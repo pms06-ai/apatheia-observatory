@@ -6,8 +6,21 @@ import json
 import os
 from http.server import BaseHTTPRequestHandler
 
-# Get the directory where data files are stored
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+# Try multiple possible data directory locations for Vercel compatibility
+def get_data_dir():
+    possible_paths = [
+        os.path.join(os.path.dirname(__file__), "data"),  # api/data/
+        os.path.join(os.path.dirname(__file__), "..", "data"),  # ../data/
+        os.path.join(os.getcwd(), "data"),  # cwd/data/
+        "/var/task/data",  # Vercel serverless path
+    ]
+    for path in possible_paths:
+        normalized = os.path.normpath(path)
+        if os.path.isdir(normalized):
+            return normalized
+    return os.path.join(os.path.dirname(__file__), "..", "data")
+
+DATA_DIR = get_data_dir()
 
 
 def load_json(filename):
@@ -263,5 +276,21 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Origin", "*")
         self.end_headers()
 
-        data = build_dashboard_data()
-        self.wfile.write(json.dumps(data).encode("utf-8"))
+        try:
+            data = build_dashboard_data()
+            # Add debug info
+            data["_debug"] = {
+                "data_dir": DATA_DIR,
+                "data_dir_exists": os.path.isdir(DATA_DIR),
+                "cwd": os.getcwd(),
+                "file_dir": os.path.dirname(__file__)
+            }
+            self.wfile.write(json.dumps(data).encode("utf-8"))
+        except Exception as e:
+            error = {
+                "error": str(e),
+                "data_dir": DATA_DIR,
+                "data_dir_exists": os.path.isdir(DATA_DIR),
+                "cwd": os.getcwd()
+            }
+            self.wfile.write(json.dumps(error).encode("utf-8"))
