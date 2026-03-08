@@ -1,0 +1,22 @@
+[
+  {
+    "party": "Democrat",
+    "actor_count": 24,
+    "evidence_count": 146
+  },
+  {
+    "party": "Republican",
+    "actor_count": 4,
+    "evidence_count": 92
+  },
+  {
+    "party": "Independent",
+    "actor_count": 2,
+    "evidence_count": 58
+  },
+  {
+    "party": "Foreign government",
+    "actor_count": 2,
+    "evidence_count": 12
+  }
+]

@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-03-07",
+    "total_count": 45
+  },
+  "categories": [
+    "Foreign Policy",
+    "National Security",
+    "Economic Policy",
+    "Social Policy",
+    "Constitutional",
+    "Immigration",
+    "Healthcare",
+    "Environment",
+    "Technology",
+    "Elections",
+    "Criminal Justice"
+  ],
+  "issues": [
+    {
+      "id": "iran-war-2026",
+      "name": "Iran War (2026)",
+      "category": "Foreign Policy",
+      "description": "US-Israel strikes on Iran beginning February 2026 (Operation Epic Fury)",
+      "active": true,
+      "key_dates": [
+        {"date": "2026-01-29", "event": "War Powers Resolution introduced"},
+        {"date": "2026-02-24", "event": "Trump State of the Union"},
+        {"date": "2026-02-28", "event": "Strikes begin, Khamenei killed"},
+        {"date": "2026-03-01", "event": "Minab school strike"},
+        {"date": "2026-03-04", "event": "War Powers vote"}
+      ],
+      "related_issues": ["israel-policy", "war-powers", "military-spending"]
+    },
+    {
+      "id": "israel-policy",
+      "name": "Israel-Palestine Policy",
+      "category": "Foreign Policy",
+      "description": "US policy toward Israel, Gaza, and Palestinian territories",
+      "active": true,
+      "key_dates": [
+        {"date": "2023-10-07", "event": "Hamas attack on Israel"},
+        {"date": "2023-10-27", "event": "Israel ground invasion of Gaza"},
+        {"date": "2024-05-24", "event": "ICC arrest warrants sought"}
+      ],
+      "related_issues": ["iran-war-2026", "humanitarian-aid"]
+    },
+    {
+      "id": "ukraine-war",
+      "name": "Ukraine War Support",
+      "category": "Foreign Policy",
+      "description": "US military and financial aid to Ukraine following Russian invasion",
+      "active": true,
+      "key_dates": [
+        {"date": "2022-02-24", "event": "Russian invasion begins"},
+        {"date": "2024-04-20", "event": "House passes $61B aid package"},
+        {"date": "2025-01-20", "event": "Trump administration policy shift"}
+      ],
+      "related_issues": ["nato-policy", "military-spending", "russia-relations"]
+    },
+    {
+      "id": "china-policy",
+      "name": "China Relations",
+      "category": "Foreign Policy",
+      "description": "Trade, technology, and security relations with China",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-04-02", "event": "Liberation Day tariffs announced"},
+        {"date": "2025-04-09", "event": "145% tariffs on China"}
+      ],
+      "related_issues": ["trade-policy", "taiwan-policy", "tiktok-ban"]
+    },
+    {
+      "id": "taiwan-policy",
+      "name": "Taiwan Defense",
+      "category": "Foreign Policy",
+      "description": "US commitment to Taiwan's defense against Chinese aggression",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["china-policy", "indo-pacific-strategy"]
+    },
+    {
+      "id": "nato-policy",
+      "name": "NATO and Alliances",
+      "category": "Foreign Policy",
+      "description": "US commitment to NATO and allied defense obligations",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["ukraine-war", "military-spending"]
+    },
+
+    {
+      "id": "war-powers",
+      "name": "War Powers and Executive Authority",
+      "category": "Constitutional",
+      "description": "Congressional vs Executive war-making authority",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["iran-war-2026", "executive-power"]
+    },
+    {
+      "id": "executive-power",
+      "name": "Executive Power / Unitary Executive",
+      "category": "Constitutional",
+      "description": "Scope of presidential authority, Schedule F, agency control",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "Day One executive orders"}
+      ],
+      "related_issues": ["doge", "federal-workforce"]
+    },
+    {
+      "id": "supreme-court",
+      "name": "Supreme Court Reform",
+      "category": "Constitutional",
+      "description": "Court expansion, term limits, ethics rules",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["judicial-appointments"]
+    },
+    {
+      "id": "second-amendment",
+      "name": "Second Amendment / Gun Policy",
+      "category": "Constitutional",
+      "description": "Gun rights, assault weapons, background checks, red flag laws",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["mass-shootings", "crime-policy"]
+    },
+    {
+      "id": "first-amendment",
+      "name": "Free Speech / Content Moderation",
+      "category": "Constitutional",
+      "description": "Social media regulation, misinformation, censorship claims",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["tiktok-ban", "tech-regulation"]
+    },
+
+    {
+      "id": "immigration-policy",
+      "name": "Immigration Policy",
+      "category": "Immigration",
+      "description": "Border security, legal immigration reform, enforcement",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "Emergency border declaration"},
+        {"date": "2025-03-15", "event": "Alien Enemies Act invocation"}
+      ],
+      "related_issues": ["border-wall", "daca-dreamers", "asylum-policy"]
+    },
+    {
+      "id": "border-wall",
+      "name": "Border Wall / Physical Barriers",
+      "category": "Immigration",
+      "description": "Construction of physical barriers on southern border",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["immigration-policy"]
+    },
+    {
+      "id": "daca-dreamers",
+      "name": "DACA / Dreamers",
+      "category": "Immigration",
+      "description": "Status of individuals brought to US as children",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["immigration-policy"]
+    },
+    {
+      "id": "asylum-policy",
+      "name": "Asylum and Refugee Policy",
+      "category": "Immigration",
+      "description": "Processing of asylum claims, refugee admissions",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["immigration-policy"]
+    },
+    {
+      "id": "deportation",
+      "name": "Mass Deportation",
+      "category": "Immigration",
+      "description": "Large-scale removal operations, enforcement priorities",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-26", "event": "ICE raids begin"}
+      ],
+      "related_issues": ["immigration-policy"]
+    },
+
+    {
+      "id": "tariffs-trade",
+      "name": "Tariffs and Trade Policy",
+      "category": "Economic Policy",
+      "description": "Import tariffs, trade agreements, economic nationalism",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-04-02", "event": "Liberation Day universal tariffs"}
+      ],
+      "related_issues": ["china-policy", "inflation"]
+    },
+    {
+      "id": "inflation",
+      "name": "Inflation and Cost of Living",
+      "category": "Economic Policy",
+      "description": "Consumer prices, grocery costs, housing affordability",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["federal-reserve", "tariffs-trade"]
+    },
+    {
+      "id": "federal-reserve",
+      "name": "Federal Reserve Independence",
+      "category": "Economic Policy",
+      "description": "Central bank autonomy, interest rate policy, Fed Chair",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["inflation"]
+    },
+    {
+      "id": "taxes",
+      "name": "Tax Policy",
+      "category": "Economic Policy",
+      "description": "TCJA extension, corporate rates, billionaire tax",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-12-31", "event": "TCJA provisions expire"}
+      ],
+      "related_issues": ["deficit-debt", "wealth-inequality"]
+    },
+    {
+      "id": "deficit-debt",
+      "name": "Deficit and National Debt",
+      "category": "Economic Policy",
+      "description": "Federal spending, debt ceiling, fiscal responsibility",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["taxes", "entitlement-reform"]
+    },
+    {
+      "id": "doge",
+      "name": "DOGE / Government Efficiency",
+      "category": "Economic Policy",
+      "description": "Department of Government Efficiency, spending cuts, agency reduction",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "DOGE established"}
+      ],
+      "related_issues": ["federal-workforce", "executive-power"]
+    },
+    {
+      "id": "minimum-wage",
+      "name": "Minimum Wage",
+      "category": "Economic Policy",
+      "description": "Federal minimum wage increase",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["labor-unions"]
+    },
+    {
+      "id": "labor-unions",
+      "name": "Labor and Union Rights",
+      "category": "Economic Policy",
+      "description": "Collective bargaining, right-to-work, PRO Act",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["minimum-wage"]
+    },
+
+    {
+      "id": "abortion",
+      "name": "Abortion Rights",
+      "category": "Social Policy",
+      "description": "Reproductive rights post-Dobbs, state bans, federal legislation",
+      "active": true,
+      "key_dates": [
+        {"date": "2022-06-24", "event": "Dobbs decision overturns Roe"}
+      ],
+      "related_issues": ["ivf-access", "contraception"]
+    },
+    {
+      "id": "ivf-access",
+      "name": "IVF Access",
+      "category": "Social Policy",
+      "description": "In vitro fertilization access and legal status",
+      "active": true,
+      "key_dates": [
+        {"date": "2024-02-16", "event": "Alabama embryo ruling"}
+      ],
+      "related_issues": ["abortion"]
+    },
+    {
+      "id": "lgbtq-rights",
+      "name": "LGBTQ+ Rights",
+      "category": "Social Policy",
+      "description": "Marriage equality, employment discrimination, transgender rights",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["transgender-policy"]
+    },
+    {
+      "id": "transgender-policy",
+      "name": "Transgender Policy",
+      "category": "Social Policy",
+      "description": "Youth medical care, sports participation, military service",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "Executive orders on gender policy"}
+      ],
+      "related_issues": ["lgbtq-rights"]
+    },
+    {
+      "id": "dei-policy",
+      "name": "DEI / Affirmative Action",
+      "category": "Social Policy",
+      "description": "Diversity programs, affirmative action, federal contractors",
+      "active": true,
+      "key_dates": [
+        {"date": "2023-06-29", "event": "SCOTUS ends race-conscious admissions"},
+        {"date": "2025-01-21", "event": "DEI executive orders"}
+      ],
+      "related_issues": ["education-policy"]
+    },
+
+    {
+      "id": "healthcare-aca",
+      "name": "ACA / Healthcare Coverage",
+      "category": "Healthcare",
+      "description": "Affordable Care Act, coverage expansion, premium subsidies",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["medicare-medicaid", "prescription-drugs"]
+    },
+    {
+      "id": "medicare-medicaid",
+      "name": "Medicare and Medicaid",
+      "category": "Healthcare",
+      "description": "Entitlement programs, expansion, work requirements",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["entitlement-reform"]
+    },
+    {
+      "id": "prescription-drugs",
+      "name": "Prescription Drug Prices",
+      "category": "Healthcare",
+      "description": "Drug price negotiation, insulin caps, PBM reform",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["healthcare-aca"]
+    },
+    {
+      "id": "vaccines",
+      "name": "Vaccines and Public Health",
+      "category": "Healthcare",
+      "description": "Vaccine mandates, FDA/CDC authority, RFK Jr. HHS",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-28", "event": "RFK Jr. confirmed as HHS Secretary"}
+      ],
+      "related_issues": []
+    },
+
+    {
+      "id": "climate-change",
+      "name": "Climate Change Policy",
+      "category": "Environment",
+      "description": "Paris Agreement, emissions targets, clean energy transition",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "Paris Agreement withdrawal again"}
+      ],
+      "related_issues": ["energy-policy", "electric-vehicles"]
+    },
+    {
+      "id": "energy-policy",
+      "name": "Energy Policy",
+      "category": "Environment",
+      "description": "Oil/gas drilling, renewables, energy independence",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "Drill baby drill executive orders"}
+      ],
+      "related_issues": ["climate-change"]
+    },
+    {
+      "id": "electric-vehicles",
+      "name": "Electric Vehicles",
+      "category": "Environment",
+      "description": "EV mandates, subsidies, charging infrastructure",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["climate-change", "energy-policy"]
+    },
+
+    {
+      "id": "ai-regulation",
+      "name": "AI Regulation",
+      "category": "Technology",
+      "description": "Artificial intelligence safety, job displacement, deepfakes",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["tech-regulation"]
+    },
+    {
+      "id": "tech-regulation",
+      "name": "Big Tech Regulation",
+      "category": "Technology",
+      "description": "Antitrust, Section 230, platform liability",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["tiktok-ban", "first-amendment"]
+    },
+    {
+      "id": "tiktok-ban",
+      "name": "TikTok Ban / Foreign Apps",
+      "category": "Technology",
+      "description": "National security concerns over foreign-owned apps",
+      "active": true,
+      "key_dates": [
+        {"date": "2024-04-24", "event": "TikTok ban signed into law"},
+        {"date": "2025-01-19", "event": "90-day extension begins"}
+      ],
+      "related_issues": ["china-policy", "tech-regulation"]
+    },
+    {
+      "id": "crypto-policy",
+      "name": "Cryptocurrency Regulation",
+      "category": "Technology",
+      "description": "Bitcoin reserve, SEC regulation, stablecoins",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-23", "event": "Bitcoin reserve executive order"}
+      ],
+      "related_issues": []
+    },
+
+    {
+      "id": "election-integrity",
+      "name": "Election Integrity",
+      "category": "Elections",
+      "description": "Voter ID, mail voting, election administration",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["voting-rights"]
+    },
+    {
+      "id": "voting-rights",
+      "name": "Voting Rights",
+      "category": "Elections",
+      "description": "VRA restoration, early voting access, registration",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["election-integrity"]
+    },
+    {
+      "id": "january-6",
+      "name": "January 6 / 2020 Election",
+      "category": "Elections",
+      "description": "Capitol riot accountability, pardons, election claims",
+      "active": true,
+      "key_dates": [
+        {"date": "2025-01-20", "event": "J6 pardons issued"}
+      ],
+      "related_issues": []
+    },
+
+    {
+      "id": "crime-policy",
+      "name": "Crime and Public Safety",
+      "category": "Criminal Justice",
+      "description": "Violent crime, policing, prosecution",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["police-reform", "drug-policy"]
+    },
+    {
+      "id": "police-reform",
+      "name": "Police Reform",
+      "category": "Criminal Justice",
+      "description": "Use of force, qualified immunity, defund movement",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["crime-policy"]
+    },
+    {
+      "id": "drug-policy",
+      "name": "Drug Policy / Fentanyl",
+      "category": "Criminal Justice",
+      "description": "Opioid crisis, fentanyl trafficking, treatment vs enforcement",
+      "active": true,
+      "key_dates": [],
+      "related_issues": ["crime-policy", "immigration-policy"]
+    }
+  ]
+}

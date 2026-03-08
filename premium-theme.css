@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Deep industrial dark background */
+  --bg: #0a0b0d;
+  --bg-elevated: rgba(20, 22, 26, 0.85);
+  
+  /* Glassmorphism panels with metallic tint */
+  --bg-panel: rgba(28, 31, 38, 0.45);
+  --bg-panel-2: rgba(36, 40, 48, 0.35);
+  --sidebar: rgba(18, 20, 24, 0.6);
+  
+  /* Metallic Accents */
+  --gold: #d8b46f;       /* Brushed Gold */
+  --bronze: #b87d52;     /* Oxidized Bronze */
+  --copper: #b56c5d;     /* Raw Copper */
+  --steel: #8f9aa3;      /* Cold Steel */
+  --silver: #c2cad0;     /* Polished Silver */
+  --gunmetal: #59626d;   /* Gunmetal */
+  --success: #6e8fa3;    /* Steely blue-green */
+  --danger: #b56c5d;     /* Copper rust */
+
+  --line: rgba(194, 202, 208, 0.15);
+  --line-strong: rgba(194, 202, 208, 0.25);
+  --text: #f4efe4;
+  --muted: #b9b1a5;
+  --faint: #7a828a;
+
+  /* Subtle metallic glows */
+  --glow-gold: 0 0 0 1px rgba(216, 180, 111, 0.3), 0 0 20px rgba(216, 180, 111, 0.15);
+  --glow-steel: 0 0 0 1px rgba(143, 154, 163, 0.3), 0 0 16px rgba(143, 154, 163, 0.15);
+
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  
+  --radius-xl: 1rem; /* Slightly boxier for industrial feel */
+}
+
+html {
+  background: 
+    radial-gradient(ellipse at 15% 10%, rgba(143, 154, 163, 0.12), transparent 45%),
+    radial-gradient(ellipse at 85% 20%, rgba(216, 180, 111, 0.1), transparent 40%),
+    radial-gradient(ellipse at 50% 90%, rgba(184, 125, 82, 0.1), transparent 50%),
+    var(--bg);
+}
+
+body {
+  font-family: var(--font-body);
+  background: transparent;
+}
+
+/* Glassmorphism Structural Upgrades with Steel Borders */
+.sidebar, 
+.header,
+.card, 
+.timeline-card, 
+.matrix-card, 
+.evidence-card, 
+.doc-card, 
+.system-card, 
+.quote-card, 
+.actor-card, 
+.theme-card, 
+.profile-spotlight, 
+.contradiction-card,
+.panel-surface,
+.cmd-palette {
+  background: var(--bg-panel);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.05); /* Beveled effect */
+  border-radius: var(--radius-xl);
+}
+
+.dashboard {
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: transparent;
+}
+
+.sidebar {
+  border-right: 1px solid var(--line-strong);
+  border-radius: var(--radius-xl);
+  margin-right: var(--space-4);
+  height: calc(100vh - 2rem);
+  background: linear-gradient(180deg, rgba(28, 31, 38, 0.5), rgba(18, 20, 24, 0.7));
+}
+
+.header {
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-4);
+  top: var(--space-4);
+  width: calc(100% - var(--space-4));
+  background: linear-gradient(180deg, rgba(20, 22, 26, 0.8), rgba(10, 11, 13, 0.9));
+}
+
+.main {
+  padding-top: var(--space-4);
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, .metric-value, .page-title, .nav-section-title {
+  font-family: var(--font-display);
+}
+
+.page-title {
+  background: linear-gradient(135deg, var(--silver) 20%, var(--steel) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  transform: translateZ(0); /* Fix for Safari clipping */
+}
+
+/* Dynamic Buttons & Micro-Animations (Industrial Style) */
+.pill-button, .tag, .action-tag, .nav-links a {
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid var(--line-strong);
+  transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
+  backdrop-filter: blur(8px);
+  color: var(--silver);
+  font-weight: 500;
+  border-radius: 4px; /* Harder edges for industrial feel */
+}
+
+.pill-button, .nav-links a {
+  border-radius: 6px;
+}
+
+.pill-button:hover, .tag:hover, .nav-links a:hover, .nav-links a.active {
+  background: linear-gradient(180deg, rgba(216, 180, 111, 0.15), rgba(216, 180, 111, 0.05));
+  border-color: rgba(216, 180, 111, 0.5);
+  box-shadow: var(--glow-gold);
+  transform: translateY(-1px);
+  color: var(--gold);
+}
+
+.pill-button.primary {
+  background: linear-gradient(135deg, var(--gold), var(--bronze));
+  color: #1a1510;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.pill-button.primary:hover {
+  background: linear-gradient(135deg, #e6c88f, #cf976e);
+  box-shadow: 0 6px 15px rgba(216, 180, 111, 0.4), inset 0 1px 0 rgba(255,255,255,0.4);
+  transform: translateY(-2px);
+  color: #1a1510;
+}
+
+/* Input Fields Metal Glow */
+.search-shell:focus-within, .select-shell:focus-within, .cmd-palette-input-wrap:focus-within {
+  border-color: rgba(216, 180, 111, 0.5);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 0 0 2px rgba(216, 180, 111, 0.15);
+  background: rgba(0,0,0,0.4);
+}
+
+/* Card Hover Elevate Effects (Heavier for Metal) */
+.card, .timeline-card, .matrix-card, .evidence-card, .profile-spotlight {
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover, .profile-spotlight:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(143, 154, 163, 0.4);
+  border-color: rgba(143, 154, 163, 0.4);
+}
+
+/* Glowing Metrics Border */
+.metric::before {
+  background: linear-gradient(135deg, var(--gold), var(--steel), var(--gunmetal));
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+}
+
+.metric:hover::before {
+  opacity: 1;
+}
+
+/* Industrial Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gunmetal) transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+  border-left: 1px solid var(--line);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gunmetal);
+  border-radius: 0px;
+  border: 1px solid var(--steel);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--steel);
+}
+
+/* Logo Shell Enhancement */
+.logo-shell {
+  background: linear-gradient(135deg, rgba(216, 180, 111, 0.2), rgba(89, 98, 109, 0.4));
+  border-color: var(--gold);
+  box-shadow: var(--glow-gold);
+}
+
+/* Adjust Eyebrow and Badges */
+.eyebrow {
+  background: rgba(216, 180, 111, 0.1);
+  color: var(--gold);
+  border: 1px solid rgba(216, 180, 111, 0.3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.data-badge {
+  background: rgba(143, 154, 163, 0.1);
+  color: var(--silver);
+  border: 1px solid rgba(143, 154, 163, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+  border-radius: 4px;
+}
+
+/* Grid Layout Enhancements */
+.content-grid {
+  max-width: 1800px;
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .sidebar {
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .header {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+}

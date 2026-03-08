@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-03-07",
+    "total_count": 150
+  },
+  "talking_points": [
+    {
+      "id": "dem-iran-illegal-war",
+      "issue_id": "iran-war-2026",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Illegal and Unconstitutional War",
+      "premise": "Trump launched strikes without congressional authorization, violating Article I, Section 8 of the Constitution which grants Congress alone the power to declare war.",
+      "supporting_arguments": [
+        "The War Powers Resolution requires congressional approval within 60 days",
+        "No imminent threat justified immediate action",
+        "Pattern of executive overreach on war powers"
+      ],
+      "common_phrases": [
+        "illegal war",
+        "unconstitutional",
+        "Congress alone has the power to declare war",
+        "Founders' worst fears",
+        "Article I authority"
+      ],
+      "target_audience": "Constitutional conservatives, anti-war progressives, independents",
+      "first_observed": "2026-02-28",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "elizabeth-warren", "ed-markey", "ro-khanna", "adam-schiff"]
+    },
+    {
+      "id": "dem-iran-no-evidence",
+      "issue_id": "iran-war-2026",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "No Evidence of Imminent Threat",
+      "premise": "Democrats with intelligence access say the administration presented no evidence of an imminent threat justifying preemptive strikes.",
+      "supporting_arguments": [
+        "Intel Committee members saw no imminent strike evidence",
+        "Pentagon offered no evidence to Congress",
+        "Definition of 'imminent' stretched beyond legal meaning"
+      ],
+      "common_phrases": [
+        "zero evidence",
+        "not a scintilla of evidence",
+        "no imminent threat",
+        "doesn't meet the definition of imminence",
+        "classified briefings showed nothing"
+      ],
+      "target_audience": "Security-focused voters, moderates, skeptics of government claims",
+      "first_observed": "2026-03-01",
+      "current_status": "active",
+      "proponents": ["mark-warner", "tim-kaine", "hakeem-jeffries"]
+    },
+    {
+      "id": "dem-iran-iraq-parallel",
+      "issue_id": "iran-war-2026",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Iraq War Parallel",
+      "premise": "This is Iraq 2.0 - the American people are being lied to again just as they were about Vietnam and Iraq.",
+      "supporting_arguments": [
+        "Same pattern of urgent claims and distorted evidence",
+        "Cherry-picked intelligence",
+        "No exit strategy presented"
+      ],
+      "common_phrases": [
+        "lied to about Vietnam",
+        "lied to about Iraq",
+        "being lied to again",
+        "weapons of mass destruction all over again",
+        "another forever war"
+      ],
+      "target_audience": "Anti-war voters, those who opposed Iraq War, millennials/Gen Z",
+      "first_observed": "2026-02-28",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "elizabeth-warren", "andy-kim"]
+    },
+    {
+      "id": "dem-iran-netanyahu",
+      "issue_id": "iran-war-2026",
+      "party": "Democrat",
+      "bloc": "Progressive",
+      "label": "Netanyahu's War",
+      "premise": "Trump is gambling with American lives to fulfill Netanyahu's decades-long ambition of dragging the US into war with Iran.",
+      "supporting_arguments": [
+        "Israel drove the timing and decision",
+        "US delegated war decision to another country",
+        "Israeli goals, not American interests"
+      ],
+      "common_phrases": [
+        "Netanyahu's ambition",
+        "delegated to another country",
+        "Israel's goals and timelines",
+        "war of choice dictated by Israel"
+      ],
+      "target_audience": "Progressive base, Arab-American voters, anti-interventionists",
+      "first_observed": "2026-02-28",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "mark-warner", "angus-king", "ruben-gallego"]
+    },
+    {
+      "id": "dem-iran-domestic-priorities",
+      "issue_id": "iran-war-2026",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Domestic Priorities Over War",
+      "premise": "Resources being spent on war should address Americans' needs at home - healthcare, housing, education.",
+      "supporting_arguments": [
+        "Multi-trillion dollar war cost",
+        "Cutting domestic programs while spending on war",
+        "Americans want jobs and healthcare, not war"
+      ],
+      "common_phrases": [
+        "taxpayer dollars wasted",
+        "endless war vs American needs",
+        "lowering costs at home",
+        "health care and housing they can afford"
+      ],
+      "target_audience": "Working class voters, economic populists",
+      "first_observed": "2026-03-03",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "hakeem-jeffries", "tim-kaine", "cory-booker"]
+    },
+    {
+      "id": "rep-iran-threat-real",
+      "issue_id": "iran-war-2026",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Iran Nuclear Threat Was Real",
+      "premise": "Iran was pursuing nuclear weapons and posed a genuine threat to US interests and allies that required military action.",
+      "supporting_arguments": [
+        "Active nuclear weapons program unlike Iraq",
+        "Verified centrifuges and enrichment activity",
+        "216+ attacks on US forces since October 2023",
+        "Assassination plots against Trump"
+      ],
+      "common_phrases": [
+        "imminent threat",
+        "nuclear weapons program",
+        "state sponsor of terror",
+        "attacks on American troops"
+      ],
+      "target_audience": "National security voters, pro-Israel voters, conservatives",
+      "first_observed": "2026-02-28",
+      "current_status": "active",
+      "proponents": ["donald-trump", "marco-rubio", "lindsey-graham", "tom-cotton"]
+    },
+    {
+      "id": "rep-iran-not-iraq",
+      "issue_id": "iran-war-2026",
+      "party": "Republican",
+      "bloc": null,
+      "label": "This Is Not Iraq",
+      "premise": "Iran has an actual verified nuclear program unlike Iraq which had nothing - the comparison is false.",
+      "supporting_arguments": [
+        "Iraq had dismantled program; Iran has active centrifuges",
+        "Iran has killed 608 Americans via proxy weapons",
+        "Iran is world's largest state terror sponsor",
+        "IAEA verification of Iranian enrichment"
+      ],
+      "common_phrases": [
+        "verified nuclear program",
+        "Iran killed American troops",
+        "world's largest terror sponsor",
+        "not Iraq all over again"
+      ],
+      "target_audience": "Skeptics of Iraq comparison, moderates, security voters",
+      "first_observed": "2026-03-02",
+      "current_status": "active",
+      "proponents": ["marco-rubio", "tom-cotton", "dan-crenshaw"]
+    },
+    {
+      "id": "rep-iran-dem-ayatollah",
+      "issue_id": "iran-war-2026",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Democrats Side With Ayatollah",
+      "premise": "Democrats opposing the war are effectively siding with Iran's regime against American interests.",
+      "supporting_arguments": [
+        "War Powers Resolution protects the regime",
+        "Democrats would let Iran get nuclear weapons",
+        "Putting politics over national security"
+      ],
+      "common_phrases": [
+        "siding with the Ayatollah",
+        "Ayatollah Protection Act",
+        "pro-Iran Democrats",
+        "putting politics over country"
+      ],
+      "target_audience": "Republican base, hawkish independents",
+      "first_observed": "2026-03-04",
+      "current_status": "active",
+      "proponents": ["jared-moskowitz", "marjorie-taylor-greene", "elise-stefanik"]
+    },
+
+    {
+      "id": "dem-immigration-pathway",
+      "issue_id": "immigration-policy",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Pathway to Citizenship",
+      "premise": "The 11 million undocumented immigrants already here should have a pathway to legal status and eventual citizenship.",
+      "supporting_arguments": [
+        "Many have lived here for decades and are part of communities",
+        "Deportation of all would be economically devastating",
+        "Family separation is cruel",
+        "DACA recipients are Americans in every way but paper"
+      ],
+      "common_phrases": [
+        "pathway to citizenship",
+        "earned legalization",
+        "comprehensive immigration reform",
+        "keep families together",
+        "Dreamers deserve a future"
+      ],
+      "target_audience": "Latino voters, immigrant communities, progressives",
+      "first_observed": "2006-01-01",
+      "current_status": "active",
+      "proponents": ["chuck-schumer", "dick-durbin", "hakeem-jeffries", "alexandria-ocasio-cortez"]
+    },
+    {
+      "id": "dem-immigration-asylum",
+      "issue_id": "asylum-policy",
+      "party": "Democrat",
+      "bloc": "Progressive",
+      "label": "Asylum Is Legal",
+      "premise": "Seeking asylum is a legal right under US and international law - it is not illegal to come to the border and request protection.",
+      "supporting_arguments": [
+        "1951 Refugee Convention guarantees",
+        "US Refugee Act of 1980",
+        "Fleeing violence and persecution is not a crime"
+      ],
+      "common_phrases": [
+        "asylum is legal",
+        "international obligations",
+        "right to seek protection",
+        "refugees are not criminals"
+      ],
+      "target_audience": "Human rights advocates, religious voters, progressives",
+      "first_observed": "2018-06-01",
+      "current_status": "active",
+      "proponents": ["alexandria-ocasio-cortez", "ilhan-omar", "pramila-jayapal"]
+    },
+    {
+      "id": "rep-immigration-invasion",
+      "issue_id": "immigration-policy",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Border Invasion",
+      "premise": "The southern border is experiencing an invasion that threatens national security, public safety, and American jobs.",
+      "supporting_arguments": [
+        "Record border crossings under Biden",
+        "Fentanyl pouring across border",
+        "Known terrorists apprehended",
+        "Strain on local communities"
+      ],
+      "common_phrases": [
+        "invasion",
+        "open borders",
+        "Biden border crisis",
+        "catch and release",
+        "criminal aliens"
+      ],
+      "target_audience": "Border state voters, security voters, working class",
+      "first_observed": "2018-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "ted-cruz", "greg-abbott", "kristi-noem"]
+    },
+    {
+      "id": "rep-immigration-finish-wall",
+      "issue_id": "border-wall",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Finish The Wall",
+      "premise": "Physical barriers work and the border wall must be completed to secure America.",
+      "supporting_arguments": [
+        "Walls work where built",
+        "Border Patrol supports physical barriers",
+        "Technology alone is insufficient"
+      ],
+      "common_phrases": [
+        "finish the wall",
+        "build the wall",
+        "physical barriers work",
+        "secure the border"
+      ],
+      "target_audience": "Republican base, border communities",
+      "first_observed": "2015-06-16",
+      "current_status": "active",
+      "proponents": ["donald-trump", "mike-johnson", "marjorie-taylor-greene"]
+    },
+    {
+      "id": "rep-immigration-mass-deportation",
+      "issue_id": "deportation",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Mass Deportation Now",
+      "premise": "All illegal immigrants must be removed from the country - the largest deportation operation in American history.",
+      "supporting_arguments": [
+        "Rule of law must be enforced",
+        "Deterrent for future illegal immigration",
+        "Criminals should be removed first"
+      ],
+      "common_phrases": [
+        "largest deportation in history",
+        "deport them all",
+        "enforce the law",
+        "they have to go back",
+        "self-deportation"
+      ],
+      "target_audience": "Immigration hardliners, MAGA base",
+      "first_observed": "2024-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "stephen-miller", "tom-homan"]
+    },
+
+    {
+      "id": "dem-abortion-codify-roe",
+      "issue_id": "abortion",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Codify Roe",
+      "premise": "Congress must codify Roe v. Wade protections into federal law to restore reproductive freedom nationwide.",
+      "supporting_arguments": [
+        "Majority of Americans support abortion access",
+        "State bans are extreme and dangerous",
+        "Women are dying due to delayed care",
+        "Privacy and bodily autonomy are fundamental rights"
+      ],
+      "common_phrases": [
+        "codify Roe",
+        "reproductive freedom",
+        "my body my choice",
+        "trust women",
+        "extreme abortion bans"
+      ],
+      "target_audience": "Women voters, suburban voters, young voters",
+      "first_observed": "2022-06-24",
+      "current_status": "active",
+      "proponents": ["kamala-harris", "chuck-schumer", "hakeem-jeffries", "nancy-pelosi"]
+    },
+    {
+      "id": "dem-abortion-healthcare",
+      "issue_id": "abortion",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Abortion Is Healthcare",
+      "premise": "Abortion is essential healthcare that should be decided between a woman and her doctor, not politicians.",
+      "supporting_arguments": [
+        "Medical necessity in many cases",
+        "Doctors need to make decisions without legal fear",
+        "Bans don't stop abortions, just safe ones"
+      ],
+      "common_phrases": [
+        "abortion is healthcare",
+        "between a woman and her doctor",
+        "politicians shouldn't practice medicine",
+        "reproductive healthcare"
+      ],
+      "target_audience": "Healthcare voters, moderates, medical professionals",
+      "first_observed": "2019-01-01",
+      "current_status": "active",
+      "proponents": ["elizabeth-warren", "kirsten-gillibrand", "patty-murray"]
+    },
+    {
+      "id": "rep-abortion-prolife",
+      "issue_id": "abortion",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Pro-Life Protection",
+      "premise": "Life begins at conception and unborn children deserve legal protection from abortion.",
+      "supporting_arguments": [
+        "Science shows unique human DNA at conception",
+        "Heartbeat detectable at 6 weeks",
+        "Late-term abortion is infanticide"
+      ],
+      "common_phrases": [
+        "pro-life",
+        "protect the unborn",
+        "life begins at conception",
+        "abortion is murder",
+        "culture of life"
+      ],
+      "target_audience": "Religious conservatives, evangelical voters, Catholic voters",
+      "first_observed": "1973-01-22",
+      "current_status": "active",
+      "proponents": ["mike-johnson", "marsha-blackburn", "mike-pence"]
+    },
+    {
+      "id": "rep-abortion-states-rights",
+      "issue_id": "abortion",
+      "party": "Republican",
+      "bloc": "Establishment",
+      "label": "Let States Decide",
+      "premise": "Dobbs correctly returned abortion to the states where voters can decide through the democratic process.",
+      "supporting_arguments": [
+        "Constitution doesn't mention abortion",
+        "Federalism respects state differences",
+        "Voters should decide, not courts"
+      ],
+      "common_phrases": [
+        "return it to the states",
+        "let voters decide",
+        "federalism",
+        "states' rights on abortion"
+      ],
+      "target_audience": "Moderate Republicans, swing voters",
+      "first_observed": "2022-06-24",
+      "current_status": "active",
+      "proponents": ["donald-trump", "nikki-haley", "mitch-mcconnell"]
+    },
+
+    {
+      "id": "dem-climate-existential",
+      "issue_id": "climate-change",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Climate Existential Crisis",
+      "premise": "Climate change is an existential threat requiring immediate, dramatic action to avoid catastrophe.",
+      "supporting_arguments": [
+        "Scientific consensus is overwhelming",
+        "Extreme weather events increasing",
+        "Sea level rise threatens coastal cities",
+        "Tipping points may be irreversible"
+      ],
+      "common_phrases": [
+        "existential threat",
+        "climate crisis",
+        "climate emergency",
+        "we're running out of time",
+        "listen to the scientists"
+      ],
+      "target_audience": "Young voters, environmentalists, coastal residents",
+      "first_observed": "2018-01-01",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "alexandria-ocasio-cortez", "ed-markey", "jay-inslee"]
+    },
+    {
+      "id": "dem-climate-green-jobs",
+      "issue_id": "climate-change",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Green Jobs Economy",
+      "premise": "Climate action creates good-paying jobs and economic opportunity through clean energy investment.",
+      "supporting_arguments": [
+        "Renewable energy is fastest-growing sector",
+        "IRA creating manufacturing jobs",
+        "Clean energy jobs pay well and can't be outsourced"
+      ],
+      "common_phrases": [
+        "green jobs",
+        "clean energy economy",
+        "good-paying union jobs",
+        "invest in the future",
+        "economic opportunity"
+      ],
+      "target_audience": "Union workers, manufacturing communities, moderates",
+      "first_observed": "2019-02-07",
+      "current_status": "active",
+      "proponents": ["joe-biden", "bernie-sanders", "john-fetterman"]
+    },
+    {
+      "id": "rep-climate-hoax",
+      "issue_id": "climate-change",
+      "party": "Republican",
+      "bloc": "MAGA",
+      "label": "Climate Hoax / Scam",
+      "premise": "Climate change is exaggerated or fabricated to justify government control and destroy American energy.",
+      "supporting_arguments": [
+        "Models have been wrong",
+        "Scientists have political agenda",
+        "Climate has always changed"
+      ],
+      "common_phrases": [
+        "climate hoax",
+        "climate scam",
+        "follow the money",
+        "not settled science",
+        "China doesn't follow rules"
+      ],
+      "target_audience": "MAGA base, energy workers, rural voters",
+      "first_observed": "2012-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "jim-jordan", "marjorie-taylor-greene"]
+    },
+    {
+      "id": "rep-climate-energy-independence",
+      "issue_id": "energy-policy",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Energy Independence / Drill Baby Drill",
+      "premise": "America should maximize domestic fossil fuel production for energy independence, lower prices, and jobs.",
+      "supporting_arguments": [
+        "Domestic production lowers gas prices",
+        "Energy security is national security",
+        "Millions of good-paying jobs",
+        "No dependence on hostile nations"
+      ],
+      "common_phrases": [
+        "drill baby drill",
+        "energy independence",
+        "energy dominance",
+        "unleash American energy",
+        "liquid gold"
+      ],
+      "target_audience": "Energy workers, rural voters, price-sensitive consumers",
+      "first_observed": "2008-09-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "ted-cruz", "john-barrasso"]
+    },
+
+    {
+      "id": "dem-economy-rigged",
+      "issue_id": "taxes",
+      "party": "Democrat",
+      "bloc": "Progressive",
+      "label": "Rigged Economy / Billionaire Tax",
+      "premise": "The economy is rigged for the wealthy while working families struggle - billionaires must pay their fair share.",
+      "supporting_arguments": [
+        "Billionaires pay lower effective tax rate than workers",
+        "Wealth inequality at historic highs",
+        "Tax loopholes benefit the rich"
+      ],
+      "common_phrases": [
+        "rigged economy",
+        "billionaires pay their fair share",
+        "working families",
+        "tax the rich",
+        "two cents on the dollar"
+      ],
+      "target_audience": "Working class, progressive base, economically anxious",
+      "first_observed": "2015-01-01",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "elizabeth-warren", "alexandria-ocasio-cortez"]
+    },
+    {
+      "id": "rep-economy-tax-cuts",
+      "issue_id": "taxes",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Tax Cuts Create Growth",
+      "premise": "Lower taxes create economic growth, jobs, and higher wages - the TCJA must be extended.",
+      "supporting_arguments": [
+        "TCJA led to wage growth and low unemployment",
+        "Businesses invest more when taxed less",
+        "Americans keep more of their money"
+      ],
+      "common_phrases": [
+        "tax cuts work",
+        "let Americans keep their money",
+        "job creators",
+        "no tax on tips",
+        "extend the Trump tax cuts"
+      ],
+      "target_audience": "Business owners, suburban voters, middle class",
+      "first_observed": "2017-12-22",
+      "current_status": "active",
+      "proponents": ["donald-trump", "kevin-brady", "mike-johnson"]
+    },
+    {
+      "id": "dem-economy-inflation-corporate",
+      "issue_id": "inflation",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Corporate Greed / Greedflation",
+      "premise": "Corporations are price gouging and using inflation as cover to jack up prices and boost profits.",
+      "supporting_arguments": [
+        "Record corporate profits during inflation",
+        "CEO pay at historic highs",
+        "Concentration allows price fixing"
+      ],
+      "common_phrases": [
+        "corporate greed",
+        "greedflation",
+        "price gouging",
+        "shrinkflation",
+        "record profits"
+      ],
+      "target_audience": "Consumers, working class, progressives",
+      "first_observed": "2022-01-01",
+      "current_status": "active",
+      "proponents": ["elizabeth-warren", "bernie-sanders", "sherrod-brown"]
+    },
+    {
+      "id": "rep-economy-inflation-biden",
+      "issue_id": "inflation",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Biden Inflation Crisis",
+      "premise": "Biden's reckless spending and war on energy caused the worst inflation in 40 years.",
+      "supporting_arguments": [
+        "American Rescue Plan flooded economy with money",
+        "Energy policies raised gas prices",
+        "9.1% inflation peak under Biden"
+      ],
+      "common_phrases": [
+        "Bidenflation",
+        "Biden's inflation crisis",
+        "reckless spending",
+        "war on energy",
+        "they broke it, we'll fix it"
+      ],
+      "target_audience": "All voters, especially those hurt by price increases",
+      "first_observed": "2022-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "kevin-mccarthy", "mike-johnson"]
+    },
+
+    {
+      "id": "dem-guns-assault-ban",
+      "issue_id": "second-amendment",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Assault Weapons Ban",
+      "premise": "Weapons of war like AR-15s have no place on our streets and should be banned for civilian use.",
+      "supporting_arguments": [
+        "Mass shootings use these weapons",
+        "1994 ban reduced mass shooting deaths",
+        "Military-style weapons cause maximum casualties"
+      ],
+      "common_phrases": [
+        "assault weapons ban",
+        "weapons of war",
+        "no place on our streets",
+        "ban AR-15s",
+        "military-style weapons"
+      ],
+      "target_audience": "Suburban voters, parents, shooting survivors",
+      "first_observed": "1994-01-01",
+      "current_status": "active",
+      "proponents": ["joe-biden", "chris-murphy", "dianne-feinstein"]
+    },
+    {
+      "id": "rep-guns-shall-not",
+      "issue_id": "second-amendment",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Shall Not Be Infringed",
+      "premise": "The Second Amendment is clear and absolute - any gun control is unconstitutional.",
+      "supporting_arguments": [
+        "Constitution says 'shall not be infringed'",
+        "Guns don't kill people, people kill people",
+        "Law-abiding citizens need to defend themselves"
+      ],
+      "common_phrases": [
+        "shall not be infringed",
+        "God-given right",
+        "cold dead hands",
+        "good guy with a gun",
+        "constitutional carry"
+      ],
+      "target_audience": "Gun owners, rural voters, conservatives",
+      "first_observed": "1975-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "marjorie-taylor-greene", "ted-cruz"]
+    },
+
+    {
+      "id": "dem-healthcare-option",
+      "issue_id": "healthcare-aca",
+      "party": "Democrat",
+      "bloc": "Moderate",
+      "label": "Public Option / Build on ACA",
+      "premise": "We should build on Obamacare with a public option to increase coverage and lower costs.",
+      "supporting_arguments": [
+        "ACA expanded coverage to millions",
+        "Public option creates competition",
+        "Pre-existing condition protections popular"
+      ],
+      "common_phrases": [
+        "public option",
+        "build on the ACA",
+        "Medicare-like option",
+        "competition lowers costs",
+        "protect and expand"
+      ],
+      "target_audience": "Moderates, ACA beneficiaries",
+      "first_observed": "2019-01-01",
+      "current_status": "active",
+      "proponents": ["joe-biden", "amy-klobuchar", "pete-buttigieg"]
+    },
+    {
+      "id": "dem-healthcare-m4a",
+      "issue_id": "healthcare-aca",
+      "party": "Democrat",
+      "bloc": "Progressive",
+      "label": "Medicare For All",
+      "premise": "Healthcare is a human right - we need single-payer Medicare for All that covers everyone.",
+      "supporting_arguments": [
+        "Healthcare is a right, not a privilege",
+        "Administrative savings pay for coverage",
+        "No more medical bankruptcies"
+      ],
+      "common_phrases": [
+        "Medicare for All",
+        "healthcare is a human right",
+        "single-payer",
+        "no more medical debt",
+        "coverage for all"
+      ],
+      "target_audience": "Progressive base, uninsured, union workers",
+      "first_observed": "2016-01-01",
+      "current_status": "active",
+      "proponents": ["bernie-sanders", "alexandria-ocasio-cortez", "pramila-jayapal"]
+    },
+
+    {
+      "id": "dem-doge-attack",
+      "issue_id": "doge",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "DOGE Is Unconstitutional Power Grab",
+      "premise": "DOGE is an unaccountable shadow government run by unelected billionaires dismantling essential services.",
+      "supporting_arguments": [
+        "No congressional authorization",
+        "Conflict of interest for Musk",
+        "Cutting veterans, Social Security, essential services",
+        "Violating Impoundment Control Act"
+      ],
+      "common_phrases": [
+        "unelected billionaire",
+        "shadow government",
+        "unconstitutional",
+        "cutting essential services",
+        "who elected Elon Musk?"
+      ],
+      "target_audience": "Federal workers, beneficiaries of programs, constitutionalists",
+      "first_observed": "2025-01-20",
+      "current_status": "active",
+      "proponents": ["alexandria-ocasio-cortez", "jamie-raskin", "chuck-schumer"]
+    },
+    {
+      "id": "rep-doge-drain-swamp",
+      "issue_id": "doge",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Drain The Swamp / Cut Waste",
+      "premise": "DOGE is finally cutting the bloated federal bureaucracy and saving taxpayers trillions.",
+      "supporting_arguments": [
+        "Government is too big and wasteful",
+        "Billions in fraud identified",
+        "Bureaucrats blocking the people's agenda"
+      ],
+      "common_phrases": [
+        "drain the swamp",
+        "cut the waste",
+        "government efficiency",
+        "save trillions",
+        "fire the bureaucrats"
+      ],
+      "target_audience": "Small government conservatives, MAGA base, taxpayers",
+      "first_observed": "2025-01-20",
+      "current_status": "active",
+      "proponents": ["donald-trump", "elon-musk", "vivek-ramaswamy"]
+    },
+
+    {
+      "id": "dem-january6-insurrection",
+      "issue_id": "january-6",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "January 6 Was An Insurrection",
+      "premise": "January 6 was a violent insurrection attempting to overturn a legitimate election, incited by Trump.",
+      "supporting_arguments": [
+        "Violence against Capitol Police",
+        "Chants to hang Mike Pence",
+        "Trump's big lie caused it",
+        "Democracy nearly fell"
+      ],
+      "common_phrases": [
+        "insurrection",
+        "domestic terrorism",
+        "attack on democracy",
+        "big lie",
+        "never forget January 6"
+      ],
+      "target_audience": "Independents, democracy-focused voters, moderates",
+      "first_observed": "2021-01-06",
+      "current_status": "active",
+      "proponents": ["nancy-pelosi", "liz-cheney", "adam-kinzinger", "jamie-raskin"]
+    },
+    {
+      "id": "rep-january6-hostages",
+      "issue_id": "january-6",
+      "party": "Republican",
+      "bloc": "MAGA",
+      "label": "J6 Hostages / Political Prisoners",
+      "premise": "January 6 defendants are political prisoners held by a weaponized DOJ for protesting.",
+      "supporting_arguments": [
+        "Two-tiered justice system",
+        "Many only trespassed",
+        "Lengthy sentences for minor offenses",
+        "Ray Epps questions"
+      ],
+      "common_phrases": [
+        "J6 hostages",
+        "political prisoners",
+        "weaponized DOJ",
+        "two-tiered justice",
+        "patriots"
+      ],
+      "target_audience": "MAGA base, Trump supporters",
+      "first_observed": "2023-01-01",
+      "current_status": "evolved",
+      "evolved_to": "rep-january6-pardoned",
+      "proponents": ["donald-trump", "marjorie-taylor-greene", "matt-gaetz"]
+    },
+    {
+      "id": "rep-january6-pardoned",
+      "issue_id": "january-6",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Justice Restored / Pardons",
+      "premise": "Trump pardoned J6 defendants to correct the injustice of political prosecution.",
+      "supporting_arguments": [
+        "Prosecutorial overreach",
+        "Many were peaceful",
+        "Healing the nation"
+      ],
+      "common_phrases": [
+        "justice restored",
+        "pardons heal the nation",
+        "end political persecution",
+        "free at last"
+      ],
+      "target_audience": "Republican base, J6 sympathizers",
+      "first_observed": "2025-01-20",
+      "current_status": "active",
+      "proponents": ["donald-trump", "mike-johnson", "jd-vance"]
+    },
+
+    {
+      "id": "dem-trans-rights",
+      "issue_id": "transgender-policy",
+      "party": "Democrat",
+      "bloc": "Progressive",
+      "label": "Trans Rights Are Human Rights",
+      "premise": "Transgender people deserve dignity, respect, and equal protection under law including access to healthcare.",
+      "supporting_arguments": [
+        "Gender-affirming care is lifesaving",
+        "Medical decisions belong to families and doctors",
+        "Discrimination causes real harm"
+      ],
+      "common_phrases": [
+        "trans rights are human rights",
+        "gender-affirming care",
+        "protect trans kids",
+        "let doctors decide",
+        "equality for all"
+      ],
+      "target_audience": "LGBTQ+ community, allies, young voters",
+      "first_observed": "2016-01-01",
+      "current_status": "active",
+      "proponents": ["alexandria-ocasio-cortez", "ilhan-omar", "sarah-mcbride"]
+    },
+    {
+      "id": "rep-trans-protect-kids",
+      "issue_id": "transgender-policy",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Protect Children / Parents' Rights",
+      "premise": "Children should not receive irreversible gender treatments and parents must be informed and in control.",
+      "supporting_arguments": [
+        "Children cannot consent to permanent changes",
+        "Detransitioner regret",
+        "Schools shouldn't hide from parents",
+        "Biological reality matters"
+      ],
+      "common_phrases": [
+        "protect children",
+        "parents' rights",
+        "irreversible damage",
+        "biological reality",
+        "two genders"
+      ],
+      "target_audience": "Parents, religious conservatives, concerned moderates",
+      "first_observed": "2021-01-01",
+      "current_status": "active",
+      "proponents": ["ron-desantis", "marsha-blackburn", "ted-cruz"]
+    },
+    {
+      "id": "rep-trans-sports",
+      "issue_id": "transgender-policy",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Save Women's Sports",
+      "premise": "Biological males should not compete in women's sports - it's unfair and erases women's achievements.",
+      "supporting_arguments": [
+        "Biological advantages persist after transition",
+        "Women losing scholarships and records",
+        "Title IX was meant to protect women"
+      ],
+      "common_phrases": [
+        "save women's sports",
+        "biological males",
+        "protect female athletes",
+        "XX means female",
+        "fairness in sports"
+      ],
+      "target_audience": "Female athletes, sports fans, parents of daughters",
+      "first_observed": "2020-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "tommy-tuberville", "marsha-blackburn"]
+    },
+
+    {
+      "id": "dem-dei-diversity",
+      "issue_id": "dei-policy",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Diversity Is Strength",
+      "premise": "Diversity, equity, and inclusion programs help correct historical discrimination and make organizations stronger.",
+      "supporting_arguments": [
+        "Diverse teams perform better",
+        "Systemic barriers still exist",
+        "Equal opportunity requires proactive effort"
+      ],
+      "common_phrases": [
+        "diversity is our strength",
+        "equity and inclusion",
+        "level the playing field",
+        "systemic barriers",
+        "representation matters"
+      ],
+      "target_audience": "Corporate America, minorities, progressives",
+      "first_observed": "2020-06-01",
+      "current_status": "declining",
+      "proponents": ["cory-booker", "hakeem-jeffries", "kamala-harris"]
+    },
+    {
+      "id": "rep-dei-discrimination",
+      "issue_id": "dei-policy",
+      "party": "Republican",
+      "bloc": null,
+      "label": "DEI Is Discrimination",
+      "premise": "DEI programs are reverse racism that discriminate against white and Asian Americans based on skin color.",
+      "supporting_arguments": [
+        "Merit should be only criterion",
+        "SCOTUS ended race-conscious admissions",
+        "Hiring by quota is wrong"
+      ],
+      "common_phrases": [
+        "reverse racism",
+        "DEI discrimination",
+        "merit-based",
+        "equal opportunity not equal outcome",
+        "end woke discrimination"
+      ],
+      "target_audience": "White working class, Asian Americans, meritocracy believers",
+      "first_observed": "2021-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "christopher-rufo", "ron-desantis"]
+    },
+
+    {
+      "id": "dem-tariffs-tax",
+      "issue_id": "tariffs-trade",
+      "party": "Democrat",
+      "bloc": null,
+      "label": "Tariffs Are a Tax on Americans",
+      "premise": "Trump's tariffs are a hidden tax paid by American consumers and businesses, not foreign countries.",
+      "supporting_arguments": [
+        "Importers pay tariffs, pass to consumers",
+        "Prices rising on everyday goods",
+        "Retaliation hurts American farmers"
+      ],
+      "common_phrases": [
+        "tariff tax",
+        "Americans pay tariffs",
+        "hidden tax",
+        "trade war hurts us",
+        "consumers pay the price"
+      ],
+      "target_audience": "Consumers, farmers, business owners",
+      "first_observed": "2018-03-01",
+      "current_status": "active",
+      "proponents": ["chuck-schumer", "elizabeth-warren", "hakeem-jeffries"]
+    },
+    {
+      "id": "rep-tariffs-fair",
+      "issue_id": "tariffs-trade",
+      "party": "Republican",
+      "bloc": null,
+      "label": "Fair Trade / America First",
+      "premise": "Tariffs protect American workers and force other countries to trade fairly with us.",
+      "supporting_arguments": [
+        "Other countries have higher tariffs on us",
+        "Brings manufacturing back",
+        "Leverage for better deals"
+      ],
+      "common_phrases": [
+        "fair trade",
+        "level playing field",
+        "America First",
+        "bring jobs back",
+        "they've been ripping us off"
+      ],
+      "target_audience": "Manufacturing workers, nationalists, trade skeptics",
+      "first_observed": "2016-01-01",
+      "current_status": "active",
+      "proponents": ["donald-trump", "jd-vance", "josh-hawley"]
+    }
+  ]
+}

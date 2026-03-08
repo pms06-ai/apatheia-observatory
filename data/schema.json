@@ -1,0 +1,151 @@
+{
+  "$schema": "Political Talking Points Repository Schema v1.0",
+  "description": "Comprehensive tracking of political positions, claims, and contradictions",
+
+  "entities": {
+    "politicians": {
+      "description": "All tracked political actors",
+      "fields": {
+        "id": "Unique slug identifier",
+        "name": "Full name",
+        "party": "Democrat | Republican | Independent | Libertarian",
+        "chamber": "Senate | House | Executive | State | Media | Other",
+        "state": "Two-letter state code or null",
+        "district": "Congressional district if House member",
+        "role": "Senator | Representative | President | Vice President | Cabinet | Governor | etc",
+        "title": "Current official title",
+        "committees": "Array of committee assignments",
+        "leadership_position": "Majority Leader, Minority Whip, etc. or null",
+        "bloc": "Ideological grouping within party",
+        "first_elected": "Year first took office",
+        "status": "active | retired | defeated | resigned",
+        "social_handles": "Object with twitter, instagram, etc.",
+        "official_url": "Official government website",
+        "photo_url": "Headshot URL"
+      }
+    },
+
+    "issues": {
+      "description": "Major policy topics being tracked",
+      "fields": {
+        "id": "Unique slug",
+        "name": "Display name",
+        "category": "Foreign Policy | Domestic | Economic | Social | Constitutional | etc",
+        "description": "Brief description",
+        "active": "Whether currently being tracked",
+        "key_dates": "Array of significant dates",
+        "related_issues": "Array of related issue IDs"
+      }
+    },
+
+    "talking_points": {
+      "description": "Standardized party/bloc messaging on issues",
+      "fields": {
+        "id": "Unique ID",
+        "issue_id": "Reference to issue",
+        "party": "Which party uses this talking point",
+        "bloc": "Optional narrower grouping",
+        "label": "Short name for the talking point",
+        "premise": "The core claim or framing",
+        "supporting_arguments": "Array of sub-arguments",
+        "common_phrases": "Array of typical phrasings used",
+        "target_audience": "Who this appeals to",
+        "first_observed": "Date first documented",
+        "peak_usage": "Date of highest frequency",
+        "current_status": "active | deprecated | evolved",
+        "evolved_to": "ID of successor talking point if evolved"
+      }
+    },
+
+    "claims": {
+      "description": "Individual verifiable statements by politicians",
+      "fields": {
+        "id": "Unique ID",
+        "politician_id": "Who made the claim",
+        "talking_point_id": "Which talking point this supports (optional)",
+        "issue_id": "Which issue this relates to",
+        "date": "When the claim was made",
+        "venue": "Where (press conference, floor speech, tweet, etc)",
+        "verbatim": "Exact quote",
+        "paraphrase": "Summary if verbatim not available",
+        "source_id": "Reference to source document",
+        "source_url": "Direct link if available",
+        "fact_check_status": "unchecked | true | mostly-true | half-true | mostly-false | false | pants-on-fire",
+        "fact_check_notes": "Explanation",
+        "tags": "Array of relevant tags"
+      }
+    },
+
+    "contradictions": {
+      "description": "Tracked inconsistencies between claims",
+      "fields": {
+        "id": "Unique ID",
+        "type": "SELF | INTER_DOC | TEMPORAL | EVIDENTIARY | MODALITY_SHIFT | SELECTIVE_CITATION | SCOPE_SHIFT | UNEXPLAINED_CHANGE",
+        "severity": "low | medium | high | critical",
+        "claim_a_id": "First claim ID",
+        "claim_b_id": "Second claim ID (if cross-actor)",
+        "actor_a": "Politician ID",
+        "actor_b": "Politician ID or null if self-contradiction",
+        "date_range": "Time span of the contradiction",
+        "summary": "Brief description",
+        "tension": "Why this matters",
+        "resolution_status": "unresolved | explained | retracted | evolved",
+        "resolution_notes": "How it was addressed if at all"
+      }
+    },
+
+    "sources": {
+      "description": "All source documents and citations",
+      "fields": {
+        "id": "Unique ID",
+        "type": "transcript | press_release | tweet | article | video | document | speech",
+        "title": "Source title",
+        "date": "Publication date",
+        "url": "Link",
+        "author": "If applicable",
+        "publication": "Media outlet, official site, etc",
+        "archived_url": "Archive.org link if available",
+        "full_text": "Complete text if available",
+        "reliability": "official | verified | reported | unverified"
+      }
+    },
+
+    "position_history": {
+      "description": "Track how politician positions evolve over time",
+      "fields": {
+        "id": "Unique ID",
+        "politician_id": "Who",
+        "issue_id": "On what issue",
+        "date": "When",
+        "position": "strongly-oppose | oppose | lean-oppose | neutral | lean-support | support | strongly-support",
+        "stance_label": "Brief label",
+        "explanation": "Context",
+        "claim_ids": "Array of supporting claim IDs",
+        "confidence": "How certain we are of this characterization"
+      }
+    },
+
+    "votes": {
+      "description": "Congressional voting record on key issues",
+      "fields": {
+        "id": "Unique ID",
+        "politician_id": "Who voted",
+        "bill_id": "External bill identifier",
+        "bill_name": "Human readable name",
+        "issue_ids": "Which issues this relates to",
+        "date": "Vote date",
+        "vote": "yea | nay | present | not-voting",
+        "chamber": "Senate | House",
+        "roll_call": "Official roll call number"
+      }
+    }
+  },
+
+  "indexes": {
+    "by_politician": "All claims, positions, votes for a given politician",
+    "by_issue": "All talking points, claims, positions for an issue",
+    "by_date": "Timeline view of all activity",
+    "by_party": "Aggregate party positions",
+    "contradictions_by_severity": "Prioritized contradiction list"
+  }
+}

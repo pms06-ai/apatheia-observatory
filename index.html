@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+    <!-- Perplexity Computer Attribution — SEO Meta Tags -->
+    <meta name="generator" content="Perplexity Computer" />
+    <meta name="author" content="Perplexity Computer" />
+    <meta property="og:see_also" content="https://www.perplexity.ai/computer" />
+    <link rel="author" href="https://www.perplexity.ai/computer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apatheia Political Rhetoric Observatory</title>
+    <meta
+      name="description"
+      content="Interactive analytical dashboard built from a structured archive of political rhetoric, contradiction mapping, party lanes, and evidence around the 2026 Iran war debate."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./premium-theme.css" />
+    <link rel="stylesheet" href="./analytics.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="./visualizations.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- CMD+K Command Palette -->
+    <div
+      class="cmd-palette-overlay"
+      id="cmd-palette-overlay"
+      aria-hidden="true"
+    >
+      <div class="cmd-palette" role="dialog" aria-label="Command palette">
+        <div class="cmd-palette-input-wrap">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            class="cmd-palette-input"
+            id="cmd-palette-input"
+            type="text"
+            placeholder="Jump to section, profile, or theme..."
+            autocomplete="off"
+          />
+        </div>
+        <div class="cmd-palette-results" id="cmd-palette-results"></div>
+        <div class="cmd-palette-footer">
+          <span><kbd class="kbd-hint">↑↓</kbd> Navigate</span>
+          <span><kbd class="kbd-hint">↵</kbd> Select</span>
+          <span><kbd class="kbd-hint">Esc</kbd> Close</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard">
+      <aside
+        class="sidebar"
+        id="sidebar"
+        aria-label="Dashboard navigation and archive summary"
+      >
+        <div class="brand">
+          <div class="brand-mark">
+            <div class="logo-shell" aria-hidden="true">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Apatheia observatory mark"
+              >
+                <path
+                  d="M12 43.5L31.8 13L52 43.5"
+                  stroke="currentColor"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 43.5H44"
+                  stroke="currentColor"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <circle cx="31.8" cy="27.6" r="5.5" fill="currentColor" />
+              </svg>
+            </div>
+            <div>
+              <h1>Apatheia Political Rhetoric Observatory</h1>
+              <p>
+                Full-spectrum rhetoric, contradiction, and evidence tracking.
+              </p>
+            </div>
+          </div>
+          <div class="panel-surface">
+            <span class="nav-section-title">Mission frame</span>
+            <p class="panel-subtitle">
+              This casefile tracks the 2026 Iran war debate as an analyst
+              workspace for claims, contradictions, source documents, and party
+              fracture.
+            </p>
+          </div>
+        </div>
+
+        <nav class="nav-section" aria-label="Sections">
+          <span class="nav-section-title">Sections</span>
+          <div class="nav-links" id="nav-links">
+            <a href="#overview" data-section="overview">Overview</a>
+            <a href="#issues" data-section="issues">Issues</a>
+            <a href="#timeline" data-section="timeline">Timeline</a>
+            <a href="#profiles" data-section="profiles">Profiles</a>
+            <a href="#contradictions" data-section="contradictions"
+              >Contradictions</a
+            >
+            <a href="#evidence" data-section="evidence">Evidence</a>
+            <a href="#documents" data-section="documents">Sources</a>
+            <a href="#analytics" data-section="analytics">Analytics</a>
+            <a href="#scaling" data-section="scaling">Scaling</a>
+          </div>
+        </nav>
+
+        <section class="nav-section">
+          <span class="nav-section-title">Theme filters</span>
+          <div
+            class="filter-row"
+            id="theme-filter-row"
+            aria-label="Theme filters"
+          ></div>
+          <p class="filter-help">
+            Use the lens, theme, profile, and search controls to trace arguments
+            across actors and files.
+          </p>
+        </section>
+
+        <section class="sidebar-meta">
+          <div class="panel-surface">
+            <span class="nav-section-title">Archive size</span>
+            <ul class="mini-list" id="manifest-list"></ul>
+          </div>
+          <div class="panel-surface">
+            <span class="nav-section-title">Party lanes</span>
+            <ul class="mini-list" id="party-mini"></ul>
+          </div>
+          <div class="panel-surface">
+            <span class="nav-section-title">Expansion tracks</span>
+            <ul class="mini-list" id="track-mini"></ul>
+          </div>
+        </section>
+      </aside>
+
+      <header class="header">
+        <div class="header-bar">
+          <div class="header-top-row">
+            <div class="header-copy">
+              <span class="eyebrow">Case observatory</span>
+              <h2 class="page-title">2026 Iran war rhetoric casefile</h2>
+              <p class="panel-subtitle">
+                Move from the case thesis into source-backed claims,
+                contradiction records, and actor-specific evidence without
+                losing investigative context.
+              </p>
+              <div class="header-status" aria-label="Dashboard capabilities">
+                <span class="header-status-pill">Fast scan</span>
+                <span class="header-status-pill">Cross-actor trace</span>
+                <span class="header-status-pill">Evidence-first</span>
+              </div>
+            </div>
+            <button
+              class="hamburger-btn"
+              id="hamburger-btn"
+              type="button"
+              aria-label="Toggle sidebar navigation"
+              aria-expanded="false"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            </button>
+          </div>
+          <div class="header-actions">
+            <label class="search-shell" aria-label="Search archive">
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Search actors, claims, or sources"
+              />
+              <kbd class="kbd-hint" id="cmd-k-hint">⌘K</kbd>
+            </label>
+            <label class="select-shell" aria-label="Choose active lens">
+              <span aria-hidden="true">Lens</span>
+              <select id="lens-select"></select>
+            </label>
+            <label class="select-shell" aria-label="Choose profile spotlight">
+              <span aria-hidden="true">Profile</span>
+              <select id="profile-select"></select>
+            </label>
+            <button
+              class="pill-button secondary"
+              id="reset-filters"
+              type="button"
+            >
+              Reset view
+            </button>
+          </div>
+          <nav
+            class="app-tab-bar"
+            id="app-tab-bar"
+            aria-label="Primary workspace tabs"
+          >
+            <button class="app-tab is-active" data-tab="overview" type="button">
+              Overview
+            </button>
+            <button class="app-tab" data-tab="issues" type="button">
+              Issues
+            </button>
+            <button class="app-tab" data-tab="timeline" type="button">
+              Timeline
+            </button>
+            <button class="app-tab" data-tab="profiles" type="button">
+              Profiles
+            </button>
+            <button class="app-tab" data-tab="contradictions" type="button">
+              Contradictions
+            </button>
+            <button class="app-tab" data-tab="evidence" type="button">
+              Evidence
+            </button>
+            <button class="app-tab" data-tab="documents" type="button">
+              Sources
+            </button>
+            <button class="app-tab" data-tab="analytics" type="button">
+              Analytics
+            </button>
+            <button class="app-tab" data-tab="scaling" type="button">
+              Scaling
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main" id="main-content">
+        <div class="content-grid">
+          <section
+            class="workspace-strip fade-in"
+            data-tab-panel="overview"
+            aria-label="Current working set overview"
+          >
+            <article class="card workspace-card">
+              <div class="card-header compact-header">
+                <div>
+                  <span class="nav-section-title">Working set</span>
+                  <h2>Current case frame</h2>
+                </div>
+                <span class="data-badge" id="workspace-updated"
+                  >Synced to current filters</span
+                >
+              </div>
+              <div class="workspace-meta-grid" id="workspace-meta-grid"></div>
+            </article>
+            <article class="card workspace-card">
+              <div class="card-header compact-header">
+                <div>
+                  <span class="nav-section-title">Active filters</span>
+                  <h2>Investigation controls</h2>
+                </div>
+                <button
+                  class="pill-button secondary"
+                  id="clear-filter-pills"
+                  type="button"
+                >
+                  Clear filters
+                </button>
+              </div>
+              <div class="active-filter-row" id="active-filter-row"></div>
+              <p class="workspace-note" id="result-summary"></p>
+            </article>
+          </section>
+
+          <section
+            class="hero-grid fade-in"
+            id="overview"
+            data-tab-panel="overview"
+          >
+            <article class="hero-card card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Observatory thesis</span>
+                  <h2>From case thesis to source-backed pressure points</h2>
+                </div>
+                <div class="legend-list" aria-label="Palette legend">
+                  <span class="legend-item"
+                    ><span class="swatch gold"></span> priority</span
+                  >
+                  <span class="legend-item"
+                    ><span class="swatch bronze"></span> contradiction</span
+                  >
+                  <span class="legend-item"
+                    ><span class="swatch steel"></span> evidence</span
+                  >
+                  <span class="legend-item"
+                    ><span class="swatch gunmetal"></span> structure</span
+                  >
+                </div>
+              </div>
+              <p class="hero-summary" id="hero-summary"></p>
+              <div class="hero-actions">
+                <a class="pill-button primary" href="#profiles"
+                  >Inspect profiles</a
+                >
+                <a class="pill-button secondary" href="#contradictions"
+                  >Open contradiction ledger</a
+                >
+                <a class="pill-button secondary" href="#evidence"
+                  >Inspect evidence</a
+                >
+              </div>
+              <div class="active-summary-grid">
+                <div class="summary-card">
+                  <span class="nav-section-title">Active lens</span>
+                  <p id="active-lens-summary"></p>
+                </div>
+                <div class="summary-card">
+                  <span class="nav-section-title">Active focus</span>
+                  <p id="active-focus-summary"></p>
+                </div>
+              </div>
+              <div class="active-summary-grid">
+                <div class="summary-card">
+                  <span class="nav-section-title">Lens scope</span>
+                  <p id="lens-scope-summary"></p>
+                  <div class="tag-stack" id="lens-theme-row"></div>
+                </div>
+                <div class="summary-card">
+                  <span class="nav-section-title">Fast routes</span>
+                  <div class="quick-route-list" id="quick-route-list"></div>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Analyst brief</span>
+                  <h2>What this case asks you to inspect first</h2>
+                </div>
+              </div>
+              <ul class="insight-list" id="top-insights-list"></ul>
+            </article>
+          </section>
+
+          <section
+            class="metrics-grid fade-in"
+            id="metrics-grid"
+            data-tab-panel="overview"
+          ></section>
+
+          <section
+            class="issues-layout fade-in"
+            id="issues"
+            data-tab-panel="issues"
+          >
+            <article class="issue-focus card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Issue tracker</span>
+                  <h2 id="issue-name"></h2>
+                </div>
+                <p class="panel-subtitle" id="issue-count-label"></p>
+              </div>
+              <div class="profile-topline">
+                <span class="data-badge" id="issue-priority"></span>
+                <span class="data-badge" id="issue-category"></span>
+                <span class="data-badge" id="issue-policy-track"></span>
+              </div>
+              <p class="profile-summary" id="issue-summary"></p>
+              <div class="hero-actions" id="issue-action-row"></div>
+              <div class="workspace-meta-grid" id="issue-stat-grid"></div>
+              <div class="dual-column-grid">
+                <div class="panel-surface detail-surface">
+                  <span class="nav-section-title">Policy brief</span>
+                  <p id="issue-brief"></p>
+                </div>
+                <div class="panel-surface detail-surface">
+                  <span class="nav-section-title">Lead actors</span>
+                  <div class="tag-stack" id="issue-lead-actors"></div>
+                  <span class="nav-section-title" style="margin-top: 1rem"
+                    >Primary sources</span
+                  >
+                  <div class="tag-stack" id="issue-source-chips"></div>
+                </div>
+              </div>
+              <div class="card-header subhead">
+                <div>
+                  <span class="nav-section-title">Linked contradictions</span>
+                  <h3>Where this issue is under pressure</h3>
+                </div>
+              </div>
+              <div
+                class="drawer-related-list"
+                id="issue-linked-contradictions"
+              ></div>
+              <div class="card-header subhead">
+                <div>
+                  <span class="nav-section-title">Evidence samples</span>
+                  <h3>Representative archive records</h3>
+                </div>
+              </div>
+              <div
+                class="drawer-related-list"
+                id="issue-evidence-samples"
+              ></div>
+              <div class="card-header subhead">
+                <div>
+                  <span class="nav-section-title">Timeline overlap</span>
+                  <h3>Events linked to this issue</h3>
+                </div>
+              </div>
+              <ol
+                class="timeline-list compact-timeline"
+                id="issue-timeline-list"
+              ></ol>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Issue register</span>
+                  <h2>Top political issues and policy tracks</h2>
+                </div>
+                <p class="panel-subtitle">
+                  Select an issue to inspect its archive footprint, policy
+                  pressure, and linked contradictions.
+                </p>
+              </div>
+              <div class="chart-shell compact-chart">
+                <canvas
+                  id="issues-chart"
+                  aria-label="Top issues chart"
+                ></canvas>
+              </div>
+              <ul class="issue-list" id="issue-list"></ul>
+            </article>
+          </section>
+
+          <section
+            class="panel-grid fade-in"
+            id="timeline"
+            data-tab-panel="timeline"
+          >
+            <article class="timeline-card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Escalation track</span>
+                  <h2>Issue timeline</h2>
+                </div>
+                <p class="panel-subtitle">
+                  Key pivots, legal triggers, and narrative shifts that reshape
+                  the case.
+                </p>
+              </div>
+              <ol class="timeline-list" id="timeline-list"></ol>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Theme pressure</span>
+                  <h2>Lens concentration</h2>
+                </div>
+              </div>
+              <div class="theme-cloud" id="theme-cloud"></div>
+              <div class="chart-shell compact-chart">
+                <canvas
+                  id="themes-chart"
+                  aria-label="Theme concentration chart"
+                ></canvas>
+              </div>
+            </article>
+          </section>
+
+          <section
+            class="profile-grid fade-in"
+            id="profiles"
+            data-tab-panel="profiles"
+          >
+            <article class="profile-spotlight card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Profile spotlight</span>
+                  <div class="profile-header-row">
+                    <div class="profile-avatar" id="profile-avatar"></div>
+                    <h2 id="profile-name"></h2>
+                  </div>
+                </div>
+                <button
+                  class="pill-button secondary"
+                  id="profile-focus-button"
+                  type="button"
+                >
+                  Focus evidence
+                </button>
+              </div>
+              <div class="profile-topline">
+                <span class="data-badge" id="profile-party"></span>
+                <span class="data-badge" id="profile-bloc"></span>
+                <span class="data-badge" id="profile-role"></span>
+                <span class="data-badge" id="profile-evidence"></span>
+              </div>
+              <p class="profile-summary" id="profile-summary"></p>
+              <div class="profile-dossier-grid" id="profile-dossier-grid"></div>
+              <div
+                class="profile-representative-grid"
+                id="profile-representative-grid"
+              ></div>
+              <div class="dual-column-grid">
+                <div class="panel-surface detail-surface">
+                  <span class="nav-section-title">Positioning</span>
+                  <p id="profile-positioning"></p>
+                  <div class="tag-stack" id="profile-signals"></div>
+                </div>
+                <div class="panel-surface detail-surface">
+                  <span class="nav-section-title">Watchpoints</span>
+                  <ul class="detail-list" id="profile-watchpoints"></ul>
+                </div>
+              </div>
+              <!-- Radar chart for theme distribution -->
+              <div class="card-header subhead">
+                <div>
+                  <span class="nav-section-title">Theme profile</span>
+                  <h3>Dominant theme radar</h3>
+                </div>
+              </div>
+              <div class="radar-chart-shell">
+                <canvas
+                  id="profile-radar-chart"
+                  aria-label="Profile theme radar chart"
+                ></canvas>
+              </div>
+              <div class="card-header subhead">
+                <div>
+                  <span class="nav-section-title">Trajectory</span>
+                  <h3>Phase sequence</h3>
+                </div>
+              </div>
+              <ol
+                class="timeline-list compact-timeline"
+                id="profile-phases"
+              ></ol>
+              <div class="card-header subhead">
+                <div>
+                  <span class="nav-section-title">Linked contradictions</span>
+                  <h3>Pressure points around this actor</h3>
+                </div>
+              </div>
+              <div class="linked-grid" id="profile-linked-contradictions"></div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Representative cards</span>
+                  <h2>Profile directory</h2>
+                </div>
+                <p class="panel-subtitle">
+                  Select a person to load their dossier, archive footprint, and
+                  representative argument cards.
+                </p>
+              </div>
+              <ul class="profile-list" id="profile-list"></ul>
+            </article>
+          </section>
+
+          <section
+            class="bottom-grid fade-in"
+            id="contradictions"
+            data-tab-panel="contradictions"
+          >
+            <article class="card contradiction-card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Contradiction ledger</span>
+                  <h2>Cross-time and cross-actor pressure points</h2>
+                </div>
+                <p class="panel-subtitle" id="contradiction-count-label"></p>
+              </div>
+              <ul class="contradiction-list" id="contradiction-list"></ul>
+              <div class="empty-state" id="contradiction-empty" hidden>
+                No contradiction records match the current focus.
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Party and bloc map</span>
+                  <h2>Cross-party scaling surface</h2>
+                </div>
+              </div>
+              <div class="chart-shell compact-chart">
+                <canvas
+                  id="party-chart"
+                  aria-label="Party representation chart"
+                ></canvas>
+              </div>
+              <div class="track-list" id="track-list"></div>
+            </article>
+          </section>
+
+          <section
+            class="bottom-grid fade-in"
+            id="patterns"
+            data-tab-panel="profiles"
+          >
+            <article class="matrix-card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Cross-reference</span>
+                  <h2>Actor × theme matrix</h2>
+                </div>
+                <p class="panel-subtitle">
+                  How often the current evidence slice links visible actors to
+                  the case's dominant themes.
+                </p>
+              </div>
+              <div class="matrix-wrap">
+                <table class="matrix-table" id="matrix-table"></table>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Figure distribution</span>
+                  <h2>Most represented actors</h2>
+                </div>
+              </div>
+              <div class="chart-shell compact-chart">
+                <canvas
+                  id="actors-chart"
+                  aria-label="Most represented actors chart"
+                ></canvas>
+              </div>
+              <div class="actor-cloud" id="actor-cloud"></div>
+            </article>
+          </section>
+
+          <section
+            class="panel-grid evidence-layout fade-in"
+            id="evidence"
+            data-tab-panel="evidence"
+          >
+            <article class="evidence-card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Evidence ledger</span>
+                  <h2>Filtered excerpts and claims</h2>
+                </div>
+                <p class="panel-subtitle" id="evidence-count-label"></p>
+              </div>
+              <div class="doc-chip-row" id="doc-chip-row"></div>
+              <ul class="evidence-list" id="evidence-list"></ul>
+              <div id="evidence-pagination"></div>
+              <div class="empty-state" id="evidence-empty" hidden>
+                No evidence matches the current search and filter combination.
+              </div>
+            </article>
+            <article class="quote-card sticky-panel">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Voice samples</span>
+                  <h2>Direct quotation set</h2>
+                </div>
+                <p class="panel-subtitle">
+                  Direct quotations from the active slice of the case archive.
+                </p>
+              </div>
+              <ul class="quote-list" id="quote-list"></ul>
+              <div class="empty-state" id="quote-empty" hidden>
+                No quotations found for the active filter.
+              </div>
+            </article>
+          </section>
+
+          <section
+            class="footer-grid fade-in"
+            id="documents"
+            data-tab-panel="documents"
+          >
+            <article class="doc-card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Source architecture</span>
+                  <h2>Document register</h2>
+                </div>
+                <p class="panel-subtitle">
+                  Select a source file to re-scope the evidence ledger and
+                  reveal its linked contradictions.
+                </p>
+              </div>
+              <div class="docs-table-wrap">
+                <table class="docs-table" id="docs-table"></table>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Actor register</span>
+                  <h2>Dominant figures</h2>
+                </div>
+              </div>
+              <ul class="actor-list" id="actor-list"></ul>
+            </article>
+          </section>
+
+          <section
+            class="analytics-grid fade-in"
+            id="analytics"
+            data-tab-panel="analytics"
+          >
+            <article class="card analytics-hero">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Data Intelligence</span>
+                  <h2>Political Analytics Dashboard</h2>
+                </div>
+                <p class="panel-subtitle">
+                  Deep analysis of positions, fact-checks, and party dynamics across the political landscape.
+                </p>
+              </div>
+              <div class="analytics-stats-grid" id="analytics-stats-grid">
+                <div class="analytics-stat-card">
+                  <span class="stat-value" id="stat-politicians">0</span>
+                  <span class="stat-label">Politicians Tracked</span>
+                </div>
+                <div class="analytics-stat-card">
+                  <span class="stat-value" id="stat-claims">0</span>
+                  <span class="stat-label">Claims Recorded</span>
+                </div>
+                <div class="analytics-stat-card">
+                  <span class="stat-value" id="stat-issues">0</span>
+                  <span class="stat-label">Issues Monitored</span>
+                </div>
+                <div class="analytics-stat-card">
+                  <span class="stat-value" id="stat-positions">0</span>
+                  <span class="stat-label">Position Changes</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Fact-Check Distribution</span>
+                  <h2>Claim Verification Status</h2>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart">
+                <canvas id="fact-check-chart" aria-label="Fact-check distribution chart"></canvas>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Party Composition</span>
+                  <h2>Politicians by Party</h2>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart">
+                <canvas id="party-breakdown-chart" aria-label="Party breakdown chart"></canvas>
+              </div>
+            </article>
+
+            <article class="card analytics-wide">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Issue Categories</span>
+                  <h2>Policy Area Distribution</h2>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart-wide">
+                <canvas id="issue-category-chart" aria-label="Issue category chart"></canvas>
+              </div>
+            </article>
+
+            <article class="card analytics-wide">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Position Tracking</span>
+                  <h2>Position Evolution Over Time</h2>
+                </div>
+                <div class="analytics-controls">
+                  <select id="position-issue-select" class="analytics-select">
+                    <option value="">Select an issue...</option>
+                  </select>
+                  <select id="position-politician-select" class="analytics-select">
+                    <option value="">Select a politician...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart-wide">
+                <canvas id="position-evolution-chart" aria-label="Position evolution chart"></canvas>
+              </div>
+            </article>
+
+            <article class="card analytics-wide">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Position Comparison</span>
+                  <h2>Where Politicians Stand</h2>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart-wide">
+                <canvas id="position-comparison-chart" aria-label="Position comparison chart"></canvas>
+              </div>
+            </article>
+
+            <article class="card analytics-wide">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Talking Points</span>
+                  <h2>Party Messaging by Issue</h2>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart-wide">
+                <canvas id="talking-points-chart" aria-label="Talking points comparison chart"></canvas>
+              </div>
+            </article>
+
+            <article class="card analytics-wide">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Activity Timeline</span>
+                  <h2>Claims Over Time</h2>
+                </div>
+              </div>
+              <div class="chart-shell analytics-chart-wide">
+                <canvas id="activity-timeline-chart" aria-label="Activity timeline chart"></canvas>
+              </div>
+            </article>
+          </section>
+
+          <section
+            class="footer-grid fade-in"
+            id="scaling"
+            data-tab-panel="scaling"
+          >
+            <article class="system-card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Scale path</span>
+                  <h2>Reusable observatory schema</h2>
+                </div>
+                <p class="panel-subtitle">
+                  This case prototype already exposes the schema needed to scale
+                  into future issue files.
+                </p>
+              </div>
+              <div class="system-grid" id="system-grid"></div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title"
+                    >Implementation blueprint</span
+                  >
+                  <h2>Suggested next data model</h2>
+                </div>
+              </div>
+              <pre class="code-block" id="model-block"></pre>
+            </article>
+          </section>
+
+          <footer class="footer">
+            <p class="footer-note">
+              The site and data bundle are designed to keep growing: more public
+              figures, more issues, more contradiction trails, and deeper
+              evidence tracing without rebuilding the system from scratch.
+            </p>
+            <p class="footer-credit">
+              <a
+                href="https://www.perplexity.ai/computer"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Created with Perplexity Computer</a
+              >
+            </p>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <div class="detail-overlay" id="detail-overlay" aria-hidden="true">
+      <aside
+        class="detail-drawer"
+        id="detail-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="detail-title"
+      >
+        <div class="detail-header">
+          <div>
+            <span class="nav-section-title" id="detail-kicker"
+              >Record detail</span
+            >
+            <h2 id="detail-title">Inspector panel</h2>
+          </div>
+          <button
+            class="detail-close"
+            id="detail-close"
+            type="button"
+            aria-label="Close detail panel"
+          >
+            ×
+          </button>
+        </div>
+        <div class="detail-meta" id="detail-meta"></div>
+        <div class="detail-body" id="detail-body"></div>
+        <div class="detail-actions" id="detail-actions"></div>
+      </aside>
+    </div>
+
+    <!-- Back to top -->
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+
+    <!-- Mobile bottom nav -->
+    <nav
+      class="mobile-bottom-nav"
+      id="mobile-bottom-nav"
+      aria-label="Mobile section navigation"
+    >
+      <div class="mobile-bottom-nav-inner">
+        <button
+          class="mobile-nav-btn"
+          data-section="overview"
+          type="button"
+          aria-label="Overview"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+          </svg>
+          <span>Overview</span>
+        </button>
+        <button
+          class="mobile-nav-btn"
+          data-section="issues"
+          type="button"
+          aria-label="Issues"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 7h16" />
+            <path d="M4 12h10" />
+            <path d="M4 17h7" />
+            <circle cx="18" cy="12" r="2" />
+          </svg>
+          <span>Issues</span>
+        </button>
+        <button
+          class="mobile-nav-btn"
+          data-section="profiles"
+          type="button"
+          aria-label="Profiles"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span>Profiles</span>
+        </button>
+        <button
+          class="mobile-nav-btn"
+          data-section="contradictions"
+          type="button"
+          aria-label="Contradictions"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+            />
+            <line x1="12" y1="9" x2="12" y2="13" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+          <span>Flags</span>
+        </button>
+        <button
+          class="mobile-nav-btn"
+          data-section="evidence"
+          type="button"
+          aria-label="Evidence"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+          <span>Evidence</span>
+        </button>
+      </div>
+    </nav>
+  </body>
+</html>

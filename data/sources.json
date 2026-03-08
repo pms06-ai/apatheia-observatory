@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-03-07",
+    "total_count": 25
+  },
+  "sources": [
+    {
+      "id": "src-sanders-press-20260228",
+      "type": "press_release",
+      "title": "Sanders Statement on Iran Military Action",
+      "date": "2026-02-28",
+      "url": "https://www.sanders.senate.gov/press-releases/",
+      "author": "Office of Senator Bernie Sanders",
+      "publication": "Official Senate Website",
+      "reliability": "official"
+    },
+    {
+      "id": "src-warner-presser-20260301",
+      "type": "transcript",
+      "title": "Warner Post-Briefing Press Conference",
+      "date": "2026-03-01",
+      "url": null,
+      "author": null,
+      "publication": "C-SPAN",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-cnn-poll-20260302",
+      "type": "article",
+      "title": "CNN Poll: 59% Disapprove of Iran Strikes",
+      "date": "2026-03-02",
+      "url": null,
+      "author": "CNN Polling Unit",
+      "publication": "CNN",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-wapo-poll-20260301",
+      "type": "article",
+      "title": "Washington Post Poll on Iran Military Action",
+      "date": "2026-03-01",
+      "url": null,
+      "author": "Washington Post",
+      "publication": "Washington Post",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-trump-debate-20240910",
+      "type": "transcript",
+      "title": "2024 Presidential Debate - Trump vs Harris",
+      "date": "2024-09-10",
+      "url": null,
+      "author": "ABC News",
+      "publication": "ABC News",
+      "reliability": "official"
+    },
+    {
+      "id": "src-trump-inaugural-20250120",
+      "type": "transcript",
+      "title": "President Trump Inaugural Address",
+      "date": "2025-01-20",
+      "url": null,
+      "author": "White House",
+      "publication": "White House",
+      "reliability": "official"
+    },
+    {
+      "id": "src-trump-twitter-20121106",
+      "type": "tweet",
+      "title": "Trump Tweet on Climate Change and China",
+      "date": "2012-11-06",
+      "url": "https://twitter.com/realDonaldTrump/status/265895292191248385",
+      "author": "Donald Trump",
+      "publication": "Twitter",
+      "archived_url": "https://web.archive.org/web/20161106182043/https://twitter.com/realDonaldTrump/status/265895292191248385",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-aoc-interview-20190121",
+      "type": "video",
+      "title": "AOC Interview - 12 Years Climate Warning",
+      "date": "2019-01-21",
+      "url": null,
+      "author": null,
+      "publication": "Ta-Nehisi Coates Interview",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-vance-fox-20210722",
+      "type": "video",
+      "title": "JD Vance Fox News Interview - Childless Cat Ladies",
+      "date": "2021-07-22",
+      "url": null,
+      "author": "Fox News",
+      "publication": "Fox News",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-dropsite-senate-dems",
+      "type": "article",
+      "title": "Senate Democrats and Iran Policy",
+      "date": "2026-03-03",
+      "url": null,
+      "author": "Drop Site News",
+      "publication": "Drop Site News",
+      "reliability": "reported",
+      "full_text": "Drop Site News reported that 'a substantial number of Senate Democrats believed Iran ultimately needed to be dealt with militarily' but wanted Trump to bear the political cost."
+    },
+    {
+      "id": "src-cip-schumer",
+      "type": "article",
+      "title": "Center for International Policy on Schumer Response",
+      "date": "2026-03-04",
+      "url": null,
+      "author": "Center for International Policy",
+      "publication": "CIP",
+      "reliability": "reported"
+    },
+    {
+      "id": "src-nation-leadership",
+      "type": "article",
+      "title": "The Nation Analysis of Democratic Leadership",
+      "date": "2026-03-05",
+      "url": null,
+      "author": "The Nation",
+      "publication": "The Nation",
+      "reliability": "reported",
+      "full_text": "Leadership's response amounts to 'de facto support' through 'delay, hand-wringing, and conspicuous silence.'"
+    },
+    {
+      "id": "src-mit-inflation-study",
+      "type": "document",
+      "title": "MIT Sloan Study on Inflation Drivers",
+      "date": "2024-01-15",
+      "url": null,
+      "author": "MIT Sloan School",
+      "publication": "MIT Sloan",
+      "reliability": "verified",
+      "full_text": "The overwhelming driver of that burst of inflation in 2022 was federal spending. 42% of inflation was directly attributable to government spending."
+    },
+    {
+      "id": "src-penn-wharton-ira",
+      "type": "document",
+      "title": "Penn Wharton Budget Model - IRA Analysis",
+      "date": "2022-08-12",
+      "url": null,
+      "author": "Penn Wharton Budget Model",
+      "publication": "Penn Wharton",
+      "reliability": "verified",
+      "full_text": "The impact on inflation is statistically indistinguishable from zero."
+    },
+    {
+      "id": "src-isg-iraq-report",
+      "type": "document",
+      "title": "Iraq Survey Group Final Report",
+      "date": "2004-09-30",
+      "url": null,
+      "author": "Iraq Survey Group",
+      "publication": "CIA",
+      "reliability": "official",
+      "full_text": "ISG has not found evidence that Saddam possessed WMD stocks in 2003."
+    },
+    {
+      "id": "src-pentagon-proxy-attacks",
+      "type": "document",
+      "title": "Pentagon Report on Iran Proxy Attacks",
+      "date": "2025-06-15",
+      "url": null,
+      "author": "Department of Defense",
+      "publication": "DoD",
+      "reliability": "official",
+      "full_text": "At least 216 attacks against U.S. forces in Iraq, Syria, and Jordan between October 2023 and mid-2025, using at least 372 rockets, missiles, and drones."
+    },
+    {
+      "id": "src-cdc-fentanyl-2023",
+      "type": "document",
+      "title": "CDC Provisional Overdose Death Counts",
+      "date": "2024-03-01",
+      "url": null,
+      "author": "CDC",
+      "publication": "CDC",
+      "reliability": "official",
+      "full_text": "105,303 Americans died from drug overdoses in 2023. 72,776 died from fentanyl alone in 2023."
+    },
+    {
+      "id": "src-harris-rally-20240723",
+      "type": "transcript",
+      "title": "Kamala Harris Campaign Rally - Milwaukee",
+      "date": "2024-07-23",
+      "url": null,
+      "author": null,
+      "publication": "Campaign",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-trump-truthsocial-abortion",
+      "type": "tweet",
+      "title": "Trump Truth Social Video on Abortion",
+      "date": "2024-04-08",
+      "url": null,
+      "author": "Donald Trump",
+      "publication": "Truth Social",
+      "reliability": "verified"
+    },
+    {
+      "id": "src-dem-debate-20190627",
+      "type": "transcript",
+      "title": "Democratic Primary Debate - Miami",
+      "date": "2019-06-27",
+      "url": null,
+      "author": "NBC News",
+      "publication": "NBC News",
+      "reliability": "official"
+    }
+  ]
+}

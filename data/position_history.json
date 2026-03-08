@@ -1,0 +1,350 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2026-03-07",
+    "total_count": 60
+  },
+  "positions": [
+    {
+      "id": "pos-jeffries-iran-1",
+      "politician_id": "hakeem-jeffries",
+      "issue_id": "iran-war-2026",
+      "date": "2025-06-19",
+      "position": "neutral",
+      "stance_label": "Cautious positioning - Hawkish baseline",
+      "explanation": "Calls Iran a sworn enemy while keeping Congress-centered war powers language in reserve.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-jeffries-iran-2",
+      "politician_id": "hakeem-jeffries",
+      "issue_id": "iran-war-2026",
+      "date": "2025-06-20",
+      "position": "lean-oppose",
+      "stance_label": "Demanding proof - Evidentiary challenge",
+      "explanation": "Adopts 'not a scintilla of evidence' language and presses for classified justification.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-jeffries-iran-3",
+      "politician_id": "hakeem-jeffries",
+      "issue_id": "iran-war-2026",
+      "date": "2026-02-24",
+      "position": "oppose",
+      "stance_label": "Pre-strike warning - Strategic alarm",
+      "explanation": "Frames escalation as another failed foreign forever war before the major strike sequence.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-jeffries-iran-4",
+      "politician_id": "hakeem-jeffries",
+      "issue_id": "iran-war-2026",
+      "date": "2026-03-01",
+      "position": "strongly-oppose",
+      "stance_label": "Full opposition - All-out-war framing",
+      "explanation": "After briefings, argues there is zero evidence of imminent threat and links war expansion to domestic cuts.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-sanders-iran-1",
+      "politician_id": "bernie-sanders",
+      "issue_id": "iran-war-2026",
+      "date": "2026-02-28",
+      "position": "strongly-oppose",
+      "stance_label": "Immediate categorical opposition",
+      "explanation": "Called the operation illegal, unconstitutional, and aligned with Netanyahu's ambitions from day one.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-fetterman-iran-1",
+      "politician_id": "john-fetterman",
+      "issue_id": "iran-war-2026",
+      "date": "2026-03-04",
+      "position": "support",
+      "stance_label": "Hawkish Democratic break",
+      "explanation": "Voted against the War Powers effort; represents visible Democratic break from anti-war bloc.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-trump-iran-1",
+      "politician_id": "donald-trump",
+      "issue_id": "iran-war-2026",
+      "date": "2025-06-20",
+      "position": "strongly-support",
+      "stance_label": "Program degraded",
+      "explanation": "Prior strike rhetoric claiming nuclear program 'obliterated.'",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-trump-iran-2",
+      "politician_id": "donald-trump",
+      "issue_id": "iran-war-2026",
+      "date": "2026-02-28",
+      "position": "strongly-support",
+      "stance_label": "Immediate threat justification",
+      "explanation": "Executes Operation Epic Fury while critics argue the threat case remained unproven.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-trump-abortion-1",
+      "politician_id": "donald-trump",
+      "issue_id": "abortion",
+      "date": "1999-10-24",
+      "position": "support",
+      "stance_label": "Pro-choice",
+      "explanation": "Stated he was 'very pro-choice' in NBC interview with Tim Russert.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-trump-abortion-2",
+      "politician_id": "donald-trump",
+      "issue_id": "abortion",
+      "date": "2016-03-30",
+      "position": "strongly-oppose",
+      "stance_label": "Pro-life with punishment",
+      "explanation": "Said women who get abortions should face 'some form of punishment' (later walked back).",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-trump-abortion-3",
+      "politician_id": "donald-trump",
+      "issue_id": "abortion",
+      "date": "2024-04-08",
+      "position": "neutral",
+      "stance_label": "States should decide",
+      "explanation": "Declined to support federal ban; said states should determine abortion policy.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-trump-ukraine-1",
+      "politician_id": "donald-trump",
+      "issue_id": "ukraine-war",
+      "date": "2022-02-24",
+      "position": "lean-support",
+      "stance_label": "Blamed Biden for weakness",
+      "explanation": "Criticized Biden for allowing invasion to happen through weakness.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-trump-ukraine-2",
+      "politician_id": "donald-trump",
+      "issue_id": "ukraine-war",
+      "date": "2024-02-10",
+      "position": "oppose",
+      "stance_label": "End aid, negotiate",
+      "explanation": "Said he would end the war in 24 hours and criticized ongoing aid.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-trump-ukraine-3",
+      "politician_id": "donald-trump",
+      "issue_id": "ukraine-war",
+      "date": "2025-02-15",
+      "position": "strongly-oppose",
+      "stance_label": "Forcing negotiations",
+      "explanation": "Cut aid and pressured Ukraine to negotiate with Russia.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-biden-marriage-1",
+      "politician_id": "joe-biden",
+      "issue_id": "lgbtq-rights",
+      "date": "1996-09-10",
+      "position": "oppose",
+      "stance_label": "Supported DOMA",
+      "explanation": "Voted for Defense of Marriage Act defining marriage as between man and woman.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-biden-marriage-2",
+      "politician_id": "joe-biden",
+      "issue_id": "lgbtq-rights",
+      "date": "2012-05-06",
+      "position": "strongly-support",
+      "stance_label": "Endorsed same-sex marriage",
+      "explanation": "Became first major administration official to publicly support same-sex marriage.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-clinton-crime-1",
+      "politician_id": "hillary-clinton",
+      "issue_id": "crime-policy",
+      "date": "1996-01-25",
+      "position": "strongly-support",
+      "stance_label": "Superpredators",
+      "explanation": "Supported 1994 crime bill; used 'superpredators' language.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-gabbard-party-1",
+      "politician_id": "tulsi-gabbard",
+      "issue_id": "dei-policy",
+      "date": "2020-03-19",
+      "position": "lean-oppose",
+      "stance_label": "Democratic candidate",
+      "explanation": "Ran for Democratic presidential nomination; left-leaning on most issues.",
+      "confidence": "medium"
+    },
+    {
+      "id": "pos-gabbard-party-2",
+      "politician_id": "tulsi-gabbard",
+      "issue_id": "dei-policy",
+      "date": "2024-10-22",
+      "position": "strongly-oppose",
+      "stance_label": "Joined Republican Party",
+      "explanation": "Officially joined Republican Party and endorsed Trump.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-warren-m4a-1",
+      "politician_id": "elizabeth-warren",
+      "issue_id": "healthcare-aca",
+      "date": "2019-06-26",
+      "position": "strongly-support",
+      "stance_label": "Medicare for All supporter",
+      "explanation": "Raised hand for eliminating private insurance in debate.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-warren-m4a-2",
+      "politician_id": "elizabeth-warren",
+      "issue_id": "healthcare-aca",
+      "date": "2019-11-15",
+      "position": "support",
+      "stance_label": "Transition plan",
+      "explanation": "Released plan showing M4A wouldn't come until year 3; public option first.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-romney-healthcare-1",
+      "politician_id": "mitt-romney",
+      "issue_id": "healthcare-aca",
+      "date": "2006-04-12",
+      "position": "strongly-support",
+      "stance_label": "Signed Massachusetts healthcare",
+      "explanation": "Signed healthcare reform in Massachusetts that became model for ACA.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-romney-healthcare-2",
+      "politician_id": "mitt-romney",
+      "issue_id": "healthcare-aca",
+      "date": "2012-08-27",
+      "position": "strongly-oppose",
+      "stance_label": "Repeal Obamacare",
+      "explanation": "Campaigned on repealing Obamacare despite its similarities to Romneycare.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-sanders-guns-1",
+      "politician_id": "bernie-sanders",
+      "issue_id": "second-amendment",
+      "date": "1993-11-10",
+      "position": "oppose",
+      "stance_label": "Voted against Brady Bill",
+      "explanation": "Voted against Brady Bill waiting period for handgun purchases.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-sanders-guns-2",
+      "politician_id": "bernie-sanders",
+      "issue_id": "second-amendment",
+      "date": "2005-10-26",
+      "position": "lean-oppose",
+      "stance_label": "Voted for gun manufacturer immunity",
+      "explanation": "Voted for Protection of Lawful Commerce in Arms Act.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-sanders-guns-3",
+      "politician_id": "bernie-sanders",
+      "issue_id": "second-amendment",
+      "date": "2016-04-14",
+      "position": "lean-support",
+      "stance_label": "Assault weapons ban",
+      "explanation": "Moved left on guns during primary; supported assault weapons ban.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-schumer-border-1",
+      "politician_id": "chuck-schumer",
+      "issue_id": "immigration-policy",
+      "date": "2009-06-24",
+      "position": "lean-oppose",
+      "stance_label": "Border security first",
+      "explanation": "Argued for securing border before pathway to citizenship.",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-schumer-border-2",
+      "politician_id": "chuck-schumer",
+      "issue_id": "immigration-policy",
+      "date": "2024-02-06",
+      "position": "support",
+      "stance_label": "Bipartisan border deal supporter",
+      "explanation": "Supported bipartisan border security bill that Trump opposed.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-graham-trump-1",
+      "politician_id": "lindsey-graham",
+      "issue_id": "election-integrity",
+      "date": "2016-02-17",
+      "position": "strongly-oppose",
+      "stance_label": "Never Trump",
+      "explanation": "Called Trump 'a race-baiting, xenophobic, religious bigot.'",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-graham-trump-2",
+      "politician_id": "lindsey-graham",
+      "issue_id": "election-integrity",
+      "date": "2020-11-07",
+      "position": "strongly-support",
+      "stance_label": "Election fraud claims",
+      "explanation": "Supported Trump's claims of election fraud; called for investigation.",
+      "confidence": "high"
+    },
+
+    {
+      "id": "pos-cruz-trump-1",
+      "politician_id": "ted-cruz",
+      "issue_id": "january-6",
+      "date": "2016-07-20",
+      "position": "strongly-oppose",
+      "stance_label": "Refused to endorse",
+      "explanation": "Refused to endorse Trump at RNC; said 'vote your conscience.'",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-cruz-trump-2",
+      "politician_id": "ted-cruz",
+      "issue_id": "january-6",
+      "date": "2022-01-05",
+      "position": "lean-oppose",
+      "stance_label": "Called J6 terrorism",
+      "explanation": "Called January 6 a 'violent terrorist attack on the Capitol.'",
+      "confidence": "high"
+    },
+    {
+      "id": "pos-cruz-trump-3",
+      "politician_id": "ted-cruz",
+      "issue_id": "january-6",
+      "date": "2022-01-06",
+      "position": "strongly-support",
+      "stance_label": "Walked back terrorism",
+      "explanation": "Appeared on Tucker Carlson to walk back terrorism characterization.",
+      "confidence": "high"
+    }
+  ]
+}
