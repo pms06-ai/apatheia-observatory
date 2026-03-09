@@ -6,7 +6,7 @@ module.exports = {
     headless: true,
   },
   webServer: {
-    command: ".venv/bin/python -m uvicorn main:app --host 127.0.0.1 --port 4173",
+    command: ".venv/bin/python init_db.py && .venv/bin/python build_profiles.py && .venv/bin/python -m uvicorn main:app --host 127.0.0.1 --port 4173",
     url: "http://127.0.0.1:4173",
     reuseExistingServer: true,
     timeout: 120000,

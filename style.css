@@ -2175,3 +2175,29 @@ body.drawer-open {
     border-left: 0;
   }
 }
+
+.workstation-intent {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.workstation-intent-headings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.workstation-intent-headings h2 {
+  margin: 0;
+  font-size: var(--text-base);
+}
+
+.workstation-empty-state {
+  display: grid;
+  gap: var(--space-3);
+}
+
+#suggested-actor-list .pill-button {
+  margin-right: 0.45rem;
+  margin-bottom: 0.45rem;
+}

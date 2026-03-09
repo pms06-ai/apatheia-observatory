@@ -6,6 +6,8 @@ const state = {
   doc: 'all',
   profile: 'all',
   activeProfileId: null,
+  investigationActorId: null,
+  activeWorkspace: 'investigate',
   activeIssue: null,
   evidencePage: 1,
   evidencePerPage: 15,
@@ -16,6 +18,9 @@ const state = {
   drawerOpen: false,
   actorDirectory: [],
   actorCategory: 'all',
+  pins: { evidence: [], contradictions: [], documents: [] },
+  findings: [],
+  draft: { title: '', dek: '', sections: [] },
 };
 
 const els = {};
@@ -166,8 +171,38 @@ async function loadData() {
   } else {
     state.actorDirectory = [];
   }
-  state.activeProfileId = state.data.profiles?.[0]?.id || null;
+  hydrateWorkstationState();
   state.activeIssue = state.data.themes?.[0]?.name || null;
+}
+
+function hydrateWorkstationState() {
+  const stored = window.workstationStorage?.load?.() || {};
+  state.investigationActorId = stored.investigationActorId || null;
+  state.activeProfileId = state.investigationActorId;
+  state.profile = state.investigationActorId || 'all';
+  state.pins = {
+    evidence: Array.isArray(stored?.pins?.evidence) ? stored.pins.evidence : [],
+    contradictions: Array.isArray(stored?.pins?.contradictions) ? stored.pins.contradictions : [],
+    documents: Array.isArray(stored?.pins?.documents) ? stored.pins.documents : [],
+  };
+  state.findings = Array.isArray(stored.findings) ? stored.findings : [];
+  state.draft = stored.draft && typeof stored.draft === 'object'
+    ? {
+      title: stored.draft.title || '',
+      dek: stored.draft.dek || '',
+      sections: Array.isArray(stored.draft.sections) ? stored.draft.sections : [],
+    }
+    : { title: '', dek: '', sections: [] };
+}
+
+function persistWorkstationState() {
+  if (!window.workstationStorage?.save) return;
+  window.workstationStorage.save({
+    investigationActorId: state.investigationActorId,
+    pins: state.pins,
+    findings: state.findings,
+    draft: state.draft,
+  });
 }
 
 function getById(id) {
@@ -194,7 +229,12 @@ function cacheElements() {
     'issue-name', 'issue-priority', 'issue-category', 'issue-policy-track', 'issue-summary',
     'issue-brief', 'issue-stat-grid', 'issue-lead-actors', 'issue-source-chips',
     'issue-linked-contradictions', 'issue-evidence-samples', 'issue-timeline-list',
-    'issue-action-row', 'issue-count-label', 'issue-list', 'actor-category-select'
+    'issue-action-row', 'issue-count-label', 'issue-list', 'actor-category-select',
+    'clear-investigation', 'investigation-status', 'workstation-intent-status',
+    'investigation-empty-state', 'suggested-actor-list', 'new-finding', 'finding-editor',
+    'finding-title', 'finding-thesis', 'finding-unresolved', 'save-finding', 'findings-list',
+    'pinned-summary', 'pinned-count-text', 'insert-finding', 'copy-markdown', 'export-markdown',
+    'draft-title', 'draft-dek', 'draft-body'
   ].forEach(id => { els[id] = getById(id); });
 }
 
@@ -437,7 +477,28 @@ function renderInlineAction(label, action, value = '', tabTarget = '') {
 function syncControlValues() {
   if (els['search-input']) els['search-input'].value = state.search ? state.search : '';
   if (els['lens-select']) els['lens-select'].value = state.lens;
-  if (els['profile-select']) els['profile-select'].value = state.profile;
+  if (els['profile-select']) els['profile-select'].value = state.investigationActorId || 'all';
+}
+
+function setInvestigationActor(profileId) {
+  state.investigationActorId = profileId || null;
+  state.activeProfileId = state.investigationActorId;
+  state.profile = state.investigationActorId || 'all';
+  state.evidencePage = 1;
+  persistWorkstationState();
+}
+
+function clearInvestigation() {
+  state.investigationActorId = null;
+  state.activeProfileId = null;
+  state.profile = 'all';
+  state.search = '';
+  state.lens = 'all';
+  state.theme = 'all';
+  state.doc = 'all';
+  state.evidencePage = 1;
+  syncControlValues();
+  persistWorkstationState();
 }
 
 function resetAllFilters() {
@@ -445,8 +506,8 @@ function resetAllFilters() {
   state.lens = 'all';
   state.theme = 'all';
   state.doc = 'all';
-  state.profile = 'all';
-  state.activeProfileId = state.data.profiles?.[0]?.id || null;
+  state.profile = state.investigationActorId || 'all';
+  state.activeProfileId = state.investigationActorId;
   state.evidencePage = 1;
   syncControlValues();
 }
@@ -456,7 +517,7 @@ function clearFilter(key) {
   if (key === 'lens') state.lens = 'all';
   if (key === 'theme') state.theme = 'all';
   if (key === 'doc') state.doc = 'all';
-  if (key === 'profile') state.profile = 'all';
+  if (key === 'profile') state.profile = state.investigationActorId || 'all';
   state.evidencePage = 1;
   syncControlValues();
 }
@@ -464,7 +525,7 @@ function clearFilter(key) {
 function focusActorSearch(actorName) {
   state.search = actorName.toLowerCase();
   const profile = profileByName(actorName);
-  if (profile) state.activeProfileId = profile.id;
+  if (profile) setInvestigationActor(profile.id);
   state.evidencePage = 1;
   syncControlValues();
 }
@@ -615,6 +676,7 @@ function openEvidenceRecord(record) {
       </div>
     `,
     actions: [
+      renderActionButton('Pin evidence', 'pin-evidence', record.id, 'secondary'),
       renderActionButton('Filter to this source', 'set-doc', record.doc_id, 'primary', 'evidence'),
       renderActionButton('Open source record', 'inspect-document', record.doc_id),
       dominantActors[0] ? renderActionButton(`Search ${dominantActors[0]}`, 'search-actor', dominantActors[0], 'secondary', 'evidence') : ''
@@ -685,6 +747,7 @@ function openContradictionRecord(item) {
       </div>
     `,
     actions: [
+      renderActionButton('Pin contradiction', 'pin-contradiction', item.id, 'secondary'),
       actorProfile ? renderActionButton(`Open ${item.actor} profile`, 'spotlight-profile', actorProfile.id, 'primary', 'profiles') : '',
       item.themes?.[0] ? renderActionButton(`Filter ${item.themes[0]}`, 'set-theme', item.themes[0], 'secondary', 'contradictions') : ''
     ].join('')
@@ -740,6 +803,7 @@ function openDocumentRecord(doc) {
       </div>
     `,
     actions: [
+      renderActionButton('Pin document', 'pin-document', doc.id, 'secondary'),
       renderActionButton('Filter to this source', 'set-doc', doc.id, 'primary', 'evidence'),
       docContradictions[0] ? renderActionButton('Inspect strongest contradiction', 'inspect-contradiction', docContradictions[0].id) : ''
     ].join('')
@@ -798,9 +862,7 @@ function handleUiAction(event) {
   }
 
   if (action === 'spotlight-profile') {
-    state.activeProfileId = value;
-    state.profile = 'all';
-    state.evidencePage = 1;
+    setInvestigationActor(value);
     syncControlValues();
     closeDetailDrawer();
     render();
@@ -831,6 +893,51 @@ function handleUiAction(event) {
 
   if (action === 'set-tab') {
     setActiveTab(value, true);
+    return;
+  }
+
+  if (action === 'pin-evidence') {
+    if (!state.pins.evidence.includes(value)) state.pins.evidence.push(value);
+    closeDetailDrawer();
+    persistWorkstationState();
+    render();
+    return;
+  }
+
+  if (action === 'pin-contradiction') {
+    if (!state.pins.contradictions.includes(value)) state.pins.contradictions.push(value);
+    closeDetailDrawer();
+    persistWorkstationState();
+    render();
+    return;
+  }
+
+  if (action === 'pin-document') {
+    if (!state.pins.documents.includes(value)) state.pins.documents.push(value);
+    closeDetailDrawer();
+    persistWorkstationState();
+    render();
+    return;
+  }
+
+  if (action === 'unpin-evidence') {
+    state.pins.evidence = state.pins.evidence.filter(id => id !== value);
+    persistWorkstationState();
+    render();
+    return;
+  }
+
+  if (action === 'unpin-contradiction') {
+    state.pins.contradictions = state.pins.contradictions.filter(id => id !== value);
+    persistWorkstationState();
+    render();
+    return;
+  }
+
+  if (action === 'unpin-document') {
+    state.pins.documents = state.pins.documents.filter(id => id !== value);
+    persistWorkstationState();
+    render();
   }
 }
 
@@ -856,31 +963,96 @@ function attachEvents() {
 
   els['profile-select'].addEventListener('change', event => {
     const value = event.target.value;
-    state.profile = value;
-    if (value !== 'all') {
-      state.activeProfileId = value;
-    }
-    state.evidencePage = 1;
+    setInvestigationActor(value !== 'all' ? value : null);
     render();
   });
 
   els['reset-filters'].addEventListener('click', () => {
     resetAllFilters();
+    persistWorkstationState();
+    render();
+  });
+  els['clear-investigation']?.addEventListener('click', () => {
+    clearInvestigation();
     render();
   });
   els['clear-filter-pills']?.addEventListener('click', () => {
     resetAllFilters();
+    persistWorkstationState();
     render();
   });
 
   els['profile-focus-button'].addEventListener('click', () => {
     const profile = activeProfile();
     if (!profile) return;
-    state.profile = profile.id;
-    els['profile-select'].value = profile.id;
+    setInvestigationActor(profile.id);
     state.evidencePage = 1;
     render();
     setActiveTab('evidence', true);
+  });
+
+  els['new-finding']?.addEventListener('click', () => {
+    els['finding-editor'].hidden = false;
+    els['finding-title'].focus();
+  });
+
+  els['save-finding']?.addEventListener('click', () => {
+    const title = (els['finding-title']?.value || '').trim();
+    const thesis = (els['finding-thesis']?.value || '').trim();
+    if (!title || !thesis) return;
+    const finding = {
+      id: `finding-${Date.now()}`,
+      title,
+      thesis,
+      evidenceIds: [...state.pins.evidence],
+      contradictionIds: [...state.pins.contradictions],
+      documentIds: [...state.pins.documents],
+      unresolved: (els['finding-unresolved']?.value || '').trim(),
+      metrics: {},
+    };
+    state.findings.unshift(finding);
+    els['finding-title'].value = '';
+    els['finding-thesis'].value = '';
+    els['finding-unresolved'].value = '';
+    els['finding-editor'].hidden = true;
+    persistWorkstationState();
+    render();
+  });
+
+  els['insert-finding']?.addEventListener('click', () => {
+    const first = state.findings[0];
+    if (!first || !els['draft-body']) return;
+    const next = `${els['draft-body'].value}\n\n## ${first.title}\n${first.thesis}\n`.trim();
+    els['draft-body'].value = next;
+    state.draft.sections = [next];
+    persistWorkstationState();
+  });
+
+  els['copy-markdown']?.addEventListener('click', async () => {
+    const markdown = buildMarkdownDraft();
+    if (!markdown) return;
+    try {
+      await navigator.clipboard.writeText(markdown);
+    } catch (_error) {
+      // Ignore clipboard failures in non-secure contexts.
+    }
+  });
+
+  els['export-markdown']?.addEventListener('click', () => {
+    const markdown = buildMarkdownDraft();
+    const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    const filename = (state.draft.title || 'untitled-draft')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/(^-|-$)/g, '') || 'untitled-draft';
+    anchor.download = `${filename}.md`;
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(url);
   });
 
   // Hamburger toggle
@@ -1124,8 +1296,7 @@ function executeCmdResult(el) {
     setActiveTab(id, true);
   } else if (type === 'profile') {
     setActiveTab('profiles', true);
-    state.activeProfileId = id;
-    state.profile = id;
+    setInvestigationActor(id);
     els['profile-select'].value = id;
     state.evidencePage = 1;
     render();
@@ -1162,9 +1333,9 @@ function activeLensThemes() {
 }
 
 function activeProfile() {
-  const fallback = state.data.profiles?.[0] || null;
-  const id = state.activeProfileId || fallback?.id;
-  return profileById(id) || fallback;
+  const id = state.investigationActorId || state.activeProfileId;
+  if (!id) return null;
+  return profileById(id) || null;
 }
 
 function evidenceMatchesProfile(item) {
@@ -1723,6 +1894,16 @@ function renderThemes() {
 function renderProfiles() {
   const profiles = state.data.profiles;
   const profile = activeProfile();
+  if (!profile) {
+    if (els['profile-name']) els['profile-name'].textContent = 'No actor selected';
+    if (els['profile-summary']) els['profile-summary'].textContent = 'Choose an actor to load dossier details.';
+    if (els['profile-dossier-grid']) {
+      els['profile-dossier-grid'].innerHTML = '<article class="profile-dossier-card panel-surface"><span class="nav-section-title">Actor snapshot</span><strong>Awaiting selection</strong><p>Select an actor to begin.</p></article>';
+    }
+    if (els['profile-representative-grid']) els['profile-representative-grid'].innerHTML = '';
+    if (els['profile-phases']) els['profile-phases'].innerHTML = '';
+    if (els['profile-linked-contradictions']) els['profile-linked-contradictions'].innerHTML = '';
+  }
   if (!profile) return;
 
   const profileEvidence = state.data.evidence.filter(item =>
@@ -1886,7 +2067,7 @@ function renderProfiles() {
     button.addEventListener('click', () => {
       const profileId = button.dataset.profileId;
       if (profileId) {
-        state.activeProfileId = profileId;
+        setInvestigationActor(profileId);
         renderProfiles();
         return;
       }
@@ -2645,6 +2826,93 @@ function updatePositionCharts() {
   }
 }
 
+function buildMarkdownDraft() {
+  const title = (els['draft-title']?.value || state.draft.title || '').trim();
+  const dek = (els['draft-dek']?.value || state.draft.dek || '').trim();
+  const body = (els['draft-body']?.value || state.draft.sections.join('\n\n') || '').trim();
+  return [
+    `# ${title || 'Untitled Draft'}`,
+    dek ? `\n> ${dek}\n` : '',
+    body ? `\n${body}\n` : '',
+  ].join('\n').trim();
+}
+
+function renderWorkstationShell() {
+  const actor = activeProfile();
+  if (els['investigation-status']) {
+    els['investigation-status'].textContent = actor
+      ? `You are investigating ${actor.name}.`
+      : 'Start an investigation by choosing an actor.';
+  }
+  if (els['workstation-intent-status']) {
+    els['workstation-intent-status'].textContent = actor
+      ? `${actor.name} is the active investigation context.`
+      : 'Evidence-first workflow from actor investigation to publication-ready draft.';
+  }
+  if (els['investigation-empty-state']) {
+    els['investigation-empty-state'].hidden = Boolean(actor);
+  }
+  if (els['suggested-actor-list']) {
+    const suggested = (state.data.profiles || []).slice(0, 6);
+    els['suggested-actor-list'].innerHTML = suggested.map(profile =>
+      `<button class="pill-button secondary" type="button" data-ui-action="spotlight-profile" data-value="${escapeHtml(profile.id)}" data-tab-target="profiles">${escapeHtml(profile.name)}</button>`
+    ).join('');
+  }
+
+  const pinnedEvidence = state.pins.evidence
+    .map(evidenceById)
+    .filter(Boolean);
+  const pinnedContradictions = state.pins.contradictions
+    .map(contradictionById)
+    .filter(Boolean);
+  const pinnedDocuments = state.pins.documents
+    .map(documentById)
+    .filter(Boolean);
+
+  if (els['pinned-summary']) {
+    els['pinned-summary'].innerHTML = [
+      { label: 'Pinned evidence', value: pinnedEvidence.length, key: 'evidence' },
+      { label: 'Pinned contradictions', value: pinnedContradictions.length, key: 'contradiction' },
+      { label: 'Pinned documents', value: pinnedDocuments.length, key: 'document' },
+    ].map(item => `<div class="workspace-meta-card"><span class="small-label">${item.label}</span><span class="metric-value">${formatNumber(item.value)}</span></div>`).join('');
+  }
+  if (els['pinned-count-text']) {
+    els['pinned-count-text'].textContent = `${formatNumber(pinnedEvidence.length)} pinned evidence · ${formatNumber(pinnedContradictions.length)} pinned contradictions · ${formatNumber(pinnedDocuments.length)} pinned documents`;
+  }
+
+  if (els['findings-list']) {
+    els['findings-list'].innerHTML = state.findings.length
+      ? state.findings.map(finding => `
+        <article class="drawer-related-card">
+          <strong>${escapeHtml(finding.title)}</strong>
+          <p>${escapeHtml(finding.thesis)}</p>
+          <div class="detail-tag-row">
+            <span class="data-badge">${formatNumber((finding.evidenceIds || []).length)} evidence</span>
+            <span class="data-badge">${formatNumber((finding.contradictionIds || []).length)} contradictions</span>
+            <span class="data-badge">${formatNumber((finding.documentIds || []).length)} documents</span>
+          </div>
+        </article>
+      `).join('')
+      : '<p class="workspace-note">No findings yet. Create one from pinned records.</p>';
+  }
+
+  if (els['draft-title']) els['draft-title'].value = state.draft.title || '';
+  if (els['draft-dek']) els['draft-dek'].value = state.draft.dek || '';
+  if (els['draft-body']) els['draft-body'].value = state.draft.sections.join('\n\n');
+
+  ['draft-title', 'draft-dek', 'draft-body'].forEach(key => {
+    const node = els[key];
+    if (!node || node.dataset.bound === 'true') return;
+    node.dataset.bound = 'true';
+    node.addEventListener('input', () => {
+      state.draft.title = els['draft-title']?.value || '';
+      state.draft.dek = els['draft-dek']?.value || '';
+      state.draft.sections = [(els['draft-body']?.value || '').trim()].filter(Boolean);
+      persistWorkstationState();
+    });
+  });
+}
+
 /* ---------- RENDER ALL ---------- */
 
 function render() {
@@ -2664,6 +2932,7 @@ function render() {
   renderDocuments();
   renderScaling();
   renderAnalytics();
+  renderWorkstationShell();
   setActiveTab(state.activeTab);
 }
 

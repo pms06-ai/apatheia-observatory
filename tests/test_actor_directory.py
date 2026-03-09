@@ -7,7 +7,7 @@ if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 from dashboard_contract import DASHBOARD_PATH, load_canonical_dashboard
-from server import build_actor_directory
+from dashboard_builder import build_actor_directory
 
 
 class ActorDirectoryTests(unittest.TestCase):

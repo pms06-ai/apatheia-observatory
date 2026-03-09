@@ -81,6 +81,17 @@ The Analytics section provides:
 - Talking points by party
 - Activity timeline
 
+## Research Publication Workstation Flow
+
+The frontend now includes a workstation flow for research-to-publication:
+
+- Select one canonical actor in `Choose actor` to anchor investigation context.
+- Use `Reset filters` to clear scope controls while keeping the actor context.
+- Use `Clear investigation` to return to a neutral `Start an investigation` state.
+- Pin evidence, contradictions, and documents from detail drawers.
+- Build findings in the `Findings` workspace and draft sections in the `Draft` workspace.
+- Export article drafts with `Export markdown`.
+
 ## Advanced Analysis Capabilities 🚀 NEW
 
 The enhanced analysis engine provides **quantitative political insights**:

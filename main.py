@@ -1,9 +1,10 @@
 import json
 import sqlite3
 import os
-from contextlib import asynccontextmanager
 from fastapi import FastAPI, APIRouter
+from fastapi import HTTPException
 from fastapi.responses import HTMLResponse
+from fastapi.responses import Response
 from fastapi.staticfiles import StaticFiles
 
 from data_quality import normalize_dashboard_payload, validate_dashboard_payload
@@ -15,13 +16,21 @@ DB_PATH = os.path.join(os.path.dirname(__file__), "apatheia.db")
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 def query_db(query, args=(), one=False):
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
-    cur.execute(query, args)
-    rv = cur.fetchall()
-    conn.close()
-    return (rv[0] if rv else None) if one else rv
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute(query, args)
+        rv = cur.fetchall()
+        return (rv[0] if rv else None) if one else rv
+    except sqlite3.OperationalError:
+        # Graceful fallback when DB or table has not been initialized yet.
+        return None if one else []
+    finally:
+        try:
+            conn.close()
+        except Exception:
+            pass
 
 
 def load_json(filename, fallback):
@@ -78,7 +87,7 @@ def get_profile(profile_id: str):
     row = query_db('SELECT data FROM "profiles" WHERE id = ?', (profile_id,), one=True)
     if row:
         return json.loads(row["data"])
-    return {"error": "Profile not found"}
+    raise HTTPException(status_code=404, detail="Profile not found")
 
 @api_router.get("/contradictions")
 def get_contradictions():
@@ -132,7 +141,7 @@ def get_rhetoric_patterns():
 app.include_router(api_router)
 
 app.mount("/css", StaticFiles(directory=".", html=False), name="static_css")
-app.mount("/js", StaticFiles(directory=".", html=False), name="static_js")
+app.mount("/js", StaticFiles(directory="js", html=False), name="static_js")
 
 @app.get("/")
 def read_root():
@@ -155,10 +164,29 @@ def get_premium_theme_css():
     with open(os.path.join(os.path.dirname(__file__), "premium-theme.css"), "r", encoding="utf-8") as f:
         return HTMLResponse(f.read(), media_type="text/css")
 
+@app.get("/analytics.css", include_in_schema=False)
+def get_analytics_css():
+    with open(os.path.join(os.path.dirname(__file__), "analytics.css"), "r", encoding="utf-8") as f:
+        return HTMLResponse(f.read(), media_type="text/css")
+
 @app.get("/app.js", include_in_schema=False)
 def get_app_js():
     with open(os.path.join(os.path.dirname(__file__), "app.js"), "r", encoding="utf-8") as f:
         return HTMLResponse(f.read(), media_type="application/javascript")
+
+@app.get("/visualizations.js", include_in_schema=False)
+def get_visualizations_js():
+    with open(os.path.join(os.path.dirname(__file__), "visualizations.js"), "r", encoding="utf-8") as f:
+        return HTMLResponse(f.read(), media_type="application/javascript")
+
+@app.get("/supabase-client.js", include_in_schema=False)
+def get_supabase_client_js():
+    with open(os.path.join(os.path.dirname(__file__), "supabase-client.js"), "r", encoding="utf-8") as f:
+        return HTMLResponse(f.read(), media_type="application/javascript")
+
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon():
+    return Response(status_code=204)
 
 if __name__ == "__main__":
     import uvicorn

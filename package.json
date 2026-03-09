@@ -5,12 +5,14 @@
   "type": "commonjs",
   "scripts": {
     "lint": "eslint .",
-    "test:contract": "python3 -m unittest discover -s tests -p \"test_*.py\"",
-    "check:perf-budget": "python3 tests/perf_budget_check.py",
-    "ci": "npm run lint && npm run test:contract && npm run check:perf-budget"
+    "test:contract": ".venv/bin/python -m unittest discover -s tests -p \"test_*.py\"",
+    "check:perf-budget": ".venv/bin/python tests/perf_budget_check.py",
+    "test:e2e": "playwright test",
+    "ci": "npm run lint && npm run test:contract && npm run check:perf-budget && npm run test:e2e"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@playwright/test": "^1.58.2",
     "eslint": "^9.35.0",
     "globals": "^15.14.0",
     "playwright-core": "^1.58.2"

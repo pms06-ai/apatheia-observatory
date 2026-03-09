@@ -36,7 +36,8 @@
     <link rel="stylesheet" href="./analytics.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="./visualizations.js"></script>
-        <script defer src="./supabase-client.js"></script>
+    <script defer src="./supabase-client.js"></script>
+    <script defer src="./js/workstation-storage.js"></script>
     <script defer src="./app.js"></script>
   </head>
   <body>
@@ -227,7 +228,7 @@
               <span aria-hidden="true">Lens</span>
               <select id="lens-select"></select>
             </label>
-            <label class="select-shell" aria-label="Choose actor spotlight">
+            <label class="select-shell" aria-label="Choose actor">
               <span aria-hidden="true">Actor</span>
               <select id="profile-select"></select>
             </label>
@@ -236,9 +237,17 @@
               id="reset-filters"
               type="button"
             >
-              Reset view
+              Reset filters
+            </button>
+            <button
+              class="pill-button secondary"
+              id="clear-investigation"
+              type="button"
+            >
+              Clear investigation
             </button>
           </div>
+          <p class="panel-subtitle" id="investigation-status">Start an investigation by choosing an actor.</p>
           <nav
             class="app-tab-bar"
             id="app-tab-bar"
@@ -270,11 +279,20 @@
             </div>
             <div class="app-tab-group" aria-label="Synthesize workflow">
               <span class="app-tab-group-label">Synthesize</span>
+              <button class="app-tab" data-tab="synthesize" type="button">
+                Findings
+              </button>
               <button class="app-tab" data-tab="analytics" type="button">
                 Analytics
               </button>
               <button class="app-tab" data-tab="scaling" type="button">
                 Roadmap
+              </button>
+            </div>
+            <div class="app-tab-group" aria-label="Write workflow">
+              <span class="app-tab-group-label">Write</span>
+              <button class="app-tab" data-tab="write" type="button">
+                Draft
               </button>
             </div>
           </nav>
@@ -283,6 +301,28 @@
 
       <main class="main" id="main-content">
         <div class="content-grid">
+          <section class="card workstation-intent">
+            <div class="workstation-intent-headings">
+              <h2>Investigate</h2>
+              <h2>Synthesize</h2>
+              <h2>Write</h2>
+            </div>
+            <p class="workspace-note" id="workstation-intent-status">
+              Evidence-first workflow from actor investigation to publication-ready draft.
+            </p>
+          </section>
+          <section
+            id="investigation-empty-state"
+            class="workstation-empty-state card"
+            data-tab-panel="overview"
+          >
+            <h2>Start an investigation</h2>
+            <p>
+              Select an actor to trace claims, contradictions, source files, and
+              analytical pressure points.
+            </p>
+            <div id="suggested-actor-list" class="quick-route-list"></div>
+          </section>
           <section
             class="workspace-strip fade-in"
             data-tab-panel="overview"
@@ -877,6 +917,90 @@
               <div class="chart-shell analytics-chart-wide">
                 <canvas id="activity-timeline-chart" aria-label="Activity timeline chart"></canvas>
               </div>
+            </article>
+          </section>
+
+          <section
+            class="panel-grid fade-in"
+            id="synthesize"
+            data-tab-panel="synthesize"
+          >
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Synthesis workspace</span>
+                  <h2>Findings board</h2>
+                </div>
+                <button class="pill-button primary" id="new-finding" type="button">
+                  New finding
+                </button>
+              </div>
+              <div id="finding-editor" class="panel-surface detail-surface" hidden>
+                <label class="select-shell" aria-label="Finding title">
+                  <span>Finding title</span>
+                  <input id="finding-title" type="text" />
+                </label>
+                <label class="select-shell" aria-label="Thesis">
+                  <span>Thesis</span>
+                  <textarea id="finding-thesis" rows="4"></textarea>
+                </label>
+                <label class="select-shell" aria-label="Unresolved note">
+                  <span>Unresolved note</span>
+                  <textarea id="finding-unresolved" rows="3"></textarea>
+                </label>
+                <button class="pill-button primary" id="save-finding" type="button">
+                  Save finding
+                </button>
+              </div>
+              <div id="findings-list" class="drawer-related-list"></div>
+            </article>
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Pinned records</span>
+                  <h2>Research shelf</h2>
+                </div>
+              </div>
+              <p class="workspace-note" id="pinned-count-text"></p>
+              <div id="pinned-summary" class="workspace-meta-grid"></div>
+            </article>
+          </section>
+
+          <section
+            class="panel-grid fade-in"
+            id="write"
+            data-tab-panel="write"
+          >
+            <article class="card">
+              <div class="card-header">
+                <div>
+                  <span class="nav-section-title">Writing workspace</span>
+                  <h2>Article draft</h2>
+                </div>
+                <div class="hero-actions">
+                  <button class="pill-button secondary" id="insert-finding" type="button">
+                    Insert finding
+                  </button>
+                  <button class="pill-button secondary" id="copy-markdown" type="button">
+                    Copy markdown
+                  </button>
+                  <button class="pill-button primary" id="export-markdown" type="button">
+                    Export markdown
+                  </button>
+                </div>
+              </div>
+              <label class="select-shell" aria-label="Draft title">
+                <span>Title</span>
+                <input id="draft-title" type="text" />
+              </label>
+              <label class="select-shell" aria-label="Draft dek">
+                <span>Dek</span>
+                <input id="draft-dek" type="text" />
+              </label>
+              <label class="select-shell" aria-label="Draft body">
+                <span>Body</span>
+                <textarea id="draft-body" rows="12"></textarea>
+              </label>
             </article>
           </section>
 

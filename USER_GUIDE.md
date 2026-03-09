@@ -44,6 +44,20 @@ curl http://localhost:8000/api/analysis
 curl http://localhost:8000/api/analysis/sentiment
 ```
 
+### **4. Use the Research Publication Workstation**
+```bash
+python init_db.py
+python build_profiles.py
+uvicorn main:app --reload
+```
+
+In the UI:
+- Select an actor from `Choose actor` to start an investigation.
+- Move through `Investigate` -> `Findings` -> `Draft`.
+- Pin records from evidence/contradiction/document detail drawers.
+- Create findings linked to pinned records.
+- Insert findings into the draft and use `Export markdown`.
+
 ## 📊 Analysis Capabilities
 
 ### **Sentiment Analysis**
