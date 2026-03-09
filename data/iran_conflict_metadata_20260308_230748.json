@@ -1,0 +1,194 @@
+{
+  "collection_date": "2026-03-08T23:07:46.346489",
+  "issue_id": "iran-conflict-2024",
+  "politicians_tracked": [
+    {
+      "id": "netanyahu",
+      "name": "Benjamin Netanyahu",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "gantz",
+      "name": "Benny Gantz",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "herzog",
+      "name": "Isaac Herzog",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "biden",
+      "name": "Joe Biden",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "blinken",
+      "name": "Antony Blinken",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "austin",
+      "name": "Lloyd Austin",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "sunak",
+      "name": "Rishi Sunak",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "macron",
+      "name": "Emmanuel Macron",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "scholz",
+      "name": "Olaf Scholz",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "trudeau",
+      "name": "Justin Trudeau",
+      "side": "pro-israel",
+      "statements_collected": 5
+    },
+    {
+      "id": "khamenei",
+      "name": "Ali Khamenei",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "raisi",
+      "name": "Ebrahim Raisi",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "amir-abdollahian",
+      "name": "Hossein Amir-Abdollahian",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "nasrallah",
+      "name": "Hassan Nasrallah",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "houthi",
+      "name": "Abdul-Malik al-Houthi",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "assad",
+      "name": "Bashar al-Assad",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "putin",
+      "name": "Vladimir Putin",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "xi",
+      "name": "Xi Jinping",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "modi",
+      "name": "Narendra Modi",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "erdogan",
+      "name": "Recep Tayyip Erdoğan",
+      "side": "pro-iran",
+      "statements_collected": 5
+    },
+    {
+      "id": "guterres",
+      "name": "António Guterres",
+      "side": "neutral-unknown",
+      "statements_collected": 5
+    },
+    {
+      "id": "borrell",
+      "name": "Josep Borrell",
+      "side": "neutral-unknown",
+      "statements_collected": 5
+    }
+  ],
+  "media_outlets_tracked": [
+    {
+      "name": "The Jerusalem Post",
+      "side": "pro-israel",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "The Times of Israel",
+      "side": "pro-israel",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "Israel Hayom",
+      "side": "pro-israel",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "Press TV",
+      "side": "pro-iran",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "Al Mayadeen",
+      "side": "pro-iran",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "Tasnim News Agency",
+      "side": "pro-iran",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "Reuters",
+      "side": "neutral",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "Associated Press",
+      "side": "neutral",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    },
+    {
+      "name": "BBC News",
+      "side": "neutral",
+      "articles_collected": 3,
+      "reporters_covered": 5
+    }
+  ]
+}

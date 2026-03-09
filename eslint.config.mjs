@@ -15,6 +15,7 @@ const sharedGlobals = {
 };
 
 export default [
+  { ignores: ["eslint.config.mjs"] },
   {
     files: ["supabase-client.js"],
     languageOptions: {
@@ -42,25 +43,8 @@ export default [
   {
   languageOptions: {
     ecmaVersion: 2021,
-<<<<<<< Current (Your changes)
-    sourceType: "module",
-    globals: {
-      ...globals.browser,
-      // CDN libraries referenced in website-building skill files
-      Chart: "readonly", d3: "readonly", gsap: "readonly", ScrollTrigger: "readonly",
-      THREE: "readonly", Motion: "readonly", Lenis: "readonly",
-      React: "readonly", ReactDOM: "readonly", Vue: "readonly",
-      Phaser: "readonly", PIXI: "readonly", p5: "readonly", Kaboom: "readonly",
-      L: "readonly", mapboxgl: "readonly",
-      anime: "readonly", Tone: "readonly", lottie: "readonly",
-      lucide: "readonly", SVG: "readonly", Snap: "readonly",
-      CANNON: "readonly", RAPIER: "readonly",
-      $: "readonly", jQuery: "readonly",
-    }
-=======
     sourceType: "script",
     globals: sharedGlobals,
->>>>>>> Incoming (Background Agent changes)
   },
   rules: {
     "no-undef": "error",

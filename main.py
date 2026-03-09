@@ -7,6 +7,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
 from data_quality import normalize_dashboard_payload, validate_dashboard_payload
+from analysis_engine import AnalysisEngine
 
 app = FastAPI(title="Apatheia API", version="1.0.0", description="API for Apatheia Political Rhetoric Observatory backed by SQLite")
 
@@ -31,6 +32,9 @@ def load_json(filename, fallback):
         return json.load(handle)
 
 api_router = APIRouter(prefix="/api")
+
+# Initialize analysis engine
+analysis_engine = AnalysisEngine()
 
 @api_router.get("/dashboard")
 def get_dashboard():
@@ -95,6 +99,35 @@ def get_documents():
 def get_themes():
     rows = query_db('SELECT data FROM "themes"')
     return [json.loads(r["data"]) for r in rows]
+
+@api_router.get("/analysis")
+def get_analysis():
+    """Run comprehensive political analysis on all available data."""
+    return analysis_engine.run_full_analysis()
+
+@api_router.get("/analysis/sentiment")
+def get_sentiment_analysis():
+    """Get sentiment analysis of political claims."""
+    results = analysis_engine.run_full_analysis()
+    return results.get('sentiment_analysis', {})
+
+@api_router.get("/analysis/trends")
+def get_trend_analysis():
+    """Get trend analysis of position changes."""
+    results = analysis_engine.run_full_analysis()
+    return results.get('trend_analysis', {})
+
+@api_router.get("/analysis/contradictions")
+def get_contradiction_analysis():
+    """Get detailed contradiction analysis."""
+    results = analysis_engine.run_full_analysis()
+    return results.get('contradiction_analysis', {})
+
+@api_router.get("/analysis/patterns")
+def get_rhetoric_patterns():
+    """Get rhetoric pattern analysis."""
+    results = analysis_engine.run_full_analysis()
+    return results.get('rhetoric_patterns', {})
 
 app.include_router(api_router)
 

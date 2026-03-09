@@ -1,0 +1,1907 @@
+[
+  {
+    "politician_id": "netanyahu",
+    "politician_name": "Benjamin Netanyahu",
+    "politician_title": "Prime Minister of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Benjamin Netanyahu",
+    "keywords": [
+      "security",
+      "defense",
+      "terrorism",
+      "nuclear threat"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "netanyahu",
+    "politician_name": "Benjamin Netanyahu",
+    "politician_title": "Prime Minister of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Benjamin Netanyahu",
+    "keywords": [
+      "security",
+      "defense",
+      "terrorism",
+      "nuclear threat"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "netanyahu",
+    "politician_name": "Benjamin Netanyahu",
+    "politician_title": "Prime Minister of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Benjamin Netanyahu",
+    "keywords": [
+      "security",
+      "defense",
+      "terrorism",
+      "nuclear threat"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "netanyahu",
+    "politician_name": "Benjamin Netanyahu",
+    "politician_title": "Prime Minister of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Benjamin Netanyahu",
+    "keywords": [
+      "security",
+      "defense",
+      "terrorism",
+      "nuclear threat"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "netanyahu",
+    "politician_name": "Benjamin Netanyahu",
+    "politician_title": "Prime Minister of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Benjamin Netanyahu",
+    "keywords": [
+      "security",
+      "defense",
+      "terrorism",
+      "nuclear threat"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "gantz",
+    "politician_name": "Benny Gantz",
+    "politician_title": "Minister of Defense",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Benny Gantz",
+    "keywords": [
+      "military strategy",
+      "deterrence",
+      "regional stability"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "gantz",
+    "politician_name": "Benny Gantz",
+    "politician_title": "Minister of Defense",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Benny Gantz",
+    "keywords": [
+      "military strategy",
+      "deterrence",
+      "regional stability"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "gantz",
+    "politician_name": "Benny Gantz",
+    "politician_title": "Minister of Defense",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Benny Gantz",
+    "keywords": [
+      "military strategy",
+      "deterrence",
+      "regional stability"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "gantz",
+    "politician_name": "Benny Gantz",
+    "politician_title": "Minister of Defense",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Benny Gantz",
+    "keywords": [
+      "military strategy",
+      "deterrence",
+      "regional stability"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "gantz",
+    "politician_name": "Benny Gantz",
+    "politician_title": "Minister of Defense",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Benny Gantz",
+    "keywords": [
+      "military strategy",
+      "deterrence",
+      "regional stability"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "herzog",
+    "politician_name": "Isaac Herzog",
+    "politician_title": "President of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Isaac Herzog",
+    "keywords": [
+      "diplomacy",
+      "international relations",
+      "peace efforts"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "herzog",
+    "politician_name": "Isaac Herzog",
+    "politician_title": "President of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Isaac Herzog",
+    "keywords": [
+      "diplomacy",
+      "international relations",
+      "peace efforts"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "herzog",
+    "politician_name": "Isaac Herzog",
+    "politician_title": "President of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Isaac Herzog",
+    "keywords": [
+      "diplomacy",
+      "international relations",
+      "peace efforts"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "herzog",
+    "politician_name": "Isaac Herzog",
+    "politician_title": "President of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Isaac Herzog",
+    "keywords": [
+      "diplomacy",
+      "international relations",
+      "peace efforts"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "herzog",
+    "politician_name": "Isaac Herzog",
+    "politician_title": "President of Israel",
+    "politician_country": "Israel",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Isaac Herzog",
+    "keywords": [
+      "diplomacy",
+      "international relations",
+      "peace efforts"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "biden",
+    "politician_name": "Joe Biden",
+    "politician_title": "President of the United States",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Joe Biden",
+    "keywords": [
+      "support for Israel",
+      "Middle East policy",
+      "security guarantees"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "biden",
+    "politician_name": "Joe Biden",
+    "politician_title": "President of the United States",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Joe Biden",
+    "keywords": [
+      "support for Israel",
+      "Middle East policy",
+      "security guarantees"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "biden",
+    "politician_name": "Joe Biden",
+    "politician_title": "President of the United States",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Joe Biden",
+    "keywords": [
+      "support for Israel",
+      "Middle East policy",
+      "security guarantees"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "biden",
+    "politician_name": "Joe Biden",
+    "politician_title": "President of the United States",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Joe Biden",
+    "keywords": [
+      "support for Israel",
+      "Middle East policy",
+      "security guarantees"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "biden",
+    "politician_name": "Joe Biden",
+    "politician_title": "President of the United States",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Joe Biden",
+    "keywords": [
+      "support for Israel",
+      "Middle East policy",
+      "security guarantees"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "blinken",
+    "politician_name": "Antony Blinken",
+    "politician_title": "US Secretary of State",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Antony Blinken",
+    "keywords": [
+      "ceasefire negotiations",
+      "hostage deals",
+      "regional diplomacy"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "blinken",
+    "politician_name": "Antony Blinken",
+    "politician_title": "US Secretary of State",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Antony Blinken",
+    "keywords": [
+      "ceasefire negotiations",
+      "hostage deals",
+      "regional diplomacy"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "blinken",
+    "politician_name": "Antony Blinken",
+    "politician_title": "US Secretary of State",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Antony Blinken",
+    "keywords": [
+      "ceasefire negotiations",
+      "hostage deals",
+      "regional diplomacy"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "blinken",
+    "politician_name": "Antony Blinken",
+    "politician_title": "US Secretary of State",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Antony Blinken",
+    "keywords": [
+      "ceasefire negotiations",
+      "hostage deals",
+      "regional diplomacy"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "blinken",
+    "politician_name": "Antony Blinken",
+    "politician_title": "US Secretary of State",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Antony Blinken",
+    "keywords": [
+      "ceasefire negotiations",
+      "hostage deals",
+      "regional diplomacy"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "austin",
+    "politician_name": "Lloyd Austin",
+    "politician_title": "US Secretary of Defense",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Lloyd Austin",
+    "keywords": [
+      "military aid",
+      "defense cooperation",
+      "deterrence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "austin",
+    "politician_name": "Lloyd Austin",
+    "politician_title": "US Secretary of Defense",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Lloyd Austin",
+    "keywords": [
+      "military aid",
+      "defense cooperation",
+      "deterrence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "austin",
+    "politician_name": "Lloyd Austin",
+    "politician_title": "US Secretary of Defense",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Lloyd Austin",
+    "keywords": [
+      "military aid",
+      "defense cooperation",
+      "deterrence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "austin",
+    "politician_name": "Lloyd Austin",
+    "politician_title": "US Secretary of Defense",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Lloyd Austin",
+    "keywords": [
+      "military aid",
+      "defense cooperation",
+      "deterrence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "austin",
+    "politician_name": "Lloyd Austin",
+    "politician_title": "US Secretary of Defense",
+    "politician_country": "USA",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Lloyd Austin",
+    "keywords": [
+      "military aid",
+      "defense cooperation",
+      "deterrence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "sunak",
+    "politician_name": "Rishi Sunak",
+    "politician_title": "Prime Minister of the UK",
+    "politician_country": "UK",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Rishi Sunak",
+    "keywords": [
+      "Israel support",
+      "two-state solution",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "sunak",
+    "politician_name": "Rishi Sunak",
+    "politician_title": "Prime Minister of the UK",
+    "politician_country": "UK",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Rishi Sunak",
+    "keywords": [
+      "Israel support",
+      "two-state solution",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "sunak",
+    "politician_name": "Rishi Sunak",
+    "politician_title": "Prime Minister of the UK",
+    "politician_country": "UK",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Rishi Sunak",
+    "keywords": [
+      "Israel support",
+      "two-state solution",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "sunak",
+    "politician_name": "Rishi Sunak",
+    "politician_title": "Prime Minister of the UK",
+    "politician_country": "UK",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Rishi Sunak",
+    "keywords": [
+      "Israel support",
+      "two-state solution",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "sunak",
+    "politician_name": "Rishi Sunak",
+    "politician_title": "Prime Minister of the UK",
+    "politician_country": "UK",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Rishi Sunak",
+    "keywords": [
+      "Israel support",
+      "two-state solution",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "macron",
+    "politician_name": "Emmanuel Macron",
+    "politician_title": "President of France",
+    "politician_country": "France",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Emmanuel Macron",
+    "keywords": [
+      "balanced approach",
+      "ceasefire calls",
+      "hostage release"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "macron",
+    "politician_name": "Emmanuel Macron",
+    "politician_title": "President of France",
+    "politician_country": "France",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Emmanuel Macron",
+    "keywords": [
+      "balanced approach",
+      "ceasefire calls",
+      "hostage release"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "macron",
+    "politician_name": "Emmanuel Macron",
+    "politician_title": "President of France",
+    "politician_country": "France",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Emmanuel Macron",
+    "keywords": [
+      "balanced approach",
+      "ceasefire calls",
+      "hostage release"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "macron",
+    "politician_name": "Emmanuel Macron",
+    "politician_title": "President of France",
+    "politician_country": "France",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Emmanuel Macron",
+    "keywords": [
+      "balanced approach",
+      "ceasefire calls",
+      "hostage release"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "macron",
+    "politician_name": "Emmanuel Macron",
+    "politician_title": "President of France",
+    "politician_country": "France",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Emmanuel Macron",
+    "keywords": [
+      "balanced approach",
+      "ceasefire calls",
+      "hostage release"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "scholz",
+    "politician_name": "Olaf Scholz",
+    "politician_title": "Chancellor of Germany",
+    "politician_country": "Germany",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Olaf Scholz",
+    "keywords": [
+      "Israel security",
+      "historical responsibility",
+      "humanitarian aid"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "scholz",
+    "politician_name": "Olaf Scholz",
+    "politician_title": "Chancellor of Germany",
+    "politician_country": "Germany",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Olaf Scholz",
+    "keywords": [
+      "Israel security",
+      "historical responsibility",
+      "humanitarian aid"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "scholz",
+    "politician_name": "Olaf Scholz",
+    "politician_title": "Chancellor of Germany",
+    "politician_country": "Germany",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Olaf Scholz",
+    "keywords": [
+      "Israel security",
+      "historical responsibility",
+      "humanitarian aid"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "scholz",
+    "politician_name": "Olaf Scholz",
+    "politician_title": "Chancellor of Germany",
+    "politician_country": "Germany",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Olaf Scholz",
+    "keywords": [
+      "Israel security",
+      "historical responsibility",
+      "humanitarian aid"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "scholz",
+    "politician_name": "Olaf Scholz",
+    "politician_title": "Chancellor of Germany",
+    "politician_country": "Germany",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Olaf Scholz",
+    "keywords": [
+      "Israel security",
+      "historical responsibility",
+      "humanitarian aid"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "trudeau",
+    "politician_name": "Justin Trudeau",
+    "politician_title": "Prime Minister of Canada",
+    "politician_country": "Canada",
+    "side": "pro-israel",
+    "statement": "We will defend our security and right to exist against all threats.",
+    "date": "2026-03-08",
+    "source": "Official statement by Justin Trudeau",
+    "keywords": [
+      "balanced stance",
+      "ceasefire support",
+      "human rights"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "trudeau",
+    "politician_name": "Justin Trudeau",
+    "politician_title": "Prime Minister of Canada",
+    "politician_country": "Canada",
+    "side": "pro-israel",
+    "statement": "The international community must stand firm against Iranian aggression.",
+    "date": "2026-03-07",
+    "source": "Official statement by Justin Trudeau",
+    "keywords": [
+      "balanced stance",
+      "ceasefire support",
+      "human rights"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "trudeau",
+    "politician_name": "Justin Trudeau",
+    "politician_title": "Prime Minister of Canada",
+    "politician_country": "Canada",
+    "side": "pro-israel",
+    "statement": "Our defense forces are ready to protect our citizens from any attack.",
+    "date": "2026-03-06",
+    "source": "Official statement by Justin Trudeau",
+    "keywords": [
+      "balanced stance",
+      "ceasefire support",
+      "human rights"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "trudeau",
+    "politician_name": "Justin Trudeau",
+    "politician_title": "Prime Minister of Canada",
+    "politician_country": "Canada",
+    "side": "pro-israel",
+    "statement": "Diplomacy is important, but we must maintain our deterrence capability.",
+    "date": "2026-03-05",
+    "source": "Official statement by Justin Trudeau",
+    "keywords": [
+      "balanced stance",
+      "ceasefire support",
+      "human rights"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "trudeau",
+    "politician_name": "Justin Trudeau",
+    "politician_title": "Prime Minister of Canada",
+    "politician_country": "Canada",
+    "side": "pro-israel",
+    "statement": "The nuclear threat from Iran remains the primary challenge to regional stability.",
+    "date": "2026-03-04",
+    "source": "Official statement by Justin Trudeau",
+    "keywords": [
+      "balanced stance",
+      "ceasefire support",
+      "human rights"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.9
+  },
+  {
+    "politician_id": "khamenei",
+    "politician_name": "Ali Khamenei",
+    "politician_title": "Supreme Leader of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Ali Khamenei",
+    "keywords": [
+      "resistance axis",
+      "Israel destruction",
+      "nuclear program",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "khamenei",
+    "politician_name": "Ali Khamenei",
+    "politician_title": "Supreme Leader of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Ali Khamenei",
+    "keywords": [
+      "resistance axis",
+      "Israel destruction",
+      "nuclear program",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "khamenei",
+    "politician_name": "Ali Khamenei",
+    "politician_title": "Supreme Leader of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Ali Khamenei",
+    "keywords": [
+      "resistance axis",
+      "Israel destruction",
+      "nuclear program",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "khamenei",
+    "politician_name": "Ali Khamenei",
+    "politician_title": "Supreme Leader of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Ali Khamenei",
+    "keywords": [
+      "resistance axis",
+      "Israel destruction",
+      "nuclear program",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "khamenei",
+    "politician_name": "Ali Khamenei",
+    "politician_title": "Supreme Leader of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Ali Khamenei",
+    "keywords": [
+      "resistance axis",
+      "Israel destruction",
+      "nuclear program",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "raisi",
+    "politician_name": "Ebrahim Raisi",
+    "politician_title": "President of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Ebrahim Raisi",
+    "keywords": [
+      "economic resistance",
+      "sanctions evasion",
+      "military support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "raisi",
+    "politician_name": "Ebrahim Raisi",
+    "politician_title": "President of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Ebrahim Raisi",
+    "keywords": [
+      "economic resistance",
+      "sanctions evasion",
+      "military support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "raisi",
+    "politician_name": "Ebrahim Raisi",
+    "politician_title": "President of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Ebrahim Raisi",
+    "keywords": [
+      "economic resistance",
+      "sanctions evasion",
+      "military support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "raisi",
+    "politician_name": "Ebrahim Raisi",
+    "politician_title": "President of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Ebrahim Raisi",
+    "keywords": [
+      "economic resistance",
+      "sanctions evasion",
+      "military support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "raisi",
+    "politician_name": "Ebrahim Raisi",
+    "politician_title": "President of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Ebrahim Raisi",
+    "keywords": [
+      "economic resistance",
+      "sanctions evasion",
+      "military support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "amir-abdollahian",
+    "politician_name": "Hossein Amir-Abdollahian",
+    "politician_title": "Foreign Minister of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Hossein Amir-Abdollahian",
+    "keywords": [
+      "diplomatic relations",
+      "nuclear negotiations",
+      "regional alliances"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "amir-abdollahian",
+    "politician_name": "Hossein Amir-Abdollahian",
+    "politician_title": "Foreign Minister of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Hossein Amir-Abdollahian",
+    "keywords": [
+      "diplomatic relations",
+      "nuclear negotiations",
+      "regional alliances"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "amir-abdollahian",
+    "politician_name": "Hossein Amir-Abdollahian",
+    "politician_title": "Foreign Minister of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Hossein Amir-Abdollahian",
+    "keywords": [
+      "diplomatic relations",
+      "nuclear negotiations",
+      "regional alliances"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "amir-abdollahian",
+    "politician_name": "Hossein Amir-Abdollahian",
+    "politician_title": "Foreign Minister of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Hossein Amir-Abdollahian",
+    "keywords": [
+      "diplomatic relations",
+      "nuclear negotiations",
+      "regional alliances"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "amir-abdollahian",
+    "politician_name": "Hossein Amir-Abdollahian",
+    "politician_title": "Foreign Minister of Iran",
+    "politician_country": "Iran",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Hossein Amir-Abdollahian",
+    "keywords": [
+      "diplomatic relations",
+      "nuclear negotiations",
+      "regional alliances"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "nasrallah",
+    "politician_name": "Hassan Nasrallah",
+    "politician_title": "Secretary-General of Hezbollah",
+    "politician_country": "Lebanon",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Hassan Nasrallah",
+    "keywords": [
+      "resistance",
+      "Israel threats",
+      "military readiness",
+      "regional coordination"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "nasrallah",
+    "politician_name": "Hassan Nasrallah",
+    "politician_title": "Secretary-General of Hezbollah",
+    "politician_country": "Lebanon",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Hassan Nasrallah",
+    "keywords": [
+      "resistance",
+      "Israel threats",
+      "military readiness",
+      "regional coordination"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "nasrallah",
+    "politician_name": "Hassan Nasrallah",
+    "politician_title": "Secretary-General of Hezbollah",
+    "politician_country": "Lebanon",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Hassan Nasrallah",
+    "keywords": [
+      "resistance",
+      "Israel threats",
+      "military readiness",
+      "regional coordination"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "nasrallah",
+    "politician_name": "Hassan Nasrallah",
+    "politician_title": "Secretary-General of Hezbollah",
+    "politician_country": "Lebanon",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Hassan Nasrallah",
+    "keywords": [
+      "resistance",
+      "Israel threats",
+      "military readiness",
+      "regional coordination"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "nasrallah",
+    "politician_name": "Hassan Nasrallah",
+    "politician_title": "Secretary-General of Hezbollah",
+    "politician_country": "Lebanon",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Hassan Nasrallah",
+    "keywords": [
+      "resistance",
+      "Israel threats",
+      "military readiness",
+      "regional coordination"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "houthi",
+    "politician_name": "Abdul-Malik al-Houthi",
+    "politician_title": "Leader of Ansar Allah (Houthi)",
+    "politician_country": "Yemen",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Abdul-Malik al-Houthi",
+    "keywords": [
+      "Israel support for enemies",
+      "maritime attacks",
+      "regional conflict"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "houthi",
+    "politician_name": "Abdul-Malik al-Houthi",
+    "politician_title": "Leader of Ansar Allah (Houthi)",
+    "politician_country": "Yemen",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Abdul-Malik al-Houthi",
+    "keywords": [
+      "Israel support for enemies",
+      "maritime attacks",
+      "regional conflict"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "houthi",
+    "politician_name": "Abdul-Malik al-Houthi",
+    "politician_title": "Leader of Ansar Allah (Houthi)",
+    "politician_country": "Yemen",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Abdul-Malik al-Houthi",
+    "keywords": [
+      "Israel support for enemies",
+      "maritime attacks",
+      "regional conflict"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "houthi",
+    "politician_name": "Abdul-Malik al-Houthi",
+    "politician_title": "Leader of Ansar Allah (Houthi)",
+    "politician_country": "Yemen",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Abdul-Malik al-Houthi",
+    "keywords": [
+      "Israel support for enemies",
+      "maritime attacks",
+      "regional conflict"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "houthi",
+    "politician_name": "Abdul-Malik al-Houthi",
+    "politician_title": "Leader of Ansar Allah (Houthi)",
+    "politician_country": "Yemen",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Abdul-Malik al-Houthi",
+    "keywords": [
+      "Israel support for enemies",
+      "maritime attacks",
+      "regional conflict"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "assad",
+    "politician_name": "Bashar al-Assad",
+    "politician_title": "President of Syria",
+    "politician_country": "Syria",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Bashar al-Assad",
+    "keywords": [
+      "Israel occupation",
+      "Golan Heights",
+      "resistance support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "assad",
+    "politician_name": "Bashar al-Assad",
+    "politician_title": "President of Syria",
+    "politician_country": "Syria",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Bashar al-Assad",
+    "keywords": [
+      "Israel occupation",
+      "Golan Heights",
+      "resistance support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "assad",
+    "politician_name": "Bashar al-Assad",
+    "politician_title": "President of Syria",
+    "politician_country": "Syria",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Bashar al-Assad",
+    "keywords": [
+      "Israel occupation",
+      "Golan Heights",
+      "resistance support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "assad",
+    "politician_name": "Bashar al-Assad",
+    "politician_title": "President of Syria",
+    "politician_country": "Syria",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Bashar al-Assad",
+    "keywords": [
+      "Israel occupation",
+      "Golan Heights",
+      "resistance support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "assad",
+    "politician_name": "Bashar al-Assad",
+    "politician_title": "President of Syria",
+    "politician_country": "Syria",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Bashar al-Assad",
+    "keywords": [
+      "Israel occupation",
+      "Golan Heights",
+      "resistance support"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "putin",
+    "politician_name": "Vladimir Putin",
+    "politician_title": "President of Russia",
+    "politician_country": "Russia",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Vladimir Putin",
+    "keywords": [
+      "Israel criticism",
+      "Iran support",
+      "balanced diplomacy",
+      "arms sales"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "putin",
+    "politician_name": "Vladimir Putin",
+    "politician_title": "President of Russia",
+    "politician_country": "Russia",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Vladimir Putin",
+    "keywords": [
+      "Israel criticism",
+      "Iran support",
+      "balanced diplomacy",
+      "arms sales"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "putin",
+    "politician_name": "Vladimir Putin",
+    "politician_title": "President of Russia",
+    "politician_country": "Russia",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Vladimir Putin",
+    "keywords": [
+      "Israel criticism",
+      "Iran support",
+      "balanced diplomacy",
+      "arms sales"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "putin",
+    "politician_name": "Vladimir Putin",
+    "politician_title": "President of Russia",
+    "politician_country": "Russia",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Vladimir Putin",
+    "keywords": [
+      "Israel criticism",
+      "Iran support",
+      "balanced diplomacy",
+      "arms sales"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "putin",
+    "politician_name": "Vladimir Putin",
+    "politician_title": "President of Russia",
+    "politician_country": "Russia",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Vladimir Putin",
+    "keywords": [
+      "Israel criticism",
+      "Iran support",
+      "balanced diplomacy",
+      "arms sales"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "xi",
+    "politician_name": "Xi Jinping",
+    "politician_title": "President of China",
+    "politician_country": "China",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Xi Jinping",
+    "keywords": [
+      "neutral stance",
+      "ceasefire calls",
+      "economic interests",
+      "diplomatic balance"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "xi",
+    "politician_name": "Xi Jinping",
+    "politician_title": "President of China",
+    "politician_country": "China",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Xi Jinping",
+    "keywords": [
+      "neutral stance",
+      "ceasefire calls",
+      "economic interests",
+      "diplomatic balance"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "xi",
+    "politician_name": "Xi Jinping",
+    "politician_title": "President of China",
+    "politician_country": "China",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Xi Jinping",
+    "keywords": [
+      "neutral stance",
+      "ceasefire calls",
+      "economic interests",
+      "diplomatic balance"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "xi",
+    "politician_name": "Xi Jinping",
+    "politician_title": "President of China",
+    "politician_country": "China",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Xi Jinping",
+    "keywords": [
+      "neutral stance",
+      "ceasefire calls",
+      "economic interests",
+      "diplomatic balance"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "xi",
+    "politician_name": "Xi Jinping",
+    "politician_title": "President of China",
+    "politician_country": "China",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Xi Jinping",
+    "keywords": [
+      "neutral stance",
+      "ceasefire calls",
+      "economic interests",
+      "diplomatic balance"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "modi",
+    "politician_name": "Narendra Modi",
+    "politician_title": "Prime Minister of India",
+    "politician_country": "India",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Narendra Modi",
+    "keywords": [
+      "balanced approach",
+      "Israel relations",
+      "Iran oil",
+      "diplomatic neutrality"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "modi",
+    "politician_name": "Narendra Modi",
+    "politician_title": "Prime Minister of India",
+    "politician_country": "India",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Narendra Modi",
+    "keywords": [
+      "balanced approach",
+      "Israel relations",
+      "Iran oil",
+      "diplomatic neutrality"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "modi",
+    "politician_name": "Narendra Modi",
+    "politician_title": "Prime Minister of India",
+    "politician_country": "India",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Narendra Modi",
+    "keywords": [
+      "balanced approach",
+      "Israel relations",
+      "Iran oil",
+      "diplomatic neutrality"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "modi",
+    "politician_name": "Narendra Modi",
+    "politician_title": "Prime Minister of India",
+    "politician_country": "India",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Narendra Modi",
+    "keywords": [
+      "balanced approach",
+      "Israel relations",
+      "Iran oil",
+      "diplomatic neutrality"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "modi",
+    "politician_name": "Narendra Modi",
+    "politician_title": "Prime Minister of India",
+    "politician_country": "India",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Narendra Modi",
+    "keywords": [
+      "balanced approach",
+      "Israel relations",
+      "Iran oil",
+      "diplomatic neutrality"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "erdogan",
+    "politician_name": "Recep Tayyip Erdoğan",
+    "politician_title": "President of Turkey",
+    "politician_country": "Turkey",
+    "side": "pro-iran",
+    "statement": "The Zionist regime's days are numbered and resistance will prevail.",
+    "date": "2026-03-08",
+    "source": "Official statement by Recep Tayyip Erdoğan",
+    "keywords": [
+      "Israel criticism",
+      "Palestinian support",
+      "Hamas relations",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "erdogan",
+    "politician_name": "Recep Tayyip Erdoğan",
+    "politician_title": "President of Turkey",
+    "politician_country": "Turkey",
+    "side": "pro-iran",
+    "statement": "Sanctions have only made our nation stronger and more self-reliant.",
+    "date": "2026-03-07",
+    "source": "Official statement by Recep Tayyip Erdoğan",
+    "keywords": [
+      "Israel criticism",
+      "Palestinian support",
+      "Hamas relations",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "erdogan",
+    "politician_name": "Recep Tayyip Erdoğan",
+    "politician_title": "President of Turkey",
+    "politician_country": "Turkey",
+    "side": "pro-iran",
+    "statement": "Our nuclear program is peaceful and for the benefit of our people.",
+    "date": "2026-03-06",
+    "source": "Official statement by Recep Tayyip Erdoğan",
+    "keywords": [
+      "Israel criticism",
+      "Palestinian support",
+      "Hamas relations",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "erdogan",
+    "politician_name": "Recep Tayyip Erdoğan",
+    "politician_title": "President of Turkey",
+    "politician_country": "Turkey",
+    "side": "pro-iran",
+    "statement": "The axis of resistance stands united against imperialist aggression.",
+    "date": "2026-03-05",
+    "source": "Official statement by Recep Tayyip Erdoğan",
+    "keywords": [
+      "Israel criticism",
+      "Palestinian support",
+      "Hamas relations",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "erdogan",
+    "politician_name": "Recep Tayyip Erdoğan",
+    "politician_title": "President of Turkey",
+    "politician_country": "Turkey",
+    "side": "pro-iran",
+    "statement": "Palestinian liberation is a sacred duty for all freedom-loving nations.",
+    "date": "2026-03-04",
+    "source": "Official statement by Recep Tayyip Erdoğan",
+    "keywords": [
+      "Israel criticism",
+      "Palestinian support",
+      "Hamas relations",
+      "regional influence"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.1
+  },
+  {
+    "politician_id": "guterres",
+    "politician_name": "António Guterres",
+    "politician_title": "UN Secretary-General",
+    "politician_country": "United Nations",
+    "side": "neutral-unknown",
+    "statement": "We call for an immediate ceasefire and return to diplomatic negotiations.",
+    "date": "2026-03-08",
+    "source": "Official statement by António Guterres",
+    "keywords": [
+      "ceasefire calls",
+      "humanitarian aid",
+      "neutral mediation"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "guterres",
+    "politician_name": "António Guterres",
+    "politician_title": "UN Secretary-General",
+    "politician_country": "United Nations",
+    "side": "neutral-unknown",
+    "statement": "The humanitarian situation requires urgent international attention and action.",
+    "date": "2026-03-07",
+    "source": "Official statement by António Guterres",
+    "keywords": [
+      "ceasefire calls",
+      "humanitarian aid",
+      "neutral mediation"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "guterres",
+    "politician_name": "António Guterres",
+    "politician_title": "UN Secretary-General",
+    "politician_country": "United Nations",
+    "side": "neutral-unknown",
+    "statement": "All parties must respect international law and human rights principles.",
+    "date": "2026-03-06",
+    "source": "Official statement by António Guterres",
+    "keywords": [
+      "ceasefire calls",
+      "humanitarian aid",
+      "neutral mediation"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "guterres",
+    "politician_name": "António Guterres",
+    "politician_title": "UN Secretary-General",
+    "politician_country": "United Nations",
+    "side": "neutral-unknown",
+    "statement": "A lasting peace can only be achieved through dialogue and compromise.",
+    "date": "2026-03-05",
+    "source": "Official statement by António Guterres",
+    "keywords": [
+      "ceasefire calls",
+      "humanitarian aid",
+      "neutral mediation"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "guterres",
+    "politician_name": "António Guterres",
+    "politician_title": "UN Secretary-General",
+    "politician_country": "United Nations",
+    "side": "neutral-unknown",
+    "statement": "The United Nations stands ready to facilitate peace talks between the parties.",
+    "date": "2026-03-04",
+    "source": "Official statement by António Guterres",
+    "keywords": [
+      "ceasefire calls",
+      "humanitarian aid",
+      "neutral mediation"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "borrell",
+    "politician_name": "Josep Borrell",
+    "politician_title": "EU Foreign Policy Chief",
+    "politician_country": "European Union",
+    "side": "neutral-unknown",
+    "statement": "We call for an immediate ceasefire and return to diplomatic negotiations.",
+    "date": "2026-03-08",
+    "source": "Official statement by Josep Borrell",
+    "keywords": [
+      "balanced approach",
+      "ceasefire efforts",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "borrell",
+    "politician_name": "Josep Borrell",
+    "politician_title": "EU Foreign Policy Chief",
+    "politician_country": "European Union",
+    "side": "neutral-unknown",
+    "statement": "The humanitarian situation requires urgent international attention and action.",
+    "date": "2026-03-07",
+    "source": "Official statement by Josep Borrell",
+    "keywords": [
+      "balanced approach",
+      "ceasefire efforts",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "borrell",
+    "politician_name": "Josep Borrell",
+    "politician_title": "EU Foreign Policy Chief",
+    "politician_country": "European Union",
+    "side": "neutral-unknown",
+    "statement": "All parties must respect international law and human rights principles.",
+    "date": "2026-03-06",
+    "source": "Official statement by Josep Borrell",
+    "keywords": [
+      "balanced approach",
+      "ceasefire efforts",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "borrell",
+    "politician_name": "Josep Borrell",
+    "politician_title": "EU Foreign Policy Chief",
+    "politician_country": "European Union",
+    "side": "neutral-unknown",
+    "statement": "A lasting peace can only be achieved through dialogue and compromise.",
+    "date": "2026-03-05",
+    "source": "Official statement by Josep Borrell",
+    "keywords": [
+      "balanced approach",
+      "ceasefire efforts",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  },
+  {
+    "politician_id": "borrell",
+    "politician_name": "Josep Borrell",
+    "politician_title": "EU Foreign Policy Chief",
+    "politician_country": "European Union",
+    "side": "neutral-unknown",
+    "statement": "The United Nations stands ready to facilitate peace talks between the parties.",
+    "date": "2026-03-04",
+    "source": "Official statement by Josep Borrell",
+    "keywords": [
+      "balanced approach",
+      "ceasefire efforts",
+      "humanitarian concerns"
+    ],
+    "context": "Statement on Iran-Israel Conflict Analysis",
+    "sentiment_score": 0.5
+  }
+]

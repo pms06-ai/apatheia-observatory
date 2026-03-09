@@ -4,19 +4,15 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-<<<<<<< Current (Your changes)
     "lint": "eslint .",
     "test:contract": "python3 -m unittest discover -s tests -p \"test_*.py\"",
     "check:perf-budget": "python3 tests/perf_budget_check.py",
     "ci": "npm run lint && npm run test:contract && npm run check:perf-budget"
-=======
-    "lint": "eslint app.js visualizations.js supabase-client.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> Incoming (Background Agent changes)
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
     "eslint": "^9.35.0",
+    "globals": "^15.14.0",
     "playwright-core": "^1.58.2"
   }
 }

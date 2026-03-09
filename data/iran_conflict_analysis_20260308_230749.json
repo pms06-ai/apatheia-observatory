@@ -1,0 +1,941 @@
+{
+  "analysis_date": "2026-03-08T23:07:49.507782",
+  "issue_id": "iran-conflict-2024",
+  "politician_analysis": [
+    {
+      "politician_id": "netanyahu",
+      "name": "Benjamin Netanyahu",
+      "title": "Prime Minister of Israel",
+      "country": "Israel",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "security",
+        "defense",
+        "terrorism",
+        "nuclear threat"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "gantz",
+      "name": "Benny Gantz",
+      "title": "Minister of Defense",
+      "country": "Israel",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "military strategy",
+        "deterrence",
+        "regional stability"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "herzog",
+      "name": "Isaac Herzog",
+      "title": "President of Israel",
+      "country": "Israel",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "diplomacy",
+        "international relations",
+        "peace efforts"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "biden",
+      "name": "Joe Biden",
+      "title": "President of the United States",
+      "country": "USA",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "support for Israel",
+        "Middle East policy",
+        "security guarantees"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "blinken",
+      "name": "Antony Blinken",
+      "title": "US Secretary of State",
+      "country": "USA",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "ceasefire negotiations",
+        "hostage deals",
+        "regional diplomacy"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "austin",
+      "name": "Lloyd Austin",
+      "title": "US Secretary of Defense",
+      "country": "USA",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "military aid",
+        "defense cooperation",
+        "deterrence"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "sunak",
+      "name": "Rishi Sunak",
+      "title": "Prime Minister of the UK",
+      "country": "UK",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "Israel support",
+        "two-state solution",
+        "humanitarian concerns"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "macron",
+      "name": "Emmanuel Macron",
+      "title": "President of France",
+      "country": "France",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "balanced approach",
+        "ceasefire calls",
+        "hostage release"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "scholz",
+      "name": "Olaf Scholz",
+      "title": "Chancellor of Germany",
+      "country": "Germany",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "Israel security",
+        "historical responsibility",
+        "humanitarian aid"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "trudeau",
+      "name": "Justin Trudeau",
+      "title": "Prime Minister of Canada",
+      "country": "Canada",
+      "side": "pro-israel",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "balanced stance",
+        "ceasefire support",
+        "human rights"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We will defend our security and right to exist against all threats."
+    },
+    {
+      "politician_id": "khamenei",
+      "name": "Ali Khamenei",
+      "title": "Supreme Leader of Iran",
+      "country": "Iran",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "resistance axis",
+        "Israel destruction",
+        "nuclear program",
+        "regional influence"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "raisi",
+      "name": "Ebrahim Raisi",
+      "title": "President of Iran",
+      "country": "Iran",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "economic resistance",
+        "sanctions evasion",
+        "military support"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "amir-abdollahian",
+      "name": "Hossein Amir-Abdollahian",
+      "title": "Foreign Minister of Iran",
+      "country": "Iran",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "diplomatic relations",
+        "nuclear negotiations",
+        "regional alliances"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "nasrallah",
+      "name": "Hassan Nasrallah",
+      "title": "Secretary-General of Hezbollah",
+      "country": "Lebanon",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "resistance",
+        "Israel threats",
+        "military readiness",
+        "regional coordination"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "houthi",
+      "name": "Abdul-Malik al-Houthi",
+      "title": "Leader of Ansar Allah (Houthi)",
+      "country": "Yemen",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "Israel support for enemies",
+        "maritime attacks",
+        "regional conflict"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "assad",
+      "name": "Bashar al-Assad",
+      "title": "President of Syria",
+      "country": "Syria",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "Israel occupation",
+        "Golan Heights",
+        "resistance support"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "putin",
+      "name": "Vladimir Putin",
+      "title": "President of Russia",
+      "country": "Russia",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "Israel criticism",
+        "Iran support",
+        "balanced diplomacy",
+        "arms sales"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "xi",
+      "name": "Xi Jinping",
+      "title": "President of China",
+      "country": "China",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "neutral stance",
+        "ceasefire calls",
+        "economic interests",
+        "diplomatic balance"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "modi",
+      "name": "Narendra Modi",
+      "title": "Prime Minister of India",
+      "country": "India",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "balanced approach",
+        "Israel relations",
+        "Iran oil",
+        "diplomatic neutrality"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "erdogan",
+      "name": "Recep Tayyip Erdoğan",
+      "title": "President of Turkey",
+      "country": "Turkey",
+      "side": "pro-iran",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "Israel criticism",
+        "Palestinian support",
+        "Hamas relations",
+        "regional influence"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "The Zionist regime's days are numbered and resistance will prevail."
+    },
+    {
+      "politician_id": "guterres",
+      "name": "António Guterres",
+      "title": "UN Secretary-General",
+      "country": "United Nations",
+      "side": "neutral-unknown",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "ceasefire calls",
+        "humanitarian aid",
+        "neutral mediation"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We call for an immediate ceasefire and return to diplomatic negotiations."
+    },
+    {
+      "politician_id": "borrell",
+      "name": "Josep Borrell",
+      "title": "EU Foreign Policy Chief",
+      "country": "European Union",
+      "side": "neutral-unknown",
+      "statements_analyzed": 5,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "consistency_score": 1.0,
+      "top_keywords": [
+        "balanced approach",
+        "ceasefire efforts",
+        "humanitarian concerns"
+      ],
+      "first_statement_date": "2026-03-04",
+      "last_statement_date": "2026-03-08",
+      "sample_statement": "We call for an immediate ceasefire and return to diplomatic negotiations."
+    }
+  ],
+  "media_analysis": [
+    {
+      "outlet_name": "The Jerusalem Post",
+      "country": "Israel",
+      "bias": "pro-Israel",
+      "side": "pro-israel",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "top_keywords": [
+        "security",
+        "defense",
+        "terrorism",
+        "nuclear threat",
+        "deterrence"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "The Jerusalem Post reports: Israel strengthens defense against Iranian threats"
+    },
+    {
+      "outlet_name": "The Times of Israel",
+      "country": "Israel",
+      "bias": "pro-Israel",
+      "side": "pro-israel",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "top_keywords": [
+        "security",
+        "defense",
+        "terrorism",
+        "nuclear threat",
+        "deterrence"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "The Times of Israel reports: Israel strengthens defense against Iranian threats"
+    },
+    {
+      "outlet_name": "Israel Hayom",
+      "country": "Israel",
+      "bias": "pro-Israel",
+      "side": "pro-israel",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "top_keywords": [
+        "security",
+        "defense",
+        "terrorism",
+        "nuclear threat",
+        "deterrence"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "Israel Hayom reports: Israel strengthens defense against Iranian threats"
+    },
+    {
+      "outlet_name": "Press TV",
+      "country": "Iran",
+      "bias": "pro-Iran",
+      "side": "pro-iran",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.23333333333333334,
+      "sentiment_category": "moderately_against",
+      "top_keywords": [
+        "resistance",
+        "oppression",
+        "occupation",
+        "imperialism",
+        "Zionist regime"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "Press TV exclusive: Resistance forces prepare for decisive action"
+    },
+    {
+      "outlet_name": "Al Mayadeen",
+      "country": "Lebanon",
+      "bias": "pro-Iran",
+      "side": "pro-iran",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.23333333333333334,
+      "sentiment_category": "moderately_against",
+      "top_keywords": [
+        "resistance",
+        "oppression",
+        "occupation",
+        "imperialism",
+        "Zionist regime"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "Al Mayadeen exclusive: Resistance forces prepare for decisive action"
+    },
+    {
+      "outlet_name": "Tasnim News Agency",
+      "country": "Iran",
+      "bias": "pro-Iran",
+      "side": "pro-iran",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.23333333333333334,
+      "sentiment_category": "moderately_against",
+      "top_keywords": [
+        "resistance",
+        "oppression",
+        "occupation",
+        "imperialism",
+        "Zionist regime"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "Tasnim News Agency exclusive: Resistance forces prepare for decisive action"
+    },
+    {
+      "outlet_name": "Reuters",
+      "country": "UK",
+      "bias": "neutral",
+      "side": "neutral",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.5666666666666667,
+      "sentiment_category": "neutral",
+      "top_keywords": [
+        "ceasefire",
+        "humanitarian aid",
+        "diplomacy",
+        "negotiations",
+        "peace process"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "Reuters: Ceasefire talks stall as both sides dig in"
+    },
+    {
+      "outlet_name": "Associated Press",
+      "country": "USA",
+      "bias": "neutral",
+      "side": "neutral",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.5666666666666667,
+      "sentiment_category": "neutral",
+      "top_keywords": [
+        "ceasefire",
+        "humanitarian aid",
+        "diplomacy",
+        "negotiations",
+        "peace process"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "Associated Press: Ceasefire talks stall as both sides dig in"
+    },
+    {
+      "outlet_name": "BBC News",
+      "country": "UK",
+      "bias": "neutral",
+      "side": "neutral",
+      "articles_analyzed": 3,
+      "average_sentiment": 0.5666666666666667,
+      "sentiment_category": "neutral",
+      "top_keywords": [
+        "ceasefire",
+        "humanitarian aid",
+        "diplomacy",
+        "negotiations",
+        "peace process"
+      ],
+      "reporters_covered": 3,
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z",
+      "sample_article_title": "BBC News: Ceasefire talks stall as both sides dig in"
+    }
+  ],
+  "side_comparison": {
+    "politicians": {
+      "pro_israel": {
+        "count": 10,
+        "avg_sentiment": 0.9,
+        "avg_consistency": 1.0
+      },
+      "pro_iran": {
+        "count": 10,
+        "avg_sentiment": 0.1,
+        "avg_consistency": 1.0
+      },
+      "neutral": {
+        "count": 2,
+        "avg_sentiment": 0.5,
+        "avg_consistency": 1.0
+      }
+    },
+    "media_outlets": {
+      "pro_israel": {
+        "count": 3,
+        "avg_sentiment": 0.9
+      },
+      "pro_iran": {
+        "count": 3,
+        "avg_sentiment": 0.233
+      },
+      "neutral": {
+        "count": 3,
+        "avg_sentiment": 0.567
+      }
+    },
+    "overall_sentiment_balance": {
+      "balance_score": 0.5193548387096775,
+      "interpretation": "balanced sentiment",
+      "sample_size": 31
+    }
+  },
+  "trend_analysis": {
+    "period_analyzed": "2026-03-04 to 2026-03-08",
+    "data_points": 5,
+    "trend_slope": 0.0,
+    "trend_direction": "stable sentiment",
+    "daily_sentiments": {
+      "2026-03-08": 0.5,
+      "2026-03-07": 0.5,
+      "2026-03-06": 0.5,
+      "2026-03-05": 0.5,
+      "2026-03-04": 0.5
+    }
+  },
+  "contradiction_analysis": {
+    "total_contradictions": 0,
+    "contradictions": [],
+    "contradiction_rate": 0.0
+  },
+  "reporter_analysis": [
+    {
+      "reporter_name": "Lahav Harkov",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Tovah Lazaroff",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Anna Ahronheim",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Raanan Elir",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Amanda Borschel-Dan",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Emanuel Fabian",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Ariel Kahana",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Mati Tuchfeld",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Yisrael Cohen",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.9,
+      "sentiment_category": "strongly_pro",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Marzieh Hashemi",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Yvonne Ridley",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Richard Medhurst",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Ghassan Ben Jeddou",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Wassim Nasr",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Ali Hashem",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Mohammad Ghaderi",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Sadegh Zibakalam",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.1,
+      "sentiment_category": "strongly_against",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Hamid Reza Moghaddamfar",
+      "outlet": null,
+      "outlet_side": null,
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Jeff Mason",
+      "outlet": "Reuters",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.7,
+      "sentiment_category": "moderately_pro",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Steve Holland",
+      "outlet": "Reuters",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Michelle Nichols",
+      "outlet": "Reuters",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Aamer Madhani",
+      "outlet": "Associated Press",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.7,
+      "sentiment_category": "moderately_pro",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Zeinab El-Gundy",
+      "outlet": "Associated Press",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Jon Gambrell",
+      "outlet": "Associated Press",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    },
+    {
+      "reporter_name": "Barbara Plett Usher",
+      "outlet": "BBC News",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.7,
+      "sentiment_category": "moderately_pro",
+      "first_article_date": "2026-03-08T23:07:48Z",
+      "last_article_date": "2026-03-08T23:07:48Z"
+    },
+    {
+      "reporter_name": "Paul Adams",
+      "outlet": "BBC News",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-07T23:07:48Z",
+      "last_article_date": "2026-03-07T23:07:48Z"
+    },
+    {
+      "reporter_name": "Anna Foster",
+      "outlet": "BBC News",
+      "outlet_side": "neutral",
+      "articles_written": 1,
+      "average_sentiment": 0.5,
+      "sentiment_category": "neutral",
+      "first_article_date": "2026-03-06T23:07:48Z",
+      "last_article_date": "2026-03-06T23:07:48Z"
+    }
+  ]
+}
