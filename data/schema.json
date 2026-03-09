@@ -1,8 +1,48 @@
 {
   "$schema": "Political Talking Points Repository Schema v1.0",
+  "dashboard_contract": {
+    "version": "dashboard.v1",
+    "required_objects": ["manifest", "stats"],
+    "required_arrays": [
+      "top_insights",
+      "timeline",
+      "profiles",
+      "parties",
+      "themes",
+      "evidence",
+      "documents",
+      "contradictions",
+      "lenses",
+      "expansion_tracks",
+      "actors",
+      "system_model"
+    ]
+  },
   "description": "Comprehensive tracking of political positions, claims, and contradictions",
 
   "entities": {
+    "profiles": {
+      "description": "Curated dossier entities for tracked public figures.",
+      "fields": {
+        "id": "Unique slug identifier",
+        "name": "Display name",
+        "party": "Party alignment",
+        "bloc": "Faction/caucus grouping",
+        "role": "Primary role title",
+        "summary": "Narrative synopsis for profile spotlight",
+        "positioning": "Analyst positioning label",
+        "signals": "Array of recurring rhetoric signals",
+        "watchpoints": "Array of monitoring notes",
+        "themes": "Array of canonical theme names",
+        "phases": "Array of {date,label,stance,detail}",
+        "linked_contradictions": "Array of contradiction IDs",
+        "evidence_count": "Count of linked evidence records",
+        "claim_count": "Count of linked claims",
+        "position_count": "Count of position-history entries",
+        "quote_count": "Count of direct quote records"
+      }
+    },
+
     "politicians": {
       "description": "All tracked political actors",
       "fields": {
@@ -72,7 +112,7 @@
         "source_url": "Direct link if available",
         "fact_check_status": "unchecked | true | mostly-true | half-true | mostly-false | false | pants-on-fire",
         "fact_check_notes": "Explanation",
-        "tags": "Array of relevant tags"
+        "tags": "Array of canonical tags for filtering and search"
       }
     },
 
@@ -147,5 +187,11 @@
     "by_date": "Timeline view of all activity",
     "by_party": "Aggregate party positions",
     "contradictions_by_severity": "Prioritized contradiction list"
+  },
+
+  "taxonomy": {
+    "issue": "Policy or geopolitical domain under analysis",
+    "theme": "Rhetorical/analytical frame linked to evidence and contradictions",
+    "tag": "Freeform label for filtering, search, and editorial grouping"
   }
 }

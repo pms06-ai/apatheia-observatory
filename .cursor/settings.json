@@ -1,0 +1,28 @@
+{
+  "plugins": {
+    "context7-plugin": {
+      "enabled": true
+    },
+    "vercel": {
+      "enabled": true
+    },
+    "figma": {
+      "enabled": true
+    },
+    "continual-learning": {
+      "enabled": true
+    },
+    "supabase": {
+      "enabled": true
+    },
+    "firecrawl": {
+      "enabled": true
+    },
+    "parallel": {
+      "enabled": true
+    },
+    "superpowers": {
+      "enabled": true
+    }
+  }
+}

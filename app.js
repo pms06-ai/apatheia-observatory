@@ -14,6 +14,8 @@ const state = {
   contradictionExpanded: new Set(),
   activeTab: 'overview',
   drawerOpen: false,
+  actorDirectory: [],
+  actorCategory: 'all',
 };
 
 const els = {};
@@ -150,9 +152,20 @@ const issueDescriptors = {
 };
 
 async function loadData() {
-  const response = await fetch('/api/dashboard');
-  if (!response.ok) throw new Error('Failed to load dashboard data');
-  state.data = await response.json();
+  const [dashboardResponse, actorDirectoryResponse] = await Promise.all([
+    fetch('/api/dashboard'),
+    fetch('/api/actors').catch(() => null),
+  ]);
+  if (!dashboardResponse.ok) throw new Error('Failed to load dashboard data');
+  state.data = await dashboardResponse.json();
+  if (actorDirectoryResponse?.ok) {
+    const actorDirectoryPayload = await actorDirectoryResponse.json();
+    state.actorDirectory = Array.isArray(actorDirectoryPayload?.actors)
+      ? actorDirectoryPayload.actors
+      : [];
+  } else {
+    state.actorDirectory = [];
+  }
   state.activeProfileId = state.data.profiles?.[0]?.id || null;
   state.activeIssue = state.data.themes?.[0]?.name || null;
 }
@@ -181,7 +194,7 @@ function cacheElements() {
     'issue-name', 'issue-priority', 'issue-category', 'issue-policy-track', 'issue-summary',
     'issue-brief', 'issue-stat-grid', 'issue-lead-actors', 'issue-source-chips',
     'issue-linked-contradictions', 'issue-evidence-samples', 'issue-timeline-list',
-    'issue-action-row', 'issue-count-label', 'issue-list'
+    'issue-action-row', 'issue-count-label', 'issue-list', 'actor-category-select'
   ].forEach(id => { els[id] = getById(id); });
 }
 
@@ -219,6 +232,28 @@ function profileById(id) {
 
 function profileByName(name) {
   return state.data.profiles.find(item => item.name === name) || null;
+}
+
+function actorDirectory() {
+  if (Array.isArray(state.actorDirectory) && state.actorDirectory.length) {
+    return state.actorDirectory;
+  }
+  return (state.data.profiles || []).map(profile => ({
+    id: `politicians:${profile.id}`,
+    name: profile.name,
+    category: 'politicians',
+    affiliation: profile.party || 'Political actor',
+    summary: profile.summary || '',
+    evidence_count: profile.evidence_count || 0,
+    themes: profile.themes || [],
+    profile_id: profile.id,
+  }));
+}
+
+function filteredActorDirectory() {
+  const directory = actorDirectory();
+  if (state.actorCategory === 'all') return directory;
+  return directory.filter(item => item.category === state.actorCategory);
 }
 
 function documentById(id) {
@@ -997,9 +1032,15 @@ function getCmdItems() {
   const items = [];
   // Sections
   const sectionLabels = {
-    overview: 'Overview', issues: 'Issues', timeline: 'Timeline', profiles: 'Profiles',
-    contradictions: 'Contradictions', evidence: 'Evidence', documents: 'Sources',
-    analytics: 'Analytics', scaling: 'Scaling'
+    overview: 'Brief',
+    issues: 'Issue Map',
+    timeline: 'Timeline',
+    profiles: 'Actors',
+    contradictions: 'Tension Map',
+    evidence: 'Evidence Log',
+    documents: 'Source Library',
+    analytics: 'Analytics',
+    scaling: 'Roadmap'
   };
   Object.entries(sectionLabels).forEach(([id, label]) => {
     items.push({ type: 'section', id, label, icon: '§' });
@@ -1640,7 +1681,7 @@ function renderTimeline() {
         <span class="timeline-date">${escapeHtml(item.date)}</span>
         <h3>${escapeHtml(item.title)}</h3>
         <p>${escapeHtml(item.detail)}</p>
-        <div class="focus-row">${item.focus.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</div>
+        <div class="focus-row">${(item.focus || []).map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</div>
       </div>
     </li>
   `).join('');
@@ -1784,36 +1825,79 @@ function renderProfiles() {
     </article>
   `).join('');
 
-  els['profile-list'].innerHTML = profiles.map(item => {
-    const itemEvidence = state.data.evidence.filter(record =>
-      ((record.actors || []).includes(item.name)) || record.text.toLowerCase().includes(item.name.toLowerCase())
-    );
-    const currentPhase = (item.phases || []).slice(-1)[0] || null;
-    return `
-      <li class="profile-item ${item.id === profile.id ? 'active' : ''}">
-        <button class="profile-item-button" data-profile-id="${escapeHtml(item.id)}" type="button">
+  const directory = actorDirectory();
+  const categoryCounts = directory.reduce((acc, item) => {
+    const key = item.category || 'politicians';
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+
+  if (els['actor-category-select']) {
+    const categoryOptions = [
+      { id: 'all', label: `All categories (${formatNumber(directory.length)})` },
+      { id: 'politicians', label: `Politicians (${formatNumber(categoryCounts.politicians || 0)})` },
+      { id: 'news_networks', label: `News networks (${formatNumber(categoryCounts.news_networks || 0)})` },
+      { id: 'reporters', label: `Reporters (${formatNumber(categoryCounts.reporters || 0)})` },
+    ];
+    els['actor-category-select'].innerHTML = categoryOptions
+      .map(option => `<option value="${escapeHtml(option.id)}">${escapeHtml(option.label)}</option>`)
+      .join('');
+    els['actor-category-select'].value = state.actorCategory;
+    els['actor-category-select'].onchange = event => {
+      state.actorCategory = event.target.value;
+      renderProfiles();
+    };
+  }
+
+  const visibleActors = filteredActorDirectory();
+  els['profile-list'].innerHTML = visibleActors.length
+    ? visibleActors.map(item => {
+      const linkedProfile = item.profile_id ? profileById(item.profile_id) : profileByName(item.name);
+      const isActive = linkedProfile?.id === profile.id;
+      const categoryLabel = titleCase((item.category || 'politicians').replace('_', ' '));
+      const affiliation = item.affiliation || linkedProfile?.party || 'Unspecified';
+      const roleLine = linkedProfile
+        ? `${linkedProfile.role || 'Political actor'} · ${affiliation}`
+        : `${categoryLabel} · ${affiliation}`;
+      const summary = item.summary || linkedProfile?.summary || 'No summary available.';
+      return `
+      <li class="profile-item ${isActive ? 'active' : ''}">
+        <button class="profile-item-button" data-directory-name="${escapeHtml(item.name)}" data-profile-id="${escapeHtml(linkedProfile?.id || '')}" type="button">
           <div class="profile-item-head">
             <span class="profile-avatar profile-avatar-small">${escapeHtml(item.name.charAt(0).toUpperCase())}</span>
             <div>
               <h3>${escapeHtml(item.name)}</h3>
-              <p class="profile-role-line">${escapeHtml(item.role)} · ${escapeHtml(item.party)}</p>
+              <p class="profile-role-line">${escapeHtml(roleLine)}</p>
             </div>
           </div>
-          <p>${escapeHtml(item.summary)}</p>
+          <p>${escapeHtml(summary)}</p>
           <div class="profile-meta">
-            <span class="data-badge">${escapeHtml(item.bloc)}</span>
-            <span class="data-badge"><strong>${formatNumber(itemEvidence.length)}</strong> records</span>
-            <span class="data-badge">${escapeHtml(currentPhase?.stance || 'Monitoring')}</span>
+            <span class="data-badge">${escapeHtml(categoryLabel)}</span>
+            <span class="data-badge"><strong>${formatNumber(item.evidence_count || 0)}</strong> records</span>
+            ${(item.themes || []).length ? `<span class="data-badge">${escapeHtml(item.themes[0])}</span>` : ''}
           </div>
         </button>
       </li>
     `;
-  }).join('');
+    }).join('')
+    : '<li class="empty-state">No actors found in this category.</li>';
 
   els['profile-list'].querySelectorAll('button').forEach(button => {
     button.addEventListener('click', () => {
-      state.activeProfileId = button.dataset.profileId;
-      renderProfiles();
+      const profileId = button.dataset.profileId;
+      if (profileId) {
+        state.activeProfileId = profileId;
+        renderProfiles();
+        return;
+      }
+      const name = button.dataset.directoryName || 'Actor';
+      openDetailDrawer({
+        kicker: 'Actor directory',
+        title: name,
+        meta: [titleCase(state.actorCategory.replace('_', ' '))],
+        body: `<p>This actor is part of the curated actor directory. No profile dossier exists yet, but you can pivot into evidence search.</p>`,
+        actions: renderActionButton(`Search ${name}`, 'search-actor', name, 'primary', 'evidence'),
+      });
     });
   });
 
@@ -2304,7 +2388,7 @@ function renderDocuments() {
       </td>
       <td><span class="data-badge"><strong>${formatNumber(evidenceCount)}</strong> records</span></td>
       <td><span class="data-badge"><strong>${formatNumber(contradictionCount)}</strong> links</span></td>
-      <td>${doc.themes.map(theme => `<span class="data-badge">${escapeHtml(theme)}</span>`).join('')}</td>
+      <td>${(doc.themes || []).map(theme => `<span class="data-badge">${escapeHtml(theme)}</span>`).join('')}</td>
     </tr>
   `;
   }).join('');
@@ -2340,7 +2424,7 @@ function renderDocuments() {
       <p>${escapeHtml(truncateText(actor.sample_excerpt, 180))}</p>
       <div class="actor-meta">
         <span class="data-badge"><strong>${actor.evidence_count}</strong> evidence hits</span>
-        ${actor.dominant_themes.map(theme => `<span class="data-badge">${escapeHtml(theme)}</span>`).join('')}
+        ${(actor.dominant_themes || []).map(theme => `<span class="data-badge">${escapeHtml(theme)}</span>`).join('')}
       </div>
       <div class="item-actions">
         ${linkedProfile
@@ -2353,7 +2437,15 @@ function renderDocuments() {
 }
 
 function renderScaling() {
-  els['system-grid'].innerHTML = state.data.system_model.map(item => `
+  const rawSystemModel = state.data.system_model;
+  const systemModelItems = Array.isArray(rawSystemModel)
+    ? rawSystemModel
+    : Object.entries(rawSystemModel || {}).map(([entity, purpose]) => ({
+      entity,
+      purpose: typeof purpose === 'string' ? purpose : JSON.stringify(purpose),
+    }));
+
+  els['system-grid'].innerHTML = systemModelItems.map(item => `
     <article class="entity-item system-card">
       <h3>${escapeHtml(item.entity)}</h3>
       <p>${escapeHtml(item.purpose)}</p>

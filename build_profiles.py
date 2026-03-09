@@ -15,7 +15,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-01-29", "label": "Legislative push", "stance": "War Powers Resolution", "detail": "Introduced resolution to restrict executive war-making."}],
         "linked_contradictions": ["admin-initiation-conflict"],
         "party": "Democrat", "bloc": "Senate Foreign Relations", "role": "Senator",
-        "dominant_themes": ["Legality and War Powers", "Historical Comparisons", "Imminence and Threat"],
+        "themes": ["Legality and War Powers", "Historical Comparisons", "Imminence and Threat"],
         "sample_excerpt": "That doesn't meet the definition of imminence under any legal criteria I'm aware of."
     },
     {
@@ -27,7 +27,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-02-28", "label": "Full rejection", "stance": "Categorical anti-war", "detail": "Declared the war illegal and based on lies."}],
         "linked_contradictions": ["democratic-fiscal-consistency"],
         "party": "Democrat", "bloc": "Progressive Caucus", "role": "Senator",
-        "dominant_themes": ["Imminence and Threat", "Legality and War Powers", "Historical Comparisons"],
+        "themes": ["Imminence and Threat", "Legality and War Powers", "Historical Comparisons"],
         "sample_excerpt": "This illegal war is based on lies."
     },
     {
@@ -39,7 +39,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-02-24", "label": "Intel alignment", "stance": "Preemptive defense", "detail": "Briefed the Gang of Eight on the necessity of action."}],
         "linked_contradictions": ["admin-initiation-conflict"],
         "party": "Republican", "bloc": "Senate Intelligence Committee", "role": "Senator",
-        "dominant_themes": ["Israel and Delegation", "Imminence and Threat", "Legality and War Powers"],
+        "themes": ["Israel and Delegation", "Imminence and Threat", "Legality and War Powers"],
         "sample_excerpt": "You cannot wait for the enemy to strike first when the evidence is clear."
     },
     {
@@ -51,7 +51,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-01-29", "label": "House resolution", "stance": "Legislative check", "detail": "Co-authored House War Powers Resolution with Thomas Massie."}],
         "linked_contradictions": ["left-vs-leadership-gap"],
         "party": "Democrat", "bloc": "Progressive Caucus", "role": "Representative",
-        "dominant_themes": ["Legality and War Powers", "Intra-party Division", "Diplomacy"],
+        "themes": ["Legality and War Powers", "Intra-party Division", "Diplomacy"],
         "sample_excerpt": "An illegal regime change war."
     },
     {
@@ -63,7 +63,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-03-01", "label": "Public mobilization", "stance": "Anti-war campaigning", "detail": "Argued that negotiations were working before military escalation disrupted them."}],
         "linked_contradictions": ["left-vs-leadership-gap"],
         "party": "Democrat", "bloc": "The Squad", "role": "Representative",
-        "dominant_themes": ["Diplomacy", "Legality and War Powers", "Public Opinion"],
+        "themes": ["Diplomacy", "Legality and War Powers", "Public Opinion"],
         "sample_excerpt": "Just this week, negotiations were underway... that could have prevented war."
     },
     {
@@ -75,7 +75,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-01-29", "label": "Bipartisan check", "stance": "War Powers cooperation", "detail": "Partnered with Tim Kaine on War Powers Resolution."}],
         "linked_contradictions": ["admin-initiation-conflict"],
         "party": "Republican", "bloc": "Libertarian Wing", "role": "Senator",
-        "dominant_themes": ["Legality and War Powers", "Intra-party Division", "Imminence and Threat"],
+        "themes": ["Legality and War Powers", "Intra-party Division", "Imminence and Threat"],
         "sample_excerpt": "The Constitution is clear: only Congress can declare war."
     },
     {
@@ -87,7 +87,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-02-28", "label": "Coordinated strike", "stance": "Defensive aggression", "detail": "Launched Operation Epic Fury in coordination with U.S. forces."}],
         "linked_contradictions": ["admin-initiation-conflict"],
         "party": "Likud", "bloc": "Israeli Government", "role": "Prime Minister",
-        "dominant_themes": ["Israel and Delegation", "Imminence and Threat", "Strategy and Exit Plan"],
+        "themes": ["Israel and Delegation", "Imminence and Threat", "Strategy and Exit Plan"],
         "sample_excerpt": "We will not wait for our enemies to bring destruction; we will bring it to them."
     },
     {
@@ -99,7 +99,7 @@ HARDCODED_PROFILES = [
         "phases": [{"date": "2026-02-28", "label": "Targeted strike", "stance": "Martyrdom framing", "detail": "Killed in the initial wave of Operation Epic Fury."}],
         "linked_contradictions": ["admin-initiation-conflict"],
         "party": "Islamic Republic", "bloc": "Iranian Leadership", "role": "Supreme Leader",
-        "dominant_themes": ["Legality and War Powers", "Diplomacy", "Imminence and Threat"],
+        "themes": ["Legality and War Powers", "Diplomacy", "Imminence and Threat"],
         "sample_excerpt": "Severe revenge awaits the criminals."
     }
 ]
@@ -176,7 +176,7 @@ def main():
             "role": "Representative",
             "evidence_count": stats["count"],
             "quote_count": 0,
-            "dominant_themes": themes_list,
+            "themes": themes_list,
             "sample_excerpt": snippet
         }
 

@@ -66,7 +66,7 @@
             class="cmd-palette-input"
             id="cmd-palette-input"
             type="text"
-            placeholder="Jump to section, profile, or theme..."
+            placeholder="Jump to workflow step, actor, source, or theme..."
             autocomplete="off"
           />
         </div>
@@ -128,20 +128,20 @@
           </div>
         </div>
 
-        <nav class="nav-section" aria-label="Sections">
-          <span class="nav-section-title">Sections</span>
+        <nav class="nav-section" aria-label="Workflow sections">
+          <span class="nav-section-title">Workflow</span>
           <div class="nav-links" id="nav-links">
-            <a href="#overview" data-section="overview">Overview</a>
-            <a href="#issues" data-section="issues">Issues</a>
+            <a href="#overview" data-section="overview">Brief</a>
+            <a href="#issues" data-section="issues">Issue Map</a>
             <a href="#timeline" data-section="timeline">Timeline</a>
-            <a href="#profiles" data-section="profiles">Profiles</a>
+            <a href="#profiles" data-section="profiles">Actors</a>
             <a href="#contradictions" data-section="contradictions"
-              >Contradictions</a
+              >Tension Map</a
             >
-            <a href="#evidence" data-section="evidence">Evidence</a>
-            <a href="#documents" data-section="documents">Sources</a>
+            <a href="#evidence" data-section="evidence">Evidence Log</a>
+            <a href="#documents" data-section="documents">Source Library</a>
             <a href="#analytics" data-section="analytics">Analytics</a>
-            <a href="#scaling" data-section="scaling">Scaling</a>
+            <a href="#scaling" data-section="scaling">Roadmap</a>
           </div>
         </nav>
 
@@ -153,7 +153,7 @@
             aria-label="Theme filters"
           ></div>
           <p class="filter-help">
-            Use the lens, theme, profile, and search controls to trace arguments
+            Use the lens, theme, actor, and search controls to trace arguments
             across actors and files.
           </p>
         </section>
@@ -227,8 +227,8 @@
               <span aria-hidden="true">Lens</span>
               <select id="lens-select"></select>
             </label>
-            <label class="select-shell" aria-label="Choose profile spotlight">
-              <span aria-hidden="true">Profile</span>
+            <label class="select-shell" aria-label="Choose actor spotlight">
+              <span aria-hidden="true">Actor</span>
               <select id="profile-select"></select>
             </label>
             <button
@@ -242,35 +242,41 @@
           <nav
             class="app-tab-bar"
             id="app-tab-bar"
-            aria-label="Primary workspace tabs"
+            aria-label="Primary workflow tabs"
           >
-            <button class="app-tab is-active" data-tab="overview" type="button">
-              Overview
-            </button>
-            <button class="app-tab" data-tab="issues" type="button">
-              Issues
-            </button>
-            <button class="app-tab" data-tab="timeline" type="button">
-              Timeline
-            </button>
-            <button class="app-tab" data-tab="profiles" type="button">
-              Profiles
-            </button>
-            <button class="app-tab" data-tab="contradictions" type="button">
-              Contradictions
-            </button>
-            <button class="app-tab" data-tab="evidence" type="button">
-              Evidence
-            </button>
-            <button class="app-tab" data-tab="documents" type="button">
-              Sources
-            </button>
-            <button class="app-tab" data-tab="analytics" type="button">
-              Analytics
-            </button>
-            <button class="app-tab" data-tab="scaling" type="button">
-              Scaling
-            </button>
+            <div class="app-tab-group" aria-label="Investigate workflow">
+              <span class="app-tab-group-label">Investigate</span>
+              <button class="app-tab is-active" data-tab="overview" type="button">
+                Brief
+              </button>
+              <button class="app-tab" data-tab="issues" type="button">
+                Issue Map
+              </button>
+              <button class="app-tab" data-tab="timeline" type="button">
+                Timeline
+              </button>
+              <button class="app-tab" data-tab="profiles" type="button">
+                Actors
+              </button>
+              <button class="app-tab" data-tab="contradictions" type="button">
+                Tension Map
+              </button>
+              <button class="app-tab" data-tab="evidence" type="button">
+                Evidence Log
+              </button>
+              <button class="app-tab" data-tab="documents" type="button">
+                Source Library
+              </button>
+            </div>
+            <div class="app-tab-group" aria-label="Synthesize workflow">
+              <span class="app-tab-group-label">Synthesize</span>
+              <button class="app-tab" data-tab="analytics" type="button">
+                Analytics
+              </button>
+              <button class="app-tab" data-tab="scaling" type="button">
+                Roadmap
+              </button>
+            </div>
           </nav>
         </div>
       </header>
@@ -342,10 +348,10 @@
               <p class="hero-summary" id="hero-summary"></p>
               <div class="hero-actions">
                 <a class="pill-button primary" href="#profiles"
-                  >Inspect profiles</a
+                  >Inspect actors</a
                 >
                 <a class="pill-button secondary" href="#contradictions"
-                  >Open contradiction ledger</a
+                  >Open tension map</a
                 >
                 <a class="pill-button secondary" href="#evidence"
                   >Inspect evidence</a
@@ -398,7 +404,7 @@
             <article class="issue-focus card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Issue tracker</span>
+                  <span class="nav-section-title">Issue focus</span>
                   <h2 id="issue-name"></h2>
                 </div>
                 <p class="panel-subtitle" id="issue-count-label"></p>
@@ -419,7 +425,7 @@
                 <div class="panel-surface detail-surface">
                   <span class="nav-section-title">Lead actors</span>
                   <div class="tag-stack" id="issue-lead-actors"></div>
-                  <span class="nav-section-title" style="margin-top: 1rem"
+                  <span class="nav-section-title nav-section-title-spaced"
                     >Primary sources</span
                   >
                   <div class="tag-stack" id="issue-source-chips"></div>
@@ -459,7 +465,7 @@
             <article class="card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Issue register</span>
+                  <span class="nav-section-title">Issue map</span>
                   <h2>Top political issues and policy tracks</h2>
                 </div>
                 <p class="panel-subtitle">
@@ -520,7 +526,7 @@
             <article class="profile-spotlight card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Profile spotlight</span>
+                  <span class="nav-section-title">Actor spotlight</span>
                   <div class="profile-header-row">
                     <div class="profile-avatar" id="profile-avatar"></div>
                     <h2 id="profile-name"></h2>
@@ -531,7 +537,7 @@
                   id="profile-focus-button"
                   type="button"
                 >
-                  Focus evidence
+                  Focus actor evidence
                 </button>
               </div>
               <div class="profile-topline">
@@ -560,14 +566,14 @@
               <!-- Radar chart for theme distribution -->
               <div class="card-header subhead">
                 <div>
-                  <span class="nav-section-title">Theme profile</span>
+                  <span class="nav-section-title">Actor theme profile</span>
                   <h3>Dominant theme radar</h3>
                 </div>
               </div>
               <div class="radar-chart-shell">
                 <canvas
                   id="profile-radar-chart"
-                  aria-label="Profile theme radar chart"
+                  aria-label="Actor theme radar chart"
                 ></canvas>
               </div>
               <div class="card-header subhead">
@@ -591,14 +597,18 @@
             <article class="card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Representative cards</span>
-                  <h2>Profile directory</h2>
+                  <span class="nav-section-title">Actor cards</span>
+                  <h2>Actor directory</h2>
                 </div>
-                <p class="panel-subtitle">
-                  Select a person to load their dossier, archive footprint, and
-                  representative argument cards.
-                </p>
+                <label class="select-shell" aria-label="Filter actor category">
+                  <span aria-hidden="true">Category</span>
+                  <select id="actor-category-select" title="Actor category filter"></select>
+                </label>
               </div>
+              <p class="panel-subtitle">
+                Select an actor to load their dossier, archive footprint, and
+                representative argument cards.
+              </p>
               <ul class="profile-list" id="profile-list"></ul>
             </article>
           </section>
@@ -611,7 +621,7 @@
             <article class="card contradiction-card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Contradiction ledger</span>
+                  <span class="nav-section-title">Tension ledger</span>
                   <h2>Cross-time and cross-actor pressure points</h2>
                 </div>
                 <p class="panel-subtitle" id="contradiction-count-label"></p>
@@ -720,7 +730,7 @@
             <article class="doc-card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Source architecture</span>
+                  <span class="nav-section-title">Source map</span>
                   <h2>Document register</h2>
                 </div>
                 <p class="panel-subtitle">
@@ -821,10 +831,10 @@
                   <h2>Position Evolution Over Time</h2>
                 </div>
                 <div class="analytics-controls">
-                  <select id="position-issue-select" class="analytics-select">
+                  <select id="position-issue-select" class="analytics-select" title="Issue filter">
                     <option value="">Select an issue...</option>
                   </select>
-                  <select id="position-politician-select" class="analytics-select">
+                  <select id="position-politician-select" class="analytics-select" title="Politician filter">
                     <option value="">Select a politician...</option>
                   </select>
                 </div>
@@ -833,7 +843,6 @@
                 <canvas id="position-evolution-chart" aria-label="Position evolution chart"></canvas>
               </div>
             </article>
-
             <article class="card analytics-wide">
               <div class="card-header">
                 <div>
@@ -879,7 +888,7 @@
             <article class="system-card">
               <div class="card-header">
                 <div>
-                  <span class="nav-section-title">Scale path</span>
+                  <span class="nav-section-title">Roadmap path</span>
                   <h2>Reusable observatory schema</h2>
                 </div>
                 <p class="panel-subtitle">
@@ -893,7 +902,7 @@
               <div class="card-header">
                 <div>
                   <span class="nav-section-title"
-                    >Implementation blueprint</span
+                    >Roadmap blueprint</span
                   >
                   <h2>Suggested next data model</h2>
                 </div>
@@ -982,7 +991,7 @@
           class="mobile-nav-btn"
           data-section="overview"
           type="button"
-          aria-label="Overview"
+          aria-label="Brief"
         >
           <svg
             viewBox="0 0 24 24"
@@ -997,13 +1006,13 @@
             <rect x="3" y="14" width="7" height="7" />
             <rect x="14" y="14" width="7" height="7" />
           </svg>
-          <span>Overview</span>
+          <span>Brief</span>
         </button>
         <button
           class="mobile-nav-btn"
           data-section="issues"
           type="button"
-          aria-label="Issues"
+          aria-label="Issue Map"
         >
           <svg
             viewBox="0 0 24 24"
@@ -1018,13 +1027,13 @@
             <path d="M4 17h7" />
             <circle cx="18" cy="12" r="2" />
           </svg>
-          <span>Issues</span>
+          <span>Issue Map</span>
         </button>
         <button
           class="mobile-nav-btn"
           data-section="profiles"
           type="button"
-          aria-label="Profiles"
+          aria-label="Actors"
         >
           <svg
             viewBox="0 0 24 24"
@@ -1037,13 +1046,13 @@
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
             <circle cx="12" cy="7" r="4" />
           </svg>
-          <span>Profiles</span>
+          <span>Actors</span>
         </button>
         <button
           class="mobile-nav-btn"
           data-section="contradictions"
           type="button"
-          aria-label="Contradictions"
+          aria-label="Tension Map"
         >
           <svg
             viewBox="0 0 24 24"
@@ -1059,13 +1068,13 @@
             <line x1="12" y1="9" x2="12" y2="13" />
             <line x1="12" y1="17" x2="12.01" y2="17" />
           </svg>
-          <span>Flags</span>
+          <span>Tension</span>
         </button>
         <button
           class="mobile-nav-btn"
           data-section="evidence"
           type="button"
-          aria-label="Evidence"
+          aria-label="Evidence Log"
         >
           <svg
             viewBox="0 0 24 24"

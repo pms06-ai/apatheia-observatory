@@ -1,0 +1,82 @@
+{
+  "news_networks": [
+    {
+      "name": "CNN",
+      "affiliation": "Cable news network",
+      "summary": "National cable network frequently cited for polling and political coverage.",
+      "aliases": ["CNN Polling Unit"]
+    },
+    {
+      "name": "Fox News",
+      "affiliation": "Cable news network",
+      "summary": "Cable network featuring interviews and political programming that shape campaign narratives."
+    },
+    {
+      "name": "MSNBC",
+      "affiliation": "Cable news network",
+      "summary": "Cable network with political analysis and commentary programming."
+    },
+    {
+      "name": "ABC News",
+      "affiliation": "Broadcast news network",
+      "summary": "Broadcast outlet used for debates, interviews, and election coverage."
+    },
+    {
+      "name": "NBC News",
+      "affiliation": "Broadcast news network",
+      "summary": "Broadcast outlet referenced for debate coverage and political reporting."
+    },
+    {
+      "name": "C-SPAN",
+      "affiliation": "Public affairs network",
+      "summary": "Primary source for unedited hearings, speeches, and congressional press events."
+    },
+    {
+      "name": "Washington Post",
+      "affiliation": "National newspaper",
+      "summary": "National publication referenced for polling and political reporting."
+    },
+    {
+      "name": "The Nation",
+      "affiliation": "Political magazine",
+      "summary": "Opinion and analysis outlet used for critiques of party leadership messaging."
+    },
+    {
+      "name": "Drop Site News",
+      "affiliation": "Independent newsroom",
+      "summary": "Independent publication cited for reporting on Democratic caucus positioning."
+    }
+  ],
+  "reporters": [
+    {
+      "name": "Christiane Amanpour",
+      "affiliation": "CNN",
+      "summary": "International affairs anchor and interviewer covering major foreign policy developments."
+    },
+    {
+      "name": "Jake Tapper",
+      "affiliation": "CNN",
+      "summary": "Political anchor covering U.S. elections, war policy, and congressional response."
+    },
+    {
+      "name": "Anderson Cooper",
+      "affiliation": "CNN",
+      "summary": "Anchor and field reporter focused on breaking political and national security stories."
+    },
+    {
+      "name": "Rachel Maddow",
+      "affiliation": "MSNBC",
+      "summary": "Prime-time host and political commentator with investigative coverage."
+    },
+    {
+      "name": "Bret Baier",
+      "affiliation": "Fox News",
+      "summary": "Chief political anchor covering White House and national security policy."
+    },
+    {
+      "name": "Jonathan Karl",
+      "affiliation": "ABC News",
+      "summary": "Chief Washington correspondent and political interviewer."
+    }
+  ]
+}

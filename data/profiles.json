@@ -50,7 +50,7 @@
     "role": "Representative",
     "evidence_count": 18,
     "quote_count": 0,
-    "dominant_themes": [
+    "themes": [
       "Jeffries Evolution",
       "Legality and War Powers",
       "Imminence and Threat",
@@ -101,7 +101,7 @@
     "role": "Senator",
     "evidence_count": 15,
     "quote_count": 0,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Legality and War Powers",
       "Historical Comparisons",
@@ -145,7 +145,7 @@
     "role": "Senator",
     "evidence_count": 7,
     "quote_count": 0,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Diplomacy",
       "Israel and Delegation",
@@ -190,7 +190,7 @@
     "role": "Senator",
     "evidence_count": 12,
     "quote_count": 1,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Public Opinion",
@@ -228,7 +228,7 @@
     "role": "Senator",
     "evidence_count": 5,
     "quote_count": 0,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Imminence and Threat",
@@ -281,7 +281,7 @@
     "role": "President",
     "evidence_count": 69,
     "quote_count": 26,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Public Opinion",

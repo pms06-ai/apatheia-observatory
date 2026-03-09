@@ -6,9 +6,12 @@ from fastapi import FastAPI, APIRouter
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
+from data_quality import normalize_dashboard_payload, validate_dashboard_payload
+
 app = FastAPI(title="Apatheia API", version="1.0.0", description="API for Apatheia Political Rhetoric Observatory backed by SQLite")
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "apatheia.db")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
 def query_db(query, args=(), one=False):
     conn = sqlite3.connect(DB_PATH)
@@ -18,6 +21,14 @@ def query_db(query, args=(), one=False):
     rv = cur.fetchall()
     conn.close()
     return (rv[0] if rv else None) if one else rv
+
+
+def load_json(filename, fallback):
+    filepath = os.path.join(DATA_DIR, filename)
+    if not os.path.exists(filepath):
+        return fallback
+    with open(filepath, "r", encoding="utf-8") as handle:
+        return json.load(handle)
 
 api_router = APIRouter(prefix="/api")
 
@@ -47,6 +58,10 @@ def get_dashboard():
             dashboard_data[table] = [json.loads(row["data"]) for row in rows]
             
     conn.close()
+    taxonomy = load_json("taxonomy.json", {})
+    normalize_dashboard_payload(dashboard_data, taxonomy)
+    dashboard_data["taxonomy"] = taxonomy
+    dashboard_data["data_quality"] = validate_dashboard_payload(dashboard_data, taxonomy)
     return dashboard_data
 
 @api_router.get("/profiles")

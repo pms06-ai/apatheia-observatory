@@ -23,6 +23,10 @@
   ],
   "routes": [
     {
+      "src": "/api/health",
+      "dest": "/api/dashboard.py"
+    },
+    {
       "src": "/api/dashboard",
       "dest": "/api/dashboard.py"
     },

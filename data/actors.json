@@ -2,7 +2,7 @@
   {
     "name": "Donald Trump",
     "evidence_count": 69,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Public Opinion",
@@ -13,7 +13,7 @@
   {
     "name": "Angus King",
     "evidence_count": 43,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Moral Irony",
       "Imminence and Threat",
@@ -24,7 +24,7 @@
   {
     "name": "Hakeem Jeffries",
     "evidence_count": 18,
-    "dominant_themes": [
+    "themes": [
       "Jeffries Evolution",
       "Legality and War Powers",
       "Imminence and Threat",
@@ -35,7 +35,7 @@
   {
     "name": "Bernie Sanders",
     "evidence_count": 15,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Legality and War Powers",
       "Historical Comparisons",
@@ -46,7 +46,7 @@
   {
     "name": "Chuck Schumer",
     "evidence_count": 12,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Public Opinion",
@@ -57,7 +57,7 @@
   {
     "name": "Ro Khanna",
     "evidence_count": 11,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Intra-party Division",
@@ -68,7 +68,7 @@
   {
     "name": "Tim Kaine",
     "evidence_count": 11,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Historical Comparisons",
       "Imminence and Threat",
@@ -79,7 +79,7 @@
   {
     "name": "Chris Murphy",
     "evidence_count": 11,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Moral Irony",
@@ -90,7 +90,7 @@
   {
     "name": "Marco Rubio",
     "evidence_count": 10,
-    "dominant_themes": [
+    "themes": [
       "Israel and Delegation",
       "Imminence and Threat",
       "Legality and War Powers",
@@ -101,7 +101,7 @@
   {
     "name": "Thomas Massie",
     "evidence_count": 9,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Imminence and Threat",
@@ -112,7 +112,7 @@
   {
     "name": "Elizabeth Warren",
     "evidence_count": 9,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Legality and War Powers",
       "Historical Comparisons",
@@ -123,7 +123,7 @@
   {
     "name": "Ali Khamenei",
     "evidence_count": 8,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Diplomacy",
       "Imminence and Threat",
@@ -134,7 +134,7 @@
   {
     "name": "Adam Schiff",
     "evidence_count": 7,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Historical Comparisons",
       "Public Opinion",
@@ -145,7 +145,7 @@
   {
     "name": "Mark Warner",
     "evidence_count": 7,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Diplomacy",
       "Israel and Delegation",
@@ -156,7 +156,7 @@
   {
     "name": "Ruben Gallego",
     "evidence_count": 6,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Legality and War Powers",
       "Israel and Delegation",
@@ -167,7 +167,7 @@
   {
     "name": "John Fetterman",
     "evidence_count": 5,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Imminence and Threat",
@@ -178,7 +178,7 @@
   {
     "name": "Josh Gottheimer",
     "evidence_count": 5,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -189,7 +189,7 @@
   {
     "name": "Rand Paul",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Intra-party Division",
@@ -200,7 +200,7 @@
   {
     "name": "Ed Markey",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Historical Comparisons",
@@ -211,7 +211,7 @@
   {
     "name": "Benjamin Netanyahu",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Imminence and Threat",
       "Legality and War Powers",
       "Israel and Delegation",
@@ -222,7 +222,7 @@
   {
     "name": "Rashida Tlaib",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Public Opinion",
       "Imminence and Threat",
@@ -233,7 +233,7 @@
   {
     "name": "Cory Booker",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Domestic Priorities",
       "Public Opinion",
@@ -244,7 +244,7 @@
   {
     "name": "Jimmy Panetta",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -255,7 +255,7 @@
   {
     "name": "Henry Cuellar",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -266,7 +266,7 @@
   {
     "name": "Greg Landsman",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -277,7 +277,7 @@
   {
     "name": "Jared Golden",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -288,7 +288,7 @@
   {
     "name": "Jim Costa",
     "evidence_count": 4,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -299,7 +299,7 @@
   {
     "name": "Richard Blumenthal",
     "evidence_count": 3,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Imminence and Threat",
       "Strategy and Exit Plan",
@@ -310,7 +310,7 @@
   {
     "name": "Andy Kim",
     "evidence_count": 3,
-    "dominant_themes": [
+    "themes": [
       "Historical Comparisons",
       "Imminence and Threat",
       "Israel and Delegation",
@@ -321,7 +321,7 @@
   {
     "name": "Alexandria Ocasio-Cortez",
     "evidence_count": 3,
-    "dominant_themes": [
+    "themes": [
       "Diplomacy",
       "Legality and War Powers",
       "Imminence and Threat",
@@ -332,7 +332,7 @@
   {
     "name": "Jared Moskowitz",
     "evidence_count": 2,
-    "dominant_themes": [
+    "themes": [
       "Legality and War Powers",
       "Intra-party Division",
       "Diplomacy",
@@ -343,7 +343,7 @@
   {
     "name": "Nancy Pelosi",
     "evidence_count": 1,
-    "dominant_themes": [
+    "themes": [
       "Human Rights",
       "Fiscal Irony",
       "Imminence and Threat",

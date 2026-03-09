@@ -12,12 +12,19 @@ A data-rich dashboard for tracking political positions, claims, and rhetoric ove
 
 ## Quick Start
 
-```bash
-# Start the API server
-python server.py
+**Option A — JSON backend (simplest)**
 
-# Open in browser
-# http://localhost:8000
+```bash
+python server.py
+# Open http://localhost:8000
+```
+
+**Option B — SQLite + FastAPI (profiles, evidence, documents)**
+
+```bash
+python init_db.py          # Build apatheia.db from data/*.json
+python build_profiles.py   # Enrich profiles (optional)
+uvicorn main:app --reload  # Start FastAPI at http://localhost:8000
 ```
 
 ## Data Structure
@@ -37,8 +44,8 @@ The application uses JSON files in the `data/` directory:
 ## Tech Stack
 
 - **Frontend**: Vanilla JS, CSS Grid, Chart.js
-- **Backend**: Python HTTP server
-- **Data**: JSON files (SQLite optional)
+- **Backend**: `server.py` (JSON) or `main.py` (FastAPI + SQLite)
+- **Data**: JSON files in `data/`; SQLite (`apatheia.db`) via `init_db.py` + `build_profiles.py`
 - **Theme**: Metallic dark mode with gold accents
 
 ## Analytics Dashboard

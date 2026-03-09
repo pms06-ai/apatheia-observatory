@@ -51,10 +51,69 @@ const PARTY_COLORS = {
   'Unknown': '#6b7280'
 };
 
+function chartSignature(value) {
+  try {
+    return JSON.stringify(value);
+  } catch (_) {
+    return String(Date.now());
+  }
+}
+
+function syncObject(target, source) {
+  if (!target || !source || typeof target !== 'object' || typeof source !== 'object') return;
+  Object.keys(target).forEach(key => {
+    if (!(key in source)) delete target[key];
+  });
+  Object.entries(source).forEach(([key, value]) => {
+    if (Array.isArray(value)) {
+      target[key] = value.slice();
+      return;
+    }
+    if (value && typeof value === 'object') {
+      if (!target[key] || typeof target[key] !== 'object' || Array.isArray(target[key])) {
+        target[key] = {};
+      }
+      syncObject(target[key], value);
+      return;
+    }
+    target[key] = value;
+  });
+}
+
+function syncDatasets(targetDatasets, sourceDatasets) {
+  targetDatasets.length = sourceDatasets.length;
+  sourceDatasets.forEach((dataset, index) => {
+    if (!targetDatasets[index]) targetDatasets[index] = {};
+    syncObject(targetDatasets[index], dataset);
+  });
+}
+
+function syncChartData(targetData, sourceData) {
+  targetData.labels = (sourceData.labels || []).slice();
+  if (!Array.isArray(targetData.datasets)) targetData.datasets = [];
+  syncDatasets(targetData.datasets, sourceData.datasets || []);
+}
+
+function upsertChart(canvas, type, data, options, signature, updateMode = 'none') {
+  const existingChart = Chart.getChart(canvas);
+  if (existingChart && existingChart.config.type === type) {
+    if (canvas.dataset.apatheiaChartSig === signature) return existingChart;
+    syncChartData(existingChart.data, data);
+    syncObject(existingChart.options, options);
+    existingChart.update(updateMode);
+    canvas.dataset.apatheiaChartSig = signature;
+    return existingChart;
+  }
+  if (existingChart) existingChart.destroy();
+  const chart = new Chart(canvas, { type, data, options });
+  canvas.dataset.apatheiaChartSig = signature;
+  return chart;
+}
+
 /**
  * Render a position evolution line chart for a politician on a specific issue
  */
-function renderPositionEvolutionChart(canvasId, positions, issueId = null) {
+function renderPositionEvolutionChart(canvasId, positions, issueId = null, renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -80,93 +139,88 @@ function renderPositionEvolutionChart(canvasId, positions, issueId = null) {
   const data = sortedPositions.map(p => POSITION_VALUES[p.position] || 0);
   const pointColors = sortedPositions.map(p => POSITION_COLORS[p.position] || '#9ca3af');
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'line',
-    data: {
-      labels,
-      datasets: [{
-        data,
-        borderColor: '#d8b46f',
-        backgroundColor: 'rgba(216, 180, 111, 0.1)',
-        borderWidth: 3,
-        pointBackgroundColor: pointColors,
-        pointBorderColor: pointColors,
-        pointRadius: 8,
-        pointHoverRadius: 12,
-        fill: true,
-        tension: 0.3
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4',
-          padding: 12,
-          callbacks: {
-            label: function(context) {
-              const pos = sortedPositions[context.dataIndex];
-              return [
-                POSITION_LABELS[pos.position] || pos.position,
-                pos.stance_label || '',
-                pos.explanation ? pos.explanation.substring(0, 60) + '...' : ''
-              ].filter(Boolean);
-            }
-          }
-        }
-      },
-      scales: {
-        y: {
-          min: -2.5,
-          max: 2.5,
-          grid: {
-            color: 'rgba(194, 202, 208, 0.1)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 10 },
-            callback: function(value) {
-              const labels = {
-                2: 'Strong Support',
-                1: 'Support',
-                0: 'Neutral',
-                '-1': 'Oppose',
-                '-2': 'Strong Oppose'
-              };
-              return labels[value] || '';
-            }
-          }
-        },
-        x: {
-          grid: {
-            color: 'rgba(194, 202, 208, 0.05)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 10 }
+  const dataConfig = {
+    labels,
+    datasets: [{
+      data,
+      borderColor: '#d8b46f',
+      backgroundColor: 'rgba(216, 180, 111, 0.1)',
+      borderWidth: 3,
+      pointBackgroundColor: pointColors,
+      pointBorderColor: pointColors,
+      pointRadius: 8,
+      pointHoverRadius: 12,
+      fill: true,
+      tension: 0.3
+    }]
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4',
+        padding: 12,
+        callbacks: {
+          label: function(context) {
+            const pos = sortedPositions[context.dataIndex];
+            return [
+              POSITION_LABELS[pos.position] || pos.position,
+              pos.stance_label || '',
+              pos.explanation ? pos.explanation.substring(0, 60) + '...' : ''
+            ].filter(Boolean);
           }
         }
       }
+    },
+    scales: {
+      y: {
+        min: -2.5,
+        max: 2.5,
+        grid: {
+          color: 'rgba(194, 202, 208, 0.1)',
+          drawBorder: false
+        },
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 10 },
+          callback: function(value) {
+            const labelsMap = {
+              2: 'Strong Support',
+              1: 'Support',
+              0: 'Neutral',
+              '-1': 'Oppose',
+              '-2': 'Strong Oppose'
+            };
+            return labelsMap[value] || '';
+          }
+        }
+      },
+      x: {
+        grid: {
+          color: 'rgba(194, 202, 208, 0.05)',
+          drawBorder: false
+        },
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 10 }
+        }
+      }
     }
-  });
+  };
+  const sig = chartSignature([canvasId, issueId || '', labels, data, pointColors]);
+  return upsertChart(canvas, 'line', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 /**
  * Render a fact-check distribution donut chart
  */
-function renderFactCheckDonut(canvasId, claims) {
+function renderFactCheckDonut(canvasId, claims, renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -181,60 +235,55 @@ function renderFactCheckDonut(canvasId, claims) {
   const data = Object.values(counts);
   const colors = labels.map(label => FACT_CHECK_COLORS[label] || '#6b7280');
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'doughnut',
-    data: {
-      labels: labels.map(l => l.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())),
-      datasets: [{
-        data,
-        backgroundColor: colors,
-        borderColor: '#0b0c0f',
-        borderWidth: 2,
-        hoverOffset: 8
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      cutout: '65%',
-      plugins: {
-        legend: {
-          position: 'right',
-          labels: {
-            color: '#b9b1a5',
-            font: { size: 11 },
-            padding: 12,
-            usePointStyle: true,
-            pointStyle: 'circle'
-          }
-        },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4',
-          callbacks: {
-            label: function(context) {
-              const total = context.dataset.data.reduce((a, b) => a + b, 0);
-              const percentage = ((context.raw / total) * 100).toFixed(1);
-              return `${context.label}: ${context.raw} (${percentage}%)`;
-            }
+  const dataConfig = {
+    labels: labels.map(l => l.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())),
+    datasets: [{
+      data,
+      backgroundColor: colors,
+      borderColor: '#0b0c0f',
+      borderWidth: 2,
+      hoverOffset: 8
+    }]
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '65%',
+    plugins: {
+      legend: {
+        position: 'right',
+        labels: {
+          color: '#b9b1a5',
+          font: { size: 11 },
+          padding: 12,
+          usePointStyle: true,
+          pointStyle: 'circle'
+        }
+      },
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4',
+        callbacks: {
+          label: function(context) {
+            const total = context.dataset.data.reduce((a, b) => a + b, 0);
+            const percentage = ((context.raw / total) * 100).toFixed(1);
+            return `${context.label}: ${context.raw} (${percentage}%)`;
           }
         }
       }
     }
-  });
+  };
+  const sig = chartSignature([canvasId, labels, data]);
+  return upsertChart(canvas, 'doughnut', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 /**
  * Render party breakdown bar chart
  */
-function renderPartyBreakdownChart(canvasId, politicians, metric = 'count') {
+function renderPartyBreakdownChart(canvasId, politicians, metric = 'count', renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -254,64 +303,59 @@ function renderPartyBreakdownChart(canvasId, politicians, metric = 'count') {
   const data = labels.map(party => partyData[party][metric] || partyData[party].count);
   const colors = labels.map(party => PARTY_COLORS[party] || '#6b7280');
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [{
-        data,
-        backgroundColor: colors.map(c => c + '80'),
-        borderColor: colors,
-        borderWidth: 2,
-        borderRadius: 6,
-        barThickness: 40
-      }]
+  const dataConfig = {
+    labels,
+    datasets: [{
+      data,
+      backgroundColor: colors.map(c => c + '80'),
+      borderColor: colors,
+      borderWidth: 2,
+      borderRadius: 6,
+      barThickness: 40
+    }]
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4'
+      }
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      indexAxis: 'y',
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4'
+    scales: {
+      x: {
+        grid: {
+          color: 'rgba(194, 202, 208, 0.1)',
+          drawBorder: false
+        },
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 11 }
         }
       },
-      scales: {
-        x: {
-          grid: {
-            color: 'rgba(194, 202, 208, 0.1)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 11 }
-          }
-        },
-        y: {
-          grid: { display: false },
-          ticks: {
-            color: '#f4efe4',
-            font: { size: 12, weight: 600 }
-          }
+      y: {
+        grid: { display: false },
+        ticks: {
+          color: '#f4efe4',
+          font: { size: 12, weight: 600 }
         }
       }
     }
-  });
+  };
+  const sig = chartSignature([canvasId, metric, labels, data]);
+  return upsertChart(canvas, 'bar', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 /**
  * Render a position comparison chart across multiple politicians
  */
-function renderPositionComparisonChart(canvasId, positions, issueId) {
+function renderPositionComparisonChart(canvasId, positions, issueId, renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -341,84 +385,79 @@ function renderPositionComparisonChart(canvasId, positions, issueId) {
   const data = positionData.map(p => POSITION_VALUES[p.position] || 0);
   const colors = positionData.map(p => POSITION_COLORS[p.position] || '#9ca3af');
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'bar',
-    data: {
-      labels,
-      datasets: [{
-        data,
-        backgroundColor: colors.map(c => c + 'cc'),
-        borderColor: colors,
-        borderWidth: 2,
-        borderRadius: 4
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      indexAxis: 'y',
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4',
-          callbacks: {
-            label: function(context) {
-              const pos = positionData[context.dataIndex];
-              return [
-                POSITION_LABELS[pos.position] || pos.position,
-                pos.stance_label || ''
-              ].filter(Boolean);
-            }
-          }
-        }
-      },
-      scales: {
-        x: {
-          min: -2.5,
-          max: 2.5,
-          grid: {
-            color: 'rgba(194, 202, 208, 0.1)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 10 },
-            callback: function(value) {
-              const labels = {
-                2: 'Strong +',
-                1: 'Support',
-                0: 'Neutral',
-                '-1': 'Oppose',
-                '-2': 'Strong -'
-              };
-              return labels[value] || '';
-            }
-          }
-        },
-        y: {
-          grid: { display: false },
-          ticks: {
-            color: '#f4efe4',
-            font: { size: 11 }
+  const dataConfig = {
+    labels,
+    datasets: [{
+      data,
+      backgroundColor: colors.map(c => c + 'cc'),
+      borderColor: colors,
+      borderWidth: 2,
+      borderRadius: 4
+    }]
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4',
+        callbacks: {
+          label: function(context) {
+            const pos = positionData[context.dataIndex];
+            return [
+              POSITION_LABELS[pos.position] || pos.position,
+              pos.stance_label || ''
+            ].filter(Boolean);
           }
         }
       }
+    },
+    scales: {
+      x: {
+        min: -2.5,
+        max: 2.5,
+        grid: {
+          color: 'rgba(194, 202, 208, 0.1)',
+          drawBorder: false
+        },
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 10 },
+          callback: function(value) {
+            const labelsMap = {
+              2: 'Strong +',
+              1: 'Support',
+              0: 'Neutral',
+              '-1': 'Oppose',
+              '-2': 'Strong -'
+            };
+            return labelsMap[value] || '';
+          }
+        }
+      },
+      y: {
+        grid: { display: false },
+        ticks: {
+          color: '#f4efe4',
+          font: { size: 11 }
+        }
+      }
     }
-  });
+  };
+  const sig = chartSignature([canvasId, issueId || '', labels, data]);
+  return upsertChart(canvas, 'bar', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 /**
  * Render issue category breakdown chart
  */
-function renderIssueCategoryChart(canvasId, issues) {
+function renderIssueCategoryChart(canvasId, issues, renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -440,60 +479,55 @@ function renderIssueCategoryChart(canvasId, issues) {
     '#59626d', '#90b08e', '#ca7b6a', '#6e8fa3', '#a7967c'
   ];
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'polarArea',
-    data: {
-      labels,
-      datasets: [{
-        data,
-        backgroundColor: categoryColors.map(c => c + '80'),
-        borderColor: categoryColors,
-        borderWidth: 2
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: 'right',
-          labels: {
-            color: '#b9b1a5',
-            font: { size: 10 },
-            padding: 8,
-            usePointStyle: true
-          }
-        },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4'
+  const dataConfig = {
+    labels,
+    datasets: [{
+      data,
+      backgroundColor: categoryColors.map(c => c + '80'),
+      borderColor: categoryColors,
+      borderWidth: 2
+    }]
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'right',
+        labels: {
+          color: '#b9b1a5',
+          font: { size: 10 },
+          padding: 8,
+          usePointStyle: true
         }
       },
-      scales: {
-        r: {
-          grid: { color: 'rgba(194, 202, 208, 0.1)' },
-          ticks: {
-            color: '#b9b1a5',
-            backdropColor: 'transparent',
-            font: { size: 10 }
-          }
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4'
+      }
+    },
+    scales: {
+      r: {
+        grid: { color: 'rgba(194, 202, 208, 0.1)' },
+        ticks: {
+          color: '#b9b1a5',
+          backdropColor: 'transparent',
+          font: { size: 10 }
         }
       }
     }
-  });
+  };
+  const sig = chartSignature([canvasId, labels, data]);
+  return upsertChart(canvas, 'polarArea', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 /**
  * Render talking points comparison by party
  */
-function renderTalkingPointsComparison(canvasId, talkingPoints) {
+function renderTalkingPointsComparison(canvasId, talkingPoints, renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -521,68 +555,64 @@ function renderTalkingPointsComparison(canvasId, talkingPoints) {
     borderRadius: 4
   }));
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'bar',
-    data: {
-      labels: allIssues.map(id => id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())),
-      datasets
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          position: 'top',
-          labels: {
-            color: '#b9b1a5',
-            font: { size: 11 },
-            padding: 16,
-            usePointStyle: true
-          }
-        },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4'
+  const chartLabels = allIssues.map(id => id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()));
+  const dataConfig = {
+    labels: chartLabels,
+    datasets
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: 'top',
+        labels: {
+          color: '#b9b1a5',
+          font: { size: 11 },
+          padding: 16,
+          usePointStyle: true
         }
       },
-      scales: {
-        x: {
-          grid: {
-            color: 'rgba(194, 202, 208, 0.05)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 10 },
-            maxRotation: 45
-          }
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4'
+      }
+    },
+    scales: {
+      x: {
+        grid: {
+          color: 'rgba(194, 202, 208, 0.05)',
+          drawBorder: false
         },
-        y: {
-          grid: {
-            color: 'rgba(194, 202, 208, 0.1)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 11 }
-          }
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 10 },
+          maxRotation: 45
+        }
+      },
+      y: {
+        grid: {
+          color: 'rgba(194, 202, 208, 0.1)',
+          drawBorder: false
+        },
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 11 }
         }
       }
     }
-  });
+  };
+  const sig = chartSignature([canvasId, chartLabels, datasets.map(d => ({ l: d.label, d: d.data }))]);
+  return upsertChart(canvas, 'bar', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 /**
  * Render a timeline activity chart showing events over time
  */
-function renderActivityTimeline(canvasId, data, dateField = 'date') {
+function renderActivityTimeline(canvasId, data, dateField = 'date', renderOptions = {}) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return null;
 
@@ -605,124 +635,58 @@ function renderActivityTimeline(canvasId, data, dateField = 'date') {
   });
   const values = sortedMonths.map(m => monthCounts[m]);
 
-  // Destroy existing chart if present
-  const existingChart = Chart.getChart(canvas);
-  if (existingChart) existingChart.destroy();
-
-  return new Chart(canvas, {
-    type: 'line',
-    data: {
-      labels,
-      datasets: [{
-        data: values,
-        borderColor: '#d8b46f',
-        backgroundColor: 'rgba(216, 180, 111, 0.15)',
-        borderWidth: 2,
-        fill: true,
-        tension: 0.4,
-        pointRadius: 4,
-        pointBackgroundColor: '#d8b46f'
-      }]
+  const dataConfig = {
+    labels,
+    datasets: [{
+      data: values,
+      borderColor: '#d8b46f',
+      backgroundColor: 'rgba(216, 180, 111, 0.15)',
+      borderWidth: 2,
+      fill: true,
+      tension: 0.4,
+      pointRadius: 4,
+      pointBackgroundColor: '#d8b46f'
+    }]
+  };
+  const optionsConfig = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: 'rgba(12, 13, 16, 0.96)',
+        borderColor: 'rgba(216, 180, 111, 0.24)',
+        borderWidth: 1,
+        titleColor: '#f4efe4',
+        bodyColor: '#f4efe4'
+      }
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: 'rgba(12, 13, 16, 0.96)',
-          borderColor: 'rgba(216, 180, 111, 0.24)',
-          borderWidth: 1,
-          titleColor: '#f4efe4',
-          bodyColor: '#f4efe4'
+    scales: {
+      x: {
+        grid: {
+          color: 'rgba(194, 202, 208, 0.05)',
+          drawBorder: false
+        },
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 10 }
         }
       },
-      scales: {
-        x: {
-          grid: {
-            color: 'rgba(194, 202, 208, 0.05)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 10 }
-          }
+      y: {
+        grid: {
+          color: 'rgba(194, 202, 208, 0.1)',
+          drawBorder: false
         },
-        y: {
-          grid: {
-            color: 'rgba(194, 202, 208, 0.1)',
-            drawBorder: false
-          },
-          ticks: {
-            color: '#b9b1a5',
-            font: { size: 11 }
-          },
-          beginAtZero: true
-        }
+        ticks: {
+          color: '#b9b1a5',
+          font: { size: 11 }
+        },
+        beginAtZero: true
       }
     }
-  });
-}
-
-/**
- * Create a mini sparkline SVG for inline display
- */
-function createSparklineSVG(values, color = '#d8b46f') {
-  if (!values || values.length < 2) return '';
-
-  const width = 80;
-  const height = 24;
-  const padding = 2;
-
-  const max = Math.max(...values);
-  const min = Math.min(...values);
-  const range = max - min || 1;
-
-  const points = values.map((v, i) => {
-    const x = padding + (i / (values.length - 1)) * (width - 2 * padding);
-    const y = height - padding - ((v - min) / range) * (height - 2 * padding);
-    return `${x},${y}`;
-  }).join(' ');
-
-  return `
-    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
-      <polyline
-        fill="none"
-        stroke="${color}"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        points="${points}"
-      />
-    </svg>
-  `;
-}
-
-/**
- * Generate a position indicator badge
- */
-function createPositionBadge(position) {
-  const color = POSITION_COLORS[position] || '#9ca3af';
-  const label = POSITION_LABELS[position] || position;
-  return `
-    <span class="position-badge" style="--badge-color: ${color}">
-      <span class="position-dot"></span>
-      ${label}
-    </span>
-  `;
-}
-
-/**
- * Generate a fact-check badge
- */
-function createFactCheckBadge(status) {
-  const color = FACT_CHECK_COLORS[status] || '#6b7280';
-  const label = status.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-  return `
-    <span class="fact-check-badge" style="--badge-color: ${color}">
-      ${label}
-    </span>
-  `;
+  };
+  const sig = chartSignature([canvasId, dateField, labels, values]);
+  return upsertChart(canvas, 'line', dataConfig, optionsConfig, sig, renderOptions.updateMode || 'none');
 }
 
 // Export functions to global scope
@@ -734,9 +698,6 @@ window.ApatheiViz = {
   renderIssueCategoryChart,
   renderTalkingPointsComparison,
   renderActivityTimeline,
-  createSparklineSVG,
-  createPositionBadge,
-  createFactCheckBadge,
   POSITION_VALUES,
   POSITION_LABELS,
   POSITION_COLORS,

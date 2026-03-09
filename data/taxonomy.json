@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "canonical_terms": {
+    "issue": "Policy or geopolitical domain under analysis.",
+    "theme": "Rhetorical or analytical frame linked to evidence and contradictions.",
+    "tag": "Freeform label for search, filtering, and editorial slicing."
+  },
+  "ui_labels": {
+    "documents": "Documents",
+    "profiles": "Profiles",
+    "issues": "Issues",
+    "themes": "Themes"
+  },
+  "themes": [
+    { "id": "legality-and-war-powers", "name": "Legality and War Powers", "aliases": [] },
+    { "id": "imminence-and-threat", "name": "Imminence and Threat", "aliases": [] },
+    { "id": "historical-comparisons", "name": "Historical Comparisons", "aliases": [] },
+    { "id": "public-opinion", "name": "Public Opinion", "aliases": [] },
+    { "id": "diplomacy", "name": "Diplomacy", "aliases": [] },
+    { "id": "jeffries-evolution", "name": "Jeffries Evolution", "aliases": [] },
+    { "id": "nuclear-program", "name": "Nuclear Program", "aliases": [] },
+    { "id": "israel-and-delegation", "name": "Israel and Delegation", "aliases": [] },
+    { "id": "moral-irony", "name": "Moral Irony", "aliases": [] },
+    { "id": "domestic-priorities", "name": "Domestic Priorities", "aliases": [] },
+    { "id": "fiscal-irony", "name": "Fiscal Irony", "aliases": [] },
+    { "id": "narcotics-networks", "name": "Narcotics Networks", "aliases": [] },
+    { "id": "human-rights", "name": "Human Rights", "aliases": [] },
+    { "id": "strategy-and-exit-plan", "name": "Strategy and Exit Plan", "aliases": [] },
+    { "id": "omissions-and-blind-spots", "name": "Omissions and Blind Spots", "aliases": [] },
+    { "id": "cyber-threats", "name": "Cyber Threats", "aliases": [] },
+    { "id": "hostages-and-detention", "name": "Hostages and Detention", "aliases": [] },
+    { "id": "proxy-violence", "name": "Proxy Violence", "aliases": [] },
+    { "id": "intra-party-division", "name": "Intra-party Division", "aliases": [] }
+  ],
+  "theme_aliases": {},
+  "tag_aliases": {}
+}
