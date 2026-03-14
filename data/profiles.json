@@ -1,0 +1,292 @@
+[
+  {
+    "id": "hakeem-jeffries",
+    "name": "Hakeem Jeffries",
+    "summary": "Bridge figure whose rhetoric combines hawkish threat recognition with increasingly aggressive constitutional and evidentiary opposition to the war rollout.",
+    "positioning": "Democratic leadership bridge",
+    "signals": [
+      "Sworn enemy framing",
+      "War Powers emphasis",
+      "Zero-evidence prosecutorial language",
+      "Forever-war warning"
+    ],
+    "watchpoints": [
+      "Threat acknowledgment vs operational opposition",
+      "Process critique replacing moral critique",
+      "Escalation from caution to all-out-war framing"
+    ],
+    "phases": [
+      {
+        "date": "2025-06-19",
+        "label": "Cautious positioning",
+        "stance": "Hawkish baseline",
+        "detail": "Calls Iran a sworn enemy while keeping Congress-centered war powers language in reserve."
+      },
+      {
+        "date": "2025-06-20",
+        "label": "Demanding proof",
+        "stance": "Evidentiary challenge",
+        "detail": "Adopts \u201cnot a scintilla of evidence\u201d language and presses for classified justification."
+      },
+      {
+        "date": "2026-02-24",
+        "label": "Pre-strike warning",
+        "stance": "Strategic alarm",
+        "detail": "Frames escalation as another failed foreign forever war before the major strike sequence."
+      },
+      {
+        "date": "2026-03-01",
+        "label": "Full opposition",
+        "stance": "All-out-war framing",
+        "detail": "After briefings, argues there is zero evidence of imminent threat and links war expansion to domestic cuts."
+      }
+    ],
+    "linked_contradictions": [
+      "jeffries-threat-method",
+      "jeffries-obliterated-claim"
+    ],
+    "party": "Democrat",
+    "bloc": "House Democratic leadership",
+    "role": "Representative",
+    "evidence_count": 18,
+    "quote_count": 0,
+    "dominant_themes": [
+      "Jeffries Evolution",
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Diplomacy"
+    ],
+    "sample_excerpt": "**Premise:** The administration claimed \"imminent threat\" to justify strikes, but Democrats with intelligence access say no such evidence exists. **Key Proponents:** - **Warner** (Vice Chair, Intel Committee): \"I saw no evidence that Iran was on the verge of launching any kind of preemptive strike against the United States.\" - **Kaine** (Armed Services/Foreign Relations): \"It was clearly not an imminent threat... That doesn't meet the definition of imminence under any legal criteria I'm aware of.\" - **Jeffries:** Reported seeing \"zero evidence\" of\u2026"
+  },
+  {
+    "id": "bernie-sanders",
+    "name": "Bernie Sanders",
+    "summary": "Builds the cleanest anti-war moral frame: illegality, public opposition, class burden, and historical deception from Vietnam through Iraq.",
+    "positioning": "Movement anti-war anchor",
+    "signals": [
+      "Illegal war language",
+      "Netanyahu linkage",
+      "People over war spending",
+      "Historical lie chain"
+    ],
+    "watchpoints": [
+      "Process and moral framing align cleanly",
+      "Less attention to omission-driven national security counters"
+    ],
+    "phases": [
+      {
+        "date": "2026-02-28",
+        "label": "Immediate denunciation",
+        "stance": "Categorical anti-war",
+        "detail": "Calls the operation illegal, unconstitutional, and aligned with Netanyahu\u2019s ambitions."
+      },
+      {
+        "date": "2026-03-03",
+        "label": "Mass politics frame",
+        "stance": "Public mandate",
+        "detail": "Centers endless-war fatigue and domestic needs rather than military logic."
+      },
+      {
+        "date": "2026-03-05",
+        "label": "Consistency audit exposure",
+        "stance": "Fiscal vulnerability",
+        "detail": "Becomes a central target of fiscal irony arguments comparing war-cost rhetoric with prior spending support."
+      }
+    ],
+    "linked_contradictions": [
+      "democratic-fiscal-consistency"
+    ],
+    "party": "Independent",
+    "bloc": "Democratic caucus",
+    "role": "Senator",
+    "evidence_count": 15,
+    "quote_count": 0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Historical Comparisons",
+      "Jeffries Evolution"
+    ],
+    "sample_excerpt": "**Premise:** Article I, Section 8 of the Constitution grants Congress alone the power to declare war. Trump launched strikes without congressional authorization. **Key Proponents:** - **Sanders:** \"An illegal, premeditated and unconstitutional war.\" - **Warren:** \"This illegal war is based on lies.\" - **Markey:** \"Illegal and unconstitutional.\" - **Khanna:** \"An illegal regime change war.\" - **Schiff:** \"Congress alone has the power to declare war... the Founders' worst fears have come to pass.\" - **Kaine:** Led War Powers Resolution effort; called\u2026"
+  },
+  {
+    "id": "mark-warner",
+    "name": "Mark Warner",
+    "summary": "Occupies the intelligence-validation lane, arguing the classified record did not support imminence and that the conflict reflected Israeli timing more than direct U.S. necessity.",
+    "positioning": "Intel credibility validator",
+    "signals": [
+      "No-evidence claim",
+      "War of choice framing",
+      "Israel-driven timing critique"
+    ],
+    "watchpoints": [
+      "Classified-briefing authority carries high evidentiary weight",
+      "Still vulnerable to omission-based counterclaims on proxy and cyber activity"
+    ],
+    "phases": [
+      {
+        "date": "2026-03-01",
+        "label": "Briefing-based rejection",
+        "stance": "No imminent threat",
+        "detail": "Says he saw no evidence Iran was about to preemptively strike the United States."
+      },
+      {
+        "date": "2026-03-04",
+        "label": "Delegation critique",
+        "stance": "Israel-timeline challenge",
+        "detail": "Frames the war as dictated by Israel\u2019s goals and timelines rather than independent U.S. necessity."
+      }
+    ],
+    "linked_contradictions": [
+      "admin-initiation-conflict"
+    ],
+    "party": "Democrat",
+    "bloc": "Democratic caucus",
+    "role": "Senator",
+    "evidence_count": 7,
+    "quote_count": 0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Diplomacy",
+      "Israel and Delegation",
+      "Legality and War Powers"
+    ],
+    "sample_excerpt": "**Premise:** The administration claimed \"imminent threat\" to justify strikes, but Democrats with intelligence access say no such evidence exists. **Key Proponents:** - **Warner** (Vice Chair, Intel Committee): \"I saw no evidence that Iran was on the verge of launching any kind of preemptive strike against the United States.\" - **Kaine** (Armed Services/Foreign Relations): \"It was clearly not an imminent threat... That doesn't meet the definition of imminence under any legal criteria I'm aware of.\" - **Jeffries:** Reported seeing \"zero evidence\" of\u2026"
+  },
+  {
+    "id": "chuck-schumer",
+    "name": "Chuck Schumer",
+    "summary": "Leadership voice stressing congressional authority and public opposition while drawing criticism from the left for moving too slowly and too procedurally.",
+    "positioning": "Senate leadership procedural shield",
+    "signals": [
+      "War of choice language",
+      "Endless-war public framing",
+      "Leadership caution"
+    ],
+    "watchpoints": [
+      "Gap between rhetorical opposition and activist expectations",
+      "Leadership credibility exposed by left critiques and party split"
+    ],
+    "phases": [
+      {
+        "date": "2026-02-25",
+        "label": "Institutional response",
+        "stance": "Process-first",
+        "detail": "Moves into War Powers process and coalition-building mode rather than maximal public denunciation."
+      },
+      {
+        "date": "2026-03-03",
+        "label": "Escalated rhetoric",
+        "stance": "War-of-choice frame",
+        "detail": "Publicly frames the conflict as a costly war of choice the country does not want."
+      }
+    ],
+    "linked_contradictions": [
+      "left-vs-leadership-gap",
+      "democratic-party-split"
+    ],
+    "party": "Democrat",
+    "bloc": "Senate Democratic leadership",
+    "role": "Senator",
+    "evidence_count": 12,
+    "quote_count": 1,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Public Opinion",
+      "Historical Comparisons"
+    ],
+    "sample_excerpt": "| Date | Event | |------|-------| | Jan 29, 2026 | Kaine/Paul War Powers Resolution introduced in Senate; Khanna/Massie in House | | Feb 24, 2026 | Trump State of the Union; Rubio briefed Gang of Eight | | Feb 25, 2026 | Kaine, Schumer, Schiff announce push for War Powers vote | | Feb 28, 2026 | U.S. and Israel launch strikes on Iran (Operation Epic Fury); Khamenei killed | | Mar 1, 2026 | Strike on girls' school in Minab (~180 killed); first U.S. troops killed | | Mar 3\u20134, 2026 | Classified briefings for Congress; Democrats issue warnings | | Mar 4,\u2026"
+  },
+  {
+    "id": "john-fetterman",
+    "name": "John Fetterman",
+    "summary": "Represents the most visible Democratic break from the anti-war bloc, exposing that \u201cDemocratic rhetoric\u201d is not internally uniform even on formal War Powers votes.",
+    "positioning": "Democratic hawkish dissenter",
+    "signals": [
+      "War Powers opposition",
+      "Pro-strike deviation",
+      "Messaging asymmetry inside party"
+    ],
+    "watchpoints": [
+      "Useful for party-split tracking",
+      "Important for cross-party clustering and hawkish-democrat classification"
+    ],
+    "phases": [
+      {
+        "date": "2026-03-04",
+        "label": "Open divergence",
+        "stance": "Hawkish break",
+        "detail": "Votes against the War Powers effort and helps define a minority Democratic hawkish lane."
+      }
+    ],
+    "linked_contradictions": [
+      "democratic-party-split"
+    ],
+    "party": "Democrat",
+    "bloc": "Democratic hawkish wing",
+    "role": "Senator",
+    "evidence_count": 5,
+    "quote_count": 0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Intra-party Division",
+      "Imminence and Threat",
+      "Israel and Delegation"
+    ],
+    "sample_excerpt": "| Date | Event | |------|-------| | Jan 29, 2026 | Kaine/Paul War Powers Resolution introduced in Senate; Khanna/Massie in House | | Feb 24, 2026 | Trump State of the Union; Rubio briefed Gang of Eight | | Feb 25, 2026 | Kaine, Schumer, Schiff announce push for War Powers vote | | Feb 28, 2026 | U.S. and Israel launch strikes on Iran (Operation Epic Fury); Khamenei killed | | Mar 1, 2026 | Strike on girls' school in Minab (~180 killed); first U.S. troops killed | | Mar 3\u20134, 2026 | Classified briefings for Congress; Democrats issue warnings | | Mar 4,\u2026"
+  },
+  {
+    "id": "donald-trump",
+    "name": "Donald Trump",
+    "summary": "Primary executive actor whose justifications become the central contradiction target: initiation, imminence, and whether the nuclear program had already been destroyed.",
+    "positioning": "Executive trigger actor",
+    "signals": [
+      "Obliterated claim",
+      "Forced Israel\u2019s hand claim",
+      "Imminence assertion",
+      "Peace promise collapse"
+    ],
+    "watchpoints": [
+      "Cross-statement consistency",
+      "Conflict with Rubio framing",
+      "Need for evidence chains and timeline comparison"
+    ],
+    "phases": [
+      {
+        "date": "2025-06-20",
+        "label": "Earlier strike precedent",
+        "stance": "Program degraded",
+        "detail": "Prior strike rhetoric lays groundwork for later contradictions over whether the program remained a live casus belli."
+      },
+      {
+        "date": "2026-02-28",
+        "label": "New strike launch",
+        "stance": "Immediate threat justification",
+        "detail": "Executes the operation while critics argue the threat case remained unproven."
+      },
+      {
+        "date": "2026-03-04",
+        "label": "Narrative collision",
+        "stance": "Competing explanations",
+        "detail": "Faces mounting criticism over whether the war was U.S.-driven, Israel-driven, or justified by a program he said was already obliterated."
+      }
+    ],
+    "linked_contradictions": [
+      "admin-initiation-conflict",
+      "jeffries-obliterated-claim"
+    ],
+    "party": "Republican",
+    "bloc": "Executive branch",
+    "role": "President",
+    "evidence_count": 69,
+    "quote_count": 26,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Public Opinion",
+      "Historical Comparisons"
+    ],
+    "sample_excerpt": "| Date | Event | |------|-------| | Jan 29, 2026 | Kaine/Paul War Powers Resolution introduced in Senate; Khanna/Massie in House | | Feb 24, 2026 | Trump State of the Union; Rubio briefed Gang of Eight | | Feb 25, 2026 | Kaine, Schumer, Schiff announce push for War Powers vote | | Feb 28, 2026 | U.S. and Israel launch strikes on Iran (Operation Epic Fury); Khamenei killed | | Mar 1, 2026 | Strike on girls' school in Minab (~180 killed); first U.S. troops killed | | Mar 3\u20134, 2026 | Classified briefings for Congress; Democrats issue warnings | | Mar 4,\u2026"
+  }
+]

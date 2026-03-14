@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ─── Apatheia Observatory Design System ─────────────────────────────── */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Core Apatheia tokens */
+  --color-charcoal-50: #f5f5f5;
+  --color-charcoal-100: #e8e8e8;
+  --color-charcoal-200: #d1d1d1;
+  --color-charcoal-300: #b0b0b0;
+  --color-charcoal-400: #888888;
+  --color-charcoal-500: #6d6d6d;
+  --color-charcoal-600: #5d5d5d;
+  --color-charcoal-700: #4f4f4f;
+  --color-charcoal-800: #363636;
+  --color-charcoal-850: #242424;
+  --color-charcoal-900: #0f0f10;
+
+  /* Metallic palette (Observatory) */
+  --color-gold: #d8b46f;
+  --color-bronze: #b87d52;
+  --color-copper: #b56c5d;
+  --color-steel: #8f9aa3;
+  --color-silver: #c2cad0;
+  --color-gunmetal: #59626d;
+
+  /* Semantic surface tokens */
+  --color-bg-primary: #0b0c0f;
+  --color-bg-secondary: #161618;
+  --color-bg-tertiary: #1c1c1e;
+  --color-bg-elevated: #242424;
+  --color-bg-panel: rgba(26, 29, 35, 0.86);
+
+  /* Text */
+  --color-text-primary: #f4efe4;
+  --color-text-muted: #b9b1a5;
+  --color-text-faint: #817969;
+
+  /* Status */
+  --color-status-success: #90b08e;
+  --color-status-danger: #ca7b6a;
+  --color-status-info: #5b8a9a;
+  --color-status-critical: #c94a4a;
+  --color-status-high: #d4a017;
+  --color-status-medium: #8b7355;
+
+  /* Lines & borders */
+  --color-line: rgba(188, 176, 155, 0.2);
+  --color-line-strong: rgba(188, 176, 155, 0.35);
+
+  /* Fonts */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ─── Base ────────────────────────────────────────────────────────────── */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-charcoal-700);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-charcoal-600);
+}
+
+/* ─── Utility classes ─────────────────────────────────────────────────── */
+
+.glow-gold {
+  box-shadow: 0 0 0 1px rgba(216, 180, 111, 0.18), 0 0 24px rgba(216, 180, 111, 0.12);
+}
+
+.glow-bronze {
+  box-shadow: 0 0 0 1px rgba(184, 125, 82, 0.18), 0 0 24px rgba(184, 125, 82, 0.12);
+}
+
+.bg-panel-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 43, 51, 0.82) 0%,
+    rgba(17, 19, 24, 0.94) 100%
+  );
+}
+
+.border-glow {
+  border: 1px solid var(--color-line);
+  transition: border-color 0.2s ease;
+}
+.border-glow:hover {
+  border-color: var(--color-line-strong);
+}
+
+/* Card animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out both;
+}
+
+/* Severity indicators */
+.severity-high { border-left: 3px solid var(--color-copper); }
+.severity-medium { border-left: 3px solid var(--color-gold); }
+.severity-low { border-left: 3px solid var(--color-steel); }

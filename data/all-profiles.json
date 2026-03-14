@@ -1,0 +1,4366 @@
+[
+  {
+    "id": "donald-trump",
+    "name": "Donald Trump",
+    "type": "politician",
+    "party": "Republican",
+    "role": "President",
+    "state": null,
+    "chamber": "Executive",
+    "bio": "47th President of the United States, returned to office in January 2025. Ordered military strikes against Iran without congressional authorization, framing the action as a response to imminent threats and Iranian proxy aggression. His administration's Iran policy is the central axis of the 2026 war debate.",
+    "summary": "Initiated the Iran strikes and defends them as a necessary response to imminent threats, placing him at the center of the authorization and evidence controversies.",
+    "positioning": "War initiator and defender",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Imminent threat justification",
+      "Strength-based framing",
+      "Proxy threat escalation",
+      "Executive authority assertion"
+    ],
+    "watchpoints": [
+      "Shifting justification timelines",
+      "Evidence disclosure gaps",
+      "Escalation vs containment rhetoric",
+      "Congressional notification compliance"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Executive Authority",
+      "Iran Nuclear Program",
+      "Proxy Network Framing"
+    ],
+    "evidence_count": 69,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "president",
+      "executive",
+      "iran-hawk",
+      "war-initiator"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "marco-rubio",
+    "name": "Marco Rubio",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Secretary of State",
+    "state": "FL",
+    "chamber": "Executive",
+    "bio": "Former Florida Senator appointed Secretary of State in 2025, long regarded as one of the Senate's most hawkish voices on Iran. Has been a consistent advocate for maximum pressure and regime change, now serving as the administration's chief diplomatic voice defending the strikes.",
+    "summary": "As Secretary of State, serves as the administration's primary public defender of the Iran strikes, drawing on years of hawkish Iran positioning.",
+    "positioning": "Administration diplomatic hawk",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Maximum pressure framing",
+      "Regime threat narrative",
+      "Diplomatic justification",
+      "Proxy network emphasis"
+    ],
+    "watchpoints": [
+      "Tension between diplomatic role and hawkish instincts",
+      "Evidence presentation in briefings",
+      "Ally coordination messaging"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Iran Nuclear Program",
+      "Diplomacy",
+      "Executive Authority"
+    ],
+    "evidence_count": 10,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "secretary-of-state",
+      "executive",
+      "iran-hawk",
+      "maximum-pressure"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "hakeem-jeffries",
+    "name": "Hakeem Jeffries",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "NY",
+    "chamber": "House",
+    "bio": "House Minority Leader representing Brooklyn, NY. A former corporate lawyer whose rhetoric combines hawkish threat recognition with increasingly aggressive constitutional and evidentiary opposition to the war rollout. Has evolved from cautious positioning to full opposition.",
+    "summary": "Bridge figure whose rhetoric combines hawkish threat recognition with increasingly aggressive constitutional and evidentiary opposition to the war rollout.",
+    "positioning": "Democratic leadership bridge",
+    "photo_url": null,
+    "stance_on_iran": "evolving",
+    "key_committees": [],
+    "signals": [
+      "Sworn enemy framing",
+      "War Powers emphasis",
+      "Zero-evidence prosecutorial language",
+      "Forever-war warning"
+    ],
+    "watchpoints": [
+      "Threat acknowledgment vs operational opposition",
+      "Process critique replacing moral critique",
+      "Escalation from caution to all-out-war framing"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Jeffries Evolution",
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Diplomacy"
+    ],
+    "evidence_count": 18,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [
+      "jeffries-threat-method",
+      "jeffries-obliterated-claim"
+    ],
+    "tags": [
+      "house-leadership",
+      "foreign-policy",
+      "war-powers",
+      "evolving-stance"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "chuck-schumer",
+    "name": "Chuck Schumer",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "NY",
+    "chamber": "Senate",
+    "bio": "Senate Majority Leader from New York. Balances Democratic caucus management with a historically pro-Israel orientation, creating tension as the Iran debate intersects with questions about Israeli influence on strike timing.",
+    "summary": "Navigates between caucus anti-war pressure and his own hawkish-on-Israel instincts, focusing on process and authorization rather than outright opposition.",
+    "positioning": "Cautious leadership manager",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [],
+    "signals": [
+      "Authorization process emphasis",
+      "Caucus unity language",
+      "Measured escalation concern",
+      "Institutional prerogative framing"
+    ],
+    "watchpoints": [
+      "Gap between process critique and substantive opposition",
+      "Israel-related positioning tensions",
+      "Willingness to force floor votes"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Diplomacy"
+    ],
+    "evidence_count": 12,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate-leadership",
+      "foreign-policy",
+      "war-powers",
+      "moderate"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "bernie-sanders",
+    "name": "Bernie Sanders",
+    "type": "politician",
+    "party": "Independent",
+    "role": "Senator",
+    "state": "VT",
+    "chamber": "Senate",
+    "bio": "Independent Senator from Vermont who caucuses with Democrats. Builds the cleanest anti-war moral frame in the Senate, connecting illegality, public opposition, class burden, and historical deception from Vietnam through Iraq.",
+    "summary": "Builds the cleanest anti-war moral frame: illegality, public opposition, class burden, and historical deception from Vietnam through Iraq.",
+    "positioning": "Movement anti-war anchor",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Budget",
+      "Health, Education, Labor and Pensions"
+    ],
+    "signals": [
+      "Illegal war language",
+      "Netanyahu linkage",
+      "People over war spending",
+      "Historical lie chain"
+    ],
+    "watchpoints": [
+      "Process and moral framing align cleanly",
+      "Less attention to omission-driven national security counters"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Historical Comparisons",
+      "Fiscal and Domestic Impact"
+    ],
+    "evidence_count": 15,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [
+      "democratic-fiscal-consistency"
+    ],
+    "tags": [
+      "senate",
+      "independent",
+      "anti-war",
+      "progressive"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "angus-king",
+    "name": "Angus King",
+    "type": "politician",
+    "party": "Independent",
+    "role": "Senator",
+    "state": "ME",
+    "chamber": "Senate",
+    "bio": "Independent Senator from Maine who caucuses with Democrats. Sits on Armed Services and Intelligence committees, giving him unique access to classified briefings. Has emerged as a prolific and detailed critic of the administration's evidence claims.",
+    "summary": "Intelligence Committee member whose detailed, evidence-based questioning of the administration's justifications has made him the most prolific congressional voice in the debate.",
+    "positioning": "Intelligence-based skeptic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Intelligence",
+      "Rules"
+    ],
+    "signals": [
+      "Classified briefing references",
+      "Evidence standard demands",
+      "Historical parallel warnings",
+      "Constitutional authority emphasis"
+    ],
+    "watchpoints": [
+      "Volume of public statements vs classified knowledge constraints",
+      "Bipartisan credibility as independent",
+      "Detailed procedural challenges"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Intelligence and Evidence",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 43,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "intelligence-committee",
+      "armed-services",
+      "independent",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "tim-kaine",
+    "name": "Tim Kaine",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "VA",
+    "chamber": "Senate",
+    "bio": "Virginia Senator and long-time War Powers advocate who sits on Foreign Relations and Armed Services. Led War Powers Resolution efforts and has been the Senate's most persistent voice on congressional authorization requirements across multiple administrations.",
+    "summary": "The Senate's foremost War Powers advocate, leading the legal and procedural challenge to unauthorized military action against Iran.",
+    "positioning": "War Powers constitutional champion",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Foreign Relations",
+      "Armed Services"
+    ],
+    "signals": [
+      "War Powers Resolution invocation",
+      "Imminence definition challenges",
+      "Cross-administration consistency",
+      "Legal criteria emphasis"
+    ],
+    "watchpoints": [
+      "Bipartisan War Powers coalition durability",
+      "Legal vs moral framing balance",
+      "Floor vote strategy"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 11,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "armed-services",
+      "war-powers",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "chris-murphy",
+    "name": "Chris Murphy",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "CT",
+    "chamber": "Senate",
+    "bio": "Connecticut Senator on the Foreign Relations Committee known for assertive foreign policy positions emphasizing diplomacy over military action. Has been a leading Democratic voice challenging the administration's Iran justifications and advocating for diplomatic alternatives.",
+    "summary": "Foreign Relations Committee voice combining diplomatic alternative advocacy with sharp critiques of the administration's evidentiary basis for strikes.",
+    "positioning": "Diplomacy-first challenger",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Foreign Relations",
+      "Appropriations"
+    ],
+    "signals": [
+      "Diplomatic alternative emphasis",
+      "Evidence gap highlighting",
+      "Escalation risk warnings",
+      "Ally credibility concerns"
+    ],
+    "watchpoints": [
+      "Diplomatic framework specificity",
+      "Coalition-building with moderate Democrats",
+      "Response to proxy threat arguments"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Diplomacy",
+      "Imminence and Threat",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 11,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "diplomacy",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ro-khanna",
+    "name": "Ro Khanna",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "CA",
+    "chamber": "House",
+    "bio": "California Representative and progressive foreign policy voice who sits on Armed Services. Combines anti-war progressive positioning with tech-sector pragmatism, consistently framing the Iran strikes as an illegal regime change war.",
+    "summary": "Progressive House voice framing the Iran conflict as an illegal regime change war while pushing for congressional reassertion of war powers.",
+    "positioning": "Progressive anti-war voice",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Oversight"
+    ],
+    "signals": [
+      "Illegal regime change war framing",
+      "Congressional authority demands",
+      "Progressive coalition language",
+      "Cost-of-war emphasis"
+    ],
+    "watchpoints": [
+      "Bridge role between progressives and moderates",
+      "Armed Services Committee leverage",
+      "Tech-sector foreign policy intersections"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Fiscal and Domestic Impact"
+    ],
+    "evidence_count": 11,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "armed-services",
+      "progressive",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "thomas-massie",
+    "name": "Thomas Massie",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Representative",
+    "state": "KY",
+    "chamber": "House",
+    "bio": "Kentucky Representative and libertarian-leaning Republican who is one of the few GOP voices opposing the Iran strikes. His opposition stems from constitutional originalism and non-interventionist principles rather than progressive anti-war framing.",
+    "summary": "Rare Republican anti-war voice grounding opposition in constitutional originalism and libertarian non-interventionism.",
+    "positioning": "Libertarian constitutional dissenter",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Rules"
+    ],
+    "signals": [
+      "Constitutional originalism",
+      "Non-interventionist principles",
+      "Executive overreach critique",
+      "Fiscal conservatism on war spending"
+    ],
+    "watchpoints": [
+      "Cross-partisan anti-war alliance potential",
+      "GOP caucus isolation dynamics",
+      "Consistency with libertarian framework"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Executive Authority",
+      "Fiscal and Domestic Impact"
+    ],
+    "evidence_count": 9,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "republican",
+      "libertarian",
+      "anti-war",
+      "constitutional-originalist"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "elizabeth-warren",
+    "name": "Elizabeth Warren",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "MA",
+    "chamber": "Senate",
+    "bio": "Massachusetts Senator on Armed Services known for detailed policy frameworks. Has declared the Iran war illegal and based on lies, combining legal critique with domestic spending priorities arguments.",
+    "summary": "Combines sharp 'illegal war based on lies' framing with detailed fiscal arguments about domestic opportunity costs.",
+    "positioning": "Progressive legal-fiscal critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Banking",
+      "Finance"
+    ],
+    "signals": [
+      "Illegal war based on lies",
+      "Domestic spending tradeoffs",
+      "Accountability demands",
+      "Systemic critique"
+    ],
+    "watchpoints": [
+      "Policy specificity vs rhetorical force",
+      "Armed Services Committee leverage",
+      "Coalition alignment with Sanders wing"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Fiscal and Domestic Impact",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 7,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "progressive",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ali-khamenei",
+    "name": "Ali Khamenei",
+    "type": "politician",
+    "party": null,
+    "role": "Supreme Leader",
+    "state": null,
+    "chamber": null,
+    "bio": "Supreme Leader of Iran since 1989, the ultimate authority over Iranian foreign and military policy. His rhetoric and decision-making are central to the debate over whether Iran posed an imminent threat and whether diplomatic alternatives existed.",
+    "summary": "As Iran's supreme authority, his statements and posture are the primary subject of the 'imminent threat' debate.",
+    "positioning": "Foreign adversary principal",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Defiance rhetoric",
+      "Nuclear ambiguity",
+      "Proxy network orchestration",
+      "Resistance axis framing"
+    ],
+    "watchpoints": [
+      "Gap between public rhetoric and private signaling",
+      "Nuclear program status claims",
+      "Proxy coordination evidence"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Iran Nuclear Program",
+      "Imminence and Threat",
+      "Proxy Network Framing"
+    ],
+    "evidence_count": 7,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "iran",
+      "foreign-leader",
+      "supreme-leader"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "adam-schiff",
+    "name": "Adam Schiff",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "CA",
+    "chamber": "Senate",
+    "bio": "California Senator and former House Intelligence Committee chair. Brings deep intelligence community expertise to the Iran debate, arguing Congress alone has the power to declare war and that the Founders' worst fears have come to pass.",
+    "summary": "Former Intelligence Committee chair using institutional credibility to challenge the administration's evidence and assert congressional war powers.",
+    "positioning": "Intelligence community institutionalist",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Intelligence",
+      "Judiciary"
+    ],
+    "signals": [
+      "Founders' intent framing",
+      "Intelligence credibility leverage",
+      "Constitutional crisis language",
+      "Institutional norm defense"
+    ],
+    "watchpoints": [
+      "Intelligence Committee access and disclosures",
+      "Legal framework specificity",
+      "Partisan credibility challenges from GOP"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 7,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "intelligence-committee",
+      "anti-war",
+      "former-house"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "mark-warner",
+    "name": "Mark Warner",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "VA",
+    "chamber": "Senate",
+    "bio": "Virginia Senator and Vice Chair of the Intelligence Committee. His access to classified briefings gives his claims about the absence of imminent-threat evidence particular weight in the debate.",
+    "summary": "Occupies the intelligence-validation lane, arguing the classified record did not support imminence and that the conflict reflected Israeli timing more than U.S. necessity.",
+    "positioning": "Intel credibility validator",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Intelligence",
+      "Banking",
+      "Finance"
+    ],
+    "signals": [
+      "No-evidence claim",
+      "War of choice framing",
+      "Israel-driven timing critique",
+      "Classified briefing authority"
+    ],
+    "watchpoints": [
+      "Classified-briefing authority carries high evidentiary weight",
+      "Vulnerable to omission-based counterclaims on proxy and cyber activity"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Intelligence and Evidence",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 6,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [
+      "admin-initiation-conflict"
+    ],
+    "tags": [
+      "senate",
+      "intelligence-committee",
+      "anti-war",
+      "intel-validator"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "rand-paul",
+    "name": "Rand Paul",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "KY",
+    "chamber": "Senate",
+    "bio": "Kentucky Senator and libertarian-leaning Republican, the most prominent GOP voice challenging the Iran strikes. His non-interventionism stems from constitutional principles and skepticism of military adventurism, creating rare cross-partisan alignment with anti-war Democrats.",
+    "summary": "The Senate's leading Republican anti-war voice, grounding opposition in constitutional war powers and non-interventionist conservatism.",
+    "positioning": "GOP non-interventionist anchor",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Foreign Relations",
+      "Homeland Security"
+    ],
+    "signals": [
+      "Constitutional war powers",
+      "Non-interventionist conservatism",
+      "Executive overreach critique",
+      "Historical skepticism of military action"
+    ],
+    "watchpoints": [
+      "Cross-partisan coalition potential",
+      "GOP isolation dynamics",
+      "Consistency with prior non-interventionist votes"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Executive Authority",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 5,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "republican",
+      "libertarian",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "john-fetterman",
+    "name": "John Fetterman",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "PA",
+    "chamber": "Senate",
+    "bio": "Pennsylvania Senator who has broken with much of the Democratic caucus on Israel-related issues, adopting a more hawkish posture. His positioning on Iran is complicated by his strong pro-Israel stance and willingness to defy progressive orthodoxy.",
+    "summary": "Democratic outlier whose pro-Israel hawkishness creates tension with the caucus anti-war consensus on Iran.",
+    "positioning": "Democratic hawk outlier",
+    "photo_url": null,
+    "stance_on_iran": "mixed",
+    "key_committees": [
+      "Agriculture",
+      "Banking",
+      "Environment and Public Works"
+    ],
+    "signals": [
+      "Pro-Israel alignment",
+      "Caucus defiance",
+      "Populist framing",
+      "Threat acknowledgment"
+    ],
+    "watchpoints": [
+      "Degree of support for strikes vs process concerns",
+      "Break with progressive base",
+      "Evolution on authorization questions"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Israel-Iran Nexus"
+    ],
+    "evidence_count": 5,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "democrat",
+      "pro-israel",
+      "hawkish-democrat"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "rashida-tlaib",
+    "name": "Rashida Tlaib",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "MI",
+    "chamber": "House",
+    "bio": "Michigan Representative and the only Palestinian-American in Congress. One of the most vocal critics of both the Iran strikes and U.S.-Israel policy, bringing a uniquely personal dimension to the foreign policy debate.",
+    "summary": "Most vocal progressive critic connecting the Iran strikes to broader U.S.-Israel policy with a uniquely personal Palestinian-American perspective.",
+    "positioning": "Progressive anti-war, anti-intervention anchor",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Oversight",
+      "Financial Services"
+    ],
+    "signals": [
+      "Anti-war moral absolutism",
+      "Palestine-Iran linkage",
+      "Civilian casualty emphasis",
+      "Imperial critique framing"
+    ],
+    "watchpoints": [
+      "Rhetorical intensity and coalition dynamics",
+      "Isolation within broader Democratic messaging",
+      "Specific policy demands vs moral positioning"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Civilian Impact",
+      "Israel-Iran Nexus"
+    ],
+    "evidence_count": 3,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "progressive",
+      "anti-war",
+      "squad"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "alexandria-ocasio-cortez",
+    "name": "Alexandria Ocasio-Cortez",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "NY",
+    "chamber": "House",
+    "bio": "New York Representative and prominent progressive voice. Uses social media reach and rhetorical skill to amplify anti-war messaging, connecting military spending to domestic austerity and framing the conflict through a generational lens.",
+    "summary": "High-profile progressive using media platform to connect Iran war opposition to domestic spending priorities and generational accountability.",
+    "positioning": "Progressive media amplifier",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Oversight",
+      "Financial Services"
+    ],
+    "signals": [
+      "Generational framing",
+      "Social media amplification",
+      "Domestic spending linkage",
+      "Anti-war coalition building"
+    ],
+    "watchpoints": [
+      "Rhetorical reach vs legislative leverage",
+      "Coalition alignment with Squad and broader caucus",
+      "Specificity of policy alternatives"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Fiscal and Domestic Impact",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "progressive",
+      "anti-war",
+      "squad",
+      "high-profile"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "nancy-pelosi",
+    "name": "Nancy Pelosi",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "CA",
+    "chamber": "House",
+    "bio": "Former Speaker of the House from California, still serving as a Representative and elder stateswoman of the Democratic caucus. Her institutional weight and foreign policy experience give her statements particular gravity, though she has been measured in her Iran positioning.",
+    "summary": "Democratic elder stateswoman whose measured statements on Iran carry institutional weight but have been less frequent than other critics.",
+    "positioning": "Institutional elder voice",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [],
+    "signals": [
+      "Institutional authority",
+      "Measured opposition",
+      "Process emphasis",
+      "Historical precedent references"
+    ],
+    "watchpoints": [
+      "Degree of public engagement vs behind-scenes influence",
+      "Alignment with Jeffries leadership messaging",
+      "Escalation triggers"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Diplomacy"
+    ],
+    "evidence_count": 1,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "former-speaker",
+      "institutional",
+      "moderate"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ed-markey",
+    "name": "Ed Markey",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "MA",
+    "chamber": "Senate",
+    "bio": "Massachusetts Senator and long-time arms control and foreign policy voice. Has been unequivocal in calling the Iran strikes illegal and unconstitutional, aligning closely with the Sanders-Warren progressive lane.",
+    "summary": "Unequivocal in declaring the strikes illegal and unconstitutional, occupying the progressive anti-war lane alongside Sanders and Warren.",
+    "positioning": "Progressive anti-war senator",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Foreign Relations",
+      "Commerce",
+      "Environment and Public Works"
+    ],
+    "signals": [
+      "Illegal and unconstitutional language",
+      "Arms control emphasis",
+      "Progressive coalition alignment",
+      "Diplomatic alternative demands"
+    ],
+    "watchpoints": [
+      "Foreign Relations Committee leverage",
+      "Arms control framework specificity",
+      "Coalition consistency"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Diplomacy",
+      "Arms Control"
+    ],
+    "evidence_count": 4,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "progressive",
+      "anti-war",
+      "arms-control"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "richard-blumenthal",
+    "name": "Richard Blumenthal",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "CT",
+    "chamber": "Senate",
+    "bio": "Connecticut Senator and former state Attorney General who serves on Armed Services and Judiciary. Brings a legal prosecutorial lens to the war authorization debate, emphasizing the constitutional requirements for military action.",
+    "summary": "Applies prosecutorial legal framing to challenge the constitutional basis of unauthorized strikes against Iran.",
+    "positioning": "Legal-constitutional critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Judiciary",
+      "Commerce"
+    ],
+    "signals": [
+      "Legal-constitutional framing",
+      "Prosecutorial questioning",
+      "Authorization requirements emphasis",
+      "Accountability demands"
+    ],
+    "watchpoints": [
+      "Armed Services Committee hearings leverage",
+      "Legal specificity of challenges",
+      "Bipartisan legal coalition potential"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Executive Authority"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "judiciary",
+      "anti-war",
+      "legal-focus"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "cory-booker",
+    "name": "Cory Booker",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "NJ",
+    "chamber": "Senate",
+    "bio": "New Jersey Senator on Foreign Relations known for moral-frame rhetoric. Has joined the anti-war chorus while maintaining a somewhat centrist positioning within the caucus on national security questions.",
+    "summary": "Foreign Relations member adding moral-frame rhetoric to the anti-war coalition while maintaining centrist national security credibility.",
+    "positioning": "Moral-frame centrist critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Foreign Relations",
+      "Judiciary",
+      "Small Business"
+    ],
+    "signals": [
+      "Moral urgency framing",
+      "Diplomatic engagement advocacy",
+      "Centrist credibility positioning",
+      "Civilian impact concern"
+    ],
+    "watchpoints": [
+      "Balancing moral rhetoric with centrist positioning",
+      "Foreign Relations Committee role",
+      "2028 presidential positioning implications"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Diplomacy",
+      "Legality and War Powers",
+      "Civilian Impact"
+    ],
+    "evidence_count": 3,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "anti-war",
+      "moderate"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ruben-gallego",
+    "name": "Ruben Gallego",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "AZ",
+    "chamber": "Senate",
+    "bio": "Arizona Senator and Marine Corps combat veteran who won his seat in 2024. His military service lends credibility to his critiques of the Iran operation, combining veteran authority with progressive foreign policy instincts.",
+    "summary": "Combat veteran senator whose military credibility strengthens his critique of the Iran strikes and demands for evidence-based justification.",
+    "positioning": "Veteran-credibility critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Veterans' Affairs"
+    ],
+    "signals": [
+      "Veteran authority",
+      "Evidence-based demands",
+      "Troop welfare emphasis",
+      "Operational critique"
+    ],
+    "watchpoints": [
+      "Military credibility as rhetorical shield",
+      "Armed Services Committee leverage",
+      "Moderate vs progressive positioning"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Military Operations"
+    ],
+    "evidence_count": 6,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "veteran",
+      "anti-war",
+      "arizona"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "josh-gottheimer",
+    "name": "Josh Gottheimer",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "NJ",
+    "chamber": "House",
+    "bio": "New Jersey Representative and co-chair of the bipartisan Problem Solvers Caucus. One of the more hawkish Democrats on Israel and Iran, creating a moderate-to-supportive lane on the strikes that diverges from progressive caucus members.",
+    "summary": "Hawkish centrist Democrat whose pro-Israel positioning puts him closer to supporting the Iran strikes than most of his caucus.",
+    "positioning": "Hawkish centrist Democrat",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Financial Services"
+    ],
+    "signals": [
+      "Bipartisan framing",
+      "Israel security emphasis",
+      "Iran threat acknowledgment",
+      "Centrist bridge language"
+    ],
+    "watchpoints": [
+      "Gap with progressive caucus on Iran",
+      "Problem Solvers Caucus positioning",
+      "Threat vs authorization tension"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Israel-Iran Nexus"
+    ],
+    "evidence_count": 5,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "centrist",
+      "pro-israel",
+      "problem-solvers"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jared-golden",
+    "name": "Jared Golden",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "ME",
+    "chamber": "House",
+    "bio": "Maine Representative and Marine veteran representing a swing district. One of the most conservative House Democrats, his positioning on Iran reflects both veteran skepticism of military adventurism and political caution in a Trump-leaning district.",
+    "summary": "Swing-district veteran Democrat whose Iran positioning balances military skepticism with political pragmatism.",
+    "positioning": "Conservative Democrat veteran",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Armed Services",
+      "Small Business"
+    ],
+    "signals": [
+      "Veteran credibility",
+      "Swing-district caution",
+      "Authorization process focus",
+      "Measured rhetoric"
+    ],
+    "watchpoints": [
+      "District political dynamics",
+      "Break points from caucus consensus",
+      "Armed Services Committee role"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Military Operations"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "armed-services",
+      "veteran",
+      "swing-district",
+      "moderate"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jimmy-panetta",
+    "name": "Jimmy Panetta",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "CA",
+    "chamber": "House",
+    "bio": "California Representative and son of former Defense Secretary and CIA Director Leon Panetta. His family legacy in defense and intelligence gives him unique perspective on the Iran debate, though he has aligned with Democratic opposition to unauthorized strikes.",
+    "summary": "Defense-legacy Democrat whose family background in intelligence and defense lends weight to his opposition to unauthorized military action.",
+    "positioning": "Defense-legacy moderate critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Ways and Means",
+      "Armed Services"
+    ],
+    "signals": [
+      "Defense establishment credibility",
+      "Authorization emphasis",
+      "Institutional knowledge",
+      "Moderate opposition framing"
+    ],
+    "watchpoints": [
+      "Panetta family legacy influence on messaging",
+      "Moderate credibility in defense debates",
+      "Committee leverage"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 3,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "armed-services",
+      "defense-legacy",
+      "moderate"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "henry-cuellar",
+    "name": "Henry Cuellar",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "TX",
+    "chamber": "House",
+    "bio": "Texas Representative known as one of the most conservative House Democrats. His border-district pragmatism and hawkish-leaning national security instincts make him a potential crossover vote on Iran authorization questions.",
+    "summary": "Conservative Democrat whose national security hawkishness makes him a swing vote on Iran-related authorization measures.",
+    "positioning": "Conservative Democratic hawk",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Appropriations"
+    ],
+    "signals": [
+      "National security hawkishness",
+      "Bipartisan cooperation signals",
+      "Border-security pragmatism",
+      "Institutional deference"
+    ],
+    "watchpoints": [
+      "Crossover vote potential",
+      "Administration briefing responsiveness",
+      "District political dynamics"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "National Security"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "conservative-democrat",
+      "national-security",
+      "swing-vote"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "greg-landsman",
+    "name": "Greg Landsman",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "OH",
+    "chamber": "House",
+    "bio": "Ohio Representative from a competitive Cincinnati-area district. A newer member navigating the Iran debate with an emphasis on constituent concerns and process-oriented criticism of the administration's approach.",
+    "summary": "Swing-district freshman whose Iran positioning emphasizes process concerns and constituent accountability.",
+    "positioning": "Process-focused swing-district Democrat",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Education and Workforce",
+      "Small Business"
+    ],
+    "signals": [
+      "Constituent accountability",
+      "Process critique",
+      "Measured opposition",
+      "Pragmatic framing"
+    ],
+    "watchpoints": [
+      "District political pressure",
+      "Vote alignment with caucus",
+      "Rhetorical escalation triggers"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "swing-district",
+      "moderate",
+      "freshman"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jim-costa",
+    "name": "Jim Costa",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "CA",
+    "chamber": "House",
+    "bio": "California Representative and senior moderate Democrat from the Central Valley. A Blue Dog Coalition member whose centrist positioning on national security creates potential flexibility on Iran-related votes.",
+    "summary": "Blue Dog moderate whose centrist national security positioning makes him a watch-list figure on Iran authorization votes.",
+    "positioning": "Blue Dog centrist",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Agriculture",
+      "Foreign Affairs"
+    ],
+    "signals": [
+      "Blue Dog moderation",
+      "Process emphasis",
+      "Bipartisan cooperation signals",
+      "Agricultural district pragmatism"
+    ],
+    "watchpoints": [
+      "Foreign Affairs Committee role",
+      "Blue Dog caucus alignment",
+      "Crossover vote potential"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Diplomacy"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "foreign-affairs",
+      "blue-dog",
+      "moderate"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "andy-kim",
+    "name": "Andy Kim",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "NJ",
+    "chamber": "Senate",
+    "bio": "New Jersey Senator who won his seat in 2024 after serving in the House. A former national security official who worked on Afghanistan and Iraq policy at the NSC and Pentagon, bringing direct policy experience to the Iran debate.",
+    "summary": "Former national security official whose direct policy experience on Middle East conflicts informs his critique of the Iran strikes.",
+    "positioning": "National security professional critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Foreign Relations"
+    ],
+    "signals": [
+      "National security professional credibility",
+      "Policy expertise emphasis",
+      "Process and evidence demands",
+      "Historical lessons framing"
+    ],
+    "watchpoints": [
+      "NSC/Pentagon experience as rhetorical authority",
+      "Committee positioning",
+      "Freshman senator visibility"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "foreign-relations",
+      "national-security-professional"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jared-moskowitz",
+    "name": "Jared Moskowitz",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "FL",
+    "chamber": "House",
+    "bio": "Florida Representative known for a more hawkish posture on Israel among House Democrats. His positioning on Iran reflects strong pro-Israel instincts that sometimes align him more closely with the administration than his caucus.",
+    "summary": "Pro-Israel House Democrat whose hawkish instincts on Iran create tension with the broader caucus anti-war positioning.",
+    "positioning": "Hawkish pro-Israel Democrat",
+    "photo_url": null,
+    "stance_on_iran": "mixed",
+    "key_committees": [
+      "Oversight",
+      "Foreign Affairs"
+    ],
+    "signals": [
+      "Pro-Israel emphasis",
+      "Threat acknowledgment",
+      "Hawkish Democrat lane",
+      "Bipartisan security framing"
+    ],
+    "watchpoints": [
+      "Degree of alignment with administration narrative",
+      "Break with caucus consensus",
+      "Foreign Affairs Committee role"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Israel-Iran Nexus"
+    ],
+    "evidence_count": 2,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "foreign-affairs",
+      "pro-israel",
+      "hawkish-democrat"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "benjamin-netanyahu",
+    "name": "Benjamin Netanyahu",
+    "type": "politician",
+    "party": null,
+    "role": "Prime Minister",
+    "state": null,
+    "chamber": null,
+    "bio": "Prime Minister of Israel and a central figure in the Iran debate due to allegations that Israeli interests and timing drove the U.S. strike decision. Long an advocate for military action against Iran's nuclear program.",
+    "summary": "Israeli PM whose advocacy for Iran strikes and alleged influence on U.S. timing are central to the 'war of choice' critique.",
+    "positioning": "Allied hawk and influence focal point",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Iran existential threat framing",
+      "Nuclear program urgency",
+      "U.S.-Israel coordination",
+      "Military action advocacy"
+    ],
+    "watchpoints": [
+      "Influence on U.S. strike timing",
+      "Nuclear threshold claims",
+      "Domestic Israeli political dynamics",
+      "Coordination evidence"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Iran Nuclear Program",
+      "Israel-Iran Nexus",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 4,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "israel",
+      "foreign-leader",
+      "prime-minister",
+      "iran-hawk"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jd-vance",
+    "name": "JD Vance",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Vice President",
+    "state": "OH",
+    "chamber": "Executive",
+    "bio": "Vice President and former Ohio Senator who rose to prominence with populist and nationalist rhetoric. Previously expressed skepticism about Middle East interventionism, but has aligned with the administration's Iran strikes as VP, creating a tension point in his public record.",
+    "summary": "Former non-interventionist voice now defending administration strikes, embodying the tension between populist skepticism and executive loyalty.",
+    "positioning": "Evolving interventionist",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Populist nationalism pivot",
+      "Executive loyalty framing",
+      "Threat escalation narrative",
+      "Prior skepticism tension"
+    ],
+    "watchpoints": [
+      "Consistency with pre-VP non-interventionist statements",
+      "Rhetorical evolution tracking",
+      "Senate tiebreaker role on war powers votes"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Executive Authority",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "vice-president",
+      "executive",
+      "populist",
+      "evolving-stance"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "pete-hegseth",
+    "name": "Pete Hegseth",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Secretary of Defense",
+    "state": null,
+    "chamber": "Executive",
+    "bio": "Secretary of Defense and former Fox News host with combat veteran experience in Iraq and Afghanistan. His transition from media personality to Pentagon chief has drawn scrutiny, particularly as he oversees the Iran military operations he would have previously commented on as a pundit.",
+    "summary": "Former Fox News host turned Defense Secretary overseeing Iran operations, bridging the media-to-policy pipeline under intense scrutiny.",
+    "positioning": "Hawkish defense principal",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Military strength projection",
+      "Veteran authority claims",
+      "Media-to-policy transition",
+      "Operational confidence framing"
+    ],
+    "watchpoints": [
+      "Operational decision-making scrutiny",
+      "Media background credibility challenges",
+      "Congressional testimony performance",
+      "Civilian casualty response"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Military Operations",
+      "Executive Authority",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "secretary-of-defense",
+      "executive",
+      "veteran",
+      "former-media",
+      "iran-hawk"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "mike-johnson",
+    "name": "Mike Johnson",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Speaker of the House",
+    "state": "LA",
+    "chamber": "House",
+    "bio": "Speaker of the House from Louisiana. As Speaker, controls which War Powers resolutions and authorization bills reach the House floor, making him a critical gatekeeper in the congressional debate over Iran strikes.",
+    "summary": "House gatekeeper whose control of the floor agenda determines whether War Powers challenges to the Iran strikes receive votes.",
+    "positioning": "Administration-aligned gatekeeper",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Executive deference",
+      "Floor agenda control",
+      "National security framing",
+      "Party unity enforcement"
+    ],
+    "watchpoints": [
+      "War Powers Resolution floor scheduling",
+      "Briefing access and transparency",
+      "Caucus management on authorization votes",
+      "Cross-party pressure points"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house-leadership",
+      "speaker",
+      "republican",
+      "gatekeeper"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "mitch-mcconnell",
+    "name": "Mitch McConnell",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "KY",
+    "chamber": "Senate",
+    "bio": "Longtime Kentucky Senator and former Senate leader, the most prominent Republican hawk on Iran and foreign intervention broadly. A staunch advocate of executive military authority and muscular foreign policy who provides crucial institutional cover for the administration's strikes.",
+    "summary": "Elder GOP hawk providing institutional cover for the strikes and resisting congressional constraints on executive military authority.",
+    "positioning": "Institutional hawk and executive authority defender",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [
+      "Appropriations",
+      "Rules"
+    ],
+    "signals": [
+      "Executive authority defense",
+      "Historical interventionist consistency",
+      "Institutional GOP leadership",
+      "Anti-isolationist framing"
+    ],
+    "watchpoints": [
+      "Floor strategy on War Powers votes",
+      "Influence on GOP caucus positioning",
+      "Health and capacity considerations"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Executive Authority",
+      "Imminence and Threat",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "republican",
+      "hawk",
+      "former-leader",
+      "interventionist"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "lindsey-graham",
+    "name": "Lindsey Graham",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "SC",
+    "chamber": "Senate",
+    "bio": "South Carolina Senator on Judiciary and Budget, among the most vocal Republican hawks on Iran. Has long advocated for military action against Iran's nuclear program and provides some of the most aggressive pro-strike rhetoric in the Senate.",
+    "summary": "The Senate's most aggressive pro-strike Republican voice, pushing for expanded military action against Iran's nuclear and military infrastructure.",
+    "positioning": "Maximum hawk",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [
+      "Judiciary",
+      "Budget",
+      "Appropriations"
+    ],
+    "signals": [
+      "Maximum military pressure",
+      "Nuclear program destruction advocacy",
+      "Iran regime threat framing",
+      "Escalation enthusiasm"
+    ],
+    "watchpoints": [
+      "Calls for expanded strikes beyond initial scope",
+      "Influence on administration escalation decisions",
+      "Rhetorical ceiling testing"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Iran Nuclear Program",
+      "Imminence and Threat",
+      "Military Operations"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "republican",
+      "maximum-hawk",
+      "iran-hawk"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "tom-cotton",
+    "name": "Tom Cotton",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "AR",
+    "chamber": "Senate",
+    "bio": "Arkansas Senator on Armed Services and Intelligence, an Army combat veteran and one of the most hawkish voices in Congress on Iran. Authored the infamous 2015 letter to Iranian leaders and has consistently pushed for military confrontation.",
+    "summary": "Combat veteran and longtime Iran hawk whose Armed Services and Intelligence seats make him a key defender of the strikes' strategic rationale.",
+    "positioning": "Hawkish interventionist with military credibility",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [
+      "Armed Services",
+      "Intelligence",
+      "Judiciary"
+    ],
+    "signals": [
+      "Military veteran authority",
+      "Iran letter legacy",
+      "Intelligence-based justification",
+      "Escalation advocacy"
+    ],
+    "watchpoints": [
+      "Intelligence Committee selective disclosure",
+      "Military credibility leverage",
+      "Escalation rhetoric ceiling"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Iran Nuclear Program",
+      "Military Operations",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "intelligence-committee",
+      "veteran",
+      "iran-hawk"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ted-cruz",
+    "name": "Ted Cruz",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "TX",
+    "chamber": "Senate",
+    "bio": "Texas Senator on Foreign Relations and Commerce, a reliable hawk on Iran who combines pro-Israel positioning with aggressive anti-Iran rhetoric. Has consistently supported maximum pressure policies and sanctions enforcement.",
+    "summary": "Foreign Relations hawk combining pro-Israel alignment with aggressive anti-Iran positioning to support the administration's strikes.",
+    "positioning": "Pro-Israel hawk",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [
+      "Foreign Relations",
+      "Commerce",
+      "Judiciary"
+    ],
+    "signals": [
+      "Pro-Israel alignment",
+      "Maximum pressure advocacy",
+      "Iran regime threat framing",
+      "Sanctions enforcement emphasis"
+    ],
+    "watchpoints": [
+      "Foreign Relations Committee role",
+      "Pro-Israel messaging intersection",
+      "Escalation support scope"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Iran Nuclear Program",
+      "Israel-Iran Nexus",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "republican",
+      "iran-hawk",
+      "pro-israel"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "mike-lee",
+    "name": "Mike Lee",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "UT",
+    "chamber": "Senate",
+    "bio": "Utah Senator and constitutional conservative on Judiciary and Commerce. Like Rand Paul, brings a constitutional-originalist skepticism to executive war powers, making him a potential Republican vote for War Powers constraints despite supporting the administration on most other issues.",
+    "summary": "Constitutional conservative whose war powers skepticism could make him a rare Republican vote to constrain executive military authority.",
+    "positioning": "Constitutional war powers skeptic",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Judiciary",
+      "Commerce",
+      "Energy"
+    ],
+    "signals": [
+      "Constitutional originalism",
+      "Executive overreach concern",
+      "War Powers emphasis",
+      "Selective administration dissent"
+    ],
+    "watchpoints": [
+      "War Powers Resolution vote positioning",
+      "Constitutional vs partisan loyalty tension",
+      "Alliance with Paul on military authorization"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "republican",
+      "constitutional-conservative",
+      "war-powers-skeptic"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jim-risch",
+    "name": "Jim Risch",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senator",
+    "state": "ID",
+    "chamber": "Senate",
+    "bio": "Idaho Senator and ranking member or chair of the Foreign Relations Committee. A reliable Republican hawk who tends to defer to executive authority on military matters while using his committee position to shape the narrative around Iran threat assessments.",
+    "summary": "Foreign Relations Committee leader providing institutional Republican support for the administration's Iran threat narrative and strike justification.",
+    "positioning": "Committee hawk and administration ally",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [
+      "Foreign Relations",
+      "Intelligence",
+      "Small Business"
+    ],
+    "signals": [
+      "Committee authority leverage",
+      "Executive deference on military matters",
+      "Threat narrative amplification",
+      "Intelligence access claims"
+    ],
+    "watchpoints": [
+      "Foreign Relations Committee hearings and witnesses",
+      "Intelligence Committee briefing narratives",
+      "Classified vs public messaging gaps"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Executive Authority",
+      "Iran Nuclear Program"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "intelligence-committee",
+      "republican",
+      "hawk"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ben-cardin",
+    "name": "Ben Cardin",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "MD",
+    "chamber": "Senate",
+    "bio": "Maryland Senator and former Foreign Relations Committee chair who brings deep institutional knowledge of diplomatic processes. A moderate Democrat with strong pro-Israel credentials whose positioning on Iran balances threat recognition with authorization concerns.",
+    "summary": "Former Foreign Relations chair balancing pro-Israel threat recognition with institutional emphasis on proper congressional authorization.",
+    "positioning": "Institutionalist moderate",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Foreign Relations",
+      "Finance",
+      "Small Business"
+    ],
+    "signals": [
+      "Institutional process emphasis",
+      "Pro-Israel moderation",
+      "Diplomatic engagement advocacy",
+      "Authorization requirement focus"
+    ],
+    "watchpoints": [
+      "Foreign Relations institutional memory leverage",
+      "Israel-related positioning tensions",
+      "Bipartisan authorization framework potential"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Diplomacy",
+      "Israel-Iran Nexus"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "foreign-relations",
+      "moderate",
+      "institutionalist",
+      "pro-israel"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jack-reed",
+    "name": "Jack Reed",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "RI",
+    "chamber": "Senate",
+    "bio": "Rhode Island Senator and chair or ranking member of Armed Services, the committee with primary oversight of military operations. A West Point graduate and Army veteran whose military background and committee position make him a critical figure in oversight of the Iran strikes.",
+    "summary": "Armed Services Committee leader and Army veteran whose military credibility and oversight authority are central to congressional scrutiny of the Iran operations.",
+    "positioning": "Armed Services oversight authority",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Armed Services",
+      "Appropriations",
+      "Intelligence"
+    ],
+    "signals": [
+      "Military oversight authority",
+      "Veteran credibility",
+      "Bipartisan defense tradition",
+      "Evidence and briefing demands"
+    ],
+    "watchpoints": [
+      "Armed Services Committee hearing strategy",
+      "Classified briefing disclosures",
+      "Bipartisan oversight coalition building",
+      "Restraint vs opposition calibration"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Military Operations",
+      "Legality and War Powers",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "intelligence-committee",
+      "veteran",
+      "oversight-authority"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "tammy-duckworth",
+    "name": "Tammy Duckworth",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Senator",
+    "state": "IL",
+    "chamber": "Senate",
+    "bio": "Illinois Senator, Iraq War combat veteran, and Purple Heart recipient who lost both legs in combat. Her personal sacrifice gives her unmatched moral authority in debates about military action, and she has been a vocal critic of unauthorized military operations.",
+    "summary": "Combat-wounded veteran whose personal sacrifice lends powerful moral authority to her criticism of unauthorized Iran strikes.",
+    "positioning": "Veteran moral authority critic",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Armed Services",
+      "Commerce",
+      "Small Business"
+    ],
+    "signals": [
+      "Veteran moral authority",
+      "Personal sacrifice credibility",
+      "Authorization requirements emphasis",
+      "Troop welfare focus"
+    ],
+    "watchpoints": [
+      "Moral authority as rhetorical force multiplier",
+      "Armed Services Committee leverage",
+      "Bipartisan veteran coalition potential"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Military Operations",
+      "Civilian Impact"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "armed-services",
+      "veteran",
+      "combat-wounded",
+      "anti-war"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "tulsi-gabbard",
+    "name": "Tulsi Gabbard",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Director of National Intelligence",
+    "state": null,
+    "chamber": "Executive",
+    "bio": "Director of National Intelligence, former Democratic congresswoman and combat veteran who switched parties. Previously one of the most vocal anti-war voices in Congress, her role overseeing intelligence that supports the administration's threat claims creates a significant tension with her prior non-interventionist record.",
+    "summary": "Former anti-war Democrat now overseeing the intelligence apparatus justifying the strikes she would have previously opposed, creating acute credibility tensions.",
+    "positioning": "Converted hawk with anti-war past",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Intelligence authority claims",
+      "Prior anti-war record tension",
+      "Party switch evolution",
+      "Threat assessment framing"
+    ],
+    "watchpoints": [
+      "Contradictions with prior anti-war positions",
+      "Intelligence assessment credibility",
+      "Congressional testimony on threat evidence",
+      "Public trust dynamics"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Imminence and Threat",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "dni",
+      "executive",
+      "former-democrat",
+      "veteran",
+      "evolving-stance"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "john-ratcliffe",
+    "name": "John Ratcliffe",
+    "type": "politician",
+    "party": "Republican",
+    "role": "CIA Director",
+    "state": null,
+    "chamber": "Executive",
+    "bio": "CIA Director and former congressman who previously served as DNI under Trump's first term. Oversees the intelligence operations and assessments central to the administration's imminent-threat justification for the Iran strikes.",
+    "summary": "CIA Director overseeing the intelligence assessments at the heart of the imminent-threat debate, with prior DNI experience under Trump.",
+    "positioning": "Intelligence principal",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Intelligence authority",
+      "Threat assessment ownership",
+      "Executive branch loyalty",
+      "Classification leverage"
+    ],
+    "watchpoints": [
+      "Intelligence assessment credibility under scrutiny",
+      "Congressional briefing content and tone",
+      "Classified vs declassified evidence gaps",
+      "Prior DNI tenure comparisons"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Imminence and Threat",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "cia-director",
+      "executive",
+      "intelligence-principal",
+      "former-dni"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "fox-news",
+    "name": "Fox News",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Dominant conservative cable news network and the most-watched cable news channel in the U.S. Generally supportive of Republican administrations and hawkish foreign policy, though hosts like Tucker Carlson (now departed) introduced non-interventionist currents.",
+    "summary": "Leading conservative network generally supportive of the administration's Iran strikes while hosting internal tension between hawkish and populist-skeptic currents.",
+    "positioning": "Pro-administration with hawkish tilt",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Administration defense framing",
+      "Threat amplification",
+      "Democratic opposition criticism",
+      "National security patriotism framing"
+    ],
+    "watchpoints": [
+      "Internal hawk vs populist-skeptic tension",
+      "Primetime vs daytime coverage divergence",
+      "Jennifer Griffin's independent reporting lane"
+    ],
+    "bias_rating": 0.6,
+    "reliability_score": 0.55,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Executive Authority",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "fox-news"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "cnn",
+    "name": "CNN",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Major cable news network positioning itself as centrist but perceived as center-left. Coverage of the Iran strikes has featured extensive debate segments and breaking news cycles, with a mix of critical analysis and administration response platforms.",
+    "summary": "Center-left cable network providing extensive debate coverage with a tilt toward skepticism of the administration's Iran justifications.",
+    "positioning": "Skeptical center-left coverage",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Both-sides debate framing",
+      "Breaking news cycle emphasis",
+      "Expert panel analysis",
+      "Administration skepticism"
+    ],
+    "watchpoints": [
+      "Balance between skepticism and access journalism",
+      "Primetime editorial direction",
+      "Pentagon source relationships"
+    ],
+    "bias_rating": -0.35,
+    "reliability_score": 0.6,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "cnn"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "msnbc",
+    "name": "MSNBC",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Progressive-leaning cable news network and the primary television platform for anti-war commentary. Primetime hosts have been consistently critical of the Iran strikes, providing extensive airtime to Democratic opposition voices.",
+    "summary": "Progressive cable network serving as the primary television platform for anti-war arguments and Democratic opposition messaging on Iran.",
+    "positioning": "Anti-war editorial platform",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Anti-war editorial framing",
+      "Democratic opposition amplification",
+      "Historical parallel emphasis",
+      "Constitutional crisis language"
+    ],
+    "watchpoints": [
+      "Editorial vs reporting distinction",
+      "Booking patterns and voice selection",
+      "Escalation of crisis framing"
+    ],
+    "bias_rating": -0.6,
+    "reliability_score": 0.55,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Historical Comparisons",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "msnbc"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "nbc-news",
+    "name": "NBC News",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Major broadcast network news division with extensive Pentagon and intelligence community sources. Distinguished from MSNBC's opinion programming, NBC News maintains a more centrist reporting posture on the Iran conflict.",
+    "summary": "Centrist broadcast news division leveraging strong Pentagon and intelligence sources for Iran conflict reporting.",
+    "positioning": "Centrist broadcast with defense sources",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Source-driven reporting",
+      "Pentagon relationship leverage",
+      "Balanced framing attempts",
+      "Breaking news credibility"
+    ],
+    "watchpoints": [
+      "Pentagon source influence on framing",
+      "NBC vs MSNBC editorial divergence",
+      "Investigative reporting depth"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Military Operations",
+      "Imminence and Threat",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "nbc-news"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "abc-news",
+    "name": "ABC News",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Major broadcast network news division with strong White House and Capitol Hill sourcing. Coverage has been relatively centrist, emphasizing factual reporting on military developments and congressional responses.",
+    "summary": "Centrist broadcast news outlet providing balanced factual coverage of military developments and congressional Iran debate.",
+    "positioning": "Centrist factual broadcaster",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "White House access journalism",
+      "Factual emphasis",
+      "Congressional coverage balance",
+      "Military operations reporting"
+    ],
+    "watchpoints": [
+      "White House source influence",
+      "Evening news framing choices",
+      "Investigative depth on evidence questions"
+    ],
+    "bias_rating": -0.15,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Military Operations",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "abc-news"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "cbs-news",
+    "name": "CBS News",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Major broadcast network news division with strong foreign affairs reporting tradition. Face the Nation and 60 Minutes provide key platforms for deep-dive Iran coverage beyond the daily news cycle.",
+    "summary": "Centrist broadcast outlet with strong foreign affairs tradition, leveraging Face the Nation and 60 Minutes for deeper Iran analysis.",
+    "positioning": "Centrist broadcast with depth platforms",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Foreign affairs expertise",
+      "Long-form investigation",
+      "Sunday show agenda-setting",
+      "Diplomatic source access"
+    ],
+    "watchpoints": [
+      "Face the Nation booking and framing",
+      "60 Minutes investigation pipeline",
+      "Margaret Brennan's editorial direction"
+    ],
+    "bias_rating": -0.15,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Diplomacy",
+      "Imminence and Threat",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "cbs-news"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "pbs-newshour",
+    "name": "PBS NewsHour",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Public television's flagship news program, widely regarded as one of the most balanced and substantive news sources in American media. Iran coverage emphasizes expert analysis, historical context, and extended-format reporting.",
+    "summary": "Gold-standard public television news providing the most balanced and substantive long-form analysis of the Iran conflict.",
+    "positioning": "Balanced depth authority",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Expert analysis emphasis",
+      "Historical context framing",
+      "Extended-format coverage",
+      "Balanced voice selection"
+    ],
+    "watchpoints": [
+      "Expert selection patterns",
+      "Framing of legal and constitutional questions",
+      "Audience reach limitations"
+    ],
+    "bias_rating": -0.1,
+    "reliability_score": 0.85,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Historical Comparisons",
+      "Diplomacy"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "pbs-newshour"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "npr",
+    "name": "NPR",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "National public radio network with extensive foreign affairs and national security reporting capabilities. NPR's Iran coverage benefits from deep sourcing in the State Department, Pentagon, and intelligence community.",
+    "summary": "Public radio network providing deeply sourced, context-rich Iran coverage drawing on extensive national security reporting capabilities.",
+    "positioning": "Context-rich public media",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Deep sourcing",
+      "Context and nuance emphasis",
+      "Expert voice integration",
+      "Diplomatic reporting strength"
+    ],
+    "watchpoints": [
+      "Source diversity and selection",
+      "Editorial framing in context choices",
+      "Digital vs broadcast coverage differences"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.8,
+    "dominant_themes": [
+      "Diplomacy",
+      "Intelligence and Evidence",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "npr"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "new-york-times",
+    "name": "The New York Times",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "America's newspaper of record with the largest investigative and foreign affairs reporting infrastructure in print journalism. Its Iran coverage sets the agenda for much of the broader media ecosystem and political discourse.",
+    "summary": "Agenda-setting newspaper of record whose investigative reporting and editorial positioning significantly shape the Iran war narrative.",
+    "positioning": "Agenda-setting paper of record",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Investigative reporting depth",
+      "Editorial board positioning",
+      "Source-driven scoops",
+      "Narrative framing influence"
+    ],
+    "watchpoints": [
+      "Editorial vs news page divergence",
+      "Anonymous source patterns",
+      "Investigation pipeline and timing",
+      "Iraq War coverage legacy influence"
+    ],
+    "bias_rating": -0.3,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Legality and War Powers",
+      "Diplomacy"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "new-york-times"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "washington-post",
+    "name": "The Washington Post",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Premier Washington political newspaper with unmatched access to government sources. National security reporting team has deep Pentagon and intelligence community relationships critical to Iran coverage.",
+    "summary": "Washington's political paper leveraging unmatched government source access for national security reporting on the Iran conflict.",
+    "positioning": "Government-sourced national security authority",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Government source access",
+      "National security reporting depth",
+      "Pentagon and IC relationships",
+      "Accountability journalism"
+    ],
+    "watchpoints": [
+      "Source capture risks",
+      "Ownership influence questions",
+      "Anonymous source reliance",
+      "Editorial board independence"
+    ],
+    "bias_rating": -0.3,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Military Operations",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "washington-post"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "wall-street-journal",
+    "name": "The Wall Street Journal",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Leading business newspaper with strong national security and foreign affairs reporting. News pages maintain high journalistic standards while the editorial page takes a distinctly hawkish posture on Iran and Middle East policy.",
+    "summary": "Business paper with strong news-side reporting and a hawkish editorial page, creating a dual-track Iran coverage dynamic.",
+    "positioning": "Quality reporting with hawkish editorial",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "News-editorial split",
+      "Economic impact analysis",
+      "Hawkish editorial framing",
+      "Defense industry sourcing"
+    ],
+    "watchpoints": [
+      "News vs opinion page divergence on Iran",
+      "Economic framing of military action",
+      "Defense and intelligence source patterns"
+    ],
+    "bias_rating": 0.2,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Iran Nuclear Program",
+      "Economic Impact",
+      "Military Operations"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "wall-street-journal"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "ap",
+    "name": "AP",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "The Associated Press, the world's oldest and largest newsgathering organization. Provides foundational factual reporting that feeds into virtually all other media coverage of the Iran conflict.",
+    "summary": "Wire service gold standard providing the factual foundation for Iran coverage across the entire media ecosystem.",
+    "positioning": "Factual wire service baseline",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Factual baseline reporting",
+      "Global sourcing network",
+      "Minimal editorial framing",
+      "Breaking news speed"
+    ],
+    "watchpoints": [
+      "Framing choices in headlines and ledes",
+      "Source attribution patterns",
+      "Verification standards under breaking-news pressure"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.9,
+    "dominant_themes": [
+      "Military Operations",
+      "Diplomacy"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "ap"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "reuters",
+    "name": "Reuters",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Global wire service with extensive Middle East bureau infrastructure and deep diplomatic sourcing. Reuters' Iran coverage benefits from on-the-ground reporting capabilities that most American outlets lack.",
+    "summary": "Global wire service with unmatched Middle East ground presence providing essential on-the-ground and diplomatic reporting on Iran.",
+    "positioning": "Global factual authority with ground presence",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "On-the-ground reporting",
+      "Diplomatic source network",
+      "Minimal editorial framing",
+      "Global perspective"
+    ],
+    "watchpoints": [
+      "Middle East bureau access and safety",
+      "Diplomatic source patterns",
+      "Speed vs verification balance"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.9,
+    "dominant_themes": [
+      "Military Operations",
+      "Diplomacy",
+      "Civilian Impact"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "reuters"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "al-jazeera",
+    "name": "Al Jazeera",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Qatar-based international news network with extensive Middle East coverage infrastructure. Provides perspectives and on-the-ground reporting from the region that American outlets often lack, though editorial orientation reflects Qatari state interests.",
+    "summary": "Qatar-based network providing essential regional perspective and ground reporting on Iran, with editorial orientation reflecting state interests.",
+    "positioning": "Regional perspective with state influence",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Regional ground reporting",
+      "Civilian impact emphasis",
+      "Anti-intervention framing",
+      "Middle East perspective centering"
+    ],
+    "watchpoints": [
+      "Qatari state interest influence",
+      "Civilian casualty reporting credibility",
+      "Editorial vs reporting distinction",
+      "Access to Iranian sources"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.6,
+    "dominant_themes": [
+      "Civilian Impact",
+      "Military Operations",
+      "Regional Dynamics"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "al-jazeera"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "bbc-news",
+    "name": "BBC News",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "British public broadcaster with global reach and extensive Middle East reporting infrastructure. Provides an allied but independent perspective on U.S. Iran policy that American audiences often find more contextual and historically grounded.",
+    "summary": "British public broadcaster offering allied but independent perspective on U.S. Iran strikes with strong historical contextualization.",
+    "positioning": "Allied independent perspective",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "International perspective",
+      "Historical contextualization",
+      "Allied but independent framing",
+      "Global audience orientation"
+    ],
+    "watchpoints": [
+      "UK government alignment influence",
+      "Transatlantic framing differences",
+      "Middle East bureau reporting depth"
+    ],
+    "bias_rating": -0.05,
+    "reliability_score": 0.8,
+    "dominant_themes": [
+      "Historical Comparisons",
+      "Diplomacy",
+      "Military Operations"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "bbc-news"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "politico",
+    "name": "Politico",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Washington-focused political news outlet excelling at insider process coverage. Iran reporting emphasizes congressional dynamics, White House strategy, and the political dimensions of the war debate over military or diplomatic substance.",
+    "summary": "DC insider outlet excelling at political process coverage of the Iran debate's congressional and White House dynamics.",
+    "positioning": "Insider political process coverage",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Process and strategy reporting",
+      "Congressional dynamics focus",
+      "Source-driven scoops",
+      "Political framing emphasis"
+    ],
+    "watchpoints": [
+      "Substance vs process balance",
+      "Anonymous source patterns",
+      "Horse-race framing of war debate"
+    ],
+    "bias_rating": -0.15,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Executive Authority",
+      "Congressional Dynamics"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "politico"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "the-hill",
+    "name": "The Hill",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Capitol Hill-focused news outlet providing granular coverage of congressional action on Iran. Strength in tracking votes, statements, and legislative maneuvering, though depth of analysis can be uneven.",
+    "summary": "Capitol Hill news outlet providing granular tracking of congressional Iran debate votes, statements, and legislative strategy.",
+    "positioning": "Congressional action tracker",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Vote tracking",
+      "Statement aggregation",
+      "Legislative process coverage",
+      "Bipartisan voice inclusion"
+    ],
+    "watchpoints": [
+      "Analysis depth vs speed tradeoff",
+      "Opinion section influence on perception",
+      "Congressional source capture"
+    ],
+    "bias_rating": -0.05,
+    "reliability_score": 0.65,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Congressional Dynamics"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "the-hill"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "axios",
+    "name": "Axios",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Digital-native news outlet known for concise, high-signal reporting on politics and policy. Iran coverage emphasizes scoops, insider dynamics, and brief analytical framing, catering to an elite policy audience.",
+    "summary": "High-signal digital outlet delivering concise insider scoops and analysis on the Iran debate for a policy-elite audience.",
+    "positioning": "Elite-audience insider reporting",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Scoop-driven coverage",
+      "Concise analytical framing",
+      "Insider source cultivation",
+      "Policy-elite orientation"
+    ],
+    "watchpoints": [
+      "Brevity vs depth tradeoff",
+      "Source access influence",
+      "Framing choices in compact format"
+    ],
+    "bias_rating": -0.1,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Executive Authority",
+      "Diplomacy",
+      "Congressional Dynamics"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "axios"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "the-intercept",
+    "name": "The Intercept",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Adversarial investigative outlet founded on national security reporting principles. Consistently anti-war editorial posture with focus on leaked documents, surveillance overreach, and government deception in the Iran context.",
+    "summary": "Adversarial investigative outlet providing the most aggressive anti-war reporting with emphasis on government deception and leaked evidence.",
+    "positioning": "Adversarial anti-war investigative",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Leaked document emphasis",
+      "Government deception framing",
+      "Anti-war editorial posture",
+      "Civil liberties intersection"
+    ],
+    "watchpoints": [
+      "Source verification under adversarial posture",
+      "Editorial vs investigative distinction",
+      "Impact of staff departures on capacity"
+    ],
+    "bias_rating": -0.7,
+    "reliability_score": 0.55,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Legality and War Powers",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "the-intercept"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "breitbart",
+    "name": "Breitbart",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Right-wing populist news outlet that has historically combined pro-Trump alignment with an anti-interventionist populist streak. Iran coverage may reflect tension between supporting the administration and populist skepticism of foreign wars.",
+    "summary": "Right-wing populist outlet whose Iran coverage reflects tension between administration loyalty and populist anti-interventionist instincts.",
+    "positioning": "Populist right with interventionist tension",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Administration loyalty framing",
+      "Populist anti-war undercurrent",
+      "Democratic opposition attacks",
+      "Nationalist framing"
+    ],
+    "watchpoints": [
+      "Hawk vs populist-skeptic tension",
+      "Comment section sentiment as populist barometer",
+      "Framing evolution as war costs mount"
+    ],
+    "bias_rating": 0.8,
+    "reliability_score": 0.3,
+    "dominant_themes": [
+      "Executive Authority",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "breitbart"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "daily-wire",
+    "name": "Daily Wire",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Conservative media company with significant online reach, founded by Ben Shapiro. Generally hawkish on Iran and pro-Israel, providing commentary and analysis that supports military action against Iranian threats.",
+    "summary": "Conservative digital media outlet providing hawkish pro-Israel commentary supporting military action against Iran.",
+    "positioning": "Conservative hawkish commentary",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Pro-Israel advocacy",
+      "Iran threat amplification",
+      "Conservative commentary framing",
+      "Democratic opposition criticism"
+    ],
+    "watchpoints": [
+      "Commentary vs reporting distinction",
+      "Audience influence on conservative opinion",
+      "Israel-focused framing dominance"
+    ],
+    "bias_rating": 0.7,
+    "reliability_score": 0.4,
+    "dominant_themes": [
+      "Iran Nuclear Program",
+      "Israel-Iran Nexus",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "daily-wire"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "newsnation",
+    "name": "NewsNation",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Cable news network positioning itself as a centrist alternative to partisan outlets. Iran coverage attempts to present multiple perspectives without strong editorial direction, though still developing its national security reporting depth.",
+    "summary": "Centrist cable upstart attempting balanced Iran coverage while still building national security reporting infrastructure.",
+    "positioning": "Centrist alternative",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Both-sides presentation",
+      "Centrist positioning emphasis",
+      "Developing source network",
+      "Non-partisan branding"
+    ],
+    "watchpoints": [
+      "Reporting depth limitations",
+      "Voice selection patterns",
+      "Centrist framing vs false balance"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.6,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "newsnation"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "bloomberg",
+    "name": "Bloomberg",
+    "type": "outlet",
+    "party": null,
+    "role": "Network",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Global business and financial news service with strong economics and policy coverage. Iran reporting emphasizes energy markets, sanctions impact, defense industry dynamics, and the economic consequences of military conflict.",
+    "summary": "Financial news service providing essential coverage of the Iran conflict's economic dimensions including energy markets and sanctions impact.",
+    "positioning": "Economic and financial lens",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Energy market analysis",
+      "Sanctions impact reporting",
+      "Defense industry coverage",
+      "Economic consequence framing"
+    ],
+    "watchpoints": [
+      "Economic framing influence on policy perception",
+      "Energy market vs geopolitical analysis balance",
+      "Bloomberg terminal audience influence"
+    ],
+    "bias_rating": 0.05,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Economic Impact",
+      "Iran Nuclear Program",
+      "Diplomacy"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "outlet",
+      "bloomberg"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jake-tapper",
+    "name": "Jake Tapper",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "CNN anchor and chief Washington correspondent known for assertive interviewing. His Iran coverage combines skeptical questioning of administration claims with platforms for both pro-war and anti-war voices, drawing on extensive political reporting experience.",
+    "summary": "Assertive CNN anchor whose skeptical interviewing style challenges both administration claims and opposition talking points on Iran.",
+    "positioning": "Skeptical centrist interviewer",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Assertive interviewing",
+      "Both-sides challenge framing",
+      "Fact-check emphasis",
+      "Historical context references"
+    ],
+    "watchpoints": [
+      "Interview framing and follow-up patterns",
+      "Guest selection balance",
+      "Fact-check coverage priorities"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.65,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Legality and War Powers",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "jake-tapper"
+    ],
+    "outlet": "CNN"
+  },
+  {
+    "id": "anderson-cooper",
+    "name": "Anderson Cooper",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "CNN primetime anchor with extensive war zone reporting experience. Brings a measured but skeptical posture to Iran coverage, emphasizing human impact and evidence standards while maintaining a reputation for emotional authenticity.",
+    "summary": "Primetime CNN anchor bringing war zone experience and measured skepticism to Iran coverage with emphasis on human impact.",
+    "positioning": "Measured skeptic with field credibility",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Human impact emphasis",
+      "War zone experience credibility",
+      "Measured skepticism",
+      "Emotional authenticity"
+    ],
+    "watchpoints": [
+      "Editorial tone calibration",
+      "Field reporting vs studio analysis",
+      "Human interest framing influence"
+    ],
+    "bias_rating": -0.25,
+    "reliability_score": 0.65,
+    "dominant_themes": [
+      "Civilian Impact",
+      "Imminence and Threat",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "anderson-cooper"
+    ],
+    "outlet": "CNN"
+  },
+  {
+    "id": "rachel-maddow",
+    "name": "Rachel Maddow",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "MSNBC's signature primetime voice known for long-form monologues connecting historical patterns to current events. Her Iran coverage draws extensive parallels to the Iraq War deception and frames the conflict through constitutional and democratic accountability lenses.",
+    "summary": "MSNBC's defining voice, deploying historical-pattern analysis to frame Iran strikes as echoing Iraq War deception and constitutional crisis.",
+    "positioning": "Anti-war historical-pattern analyst",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Iraq War parallel emphasis",
+      "Constitutional crisis framing",
+      "Long-form narrative construction",
+      "Government deception pattern-matching"
+    ],
+    "watchpoints": [
+      "Historical parallel accuracy and applicability",
+      "Narrative construction influence",
+      "Guest selection patterns",
+      "Audience mobilization effect"
+    ],
+    "bias_rating": -0.65,
+    "reliability_score": 0.5,
+    "dominant_themes": [
+      "Historical Comparisons",
+      "Legality and War Powers",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "rachel-maddow"
+    ],
+    "outlet": "MSNBC"
+  },
+  {
+    "id": "chris-hayes",
+    "name": "Chris Hayes",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "MSNBC primetime host with a policy-wonk orientation and progressive editorial posture. Iran coverage combines detailed policy analysis with anti-war framing, often connecting the conflict to broader progressive concerns about executive power and domestic priorities.",
+    "summary": "Progressive MSNBC host combining detailed policy analysis with anti-war editorial framing, connecting Iran to executive overreach and domestic priorities.",
+    "positioning": "Progressive policy-analysis anchor",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Policy detail emphasis",
+      "Progressive framing",
+      "Executive overreach critique",
+      "Domestic priority linkage"
+    ],
+    "watchpoints": [
+      "Policy depth vs editorial direction tension",
+      "Expert selection patterns",
+      "Framing evolution over conflict duration"
+    ],
+    "bias_rating": -0.6,
+    "reliability_score": 0.55,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Fiscal and Domestic Impact",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "chris-hayes"
+    ],
+    "outlet": "MSNBC"
+  },
+  {
+    "id": "tucker-carlson",
+    "name": "Tucker Carlson",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Former Fox News host now operating an independent media platform. The most prominent right-wing non-interventionist voice, whose opposition to Iran strikes from a populist-nationalist perspective creates unusual cross-partisan alignment with progressive anti-war voices.",
+    "summary": "Leading right-wing non-interventionist whose populist opposition to Iran strikes creates rare cross-partisan anti-war alignment.",
+    "positioning": "Populist right anti-war voice",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Populist anti-interventionism",
+      "Establishment critique",
+      "Cross-partisan anti-war alignment",
+      "America-first framing"
+    ],
+    "watchpoints": [
+      "Cross-partisan coalition influence",
+      "Audience migration from Fox",
+      "Populist right anti-war movement building",
+      "Conspiracy theory adjacency risks"
+    ],
+    "bias_rating": 0.5,
+    "reliability_score": 0.4,
+    "dominant_themes": [
+      "Historical Comparisons",
+      "Executive Authority",
+      "Fiscal and Domestic Impact"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "tucker-carlson"
+    ],
+    "outlet": "TCN (Independent)"
+  },
+  {
+    "id": "sean-hannity",
+    "name": "Sean Hannity",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Fox News primetime host and the most prominent pro-administration media voice. Functions as an unofficial communications channel for the White House, providing near-total support for the Iran strikes and aggressively attacking domestic opposition.",
+    "summary": "Fox News flagship host functioning as de facto administration communications ally, providing maximum support for Iran strikes.",
+    "positioning": "Pro-administration media ally",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Administration talking point amplification",
+      "Opposition demonization",
+      "National security patriotism framing",
+      "Threat maximization"
+    ],
+    "watchpoints": [
+      "White House coordination signals",
+      "Talking point origination tracking",
+      "Opposition framing escalation"
+    ],
+    "bias_rating": 0.7,
+    "reliability_score": 0.35,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Executive Authority",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "sean-hannity"
+    ],
+    "outlet": "Fox News"
+  },
+  {
+    "id": "laura-ingraham",
+    "name": "Laura Ingraham",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Fox News primetime host combining populist-nationalist instincts with administration loyalty. Her Iran positioning reflects tension between America-first skepticism of foreign entanglements and support for Republican executive authority.",
+    "summary": "Fox News host navigating tension between populist non-interventionism and administration loyalty on Iran strikes.",
+    "positioning": "Populist hawk with interventionist tension",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Populist-nationalist framing",
+      "Administration loyalty",
+      "Democratic opposition attacks",
+      "Cost-of-war awareness"
+    ],
+    "watchpoints": [
+      "Populist vs hawk tension evolution",
+      "Audience sentiment responsiveness",
+      "Framing shifts as conflict costs emerge"
+    ],
+    "bias_rating": 0.65,
+    "reliability_score": 0.35,
+    "dominant_themes": [
+      "Executive Authority",
+      "Fiscal and Domestic Impact",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "laura-ingraham"
+    ],
+    "outlet": "Fox News"
+  },
+  {
+    "id": "bret-baier",
+    "name": "Bret Baier",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Fox News chief political anchor and Special Report host, widely regarded as the network's most straight-news journalist. His Iran coverage attempts more balanced analysis than primetime opinion hosts, providing a relative credibility anchor within Fox's ecosystem.",
+    "summary": "Fox News's most credible straight-news anchor providing relatively balanced Iran analysis within the network's editorial ecosystem.",
+    "positioning": "Conservative straight-news anchor",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Straight-news positioning",
+      "Balanced panel construction",
+      "Administration access leverage",
+      "Credibility differentiation"
+    ],
+    "watchpoints": [
+      "News vs opinion boundary maintenance",
+      "Panel selection balance",
+      "Breaking news framing choices"
+    ],
+    "bias_rating": 0.3,
+    "reliability_score": 0.6,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Military Operations",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "bret-baier"
+    ],
+    "outlet": "Fox News"
+  },
+  {
+    "id": "lester-holt",
+    "name": "Lester Holt",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "NBC Nightly News anchor and one of the most trusted faces in broadcast journalism. His Iran coverage maintains a measured, factual tone that prioritizes reporting over editorial commentary, reaching one of the largest nightly news audiences.",
+    "summary": "Trusted NBC anchor reaching one of the largest broadcast audiences with measured, factual Iran conflict reporting.",
+    "positioning": "Trusted broadcast factual voice",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Measured factual tone",
+      "Mass audience reach",
+      "Minimal editorial commentary",
+      "Breaking news authority"
+    ],
+    "watchpoints": [
+      "Framing choices in limited broadcast time",
+      "Story selection priorities",
+      "Tone shifts as conflict evolves"
+    ],
+    "bias_rating": -0.1,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Military Operations",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "lester-holt"
+    ],
+    "outlet": "NBC News"
+  },
+  {
+    "id": "david-muir",
+    "name": "David Muir",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "ABC World News Tonight anchor leading the most-watched evening news broadcast. Iran coverage emphasizes accessible factual reporting for a broad audience, with occasional field reporting from conflict zones.",
+    "summary": "Most-watched evening news anchor providing accessible factual Iran coverage to the broadest broadcast news audience.",
+    "positioning": "Mass-audience factual broadcaster",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Accessible reporting",
+      "Broad audience orientation",
+      "Field reporting credibility",
+      "Factual emphasis"
+    ],
+    "watchpoints": [
+      "Story framing for mass audience",
+      "Time allocation to Iran vs other stories",
+      "Administration interview handling"
+    ],
+    "bias_rating": -0.1,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Military Operations",
+      "Civilian Impact"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "david-muir"
+    ],
+    "outlet": "ABC News"
+  },
+  {
+    "id": "margaret-brennan",
+    "name": "Margaret Brennan",
+    "type": "journalist",
+    "party": null,
+    "role": "Anchor",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Face the Nation moderator and CBS News senior foreign affairs correspondent with deep diplomatic and national security sourcing. Her Sunday show serves as a key agenda-setting platform for the Iran debate's political and policy dimensions.",
+    "summary": "Face the Nation moderator whose Sunday show serves as a key agenda-setting platform for Iran debate principals.",
+    "positioning": "Agenda-setting diplomatic interviewer",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Sunday show agenda-setting",
+      "Diplomatic source depth",
+      "Foreign affairs expertise",
+      "High-level interview access"
+    ],
+    "watchpoints": [
+      "Booking patterns and balance",
+      "Interview follow-up rigor",
+      "Framing of authorization and evidence debates"
+    ],
+    "bias_rating": -0.1,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Diplomacy",
+      "Legality and War Powers",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "margaret-brennan"
+    ],
+    "outlet": "CBS News"
+  },
+  {
+    "id": "christiane-amanpour",
+    "name": "Christiane Amanpour",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "CNN's chief international anchor and the most recognized American foreign correspondent of her generation. Decades of Middle East reporting experience and direct access to regional leaders give her Iran coverage unmatched depth and credibility.",
+    "summary": "Preeminent international correspondent whose decades of Middle East access and expertise provide the deepest broadcast-level Iran coverage.",
+    "positioning": "International authority with regional access",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Regional leader access",
+      "Historical depth",
+      "International perspective",
+      "Diplomatic source network"
+    ],
+    "watchpoints": [
+      "Regional source influence on framing",
+      "International vs domestic audience orientation",
+      "Access journalism dynamics"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Diplomacy",
+      "Historical Comparisons",
+      "Regional Dynamics"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "christiane-amanpour"
+    ],
+    "outlet": "CNN International"
+  },
+  {
+    "id": "andrea-mitchell",
+    "name": "Andrea Mitchell",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "NBC News chief foreign affairs correspondent with decades of State Department and diplomatic community sourcing. One of the most experienced national security journalists in television, her Iran coverage draws on relationships built over multiple administrations.",
+    "summary": "Veteran foreign affairs correspondent whose multi-administration diplomatic sourcing provides essential context for Iran coverage.",
+    "positioning": "Veteran diplomatic correspondent",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "State Department sourcing depth",
+      "Multi-administration perspective",
+      "Diplomatic process expertise",
+      "Institutional memory"
+    ],
+    "watchpoints": [
+      "Source capture risks from long relationships",
+      "Editorial direction vs reporting independence",
+      "Diplomatic framing influence"
+    ],
+    "bias_rating": -0.3,
+    "reliability_score": 0.6,
+    "dominant_themes": [
+      "Diplomacy",
+      "Intelligence and Evidence",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "andrea-mitchell"
+    ],
+    "outlet": "NBC/MSNBC"
+  },
+  {
+    "id": "peter-baker",
+    "name": "Peter Baker",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "New York Times chief White House correspondent and one of the most respected political journalists in Washington. His Iran coverage combines deep White House sourcing with historical perspective from covering multiple presidencies and prior Middle East conflicts.",
+    "summary": "NYT chief White House correspondent providing deeply sourced, historically grounded reporting on the administration's Iran decision-making.",
+    "positioning": "Elite White House reporter with historical depth",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "White House inner-circle sourcing",
+      "Historical presidential comparison",
+      "Process and decision reporting",
+      "Institutional journalism"
+    ],
+    "watchpoints": [
+      "White House source influence on framing",
+      "Access vs accountability tension",
+      "Historical framing choices"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Executive Authority",
+      "Historical Comparisons",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "peter-baker"
+    ],
+    "outlet": "The New York Times"
+  },
+  {
+    "id": "maggie-haberman",
+    "name": "Maggie Haberman",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "New York Times senior political correspondent and the most connected Trump-orbit reporter in American journalism. Her unique access to Trump's inner circle provides insight into the president's Iran decision-making that no other journalist can match.",
+    "summary": "The most Trump-connected political reporter, providing unmatched insight into the president's personal decision-making on Iran.",
+    "positioning": "Trump-orbit insider reporter",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Trump inner-circle access",
+      "Personal decision-making insight",
+      "Personality-driven political reporting",
+      "Real-time Trump thinking access"
+    ],
+    "watchpoints": [
+      "Access journalism tradeoffs",
+      "Source relationship influence",
+      "Framing of presidential decision-making",
+      "Scoop vs analysis balance"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Executive Authority",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "maggie-haberman"
+    ],
+    "outlet": "The New York Times"
+  },
+  {
+    "id": "bob-woodward",
+    "name": "Bob Woodward",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Washington Post associate editor and the most famous investigative journalist in American history. His Iran reporting carries extraordinary institutional weight, and any book-length treatment of the conflict would likely be the definitive historical account.",
+    "summary": "Legendary investigative journalist whose Iran reporting and eventual book-length treatment will likely become the definitive historical account.",
+    "positioning": "Definitive investigative authority",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Deep background sourcing",
+      "Book-length investigation pipeline",
+      "Institutional credibility",
+      "Historical record emphasis"
+    ],
+    "watchpoints": [
+      "Book publication timing and content",
+      "Source relationship with administration principals",
+      "Scoop timing and strategic disclosure"
+    ],
+    "bias_rating": -0.15,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Executive Authority",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "bob-woodward"
+    ],
+    "outlet": "The Washington Post"
+  },
+  {
+    "id": "shane-harris",
+    "name": "Shane Harris",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Washington Post intelligence and national security reporter with deep sourcing in the intelligence community. His reporting on the classified evidence behind the Iran strike justification is among the most important journalism in the debate.",
+    "summary": "WaPo intelligence reporter whose deep IC sourcing produces critical reporting on the classified evidence behind Iran strike justifications.",
+    "positioning": "Intelligence community beat authority",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Intelligence community sourcing",
+      "Classified evidence reporting",
+      "National security beat expertise",
+      "Source protection emphasis"
+    ],
+    "watchpoints": [
+      "IC source influence on framing",
+      "Classified vs public evidence gap reporting",
+      "Source protection and verification standards"
+    ],
+    "bias_rating": -0.15,
+    "reliability_score": 0.75,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Imminence and Threat",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "shane-harris"
+    ],
+    "outlet": "The Washington Post"
+  },
+  {
+    "id": "jennifer-griffin",
+    "name": "Jennifer Griffin",
+    "type": "journalist",
+    "party": null,
+    "role": "Correspondent",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Fox News national security correspondent and one of the most respected Pentagon reporters in television journalism. Maintains journalistic independence within Fox's ecosystem, providing factual military reporting that sometimes diverges from the network's editorial posture.",
+    "summary": "Fox News's most credible national security reporter, maintaining journalistic independence and Pentagon sourcing that distinguishes her from opinion programming.",
+    "positioning": "Independent Pentagon reporter within Fox",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Pentagon sourcing credibility",
+      "Journalistic independence within Fox",
+      "Military operations expertise",
+      "Factual reporting emphasis"
+    ],
+    "watchpoints": [
+      "Independence from Fox editorial direction",
+      "Pentagon source influence",
+      "Factual reporting vs network framing tension"
+    ],
+    "bias_rating": 0.15,
+    "reliability_score": 0.7,
+    "dominant_themes": [
+      "Military Operations",
+      "Imminence and Threat",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "jennifer-griffin"
+    ],
+    "outlet": "Fox News"
+  },
+  {
+    "id": "matt-taibbi",
+    "name": "Matt Taibbi",
+    "type": "journalist",
+    "party": null,
+    "role": "Journalist",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Independent journalist and author known for acerbic, anti-establishment reporting. Has evolved from a left-leaning voice to a more heterodox posture critical of both parties, bringing deep skepticism of government narratives to his Iran coverage.",
+    "summary": "Heterodox independent journalist bringing deep anti-establishment skepticism to government narratives on Iran from outside partisan lanes.",
+    "positioning": "Anti-establishment heterodox skeptic",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Anti-establishment skepticism",
+      "Government narrative deconstruction",
+      "Heterodox political positioning",
+      "Media criticism intersection"
+    ],
+    "watchpoints": [
+      "Partisan alignment shifts",
+      "Source verification standards",
+      "Conspiracy-adjacent content risks",
+      "Media criticism influence"
+    ],
+    "bias_rating": -0.1,
+    "reliability_score": 0.5,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Media Framing",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "matt-taibbi"
+    ],
+    "outlet": "Independent (Racket News)"
+  },
+  {
+    "id": "glenn-greenwald",
+    "name": "Glenn Greenwald",
+    "type": "journalist",
+    "party": null,
+    "role": "Journalist",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Independent journalist, former Intercept co-founder, and Pulitzer Prize winner for the Snowden revelations. His Iran coverage centers on surveillance state overreach, government deception, and civil liberties, though his political evolution has complicated his audience and credibility.",
+    "summary": "Pulitzer-winning independent voice centering surveillance, deception, and civil liberties in Iran critique while navigating a complex political evolution.",
+    "positioning": "Civil liberties critic with evolving politics",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Surveillance state critique",
+      "Government deception framing",
+      "Civil liberties emphasis",
+      "Cross-partisan positioning"
+    ],
+    "watchpoints": [
+      "Political evolution trajectory",
+      "Source relationships and verification",
+      "Audience polarization dynamics",
+      "Credibility with different political cohorts"
+    ],
+    "bias_rating": -0.2,
+    "reliability_score": 0.45,
+    "dominant_themes": [
+      "Intelligence and Evidence",
+      "Legality and War Powers",
+      "Executive Authority"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "glenn-greenwald"
+    ],
+    "outlet": "Independent (Rumble)"
+  },
+  {
+    "id": "mehdi-hasan",
+    "name": "Mehdi Hasan",
+    "type": "journalist",
+    "party": null,
+    "role": "Journalist",
+    "state": null,
+    "chamber": "Media",
+    "bio": "British-American journalist and founder of Zeteo, formerly of MSNBC. Known for aggressive, prosecutorial interview style and unambiguous progressive positioning. His Iran coverage is among the most forceful in opposing the strikes and challenging administration narratives.",
+    "summary": "Aggressive progressive journalist providing some of the most forceful anti-war coverage and prosecutorial interviewing on Iran.",
+    "positioning": "Prosecutorial progressive voice",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Prosecutorial interviewing",
+      "Progressive editorial clarity",
+      "Administration narrative demolition",
+      "Historical accountability emphasis"
+    ],
+    "watchpoints": [
+      "Interview target selection",
+      "Audience reach after MSNBC departure",
+      "Factual rigor under editorial passion",
+      "Cross-platform influence"
+    ],
+    "bias_rating": -0.6,
+    "reliability_score": 0.55,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat",
+      "Historical Comparisons"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "mehdi-hasan"
+    ],
+    "outlet": "Zeteo"
+  },
+  {
+    "id": "krystal-ball",
+    "name": "Krystal Ball",
+    "type": "journalist",
+    "party": null,
+    "role": "Journalist",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Co-host of Breaking Points, an independent populist news show. Represents the populist-left anti-war voice that finds common ground with right-wing non-interventionists, creating a cross-partisan media coalition against the Iran strikes.",
+    "summary": "Populist-left host whose cross-partisan anti-war positioning mirrors the Breaking Points model of left-right non-interventionist alliance.",
+    "positioning": "Populist-left anti-war voice",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Left-right anti-war coalition",
+      "Populist framing",
+      "Establishment critique",
+      "Independent media positioning"
+    ],
+    "watchpoints": [
+      "Cross-partisan coalition durability",
+      "Audience composition shifts",
+      "Populist framing vs policy depth",
+      "Independent media influence metrics"
+    ],
+    "bias_rating": -0.3,
+    "reliability_score": 0.5,
+    "dominant_themes": [
+      "Fiscal and Domestic Impact",
+      "Legality and War Powers",
+      "Media Framing"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "krystal-ball"
+    ],
+    "outlet": "Breaking Points"
+  },
+  {
+    "id": "ryan-grim",
+    "name": "Ryan Grim",
+    "type": "journalist",
+    "party": null,
+    "role": "Journalist",
+    "state": null,
+    "chamber": "Media",
+    "bio": "Investigative journalist and founder of Drop Site News, formerly of The Intercept. Specializes in national security and progressive politics reporting, bringing adversarial investigative instincts to the Iran evidence debate and congressional opposition dynamics.",
+    "summary": "Adversarial investigative journalist providing detailed reporting on congressional opposition dynamics and evidence challenges in the Iran debate.",
+    "positioning": "Adversarial progressive investigator",
+    "photo_url": null,
+    "stance_on_iran": null,
+    "key_committees": [],
+    "signals": [
+      "Congressional dynamics reporting",
+      "Evidence challenge emphasis",
+      "Progressive movement coverage",
+      "Adversarial investigation"
+    ],
+    "watchpoints": [
+      "Source relationships in Congress",
+      "Investigation pipeline and timing",
+      "Editorial vs investigative balance",
+      "Independent media sustainability"
+    ],
+    "bias_rating": -0.5,
+    "reliability_score": 0.55,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Intelligence and Evidence",
+      "Congressional Dynamics"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "media",
+      "journalist",
+      "ryan-grim"
+    ],
+    "outlet": "Drop Site News"
+  },
+  {
+    "id": "john-thune",
+    "name": "John Thune",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Senate Majority Leader",
+    "state": "SD",
+    "chamber": "Senate",
+    "bio": "Senate Majority Leader from South Dakota, the highest-ranking Republican in the Senate. Framed the Iran war as potentially 'generational' in impact, citing Iran as the largest state sponsor of terrorism and its pursuit of nuclear capability as justification for decisive action.",
+    "summary": "Senate Majority Leader providing institutional Republican leadership framing the Iran conflict as a generational national security challenge.",
+    "positioning": "Institutional hawk leadership",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Generational threat framing",
+      "State sponsor of terrorism emphasis",
+      "Nuclear capability urgency",
+      "Regional hostage narrative"
+    ],
+    "watchpoints": [
+      "Floor scheduling of war-related votes",
+      "Caucus management on dissent",
+      "Messaging coordination with administration"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Imminence and Threat",
+      "Nuclear Program",
+      "Legality and War Powers"
+    ],
+    "evidence_count": 1,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "senate",
+      "leadership",
+      "foreign-policy",
+      "hawk"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "jim-himes",
+    "name": "Jim Himes",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "CT",
+    "chamber": "House",
+    "bio": "Connecticut Representative and ranking member of the House Intelligence Committee. Used his intelligence access to declare the Iran strikes a 'war of choice with no strategic endgame,' positioning himself as a key Democratic voice challenging the administration's justification.",
+    "summary": "Intelligence Committee ranking member leveraging classified access to challenge the administration's strategic rationale for Iran strikes.",
+    "positioning": "Intelligence-based dove",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Intelligence"
+    ],
+    "signals": [
+      "War of choice framing",
+      "Intelligence committee authority",
+      "Strategic endgame demands",
+      "Classified briefing skepticism"
+    ],
+    "watchpoints": [
+      "Intelligence Committee access and disclosures",
+      "Strategic specificity of critiques",
+      "Coordination with Senate intelligence doves"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Strategy and Exit Plan",
+      "Intelligence and Evidence"
+    ],
+    "evidence_count": 1,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "intelligence",
+      "dove"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "juan-vargas",
+    "name": "Juan Vargas",
+    "type": "politician",
+    "party": "Democrat",
+    "role": "Representative",
+    "state": "CA",
+    "chamber": "House",
+    "bio": "California Representative from a border district who broke with the Democratic caucus to vote against the War Powers Resolution. One of only four House Democrats to cross party lines on the most consequential war vote of the session.",
+    "summary": "Border-district Democrat who broke ranks to vote against the War Powers Resolution, acknowledging the Iran threat over partisan pressure.",
+    "positioning": "Moderate Democrat who broke ranks",
+    "photo_url": null,
+    "stance_on_iran": "moderate",
+    "key_committees": [
+      "Financial Services"
+    ],
+    "signals": [
+      "Bipartisan security vote",
+      "Caucus defiance on war powers",
+      "Pragmatic threat assessment",
+      "Border-district independence"
+    ],
+    "watchpoints": [
+      "Future votes on Iran authorization",
+      "District political dynamics",
+      "Relationship with caucus leadership after break"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Imminence and Threat"
+    ],
+    "evidence_count": 1,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "moderate",
+      "broke-ranks"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "reza-pahlavi",
+    "name": "Reza Pahlavi",
+    "type": "politician",
+    "party": null,
+    "role": "Crown Prince (exile)",
+    "state": null,
+    "chamber": null,
+    "bio": "Exiled son of the last Shah of Iran, leads the largest organized Iranian opposition movement. Architect of the Iran Prosperity Project for democratic transition. Commands massive diaspora support with rallies drawing 350,000+. Framed US strikes as 'humanitarian intervention' while urging protection of Iranian civilians. The most significant Iranian opposition figure systematically excluded from Western media coverage of the conflict.",
+    "summary": "Exiled Iranian Crown Prince leading the largest diaspora opposition movement, framing US strikes as humanitarian intervention while urging civilian protection.",
+    "positioning": "Iranian opposition leader and diaspora voice",
+    "photo_url": null,
+    "stance_on_iran": "hawk",
+    "key_committees": [],
+    "signals": [
+      "Humanitarian intervention framing",
+      "Diaspora mobilization",
+      "Democratic transition advocacy",
+      "Regime collapse preparation"
+    ],
+    "watchpoints": [
+      "Media coverage and platform access",
+      "Diaspora rally mobilization",
+      "Coordination with US policy",
+      "Post-regime transition planning"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Human Rights",
+      "Regime Change",
+      "Public Opinion"
+    ],
+    "evidence_count": 1,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "iran",
+      "diaspora",
+      "regime-change",
+      "opposition",
+      "exile"
+    ],
+    "outlet": null
+  },
+  {
+    "id": "nancy-mace",
+    "name": "Nancy Mace",
+    "type": "politician",
+    "party": "Republican",
+    "role": "Representative",
+    "state": "SC",
+    "chamber": "House",
+    "bio": "South Carolina Representative who broke with the majority of her Republican caucus to oppose the Iran war, stating she did not want to send South Carolina's sons and daughters into war with Iran. One of the few Republican voices of dissent on the strikes.",
+    "summary": "Republican dissenter opposing the Iran strikes out of concern for constituent military families and skepticism of the war's necessity.",
+    "positioning": "Republican anti-war dissenter",
+    "photo_url": null,
+    "stance_on_iran": "dove",
+    "key_committees": [
+      "Oversight",
+      "Armed Services"
+    ],
+    "signals": [
+      "Constituent protection framing",
+      "Republican dissent on war",
+      "Military family concern",
+      "War skepticism from within GOP"
+    ],
+    "watchpoints": [
+      "GOP caucus isolation dynamics",
+      "District military community reaction",
+      "Evolution of stance as conflict develops"
+    ],
+    "bias_rating": 0.0,
+    "reliability_score": 0.0,
+    "dominant_themes": [
+      "Legality and War Powers",
+      "Domestic Priorities"
+    ],
+    "evidence_count": 0,
+    "quote_count": 0,
+    "phases": [],
+    "linked_contradictions": [],
+    "tags": [
+      "house",
+      "republican-dissent",
+      "dove"
+    ],
+    "outlet": null
+  }
+]
