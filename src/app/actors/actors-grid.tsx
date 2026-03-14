@@ -4,14 +4,16 @@ import { useState, useMemo } from 'react';
 import { ActorCard } from '@/components/cards/actor-card';
 import type { Profile } from '@/types';
 import { cn } from '@/lib/utils';
+import { LayoutGrid, User, Newspaper, Pen } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 type TabKey = 'all' | 'politicians' | 'outlets' | 'journalists';
 
-const tabs: { key: TabKey; label: string; icon: string }[] = [
-  { key: 'all', label: 'All', icon: '◈' },
-  { key: 'politicians', label: 'Officials', icon: '◉' },
-  { key: 'outlets', label: 'Outlets', icon: '◫' },
-  { key: 'journalists', label: 'Journalists', icon: '◈' },
+const tabs: { key: TabKey; label: string; icon: LucideIcon }[] = [
+  { key: 'all', label: 'All', icon: LayoutGrid },
+  { key: 'politicians', label: 'Officials', icon: User },
+  { key: 'outlets', label: 'Outlets', icon: Newspaper },
+  { key: 'journalists', label: 'Journalists', icon: Pen },
 ];
 
 const stanceOptions = ['all', 'hawk', 'dove', 'moderate', 'mixed', 'evolving'];
@@ -101,7 +103,7 @@ export function ActorsGrid({
                   : 'text-text-muted hover:bg-charcoal-850 hover:text-text-primary'
               )}
             >
-              <span>{tab.icon}</span>
+              <tab.icon className="h-3.5 w-3.5" />
               <span>{tab.label}</span>
               <span className="text-[10px] text-text-faint">({count})</span>
             </button>

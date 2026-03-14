@@ -1,5 +1,7 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
+
 export default function Error({
   error,
   reset,
@@ -16,12 +18,9 @@ export default function Error({
       <p className="mt-2 max-w-md text-sm text-text-muted">
         {error.message || 'An unexpected error occurred while loading this page.'}
       </p>
-      <button
-        onClick={reset}
-        className="mt-6 rounded-md bg-gold/10 px-4 py-2 text-sm text-gold transition-colors hover:bg-gold/20"
-      >
+      <Button variant="primary" onClick={reset} className="mt-6">
         Try again
-      </button>
+      </Button>
     </div>
   );
 }

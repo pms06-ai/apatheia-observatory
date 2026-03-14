@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getStatements, getProfiles } from '@/lib/data';
+import { getStatements } from '@/lib/data';
 import { PageHeader } from '@/components/ui/page-header';
 import { StatementFeed } from './statement-feed';
 
@@ -9,10 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AccountabilityPage() {
-  const [statements] = await Promise.all([
-    getStatements(),
-    getProfiles(),
-  ]);
+  const statements = await getStatements();
 
   const actors = Array.from(new Set(statements.map((s) => s.actor))).sort();
   const themes = Array.from(new Set(statements.flatMap((s) => s.themes))).sort();

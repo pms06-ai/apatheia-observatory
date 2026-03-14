@@ -1,20 +1,17 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import {
-  getProfileBySlug,
+  getActorPageData,
   getProfiles,
-  getEvidence,
-  getContradictions,
-  getStatements,
-  getActorEvidence,
-  getActorContradictions,
-  getActorStatements,
 } from '@/lib/data';
 import { PageHeader } from '@/components/ui/page-header';
 import { EvidenceCard } from '@/components/cards/evidence-card';
 import { ContradictionCard } from '@/components/cards/contradiction-card';
 import { MetricCard } from '@/components/ui/metric-card';
+import { BackToTop } from '@/components/ui/back-to-top';
 import { cn, partyColor, partyBgColor, formatDate } from '@/lib/utils';
+import { Diamond } from 'lucide-react';
 
 export async function generateStaticParams() {
   const profiles = await getProfiles();
@@ -27,13 +24,13 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const profile = await getProfileBySlug(slug);
-  if (!profile) {
+  const data = await getActorPageData(slug);
+  if (!data) {
     return { title: 'Actor Not Found — Apatheia Observatory' };
   }
   return {
-    title: `${profile.name} — Apatheia Observatory`,
-    description: profile.summary ?? `${profile.name} — tracked actor in the Iran war rhetoric observatory.`,
+    title: `${data.profile.name} — Apatheia Observatory`,
+    description: data.profile.summary ?? `${data.profile.name} — tracked actor in the Iran war rhetoric observatory.`,
   };
 }
 
@@ -112,35 +109,58 @@ function StanceIndicator({ stance }: { stance: string }) {
   );
 }
 
+function StickyNav({ sections }: { sections: { id: string; label: string }[] }) {
+  return (
+    <nav className="sticky top-0 z-10 -mx-6 mb-4 flex gap-1 overflow-x-auto border-b border-line bg-bg-primary/80 px-6 py-2 backdrop-blur-sm">
+      {sections.map((s) => (
+        <a
+          key={s.id}
+          href={`#${s.id}`}
+          className="shrink-0 rounded-md px-3 py-1.5 text-xs text-text-muted transition-colors duration-150 hover:bg-charcoal-850 hover:text-text-primary"
+        >
+          {s.label}
+        </a>
+      ))}
+    </nav>
+  );
+}
+
 export default async function ActorProfilePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const profile = await getProfileBySlug(slug);
-  if (!profile) notFound();
+  const data = await getActorPageData(slug);
+  if (!data) notFound();
 
-  const [allEvidence, allContradictions, allStatements] = await Promise.all([
-    getEvidence(),
-    getContradictions(),
-    getStatements(),
-  ]);
-
-  const evidence = getActorEvidence(allEvidence, profile.name);
-  const contradictions = getActorContradictions(allContradictions, profile.name);
-  const statements = getActorStatements(allStatements, profile.name);
+  const { profile, evidence, contradictions, statements, relatedActors } = data;
 
   const isPolitician = profile.type === 'politician';
   const isMedia = profile.type === 'outlet' || profile.type === 'journalist';
+
+  // Build section nav dynamically
+  const sectionNav: { id: string; label: string }[] = [
+    { id: 'overview', label: 'Overview' },
+  ];
+  if (profile.stance_on_iran) sectionNav.push({ id: 'stance', label: 'Stance' });
+  if (profile.signals?.length > 0 || profile.watchpoints?.length > 0)
+    sectionNav.push({ id: 'signals', label: 'Signals' });
+  if (profile.phases?.length > 0) sectionNav.push({ id: 'timeline', label: 'Timeline' });
+  if (statements.length > 0) sectionNav.push({ id: 'statements', label: 'Statements' });
+  if (contradictions.length > 0) sectionNav.push({ id: 'contradictions', label: 'Contradictions' });
+  if (evidence.length > 0) sectionNav.push({ id: 'evidence', label: 'Evidence' });
+  if (relatedActors.length > 0) sectionNav.push({ id: 'related', label: 'Related' });
 
   return (
     <div>
       <PageHeader title={profile.name} description={profile.positioning} />
 
       <div className="space-y-8 p-6">
+        {sectionNav.length > 2 && <StickyNav sections={sectionNav} />}
+
         {/* ─── Header ──────────────────────────────────── */}
-        <div className="flex items-start gap-6">
+        <div id="overview" className="flex items-start gap-6">
           <div
             className={cn(
               'flex h-16 w-16 items-center justify-center rounded-full text-xl font-bold shrink-0',
@@ -204,17 +224,17 @@ export default async function ActorProfilePage({
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           <MetricCard
             label="Evidence Items"
-            value={profile.evidence_count || evidence.length}
+            value={evidence.length}
             accent="steel"
           />
           <MetricCard
-            label={isPolitician ? 'Quotes' : 'Articles'}
-            value={profile.quote_count}
+            label={isPolitician ? 'Statements' : 'Articles'}
+            value={statements.length}
             accent="gold"
           />
           <MetricCard
             label="Contradictions"
-            value={contradictions.length || profile.linked_contradictions?.length || 0}
+            value={contradictions.length}
             accent="copper"
           />
           <MetricCard
@@ -225,7 +245,7 @@ export default async function ActorProfilePage({
         </div>
 
         {/* ─── Stance + Bias/Reliability (media) ──────── */}
-        <div className={cn('grid gap-4', isMedia ? 'lg:grid-cols-3' : 'lg:grid-cols-1')}>
+        <div id="stance" className={cn('grid gap-4', isMedia ? 'lg:grid-cols-3' : 'lg:grid-cols-1')}>
           {profile.stance_on_iran && (
             <StanceIndicator stance={profile.stance_on_iran} />
           )}
@@ -257,7 +277,7 @@ export default async function ActorProfilePage({
         )}
 
         {/* ─── Signals & Watchpoints ──────────────────── */}
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div id="signals" className="grid gap-6 lg:grid-cols-2">
           {profile.signals?.length > 0 && (
             <div className="rounded-lg border border-line bg-bg-elevated p-4">
               <h3 className="text-xs font-medium uppercase tracking-wider text-gold">
@@ -266,7 +286,7 @@ export default async function ActorProfilePage({
               <ul className="mt-2 space-y-1.5">
                 {profile.signals.map((s, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-text-muted">
-                    <span className="mt-1 text-gold text-[8px]">◆</span>
+                    <Diamond className="mt-1 h-2 w-2 shrink-0 text-gold" />
                     {s}
                   </li>
                 ))}
@@ -281,7 +301,7 @@ export default async function ActorProfilePage({
               <ul className="mt-2 space-y-1.5">
                 {profile.watchpoints.map((w, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-text-muted">
-                    <span className="mt-1 text-copper text-[8px]">◆</span>
+                    <Diamond className="mt-1 h-2 w-2 shrink-0 text-copper" />
                     {w}
                   </li>
                 ))}
@@ -292,7 +312,7 @@ export default async function ActorProfilePage({
 
         {/* ─── Position Phases (politicians) ──────────── */}
         {profile.phases?.length > 0 && (
-          <div className="rounded-lg border border-line bg-bg-elevated p-5">
+          <div id="timeline" className="rounded-lg border border-line bg-bg-elevated p-5">
             <h3 className="mb-4 text-xs font-medium uppercase tracking-wider text-text-faint">
               Position Timeline
             </h3>
@@ -340,20 +360,21 @@ export default async function ActorProfilePage({
         {/* ─── Themes ────────────────────────────────── */}
         {profile.dominant_themes?.length > 0 && (
           <div className="flex flex-wrap gap-2">
-            {profile.dominant_themes.map((t) => (
-              <span
+            {profile.dominant_themes.map((t, i) => (
+              <Link
                 key={t}
-                className="rounded-full bg-gold/10 px-3 py-1 text-xs text-gold"
+                href={`/themes/${t}`}
+                className="rounded-full bg-gold/10 px-3 py-1 text-xs text-gold hover:bg-gold/20 transition-colors"
               >
-                {t}
-              </span>
+                {(profile as unknown as { dominant_theme_names?: string[] }).dominant_theme_names?.[i] || t}
+              </Link>
             ))}
           </div>
         )}
 
         {/* ─── Statements ─────────────────────────────── */}
         {statements.length > 0 && (
-          <div>
+          <div id="statements">
             <h3 className="mb-3 text-sm font-medium uppercase tracking-wider text-text-faint">
               Recorded Statements ({statements.length})
             </h3>
@@ -412,7 +433,7 @@ export default async function ActorProfilePage({
 
         {/* ─── Contradictions ────────────────────────── */}
         {contradictions.length > 0 && (
-          <div>
+          <div id="contradictions">
             <h3 className="mb-3 text-sm font-medium uppercase tracking-wider text-text-faint">
               Contradictions ({contradictions.length})
             </h3>
@@ -426,7 +447,7 @@ export default async function ActorProfilePage({
 
         {/* ─── Evidence ──────────────────────────────── */}
         {evidence.length > 0 && (
-          <div>
+          <div id="evidence">
             <h3 className="mb-3 text-sm font-medium uppercase tracking-wider text-text-faint">
               Evidence ({evidence.length})
             </h3>
@@ -443,6 +464,32 @@ export default async function ActorProfilePage({
           </div>
         )}
 
+        {/* ─── Related Actors ────────────────────────── */}
+        {relatedActors.length > 0 && (
+          <div id="related">
+            <h3 className="mb-3 text-sm font-medium uppercase tracking-wider text-text-faint">
+              Related Actors
+            </h3>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedActors.slice(0, 6).map((r) => (
+                <a
+                  key={r.id}
+                  href={`/actors/${r.id}`}
+                  className="rounded-lg border border-line bg-bg-elevated p-4 transition-colors hover:border-gold/30"
+                >
+                  <p className="text-sm font-medium text-text-primary">{r.name}</p>
+                  <div className="mt-1 flex gap-3 text-xs text-text-faint">
+                    <span>{r.sharedThemes} shared themes</span>
+                    {r.sharedContradictions > 0 && (
+                      <span className="text-copper">{r.sharedContradictions} contradictions</span>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* ─── Empty state for non-prototype actors ─── */}
         {evidence.length === 0 && contradictions.length === 0 && (
           <div className="rounded-lg border border-line bg-bg-elevated p-8 text-center">
@@ -455,6 +502,8 @@ export default async function ActorProfilePage({
           </div>
         )}
       </div>
+
+      <BackToTop />
     </div>
   );
 }

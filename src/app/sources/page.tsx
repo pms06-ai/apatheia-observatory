@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { getDocuments, getActors } from '@/lib/data';
+import Link from 'next/link';
+import { getDocuments, getProfiles, getThemes } from '@/lib/data';
 import { PageHeader } from '@/components/ui/page-header';
 
 export const metadata: Metadata = {
@@ -8,16 +9,19 @@ export const metadata: Metadata = {
 };
 
 export default async function SourcesPage() {
-  const [documents, actors] = await Promise.all([
+  const [documents, profiles, themes] = await Promise.all([
     getDocuments(),
-    getActors(),
+    getProfiles(),
+    getThemes(),
   ]);
+
+  const themeNameMap = new Map(themes.map((t) => [t.id ?? '', t.name]));
 
   return (
     <div>
       <PageHeader
         title="Sources"
-        description={`${documents.length} source documents and ${actors.length} tracked actors`}
+        description={`${documents.length} source documents and ${profiles.length} tracked actors`}
       />
 
       <div className="space-y-8 p-6">
@@ -64,12 +68,13 @@ export default async function SourcesPage() {
                     <td className="py-3">
                       <div className="flex flex-wrap gap-1">
                         {doc.themes.slice(0, 3).map((t) => (
-                          <span
+                          <Link
                             key={t}
-                            className="rounded bg-gold/10 px-1.5 py-0.5 text-[10px] text-gold"
+                            href={`/themes/${t}`}
+                            className="rounded bg-gold/10 px-1.5 py-0.5 text-[10px] text-gold hover:bg-gold/20 transition-colors"
                           >
-                            {t}
-                          </span>
+                            {themeNameMap.get(t) || t}
+                          </Link>
                         ))}
                       </div>
                     </td>
@@ -95,33 +100,42 @@ export default async function SourcesPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line">
-                {actors
-                  .sort((a, b) => b.evidence_count - a.evidence_count)
-                  .map((actor) => (
-                    <tr
-                      key={actor.name}
-                      className="hover:bg-bg-elevated transition-colors"
-                    >
-                      <td className="py-2 pr-4 font-medium text-text-primary">
-                        {actor.name}
-                      </td>
-                      <td className="py-2 pr-4 text-right text-steel">
-                        {actor.evidence_count}
-                      </td>
-                      <td className="py-2">
-                        <div className="flex flex-wrap gap-1">
-                          {actor.dominant_themes.slice(0, 3).map((t) => (
-                            <span
-                              key={t}
-                              className="rounded bg-charcoal-800 px-1.5 py-0.5 text-[10px] text-text-faint"
-                            >
-                              {t}
-                            </span>
-                          ))}
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
+                {profiles
+                  .sort((a, b) => (b.evidence_count ?? 0) - (a.evidence_count ?? 0))
+                  .map((actor) => {
+                    const themeNames = (actor as unknown as { dominant_theme_names?: string[] }).dominant_theme_names;
+                    return (
+                      <tr
+                        key={actor.id}
+                        className="hover:bg-bg-elevated transition-colors"
+                      >
+                        <td className="py-2 pr-4">
+                          <Link
+                            href={`/actors/${actor.id}`}
+                            className="font-medium text-text-primary hover:text-gold transition-colors"
+                          >
+                            {actor.name}
+                          </Link>
+                        </td>
+                        <td className="py-2 pr-4 text-right text-steel">
+                          {actor.evidence_count ?? 0}
+                        </td>
+                        <td className="py-2">
+                          <div className="flex flex-wrap gap-1">
+                            {actor.dominant_themes.slice(0, 3).map((t, i) => (
+                              <Link
+                                key={t}
+                                href={`/themes/${t}`}
+                                className="rounded bg-charcoal-800 px-1.5 py-0.5 text-[10px] text-text-faint hover:bg-gold/10 hover:text-gold transition-colors"
+                              >
+                                {themeNames?.[i] || t}
+                              </Link>
+                            ))}
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
               </tbody>
             </table>
           </div>

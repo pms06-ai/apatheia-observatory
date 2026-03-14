@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getContradictions } from '@/lib/data';
+import { getContradictions, getThemes } from '@/lib/data';
 import { PageHeader } from '@/components/ui/page-header';
 import { ContradictionFilters } from './filters';
 
@@ -9,12 +9,17 @@ export const metadata: Metadata = {
 };
 
 export default async function ContradictionsPage() {
-  const contradictions = await getContradictions();
+  const [contradictions, themes] = await Promise.all([
+    getContradictions(),
+    getThemes(),
+  ]);
+  const themeNameMap = new Map(themes.map((t) => [t.id ?? '', t.name]));
 
-  // Extract unique themes for filter
-  const allThemes = Array.from(
-    new Set(contradictions.flatMap((c) => c.themes))
-  ).sort();
+  // Extract unique themes for filter, showing display names
+  const allThemeIds = Array.from(new Set(contradictions.flatMap((c) => c.themes)));
+  const allThemes = allThemeIds
+    .map((id) => themeNameMap.get(id) || id)
+    .sort();
 
   return (
     <div>

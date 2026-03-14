@@ -1,6 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+import { Button } from './button';
 
 interface FilterOption {
   value: string;
@@ -16,9 +17,13 @@ interface FilterBarProps {
   }[];
   search?: string;
   onSearchChange?: (value: string) => void;
+  onClearAll?: () => void;
 }
 
-export function FilterBar({ filters, search, onSearchChange }: FilterBarProps) {
+export function FilterBar({ filters, search, onSearchChange, onClearAll }: FilterBarProps) {
+  const hasActiveFilters =
+    filters.some((f) => f.value !== 'all') || (search && search.length > 0);
+
   return (
     <div className="flex flex-wrap items-center gap-3">
       {onSearchChange && (
@@ -28,7 +33,7 @@ export function FilterBar({ filters, search, onSearchChange }: FilterBarProps) {
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder="Search…"
           aria-label="Search"
-          className="rounded-md border border-line bg-bg-elevated px-3 py-1.5 text-sm text-text-primary placeholder:text-text-faint outline-none focus:border-gold/40 transition-colors w-48"
+          className="rounded-md border border-line bg-bg-elevated px-3 py-1.5 text-sm text-text-primary placeholder:text-text-faint focus-ring transition-colors w-48"
         />
       )}
       {filters.map((f) => (
@@ -37,7 +42,7 @@ export function FilterBar({ filters, search, onSearchChange }: FilterBarProps) {
           value={f.value}
           onChange={(e) => f.onChange(e.target.value)}
           aria-label={`Filter by ${f.name}`}
-          className="rounded-md border border-line bg-bg-elevated px-3 py-1.5 text-sm text-text-muted outline-none focus:border-gold/40 transition-colors"
+          className="rounded-md border border-line bg-bg-elevated px-3 py-1.5 text-sm text-text-muted focus-ring transition-colors"
         >
           <option value="all">All {f.name}</option>
           {f.options.map((o) => (
@@ -47,6 +52,11 @@ export function FilterBar({ filters, search, onSearchChange }: FilterBarProps) {
           ))}
         </select>
       ))}
+      {onClearAll && hasActiveFilters && (
+        <Button variant="ghost" size="sm" onClick={onClearAll}>
+          Clear filters
+        </Button>
+      )}
     </div>
   );
 }

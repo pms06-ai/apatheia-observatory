@@ -7,8 +7,12 @@ export function TimelineCard({ events }: { events: TimelineEvent[] }) {
       {/* Vertical line */}
       <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-gold via-bronze via-steel to-gunmetal" />
 
-      {events.map((event) => (
-        <div key={`${event.date}-${event.title}`} className="relative flex gap-4 pb-6">
+      {events.map((event, i) => (
+        <div
+          key={`${event.date}-${event.title}`}
+          className="relative flex gap-4 pb-6 animate-fade-in"
+          style={{ animationDelay: `${i * 0.05}s` }}
+        >
           <div className="relative z-10 mt-1.5 h-3.5 w-3.5 shrink-0 rounded-full border-2 border-gold/60 bg-bg-primary" />
           <div className="flex-1 min-w-0">
             <p className="text-xs text-text-faint">{formatDate(event.date)}</p>

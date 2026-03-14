@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { FilterBar } from '@/components/ui/filter-bar';
 import { formatDate, cn } from '@/lib/utils';
+import { ChevronDown } from 'lucide-react';
 import type { Statement } from '@/types';
 import Link from 'next/link';
 
@@ -80,6 +81,7 @@ export function StatementFeed({
             onChange: setStance,
           },
         ]}
+        onClearAll={() => { setSearch(''); setActor('all'); setTheme('all'); setStance('all'); }}
       />
 
       <p className="text-xs text-text-faint">
@@ -144,9 +146,12 @@ export function StatementFeed({
                       {s.context} — {s.source}
                     </p>
                   </div>
-                  <span className="text-text-faint text-xs shrink-0">
-                    {isOpen ? '▾' : '▸'}
-                  </span>
+                  <ChevronDown
+                    className={cn(
+                      'h-4 w-4 text-text-faint shrink-0 transition-transform duration-200',
+                      isOpen && 'rotate-180'
+                    )}
+                  />
                 </div>
               </button>
 

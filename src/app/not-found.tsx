@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function NotFound() {
   return (
@@ -14,11 +15,8 @@ export default function NotFound() {
           Cmd+K
         </kbd>
       </p>
-      <Link
-        href="/"
-        className="mt-6 rounded-md bg-gold/10 px-4 py-2 text-sm text-gold transition-colors hover:bg-gold/20"
-      >
-        Back to Observatory
+      <Link href="/" className="mt-6">
+        <Button variant="primary">Back to Observatory</Button>
       </Link>
     </div>
   );

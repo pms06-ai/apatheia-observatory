@@ -1,0 +1,528 @@
+[
+  {
+    "id": "frame-girls-school-vs-protests",
+    "title": "Girls School Amplification vs. Protest Killings Silence",
+    "category": "selective_coverage",
+    "severity": "critical",
+    "date": "2026-03-01",
+    "summary": "The Minab girls school strike received wall-to-wall coverage across all major networks for 96+ hours. By contrast, Iran's killing of 1,500+ protesters in November 2019 and 500+ during 2022 Mahsa Amini protests received a fraction of sustained coverage and is never referenced as context for why Iranians support regime change.",
+    "amplified_story": {
+      "event": "Shajareh Tayyebeh girls school in Minab, Hormozgan province, struck by US missile on Feb 28 — Day 1 of the war. Triple-tapped with three distinct strikes. 168-180 killed, mostly girls aged 7-12. NYT, CBC, NPR, BBC Verify investigations concluded US responsible due to outdated DIA targeting data. School had been separated from adjacent IRGC compound since 2016.",
+      "coverage_hours": "96+ hours continuous across CNN, MSNBC, ABC, CBS, NBC. Time, Al Jazeera, HRW, UN experts all ran major pieces. Became dominant emotional frame of entire war.",
+      "framing": "Civilian casualty horror, American aggression, children as victims. HRW called for war crime investigation. UN experts condemned it. Al Jazeera investigation called targeting 'likely deliberate.'",
+      "emotional_anchoring": "Images and victim stories dominated coverage. Named victims. Close-up photographs. Parent interviews.",
+      "networks_leading": [
+        "CNN",
+        "MSNBC",
+        "ABC News",
+        "CBS News",
+        "NBC News",
+        "The New York Times",
+        "The Washington Post",
+        "Al Jazeera",
+        "Time",
+        "BBC"
+      ]
+    },
+    "suppressed_story": {
+      "event": "Iranian regime killed an estimated 7,000-30,000+ protesters between Dec 28, 2025 and Jan 2026. Iran's own Ministry of Health internal estimates: 30,000 killed in first 48 hours — a scale unseen since Babi Yar. Amnesty International confirmed IRGC used live ammunition. Internet shut down 2+ weeks. Plus: 1,500+ killed in Nov 2019 protests, 500+ killed in 2022 Mahsa Amini protests, systematic execution of women for hijab violations, hanging of dissidents and LGBTQ individuals.",
+      "coverage_hours": "Covered briefly in January 2026 when happening. NEVER referenced as context during subsequent war coverage. Zero comparison to school strike casualties.",
+      "framing": "When covered: 'unrest in Iran,' 'crackdown.' Not framed as systematic massacre by the regime now portrayed as victim of US aggression.",
+      "emotional_anchoring": "No sustained victim stories during war coverage. No names. No faces. No parent interviews. 30,000 dead reduced to a statistic mentioned in passing.",
+      "networks_silent": [
+        "CNN",
+        "MSNBC",
+        "ABC News",
+        "CBS News",
+        "NBC News"
+      ]
+    },
+    "analysis": "The media created a moral frame where one tragic incident of collateral damage outweighs decades of deliberate, systematic murder of civilians by the Iranian regime. The girls school is undeniably tragic. But presenting it without the context of what the regime does to its own people daily is not journalism — it's narrative construction. An honest accounting would present both and let the audience weigh the trolley problem.",
+    "what_honest_coverage_looks_like": "Report the school strike fully. Then in the same segment: 'For context, the Iranian regime this strike targeted has killed over 2,000 of its own citizens in protests since 2019, including women and girls killed for refusing to wear hijab. Many Iranians, both in-country and diaspora, have expressed support for military action against the regime.' Let the viewer decide.",
+    "actors_amplifying": [
+      "Rashida Tlaib",
+      "Alexandria Ocasio-Cortez",
+      "Bernie Sanders",
+      "Chris Hayes",
+      "Rachel Maddow",
+      "Mehdi Hasan"
+    ],
+    "actors_providing_context": [
+      "John Fetterman",
+      "Lindsey Graham",
+      "Tom Cotton",
+      "Jennifer Griffin"
+    ],
+    "actor_ids": [
+      "rashida-tlaib",
+      "alexandria-ocasio-cortez",
+      "bernie-sanders",
+      "chris-hayes",
+      "rachel-maddow",
+      "mehdi-hasan",
+      "john-fetterman",
+      "lindsey-graham",
+      "tom-cotton",
+      "jennifer-griffin"
+    ],
+    "themes": [
+      "human-rights",
+      "omissions-and-blind-spots",
+      "moral-irony"
+    ]
+  },
+  {
+    "id": "frame-transparency-vs-opsec",
+    "title": "Demands for 'Transparency' vs. Operational Security Reality",
+    "category": "false_framing",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Media and opposition demanded detailed operational information, evidence, and strategy — framing refusal as 'lack of transparency.' In reality, releasing such information would compromise intelligence sources, endanger troops in active combat, and inform adversaries. No responsible military operation in history has been conducted via press conference.",
+    "the_demand": {
+      "what_media_wants": "Troop numbers, operational timelines, targeting criteria, intelligence sources, exit strategy details, casualty projections",
+      "framing": "'The public has a right to know.' 'What is the administration hiding?' 'Democracy dies in darkness.'",
+      "who_demands_it": [
+        "Chris Murphy",
+        "Adam Schiff",
+        "Chuck Schumer",
+        "Jake Tapper",
+        "Rachel Maddow",
+        "Anderson Cooper"
+      ]
+    },
+    "the_reality": {
+      "why_its_withheld": "Active military operations. Troops in combat zones. Intelligence sources in hostile territory. Adversary signals intelligence capability. Congressional security clearance concerns.",
+      "historical_precedent": "D-Day: press knew invasion was coming, voluntarily withheld details. Gulf War: pool reporting system. Bin Laden raid: zero pre-operational disclosure. Every successful military operation in history maintained operational security.",
+      "the_double_standard": "Obama administration conducted drone strikes in 7 countries with minimal operational disclosure. CIA drone program was classified for years while actively killing targets. Media accepted this. Same media now demands real-time Iran operation transparency."
+    },
+    "who_explains_it": [
+      "Pete Hegseth",
+      "JD Vance",
+      "Tom Cotton"
+    ],
+    "analysis": "The transparency demand is a rhetorical trap. If the administration releases details: sources compromised, troops endangered, enemy informed. If they don't: 'What are they hiding?' The same people making this demand would be the first to blame the administration if leaked information got soldiers killed. As any veteran knows, operational security exists for one reason: to bring people home alive.",
+    "actor_ids": [
+      "pete-hegseth",
+      "jd-vance",
+      "tom-cotton"
+    ],
+    "themes": [
+      "legality-and-war-powers",
+      "omissions-and-blind-spots",
+      "historical-comparisons"
+    ]
+  },
+  {
+    "id": "frame-iraq-false-equivalence",
+    "title": "Iraq War False Equivalence",
+    "category": "false_equivalence",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Opposition and media immediately invoked Iraq War comparisons. While superficially appealing, the comparison collapses under examination. Iraq was based on intelligence assessments of WMD programs. Iran has a documented 47-year record of direct attacks on Americans, verified nuclear enrichment, and public threats of annihilation. The evidence basis is categorically different.",
+    "iraq_2003": {
+      "intelligence_basis": "CIA assessment of Iraqi WMD programs — later found to be flawed",
+      "prior_hostility_to_us": "Limited — Iraq had not directly attacked US homeland or killed Americans at scale outside Gulf War",
+      "public_threat_record": "Saddam's rhetoric was regional, not primarily anti-American",
+      "international_support": "Coalition of the willing — significant but contested",
+      "congressional_vote": "Yes — AUMF passed both chambers"
+    },
+    "iran_2026": {
+      "intelligence_basis": "47 years of documented hostility: 1979 hostage crisis, 1983 Beirut bombing (241 Marines killed), Khobar Towers, EFPs killing 600+ soldiers in Iraq, funding of Hamas/Hezbollah/Houthis, assassination plots on US soil, verified nuclear enrichment to near-weapons grade",
+      "prior_hostility_to_us": "Extreme — responsible for more American military deaths than any nation since Vietnam",
+      "public_threat_record": "'Death to America' is official state policy chanted at government events weekly for 47 years",
+      "international_support": "US-Israel coalition with Gulf state tacit support",
+      "congressional_vote": "Disputed — administration cites existing AUMFs and Article II"
+    },
+    "why_comparison_fails": "Iraq required believing an intelligence assessment about hidden weapons. Iran requires only reading the newspaper for the past 47 years. The threat isn't hypothetical — it's historical fact. Invoking Iraq is designed to create doubt by association, not illuminate genuine parallels.",
+    "who_invokes_iraq": [
+      "Bernie Sanders",
+      "Chris Murphy",
+      "Chris Hayes",
+      "Rachel Maddow",
+      "The Intercept",
+      "Mehdi Hasan"
+    ],
+    "who_challenges_comparison": [
+      "Tom Cotton",
+      "Lindsey Graham",
+      "Ted Cruz",
+      "Marco Rubio"
+    ],
+    "actor_ids": [],
+    "themes": [
+      "historical-comparisons",
+      "omissions-and-blind-spots"
+    ]
+  },
+  {
+    "id": "frame-doing-israels-bidding",
+    "title": "'Doing Israel's Bidding' vs. Allied Coalition Against Shared Threat",
+    "category": "false_framing",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Opposition framed US-Israel coordination as America 'fighting Israel's war.' This ignores: Iran has directly attacked US forces and interests for decades independent of Israel. Iran funded attacks on US troops in Iraq. Iran attempted assassinations on US soil. Iran held American hostages. The US has its own extensive, independent casus belli against Iran.",
+    "the_frame": {
+      "claim": "US is being 'dragged into' or 'doing the bidding of' Israel/Netanyahu",
+      "implication": "US has no independent interest in confronting Iran; merely serving as Israeli proxy",
+      "who_uses_it": [
+        "Rashida Tlaib",
+        "Bernie Sanders",
+        "Mehdi Hasan",
+        "The Intercept",
+        "Al Jazeera"
+      ]
+    },
+    "the_reality": {
+      "us_independent_grievances": [
+        "1979: 52 Americans held hostage for 444 days",
+        "1983: 241 US Marines killed in Beirut barracks bombing — Iranian-directed Hezbollah",
+        "1996: 19 US airmen killed at Khobar Towers — Iranian-directed",
+        "2003-2011: 600+ US soldiers killed by Iranian-supplied EFPs in Iraq",
+        "2020: Iranian ballistic missile attack on Al Asad airbase — 109 US troops with TBI",
+        "Multiple assassination plots against US officials on American soil",
+        "Nuclear weapons program threatening entire global non-proliferation framework"
+      ],
+      "conclusion": "The US has lost more service members to Iranian-directed action than to any other state actor since Vietnam. The idea that America has no independent interest in neutralizing Iran's capability is historically illiterate."
+    },
+    "actor_ids": [],
+    "themes": [
+      "israel-and-delegation",
+      "historical-comparisons",
+      "omissions-and-blind-spots"
+    ]
+  },
+  {
+    "id": "frame-jeffries-position-evolution",
+    "title": "Jeffries: From 'Sworn Enemy' to 'Zero Evidence' in 9 Months",
+    "category": "position_shift",
+    "severity": "critical",
+    "date": "2026-03-01",
+    "summary": "House Minority Leader Hakeem Jeffries evolved from calling Iran a 'sworn enemy' pursuing nuclear weapons (June 2025) to claiming 'zero evidence of imminent threat' (March 2026). This 9-month reversal was not driven by new information — Iran's behavior escalated, not de-escalated. The shift was political: as the political winds changed, so did the rhetoric. No major outlet documented this contradiction.",
+    "timeline": [
+      {
+        "date": "2025-06-19",
+        "position": "Iran is a 'sworn enemy' — acknowledges nuclear threat, wants constitutional process",
+        "stance": "moderate"
+      },
+      {
+        "date": "2026-01-10",
+        "position": "Supports Iranian protesters, condemns regime brutality",
+        "stance": "moderate"
+      },
+      {
+        "date": "2026-02-28",
+        "position": "Opposes strikes, questions legal basis but still hedging",
+        "stance": "shifting"
+      },
+      {
+        "date": "2026-03-01",
+        "position": "'Zero evidence of imminent threat' — 'illegal war' — 'reckless escalation'",
+        "stance": "dove"
+      }
+    ],
+    "the_contradiction": "You cannot simultaneously believe Iran is a 'sworn enemy' pursuing nuclear weapons AND that there is 'zero evidence' of a threat. These positions are mutually exclusive. Either Iran is dangerous (June 2025) or it isn't (March 2026). The threat didn't change — the political calculus did.",
+    "media_accountability": "Zero major outlets ran this timeline side-by-side. If a Republican made this shift, it would be a week-long 'flip-flop' story.",
+    "actor_ids": [],
+    "themes": [
+      "jeffries-evolution",
+      "omissions-and-blind-spots",
+      "intra-party-division"
+    ]
+  },
+  {
+    "id": "frame-democratic-war-powers-hypocrisy",
+    "title": "War Powers Constitutionalism — Only When Convenient",
+    "category": "double_standard",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Democrats invoked the Constitution and War Powers Act with unprecedented urgency regarding Iran. The same members were largely silent when President Obama conducted military operations in Libya, Syria, Yemen, Somalia, and Pakistan without specific Congressional authorization.",
+    "under_obama": {
+      "libya_2011": "8-month bombing campaign. No AUMF. No Congressional vote. Regime change achieved. Zero war powers challenge from current critics.",
+      "syria_2014": "Ongoing airstrikes. No specific AUMF. Stretched 2001 AUMF beyond recognition.",
+      "yemen_2015": "Support for Saudi bombing campaign. No authorization. Limited Democratic opposition.",
+      "drone_program": "Thousands of strikes across multiple countries. Kill list approved by President personally. Minimal Congressional oversight demands.",
+      "democratic_response": "Scattered objections from Paul and Massie. No Democratic leadership push for war powers vote."
+    },
+    "under_trump_2026": {
+      "iran": "Immediate war powers resolution. Wall-to-wall coverage of 'constitutional crisis.' Jeffries, Schumer, Schiff leading the charge.",
+      "difference": "The Constitution didn't change between 2015 and 2026. The party in the White House did."
+    },
+    "consistent_voices": "Rand Paul and Thomas Massie opposed unauthorized action under both administrations. They have credibility on this issue. Most current critics do not.",
+    "actor_ids": [],
+    "themes": [
+      "legality-and-war-powers",
+      "historical-comparisons",
+      "omissions-and-blind-spots"
+    ]
+  },
+  {
+    "id": "frame-troop-meal-outrage",
+    "title": "Outrage Over Feeding Troops Well",
+    "category": "misplaced_priorities",
+    "severity": "medium",
+    "date": "2026-03-05",
+    "summary": "Multiple outlets ran stories questioning upgraded meal contracts for deployed troops. Service members who may be called to give their lives for their country were criticized for being fed well. This reveals a profound disconnect between media priorities and basic decency.",
+    "the_story": "Pentagon awarded upgraded food service contracts for troops deployed to Iran theater. Better quality meals, more variety, improved nutrition.",
+    "the_criticism": "Framed as 'wasteful defense spending,' 'Pentagon luxury,' and 'fiscal irresponsibility during wartime.'",
+    "the_reality": "These troops are deployed to a combat zone. Many will not return home. The idea that providing them decent food is controversial tells you everything about the critics' priorities. Meanwhile, Congressional dining facilities serve meals that would make the criticisms ironic.",
+    "outlets_running_criticism": [
+      "MSNBC",
+      "The Washington Post",
+      "Politico"
+    ],
+    "veteran_response": "Overwhelmingly supportive of troops receiving quality meals. Veterans on social media: 'We ate MREs for months. Let them have a good meal.'",
+    "actor_ids": [],
+    "themes": [
+      "fiscal-irony",
+      "domestic-priorities",
+      "moral-irony"
+    ]
+  },
+  {
+    "id": "frame-immigration-pivot",
+    "title": "Constant Aggression on Unrelated Policy to Undermine Wartime Administration",
+    "category": "strategic_distraction",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "During active military operations, opposition media and politicians maintained aggressive pushback on immigration enforcement, voter ID, healthcare, and tax policy — treating these as urgently as a shooting war. The timing is not coincidental: undermining the administration on all fronts during wartime is a strategy, not a coincidence.",
+    "pattern": {
+      "during_operations": [
+        "Simultaneous attacks on immigration enforcement policy",
+        "Voter ID legislation framed as 'voter suppression'",
+        "Healthcare cost demands positioned as alternative to defense spending",
+        "Tax policy debates framed as 'priorities' contrast to military action",
+        "Welfare and benefits coverage positioned as 'what troops should be fighting for instead'"
+      ],
+      "the_effect": "Creates impression of an administration failing on all fronts simultaneously. Prevents unified national response during military crisis. Fragments public attention away from the threat that necessitated action."
+    },
+    "historical_contrast": "Post-9/11, Congress passed AUMF 420-1 (House) and 98-0 (Senate). Bipartisan unity in face of threat. 2026: Partisan attacks from Day 1 of operations.",
+    "actor_ids": [],
+    "themes": [
+      "domestic-priorities",
+      "omissions-and-blind-spots",
+      "intra-party-division"
+    ]
+  },
+  {
+    "id": "frame-iranian-people-erased",
+    "title": "The Voices Media Refuses to Amplify: Iranian Citizens Supporting Liberation",
+    "category": "suppressed_narrative",
+    "severity": "critical",
+    "date": "2026-03-01",
+    "summary": "Millions of Iranians — both diaspora and in-country — expressed support for military action against the regime that has oppressed them for 47 years. Women forced to wear hijab or face death. Students shot in the streets for protesting. LGBTQ individuals executed. Ethnic minorities persecuted. These voices were systematically excluded from mainstream coverage because they contradict the 'US aggression' narrative.",
+    "iranian_voices": [
+      {
+        "source": "Toronto rally — 350,000 attendees, zero incidents, protesters gave flowers to police and cleaned streets afterward",
+        "message": "Thank you America. Thank you Israel. Free Iran.",
+        "coverage": "Brief local Canadian coverage. Near-zero US national network segments."
+      },
+      {
+        "source": "Los Angeles rally — 350,000 attendees, peaceful",
+        "message": "You are rescuing the Iranian people. This regime killed our families.",
+        "coverage": "New York Post covered it. MSNBC gave near-zero coverage. CNN juxtaposed with small anti-war protests to create false equivalence."
+      },
+      {
+        "source": "Munich rally — over 200,000 attendees, largest Iran-focused demonstration in European history",
+        "message": "Reza Pahlavi for Iran. Secular democracy now.",
+        "coverage": "Euronews covered it. Barely registered on US networks."
+      },
+      {
+        "source": "Global solidarity rallies across 30+ countries — Canada, US, UK, Norway, Sweden, Finland, Denmark, Germany, Netherlands, Belgium, France, Switzerland, Portugal, Spain, Austria, Hungary, Italy, Poland, and more",
+        "message": "The world finally heard us. For 47 years we have suffered.",
+        "coverage": "Individual rallies received local coverage. No US network ran a comprehensive story on the global scale of pro-American Iranian demonstrations."
+      },
+      {
+        "source": "Reza Pahlavi — Crown Prince, leading Iranian opposition figure",
+        "message": "This is a humanitarian intervention. The Islamic Republic is collapsing. I urge the military to side with the people.",
+        "coverage": "Near-total absence from mainstream US coverage. The most significant Iranian opposition figure in the world — commanding 350,000-person rallies — was effectively silenced by editorial choices."
+      }
+    ],
+    "why_its_suppressed": "If the dominant narrative is 'US attacks innocent country,' then showing millions of that country's citizens celebrating undermines the entire frame. The media chose the narrative over the truth.",
+    "the_trolley_problem": "This is a real-world trolley problem. Inaction means a nuclear-armed theocracy continues murdering its citizens, funding global terror, and threatening annihilation of neighboring states. Action means tragic collateral damage in pursuit of liberating 88 million people from 47 years of oppression. A capable leader makes the hard choice. A coward pretends there is no trolley.",
+    "actor_ids": [],
+    "themes": [
+      "human-rights",
+      "public-opinion",
+      "omissions-and-blind-spots",
+      "moral-irony"
+    ]
+  },
+  {
+    "id": "frame-social-media-censorship-pattern",
+    "title": "Social Media Platform Reluctance to Amplify Pro-Action Voices",
+    "category": "platform_bias",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Social media platforms showed measurable reluctance to amplify content supporting military action against Iran, while anti-war content dominated trending topics and recommendation algorithms. Pro-Iranian-liberation content from diaspora communities was deprioritized or labeled with 'context' warnings not applied to opposition content.",
+    "patterns_observed": [
+      "Iranian diaspora celebration videos received 'sensitive content' warnings while protest imagery did not",
+      "Pro-military-action tweets from veterans were algorithmically deprioritized",
+      "Anti-war hashtags trended organically; pro-liberation hashtags required massive volume to trend",
+      "Content showing Iranian civilian support for strikes was flagged for 'verification' at higher rates",
+      "Historical context threads about Iran's 47-year threat record received lower engagement distribution"
+    ],
+    "the_effect": "Created artificial impression of unanimous opposition to military action. Silenced the voices of the very people the action was partially designed to help.",
+    "actor_ids": [],
+    "themes": [
+      "public-opinion",
+      "omissions-and-blind-spots"
+    ]
+  },
+  {
+    "id": "frame-moral-highground-claim",
+    "title": "Claiming Moral Authority While Enabling Oppression Through Inaction",
+    "category": "moral_inversion",
+    "severity": "critical",
+    "date": "2026-03-01",
+    "summary": "Opposition politicians and sympathetic media claim the 'moral high ground' by opposing military action. But the moral calculus they refuse to engage with: inaction is itself a choice. Choosing not to act against a regime that murders its own citizens, funds global terrorism, and pursues nuclear weapons is not moral neutrality — it is complicity. The moral high ground is not claimed through rhetoric. It is earned through action that serves the greater good, even when that action is difficult and imperfect.",
+    "who_claims_moral_authority": [
+      {
+        "actor": "Angus King",
+        "claim": "'We cannot bomb our way to democracy'",
+        "what_they_ignore": "Iranian people in the streets begging for exactly this kind of help"
+      },
+      {
+        "actor": "Bernie Sanders",
+        "claim": "'Another endless war'",
+        "what_they_ignore": "Iran's war against its own people has been 'endless' for 47 years"
+      },
+      {
+        "actor": "Rashida Tlaib",
+        "claim": "'Children are dead'",
+        "what_they_ignore": "Children executed by Iranian regime for parents' political beliefs; Tlaib has never spoken about them"
+      },
+      {
+        "actor": "Chris Hayes",
+        "claim": "'No evidence justifies this'",
+        "what_they_ignore": "47 years of evidence is apparently insufficient"
+      }
+    ],
+    "the_real_moral_question": "Who is more moral: the leader who makes an imperfect decision to stop a nuclear-armed theocracy from continuing 47 years of murder, terror, and oppression — accepting that the decision will be ugly and costly — or the critic who demands perfection knowing full well that perfection means continued suffering for 88 million Iranians? The one who shifts positions based on political climate is not a leader. The one who does what must be done is.",
+    "actor_ids": [],
+    "themes": [
+      "moral-irony",
+      "human-rights",
+      "omissions-and-blind-spots"
+    ]
+  },
+  {
+    "id": "frame-media-network-coverage-patterns",
+    "title": "Network-by-Network Coverage Framing Comparison",
+    "category": "coverage_comparison",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Systematic comparison of how each major network framed the same events, revealing consistent editorial choices that shape public understanding.",
+    "event_coverage": [
+      {
+        "event": "Operation Epic Fury launch (Feb 28)",
+        "fox_news": "Led with threat context and operational success. Hosted military analysts explaining strategic rationale. Covered Iranian nuclear timeline.",
+        "cnn": "Led with Congressional reaction and legality questions. 'Breaking news' chyron focused on 'unauthorized war.' Limited threat context.",
+        "msnbc": "Led with anti-war voices. Iraq comparison within first 10 minutes. 'Constitutional crisis' framing. No military analyst explaining operational rationale in first hour.",
+        "nyt": "Front page: 'Trump Orders Strikes on Iran Without Congressional Approval.' Below fold: threat assessment. Op-eds 3:1 against action within 48 hours.",
+        "ap_reuters": "Factual reporting of strikes. Included both administration justification and opposition response. Most balanced initial coverage."
+      },
+      {
+        "event": "Minab girls school report (Mar 1)",
+        "fox_news": "Covered incident. Also provided context: school location near IRGC facility. Interviewed military analyst on collateral damage protocols. 3 segments.",
+        "cnn": "12+ segments in 24 hours. Emotional victim stories. No military context for target proximity. 'What did we do?' framing.",
+        "msnbc": "Lead story for 72 hours. Connected to broader 'illegal war' narrative. No Iranian regime human rights context provided.",
+        "nyt": "Front page with photo. Investigation of 'targeting failures.' No companion piece on Iranian regime's own civilian killings.",
+        "ap_reuters": "Factual reporting. Noted proximity to military target. Included administration response."
+      },
+      {
+        "event": "Iranian diaspora celebrations (Mar 1-3)",
+        "fox_news": "Multiple segments. Interviewed diaspora leaders in LA and DC. Showed rally footage. Provided historical context for why Iranians support action.",
+        "cnn": "One brief segment. Framed as 'diaspora divided.' Equal time to small anti-war Iranian contingent despite being vastly outnumbered at rallies.",
+        "msnbc": "No dedicated segment. Brief mention in passing. Not included in any panel discussion.",
+        "nyt": "Page A14 brief. No photos. No interviews with celebrating Iranians.",
+        "ap_reuters": "Wire photo and story distributed. Not picked up by most subscribers for prominent placement."
+      }
+    ],
+    "actor_ids": [],
+    "themes": [
+      "omissions-and-blind-spots",
+      "public-opinion",
+      "human-rights"
+    ]
+  },
+  {
+    "id": "frame-headline-attribution-asymmetry",
+    "title": "Headline Attribution Asymmetry: 'Iran Says' vs. Direct Statement",
+    "category": "false_framing",
+    "severity": "critical",
+    "date": "2026-03-01",
+    "summary": "AllSides documented systematic headline framing differences across major outlets. When reporting Iranian casualties, outlets use hedging language ('Iran says,' 'according to Iranian media'). When reporting Iranian attacks on Israel or US forces, the same outlets use direct attributive language ('Iranian missile strike kills 9'). This asymmetry creates the impression that Iranian casualty claims are dubious while Iranian aggression is factual — the exact opposite of what honest attribution would produce given Iran's documented history of propaganda vs. verifiable military actions.",
+    "analysis": "The NYT headline 'Iran Says Dozens Are Killed In Strike on School' vs 'Nine Killed in Israeli City Near Jerusalem After Iranian Missile Strike' is a textbook example. 'Iran says' implies doubt about Iranian casualties. No equivalent 'Israel says' or 'US says' when attributing Iranian attacks. The editorial choice to apply skepticism asymmetrically based on which side is claiming to be the victim is not neutral journalism — it is narrative construction.",
+    "what_honest_coverage_looks_like": "Apply the same attribution standard to both sides. Either both get 'says' or neither does. 'Strike kills dozens at Iranian school' and 'Iranian missile strike kills 9 in Israeli city' — parallel construction, equal credibility treatment.",
+    "actor_ids": [],
+    "themes": [
+      "omissions-and-blind-spots",
+      "media-framing"
+    ]
+  },
+  {
+    "id": "frame-shifting-narrative-trap",
+    "title": "The 'Shifting Narrative' Trap: When Providing Multiple Justifications Is Framed as Inconsistency",
+    "category": "false_framing",
+    "severity": "high",
+    "date": "2026-03-03",
+    "summary": "The Washington Post ran 'White House offers shifting rationales for war with Iran' — framing the administration's multi-faceted justification as inconsistency rather than what it actually was: a complex threat with multiple dimensions. Iran simultaneously posed a nuclear threat, a terrorism threat, a proxy war threat, a maritime threat, a human rights crisis, and an imminent attack threat. Providing separate justifications for each dimension is not 'shifting' — it's comprehensive.",
+    "analysis": "If the administration gave ONE reason, media would say 'that's not enough.' When they gave MULTIPLE reasons — nuclear breakout, proxy networks, IRGC attacks on US forces, 30,000 protesters killed, imminent threat intelligence — media framed it as 'shifting narrative.' This is an unfalsifiable criticism: any number of reasons is wrong. The real-world parallel: a prosecutor charging someone with multiple crimes is not 'shifting their story' — the defendant committed multiple crimes.",
+    "who_uses_frame": [
+      "The Washington Post",
+      "CNN",
+      "NPR"
+    ],
+    "actor_ids": [],
+    "themes": [
+      "omissions-and-blind-spots",
+      "media-framing",
+      "legality-and-war-powers"
+    ]
+  },
+  {
+    "id": "frame-900-strikes-context-missing",
+    "title": "900 Strikes in 12 Hours — Without Context of What Was Struck",
+    "category": "selective_coverage",
+    "severity": "high",
+    "date": "2026-03-01",
+    "summary": "Media widely reported '900 joint strikes in 12 hours' and '6,000+ targets struck' — numbers designed to evoke shock and overwhelm. What was rarely reported: these were strikes on IRGC military bases, nuclear enrichment facilities, ballistic missile sites, and command and control infrastructure. The 900 number without target context implies indiscriminate bombing. With target context, it demonstrates precision targeting of the military infrastructure of a regime that killed 30,000 of its own people and was weeks from nuclear weapons.",
+    "analysis": "Pentagon reported targets included nuclear facilities, IRGC bases, missile sites, and air defense systems. Hengaw Organization confirmed 4,000+ IRGC military deaths. The ratio of military to civilian casualties — while tragic for any civilian loss — demonstrates precision targeting, not indiscriminate bombing. Media chose the shocking number over the contextual explanation.",
+    "actor_ids": [],
+    "themes": [
+      "military-operations",
+      "omissions-and-blind-spots",
+      "media-framing"
+    ]
+  },
+  {
+    "id": "frame-cost-of-war-without-cost-of-inaction",
+    "title": "The $5 Billion Question — Without Asking What Inaction Would Cost",
+    "category": "false_framing",
+    "severity": "medium",
+    "date": "2026-03-10",
+    "summary": "Responsible Statecraft and other outlets prominently featured 'The cost of Trump's Iran war: $5 billion and counting.' This is presented as self-evidently damning. What is never presented alongside it: the cost of a nuclear-armed Iran ($trillions in nuclear proliferation cascade, regional arms race), the cost of continued Strait of Hormuz threats ($billions annually in energy security premiums), the cost of Iranian-funded terrorism (incalculable human suffering), the cost of the regime killing its own citizens ($0 apparently, since media doesn't assign value to Iranian lives under the regime).",
+    "analysis": "Every military action has costs. The question is whether the alternative costs more. A nuclear-armed Iran threatening the Strait of Hormuz — through which 20% of global oil transits — would cost the global economy far more than $5 billion. But 'war costs money' is an easier story than 'nuclear proliferation threatens global stability.'",
+    "actor_ids": [],
+    "themes": [
+      "fiscal-irony",
+      "omissions-and-blind-spots",
+      "nuclear-program"
+    ]
+  },
+  {
+    "id": "frame-hegseth-brash-vs-clear",
+    "title": "Hegseth: 'Brash' and 'Glorifying Violence' vs. Clear Military Leadership",
+    "category": "false_framing",
+    "severity": "medium",
+    "date": "2026-03-11",
+    "summary": "Christian Science Monitor ran 'Hegseth fuels debate with brash rhetoric on Iran.' PBS ran 'Hegseth's remarks highlight the government's reluctance to show human costs of war.' CNN ran 'Boom Boom US propaganda' analysis. Media consistently framed Hegseth's direct military communication as concerning, inflammatory, or propagandistic. By contrast, when Hegseth said 'No stupid rules of engagement, no nation-building quagmire, no democracy building exercise, no politically correct wars. We fight to win, and we don't waste time or lives' — he was articulating exactly what 20 years of post-Iraq military reform demanded: clear objectives, decisive action, no mission creep. The media spent 20 years saying 'learn from Iraq' and then criticized the SecDef for doing exactly that.",
+    "analysis": "The irony is complete: media demanded for 20 years that America learn from Iraq and Afghanistan — no nation-building, clear objectives, in-and-out. Hegseth articulated exactly this doctrine. Media then criticized him for it. The standard is not 'learn lessons' — the standard is 'oppose this administration regardless.'",
+    "actor_ids": [],
+    "themes": [
+      "military-operations",
+      "historical-comparisons",
+      "media-framing"
+    ]
+  }
+]

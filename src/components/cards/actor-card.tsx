@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { cn, partyColor, partyBgColor } from '@/lib/utils';
+import { User, Newspaper, Pen } from 'lucide-react';
 import type { Profile } from '@/types';
 
-const typeIcons: Record<string, string> = {
-  politician: '◉',
-  outlet: '◫',
-  journalist: '◈',
+const typeIcons: Record<string, typeof User> = {
+  politician: User,
+  outlet: Newspaper,
+  journalist: Pen,
 };
 
 const stanceColors: Record<string, string> = {
@@ -18,7 +19,6 @@ const stanceColors: Record<string, string> = {
 };
 
 function BiasBar({ rating }: { rating: number }) {
-  // rating: -1 (far left) to +1 (far right)
   const pct = ((rating + 1) / 2) * 100;
   return (
     <div className="relative mt-2 h-1.5 w-full rounded-full bg-charcoal-800 overflow-hidden">
@@ -26,17 +26,18 @@ function BiasBar({ rating }: { rating: number }) {
         className="absolute top-0 h-full w-1 rounded-full bg-gold"
         style={{ left: `calc(${pct}% - 2px)` }}
       />
-      {/* center marker */}
       <div className="absolute left-1/2 top-0 h-full w-px bg-charcoal-600" />
     </div>
   );
 }
 
 export function ActorCard({ profile }: { profile: Profile }) {
+  const Icon = typeIcons[profile.type] ?? User;
+
   return (
     <Link
       href={`/actors/${profile.id}`}
-      className="group flex flex-col rounded-lg border border-line bg-bg-elevated p-4 transition-all hover:border-gold/30 hover:shadow-lg"
+      className="group flex flex-col rounded-lg border border-line bg-bg-elevated p-4 transition-all duration-200 hover:border-gold/30 hover:translate-y-[-1px] hover:shadow-lg"
     >
       {/* Header */}
       <div className="flex items-start gap-3">
@@ -67,7 +68,7 @@ export function ActorCard({ profile }: { profile: Profile }) {
             {profile.outlet && ` · ${profile.outlet}`}
           </p>
         </div>
-        <span className="text-text-faint text-xs">{typeIcons[profile.type]}</span>
+        <Icon className="h-3.5 w-3.5 text-text-faint shrink-0" />
       </div>
 
       {/* Badges */}
@@ -139,10 +140,10 @@ export function ActorCard({ profile }: { profile: Profile }) {
         )}
       </div>
 
-      {/* Themes */}
+      {/* Themes — capped at 2 */}
       {profile.dominant_themes?.length > 0 && (
         <div className="mt-2 flex flex-wrap gap-1">
-          {profile.dominant_themes.slice(0, 3).map((t) => (
+          {profile.dominant_themes.slice(0, 2).map((t) => (
             <span
               key={t}
               className="rounded bg-charcoal-800 px-1.5 py-0.5 text-[10px] text-text-faint"
@@ -150,9 +151,9 @@ export function ActorCard({ profile }: { profile: Profile }) {
               {t}
             </span>
           ))}
-          {profile.dominant_themes.length > 3 && (
+          {profile.dominant_themes.length > 2 && (
             <span className="text-[10px] text-text-faint">
-              +{profile.dominant_themes.length - 3}
+              +{profile.dominant_themes.length - 2}
             </span>
           )}
         </div>

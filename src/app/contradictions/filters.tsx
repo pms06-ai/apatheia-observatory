@@ -21,11 +21,16 @@ export function ContradictionFilters({
     return contradictions.filter((c) => {
       if (search) {
         const q = search.toLowerCase();
-        const haystack = `${c.title} ${c.actor} ${c.counterparty ?? ''} ${c.summary} ${c.tension}`.toLowerCase();
+        const enriched = c as Contradiction & { actor_name?: string; counterparty_name?: string | null };
+        const haystack = `${c.title} ${enriched.actor_name || c.actor} ${enriched.counterparty_name || c.counterparty || ''} ${c.summary} ${c.tension}`.toLowerCase();
         if (!haystack.includes(q)) return false;
       }
       if (severity !== 'all' && c.severity !== severity) return false;
-      if (theme !== 'all' && !c.themes.includes(theme)) return false;
+      if (theme !== 'all') {
+        const cEnriched = c as Contradiction & { theme_names?: string[] };
+        const themeMatch = c.themes.includes(theme) || cEnriched.theme_names?.includes(theme);
+        if (!themeMatch) return false;
+      }
       if (type !== 'all' && c.type !== type) return false;
       return true;
     });
@@ -62,6 +67,7 @@ export function ContradictionFilters({
             onChange: setType,
           },
         ]}
+        onClearAll={() => { setSearch(''); setSeverity('all'); setTheme('all'); setType('all'); }}
       />
 
       <p className="text-xs text-text-faint">

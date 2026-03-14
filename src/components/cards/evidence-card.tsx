@@ -1,5 +1,11 @@
+import Link from 'next/link';
 import { cn, truncate } from '@/lib/utils';
 import type { Evidence } from '@/types';
+
+type EnrichedEvidence = Evidence & {
+  actor_names?: string[];
+  theme_names?: string[];
+};
 
 const kindColors: Record<string, string> = {
   quote: 'text-gold border-gold/30',
@@ -8,15 +14,17 @@ const kindColors: Record<string, string> = {
   section: 'text-gunmetal border-gunmetal/30',
 };
 
-export function EvidenceCard({ evidence }: { evidence: Evidence }) {
+export function EvidenceCard({ evidence }: { evidence: EnrichedEvidence }) {
   const e = evidence;
 
   return (
-    <div className="rounded-lg border border-line bg-bg-elevated p-4 transition-all hover:border-line-strong">
+    <div className="rounded-lg border border-line bg-bg-elevated p-4 transition-all duration-200 hover:border-line-strong hover:translate-y-[-1px] hover:shadow-lg">
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 min-w-0">
           <h3 className="text-sm font-medium text-text-primary">{e.title}</h3>
-          <p className="mt-1 text-xs text-text-faint">{e.doc_title}</p>
+          {e.doc_title && (
+            <p className="mt-1 text-xs text-text-faint">{e.doc_title}</p>
+          )}
         </div>
         <span
           className={cn(
@@ -33,21 +41,23 @@ export function EvidenceCard({ evidence }: { evidence: Evidence }) {
       </p>
 
       <div className="mt-3 flex flex-wrap items-center gap-2">
-        {e.actors?.slice(0, 3).map((a) => (
-          <span
+        {e.actors?.slice(0, 3).map((a, i) => (
+          <Link
             key={a}
-            className="rounded bg-gold/10 px-1.5 py-0.5 text-[10px] text-gold"
+            href={`/actors/${a}`}
+            className="rounded bg-gold/10 px-1.5 py-0.5 text-[10px] text-gold hover:bg-gold/20 transition-colors"
           >
-            {a}
-          </span>
+            {e.actor_names?.[i] || a}
+          </Link>
         ))}
-        {e.themes?.slice(0, 2).map((t) => (
-          <span
+        {e.themes?.slice(0, 2).map((t, i) => (
+          <Link
             key={t}
-            className="rounded bg-charcoal-800 px-1.5 py-0.5 text-[10px] text-text-faint"
+            href={`/themes/${t}`}
+            className="rounded bg-charcoal-800 px-1.5 py-0.5 text-[10px] text-text-faint hover:bg-gold/10 hover:text-gold transition-colors"
           >
-            {t}
-          </span>
+            {e.theme_names?.[i] || t}
+          </Link>
         ))}
       </div>
     </div>

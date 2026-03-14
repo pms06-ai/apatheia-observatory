@@ -25,16 +25,14 @@
       "Escalation vs containment rhetoric",
       "Congressional notification compliance"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Executive Authority",
-      "Iran Nuclear Program",
-      "Proxy Network Framing"
+      "imminence-and-threat",
+      "executive-authority",
+      "iran-nuclear-program",
+      "proxy-network-framing"
     ],
-    "evidence_count": 69,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -70,16 +68,14 @@
       "Evidence presentation in briefings",
       "Ally coordination messaging"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Iran Nuclear Program",
-      "Diplomacy",
-      "Executive Authority"
+      "imminence-and-threat",
+      "iran-nuclear-program",
+      "diplomacy",
+      "executive-authority"
     ],
-    "evidence_count": 10,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -115,16 +111,14 @@
       "Process critique replacing moral critique",
       "Escalation from caution to all-out-war framing"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Jeffries Evolution",
-      "Legality and War Powers",
-      "Imminence and Threat",
-      "Diplomacy"
+      "jeffries-evolution",
+      "legality-and-war-powers",
+      "imminence-and-threat",
+      "diplomacy"
     ],
-    "evidence_count": 18,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [
       "jeffries-threat-method",
@@ -163,15 +157,13 @@
       "Israel-related positioning tensions",
       "Willingness to force floor votes"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Imminence and Threat",
-      "Diplomacy"
+      "legality-and-war-powers",
+      "imminence-and-threat",
+      "diplomacy"
     ],
-    "evidence_count": 12,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -209,16 +201,14 @@
       "Process and moral framing align cleanly",
       "Less attention to omission-driven national security counters"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers",
-      "Historical Comparisons",
-      "Fiscal and Domestic Impact"
+      "imminence-and-threat",
+      "legality-and-war-powers",
+      "historical-comparisons",
+      "fiscal-and-domestic-impact"
     ],
-    "evidence_count": 15,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [
       "democratic-fiscal-consistency"
@@ -260,16 +250,14 @@
       "Bipartisan credibility as independent",
       "Detailed procedural challenges"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers",
-      "Intelligence and Evidence",
-      "Historical Comparisons"
+      "imminence-and-threat",
+      "legality-and-war-powers",
+      "intelligence-and-evidence",
+      "historical-comparisons"
     ],
-    "evidence_count": 43,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -309,15 +297,13 @@
       "Legal vs moral framing balance",
       "Floor vote strategy"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Imminence and Threat",
-      "Historical Comparisons"
+      "legality-and-war-powers",
+      "imminence-and-threat",
+      "historical-comparisons"
     ],
-    "evidence_count": 11,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -357,15 +343,13 @@
       "Coalition-building with moderate Democrats",
       "Response to proxy threat arguments"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Diplomacy",
-      "Imminence and Threat",
-      "Legality and War Powers"
+      "diplomacy",
+      "imminence-and-threat",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 11,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -404,15 +388,13 @@
       "Armed Services Committee leverage",
       "Tech-sector foreign policy intersections"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Imminence and Threat",
-      "Fiscal and Domestic Impact"
+      "legality-and-war-powers",
+      "imminence-and-threat",
+      "fiscal-and-domestic-impact"
     ],
-    "evidence_count": 11,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -450,15 +432,13 @@
       "GOP caucus isolation dynamics",
       "Consistency with libertarian framework"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Executive Authority",
-      "Fiscal and Domestic Impact"
+      "legality-and-war-powers",
+      "executive-authority",
+      "fiscal-and-domestic-impact"
     ],
-    "evidence_count": 9,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -499,15 +479,13 @@
       "Armed Services Committee leverage",
       "Coalition alignment with Sanders wing"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Fiscal and Domestic Impact",
-      "Imminence and Threat"
+      "legality-and-war-powers",
+      "fiscal-and-domestic-impact",
+      "imminence-and-threat"
     ],
-    "evidence_count": 7,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -543,15 +521,13 @@
       "Nuclear program status claims",
       "Proxy coordination evidence"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Iran Nuclear Program",
-      "Imminence and Threat",
-      "Proxy Network Framing"
+      "iran-nuclear-program",
+      "imminence-and-threat",
+      "proxy-network-framing"
     ],
-    "evidence_count": 7,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -589,15 +565,13 @@
       "Legal framework specificity",
       "Partisan credibility challenges from GOP"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Imminence and Threat",
-      "Intelligence and Evidence"
+      "legality-and-war-powers",
+      "imminence-and-threat",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 7,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -636,15 +610,13 @@
       "Classified-briefing authority carries high evidentiary weight",
       "Vulnerable to omission-based counterclaims on proxy and cyber activity"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Intelligence and Evidence",
-      "Legality and War Powers"
+      "imminence-and-threat",
+      "intelligence-and-evidence",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 6,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [
       "admin-initiation-conflict"
@@ -685,15 +657,13 @@
       "GOP isolation dynamics",
       "Consistency with prior non-interventionist votes"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Executive Authority",
-      "Historical Comparisons"
+      "legality-and-war-powers",
+      "executive-authority",
+      "historical-comparisons"
     ],
-    "evidence_count": 5,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -734,14 +704,12 @@
       "Break with progressive base",
       "Evolution on authorization questions"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Israel-Iran Nexus"
+      "imminence-and-threat",
+      "israel-iran-nexus"
     ],
-    "evidence_count": 5,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -780,15 +748,13 @@
       "Isolation within broader Democratic messaging",
       "Specific policy demands vs moral positioning"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Civilian Impact",
-      "Israel-Iran Nexus"
+      "legality-and-war-powers",
+      "civilian-impact",
+      "israel-iran-nexus"
     ],
-    "evidence_count": 3,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -827,15 +793,13 @@
       "Coalition alignment with Squad and broader caucus",
       "Specificity of policy alternatives"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Fiscal and Domestic Impact",
-      "Historical Comparisons"
+      "legality-and-war-powers",
+      "fiscal-and-domestic-impact",
+      "historical-comparisons"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -872,14 +836,12 @@
       "Alignment with Jeffries leadership messaging",
       "Escalation triggers"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Diplomacy"
+      "legality-and-war-powers",
+      "diplomacy"
     ],
-    "evidence_count": 1,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -919,15 +881,13 @@
       "Arms control framework specificity",
       "Coalition consistency"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Diplomacy",
-      "Arms Control"
+      "legality-and-war-powers",
+      "diplomacy",
+      "arms-control"
     ],
-    "evidence_count": 4,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -968,14 +928,12 @@
       "Legal specificity of challenges",
       "Bipartisan legal coalition potential"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Executive Authority"
+      "legality-and-war-powers",
+      "executive-authority"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1016,15 +974,13 @@
       "Foreign Relations Committee role",
       "2028 presidential positioning implications"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Diplomacy",
-      "Legality and War Powers",
-      "Civilian Impact"
+      "diplomacy",
+      "legality-and-war-powers",
+      "civilian-impact"
     ],
-    "evidence_count": 3,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1063,15 +1019,13 @@
       "Armed Services Committee leverage",
       "Moderate vs progressive positioning"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers",
-      "Military Operations"
+      "imminence-and-threat",
+      "legality-and-war-powers",
+      "military-operations"
     ],
-    "evidence_count": 6,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1110,14 +1064,12 @@
       "Problem Solvers Caucus positioning",
       "Threat vs authorization tension"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Israel-Iran Nexus"
+      "imminence-and-threat",
+      "israel-iran-nexus"
     ],
-    "evidence_count": 5,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1156,14 +1108,12 @@
       "Break points from caucus consensus",
       "Armed Services Committee role"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Military Operations"
+      "legality-and-war-powers",
+      "military-operations"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1203,14 +1153,12 @@
       "Moderate credibility in defense debates",
       "Committee leverage"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Intelligence and Evidence"
+      "legality-and-war-powers",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 3,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1248,14 +1196,12 @@
       "Administration briefing responsiveness",
       "District political dynamics"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "National Security"
+      "imminence-and-threat",
+      "national-security"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1294,13 +1240,11 @@
       "Vote alignment with caucus",
       "Rhetorical escalation triggers"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers"
+      "legality-and-war-powers"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1339,14 +1283,12 @@
       "Blue Dog caucus alignment",
       "Crossover vote potential"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Diplomacy"
+      "legality-and-war-powers",
+      "diplomacy"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1385,15 +1327,13 @@
       "Committee positioning",
       "Freshman senator visibility"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers",
-      "Intelligence and Evidence"
+      "imminence-and-threat",
+      "legality-and-war-powers",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1432,14 +1372,12 @@
       "Break with caucus consensus",
       "Foreign Affairs Committee role"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Israel-Iran Nexus"
+      "imminence-and-threat",
+      "israel-iran-nexus"
     ],
-    "evidence_count": 2,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1476,15 +1414,13 @@
       "Domestic Israeli political dynamics",
       "Coordination evidence"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Iran Nuclear Program",
-      "Israel-Iran Nexus",
-      "Imminence and Threat"
+      "iran-nuclear-program",
+      "israel-iran-nexus",
+      "imminence-and-threat"
     ],
-    "evidence_count": 4,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1520,14 +1456,12 @@
       "Rhetorical evolution tracking",
       "Senate tiebreaker role on war powers votes"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Executive Authority",
-      "Imminence and Threat"
+      "executive-authority",
+      "imminence-and-threat"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1564,15 +1498,13 @@
       "Congressional testimony performance",
       "Civilian casualty response"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Military Operations",
-      "Executive Authority",
-      "Imminence and Threat"
+      "military-operations",
+      "executive-authority",
+      "imminence-and-threat"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1610,14 +1542,12 @@
       "Caucus management on authorization votes",
       "Cross-party pressure points"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Executive Authority"
+      "legality-and-war-powers",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1656,15 +1586,13 @@
       "Influence on GOP caucus positioning",
       "Health and capacity considerations"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Executive Authority",
-      "Imminence and Threat",
-      "Historical Comparisons"
+      "executive-authority",
+      "imminence-and-threat",
+      "historical-comparisons"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1705,15 +1633,13 @@
       "Influence on administration escalation decisions",
       "Rhetorical ceiling testing"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Iran Nuclear Program",
-      "Imminence and Threat",
-      "Military Operations"
+      "iran-nuclear-program",
+      "imminence-and-threat",
+      "military-operations"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1753,16 +1679,14 @@
       "Military credibility leverage",
       "Escalation rhetoric ceiling"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Iran Nuclear Program",
-      "Military Operations",
-      "Intelligence and Evidence"
+      "imminence-and-threat",
+      "iran-nuclear-program",
+      "military-operations",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1803,15 +1727,13 @@
       "Pro-Israel messaging intersection",
       "Escalation support scope"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Iran Nuclear Program",
-      "Israel-Iran Nexus",
-      "Imminence and Threat"
+      "iran-nuclear-program",
+      "israel-iran-nexus",
+      "imminence-and-threat"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1852,14 +1774,12 @@
       "Constitutional vs partisan loyalty tension",
       "Alliance with Paul on military authorization"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Executive Authority"
+      "legality-and-war-powers",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1899,15 +1819,13 @@
       "Intelligence Committee briefing narratives",
       "Classified vs public messaging gaps"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Executive Authority",
-      "Iran Nuclear Program"
+      "imminence-and-threat",
+      "executive-authority",
+      "iran-nuclear-program"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1948,15 +1866,13 @@
       "Israel-related positioning tensions",
       "Bipartisan authorization framework potential"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Diplomacy",
-      "Israel-Iran Nexus"
+      "legality-and-war-powers",
+      "diplomacy",
+      "israel-iran-nexus"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -1998,15 +1914,13 @@
       "Bipartisan oversight coalition building",
       "Restraint vs opposition calibration"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Military Operations",
-      "Legality and War Powers",
-      "Intelligence and Evidence"
+      "military-operations",
+      "legality-and-war-powers",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2047,15 +1961,13 @@
       "Armed Services Committee leverage",
       "Bipartisan veteran coalition potential"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Military Operations",
-      "Civilian Impact"
+      "legality-and-war-powers",
+      "military-operations",
+      "civilian-impact"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2093,15 +2005,13 @@
       "Congressional testimony on threat evidence",
       "Public trust dynamics"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Imminence and Threat",
-      "Executive Authority"
+      "intelligence-and-evidence",
+      "imminence-and-threat",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2139,15 +2049,13 @@
       "Classified vs declassified evidence gaps",
       "Prior DNI tenure comparisons"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Imminence and Threat",
-      "Executive Authority"
+      "intelligence-and-evidence",
+      "imminence-and-threat",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2186,12 +2094,10 @@
     "bias_rating": 0.6,
     "reliability_score": 0.55,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Executive Authority",
-      "Media Framing"
+      "imminence-and-threat",
+      "executive-authority",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2229,12 +2135,10 @@
     "bias_rating": -0.35,
     "reliability_score": 0.6,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers",
-      "Media Framing"
+      "imminence-and-threat",
+      "legality-and-war-powers",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2272,12 +2176,10 @@
     "bias_rating": -0.6,
     "reliability_score": 0.55,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Historical Comparisons",
-      "Media Framing"
+      "legality-and-war-powers",
+      "historical-comparisons",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2315,12 +2217,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Military Operations",
-      "Imminence and Threat",
-      "Intelligence and Evidence"
+      "military-operations",
+      "imminence-and-threat",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2358,11 +2258,9 @@
     "bias_rating": -0.15,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Military Operations",
-      "Legality and War Powers"
+      "military-operations",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2400,12 +2298,10 @@
     "bias_rating": -0.15,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Diplomacy",
-      "Imminence and Threat",
-      "Intelligence and Evidence"
+      "diplomacy",
+      "imminence-and-threat",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2443,12 +2339,10 @@
     "bias_rating": -0.1,
     "reliability_score": 0.85,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Historical Comparisons",
-      "Diplomacy"
+      "legality-and-war-powers",
+      "historical-comparisons",
+      "diplomacy"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2486,12 +2380,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.8,
     "dominant_themes": [
-      "Diplomacy",
-      "Intelligence and Evidence",
-      "Legality and War Powers"
+      "diplomacy",
+      "intelligence-and-evidence",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2530,12 +2422,10 @@
     "bias_rating": -0.3,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Legality and War Powers",
-      "Diplomacy"
+      "intelligence-and-evidence",
+      "legality-and-war-powers",
+      "diplomacy"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2574,12 +2464,10 @@
     "bias_rating": -0.3,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Military Operations",
-      "Executive Authority"
+      "intelligence-and-evidence",
+      "military-operations",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2617,12 +2505,10 @@
     "bias_rating": 0.2,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Iran Nuclear Program",
-      "Economic Impact",
-      "Military Operations"
+      "iran-nuclear-program",
+      "economic-impact",
+      "military-operations"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2657,14 +2543,12 @@
       "Source attribution patterns",
       "Verification standards under breaking-news pressure"
     ],
-    "bias_rating": 0.0,
+    "bias_rating": 0,
     "reliability_score": 0.9,
     "dominant_themes": [
-      "Military Operations",
-      "Diplomacy"
+      "military-operations",
+      "diplomacy"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2699,15 +2583,13 @@
       "Diplomatic source patterns",
       "Speed vs verification balance"
     ],
-    "bias_rating": 0.0,
+    "bias_rating": 0,
     "reliability_score": 0.9,
     "dominant_themes": [
-      "Military Operations",
-      "Diplomacy",
-      "Civilian Impact"
+      "military-operations",
+      "diplomacy",
+      "civilian-impact"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2746,12 +2628,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.6,
     "dominant_themes": [
-      "Civilian Impact",
-      "Military Operations",
-      "Regional Dynamics"
+      "civilian-impact",
+      "military-operations",
+      "regional-dynamics"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2789,12 +2669,10 @@
     "bias_rating": -0.05,
     "reliability_score": 0.8,
     "dominant_themes": [
-      "Historical Comparisons",
-      "Diplomacy",
-      "Military Operations"
+      "historical-comparisons",
+      "diplomacy",
+      "military-operations"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2832,12 +2710,10 @@
     "bias_rating": -0.15,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Executive Authority",
-      "Congressional Dynamics"
+      "legality-and-war-powers",
+      "executive-authority",
+      "congressional-dynamics"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2875,11 +2751,9 @@
     "bias_rating": -0.05,
     "reliability_score": 0.65,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Congressional Dynamics"
+      "legality-and-war-powers",
+      "congressional-dynamics"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2917,12 +2791,10 @@
     "bias_rating": -0.1,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Executive Authority",
-      "Diplomacy",
-      "Congressional Dynamics"
+      "executive-authority",
+      "diplomacy",
+      "congressional-dynamics"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -2960,12 +2832,10 @@
     "bias_rating": -0.7,
     "reliability_score": 0.55,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Legality and War Powers",
-      "Historical Comparisons"
+      "intelligence-and-evidence",
+      "legality-and-war-powers",
+      "historical-comparisons"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3003,11 +2873,9 @@
     "bias_rating": 0.8,
     "reliability_score": 0.3,
     "dominant_themes": [
-      "Executive Authority",
-      "Media Framing"
+      "executive-authority",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3045,12 +2913,10 @@
     "bias_rating": 0.7,
     "reliability_score": 0.4,
     "dominant_themes": [
-      "Iran Nuclear Program",
-      "Israel-Iran Nexus",
-      "Media Framing"
+      "iran-nuclear-program",
+      "israel-iran-nexus",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3085,14 +2951,12 @@
       "Voice selection patterns",
       "Centrist framing vs false balance"
     ],
-    "bias_rating": 0.0,
+    "bias_rating": 0,
     "reliability_score": 0.6,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers"
+      "imminence-and-threat",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3130,12 +2994,10 @@
     "bias_rating": 0.05,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Economic Impact",
-      "Iran Nuclear Program",
-      "Diplomacy"
+      "economic-impact",
+      "iran-nuclear-program",
+      "diplomacy"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3173,12 +3035,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.65,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Legality and War Powers",
-      "Media Framing"
+      "imminence-and-threat",
+      "legality-and-war-powers",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3216,12 +3076,10 @@
     "bias_rating": -0.25,
     "reliability_score": 0.65,
     "dominant_themes": [
-      "Civilian Impact",
-      "Imminence and Threat",
-      "Media Framing"
+      "civilian-impact",
+      "imminence-and-threat",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3260,12 +3118,10 @@
     "bias_rating": -0.65,
     "reliability_score": 0.5,
     "dominant_themes": [
-      "Historical Comparisons",
-      "Legality and War Powers",
-      "Intelligence and Evidence"
+      "historical-comparisons",
+      "legality-and-war-powers",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3303,12 +3159,10 @@
     "bias_rating": -0.6,
     "reliability_score": 0.55,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Fiscal and Domestic Impact",
-      "Executive Authority"
+      "legality-and-war-powers",
+      "fiscal-and-domestic-impact",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3347,12 +3201,10 @@
     "bias_rating": 0.5,
     "reliability_score": 0.4,
     "dominant_themes": [
-      "Historical Comparisons",
-      "Executive Authority",
-      "Fiscal and Domestic Impact"
+      "historical-comparisons",
+      "executive-authority",
+      "fiscal-and-domestic-impact"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3390,12 +3242,10 @@
     "bias_rating": 0.7,
     "reliability_score": 0.35,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Executive Authority",
-      "Media Framing"
+      "imminence-and-threat",
+      "executive-authority",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3433,12 +3283,10 @@
     "bias_rating": 0.65,
     "reliability_score": 0.35,
     "dominant_themes": [
-      "Executive Authority",
-      "Fiscal and Domestic Impact",
-      "Media Framing"
+      "executive-authority",
+      "fiscal-and-domestic-impact",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3476,12 +3324,10 @@
     "bias_rating": 0.3,
     "reliability_score": 0.6,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Military Operations",
-      "Legality and War Powers"
+      "imminence-and-threat",
+      "military-operations",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3519,11 +3365,9 @@
     "bias_rating": -0.1,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Military Operations",
-      "Imminence and Threat"
+      "military-operations",
+      "imminence-and-threat"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3561,11 +3405,9 @@
     "bias_rating": -0.1,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Military Operations",
-      "Civilian Impact"
+      "military-operations",
+      "civilian-impact"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3603,12 +3445,10 @@
     "bias_rating": -0.1,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Diplomacy",
-      "Legality and War Powers",
-      "Imminence and Threat"
+      "diplomacy",
+      "legality-and-war-powers",
+      "imminence-and-threat"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3646,12 +3486,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Diplomacy",
-      "Historical Comparisons",
-      "Regional Dynamics"
+      "diplomacy",
+      "historical-comparisons",
+      "regional-dynamics"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3689,12 +3527,10 @@
     "bias_rating": -0.3,
     "reliability_score": 0.6,
     "dominant_themes": [
-      "Diplomacy",
-      "Intelligence and Evidence",
-      "Historical Comparisons"
+      "diplomacy",
+      "intelligence-and-evidence",
+      "historical-comparisons"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3732,12 +3568,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Executive Authority",
-      "Historical Comparisons",
-      "Intelligence and Evidence"
+      "executive-authority",
+      "historical-comparisons",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3776,11 +3610,9 @@
     "bias_rating": -0.2,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Executive Authority",
-      "Imminence and Threat"
+      "executive-authority",
+      "imminence-and-threat"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3818,12 +3650,10 @@
     "bias_rating": -0.15,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Executive Authority",
-      "Historical Comparisons"
+      "intelligence-and-evidence",
+      "executive-authority",
+      "historical-comparisons"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3861,12 +3691,10 @@
     "bias_rating": -0.15,
     "reliability_score": 0.75,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Imminence and Threat",
-      "Executive Authority"
+      "intelligence-and-evidence",
+      "imminence-and-threat",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3904,12 +3732,10 @@
     "bias_rating": 0.15,
     "reliability_score": 0.7,
     "dominant_themes": [
-      "Military Operations",
-      "Imminence and Threat",
-      "Intelligence and Evidence"
+      "military-operations",
+      "imminence-and-threat",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3948,12 +3774,10 @@
     "bias_rating": -0.1,
     "reliability_score": 0.5,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Media Framing",
-      "Historical Comparisons"
+      "intelligence-and-evidence",
+      "media-framing",
+      "historical-comparisons"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -3992,12 +3816,10 @@
     "bias_rating": -0.2,
     "reliability_score": 0.45,
     "dominant_themes": [
-      "Intelligence and Evidence",
-      "Legality and War Powers",
-      "Executive Authority"
+      "intelligence-and-evidence",
+      "legality-and-war-powers",
+      "executive-authority"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4036,12 +3858,10 @@
     "bias_rating": -0.6,
     "reliability_score": 0.55,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Imminence and Threat",
-      "Historical Comparisons"
+      "legality-and-war-powers",
+      "imminence-and-threat",
+      "historical-comparisons"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4080,12 +3900,10 @@
     "bias_rating": -0.3,
     "reliability_score": 0.5,
     "dominant_themes": [
-      "Fiscal and Domestic Impact",
-      "Legality and War Powers",
-      "Media Framing"
+      "fiscal-and-domestic-impact",
+      "legality-and-war-powers",
+      "media-framing"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4124,12 +3942,10 @@
     "bias_rating": -0.5,
     "reliability_score": 0.55,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Intelligence and Evidence",
-      "Congressional Dynamics"
+      "legality-and-war-powers",
+      "intelligence-and-evidence",
+      "congressional-dynamics"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4164,15 +3980,13 @@
       "Caucus management on dissent",
       "Messaging coordination with administration"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Imminence and Threat",
-      "Nuclear Program",
-      "Legality and War Powers"
+      "imminence-and-threat",
+      "nuclear-program",
+      "legality-and-war-powers"
     ],
-    "evidence_count": 1,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4210,15 +4024,13 @@
       "Strategic specificity of critiques",
       "Coordination with Senate intelligence doves"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Strategy and Exit Plan",
-      "Intelligence and Evidence"
+      "legality-and-war-powers",
+      "strategy-and-exit-plan",
+      "intelligence-and-evidence"
     ],
-    "evidence_count": 1,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4255,14 +4067,12 @@
       "District political dynamics",
       "Relationship with caucus leadership after break"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Imminence and Threat"
+      "legality-and-war-powers",
+      "imminence-and-threat"
     ],
-    "evidence_count": 1,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4298,15 +4108,13 @@
       "Coordination with US policy",
       "Post-regime transition planning"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Human Rights",
-      "Regime Change",
-      "Public Opinion"
+      "human-rights",
+      "regime-change",
+      "public-opinion"
     ],
-    "evidence_count": 1,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [
@@ -4346,14 +4154,12 @@
       "District military community reaction",
       "Evolution of stance as conflict develops"
     ],
-    "bias_rating": 0.0,
-    "reliability_score": 0.0,
+    "bias_rating": 0,
+    "reliability_score": 0,
     "dominant_themes": [
-      "Legality and War Powers",
-      "Domestic Priorities"
+      "legality-and-war-powers",
+      "domestic-priorities"
     ],
-    "evidence_count": 0,
-    "quote_count": 0,
     "phases": [],
     "linked_contradictions": [],
     "tags": [

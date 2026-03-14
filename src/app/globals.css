@@ -34,7 +34,7 @@
   /* Text */
   --color-text-primary: #f4efe4;
   --color-text-muted: #b9b1a5;
-  --color-text-faint: #817969;
+  --color-text-faint: #998f7f;
 
   /* Status */
   --color-status-success: #90b08e;
@@ -114,6 +114,21 @@ body {
 
 .animate-fade-in {
   animation: fade-in 0.3s ease-out both;
+}
+
+/* Slide-down expand animation */
+@keyframes slide-down {
+  from { opacity: 0; height: 0; transform: translateY(-4px); }
+  to { opacity: 1; height: var(--radix-collapsible-content-height, auto); transform: translateY(0); }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.2s ease-out both;
+}
+
+/* Focus ring utility */
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-gold/40 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary;
 }
 
 /* Severity indicators */

@@ -2,11 +2,33 @@
 
 import { Command } from 'cmdk';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
+import Fuse from 'fuse.js';
+import {
+  LayoutDashboard,
+  BookOpen,
+  Users,
+  Tags,
+  FileText,
+  GitCompareArrows,
+  Frame,
+  Library,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+
+interface SearchDoc {
+  id: string;
+  type: string;
+  title: string;
+  subtitle: string;
+  href: string;
+  searchable: string;
+}
 
 const sections = [
   { name: 'Overview', href: '/' },
   { name: 'Actors', href: '/actors' },
+  { name: 'Themes', href: '/themes' },
   { name: 'Accountability', href: '/accountability' },
   { name: 'Contradictions', href: '/contradictions' },
   { name: 'Evidence', href: '/evidence' },
@@ -17,42 +39,31 @@ const sections = [
   { name: 'Blind Spots', href: '/blind-spots' },
 ];
 
-const explainerTerms = [
-  { name: 'War Powers Act', id: 'war-powers-act' },
-  { name: 'AUMF (2001)', id: 'aumf-2001' },
-  { name: 'AUMF (2002)', id: 'aumf-2002' },
-  { name: 'Article II Powers', id: 'article-ii-powers' },
-  { name: 'Imminent Threat Doctrine', id: 'imminent-threat-doctrine' },
-  { name: 'OPSEC', id: 'operational-security' },
-  { name: 'Nuclear Breakout Time', id: 'nuclear-breakout-time' },
-  { name: 'JCPOA', id: 'jcpoa' },
-  { name: 'IRGC', id: 'irgc' },
-  { name: 'Maximum Pressure', id: 'maximum-pressure' },
-  { name: 'Manufactured Consent', id: 'manufactured-consent' },
-  { name: 'Whataboutism', id: 'whataboutism' },
-  { name: 'Proxy War', id: 'proxy-war' },
-  { name: 'Deterrence', id: 'deterrence' },
-];
+const typeIcons: Record<string, LucideIcon> = {
+  actor: Users,
+  theme: Tags,
+  explainer: BookOpen,
+  contradiction: GitCompareArrows,
+  document: Library,
+  framing: Frame,
+  evidence: FileText,
+};
 
-const quickActors = [
-  { name: 'Donald Trump', id: 'donald-trump' },
-  { name: 'Hakeem Jeffries', id: 'hakeem-jeffries' },
-  { name: 'Bernie Sanders', id: 'bernie-sanders' },
-  { name: 'Marco Rubio', id: 'marco-rubio' },
-  { name: 'Chuck Schumer', id: 'chuck-schumer' },
-  { name: 'Angus King', id: 'angus-king' },
-  { name: 'Fox News', id: 'fox-news' },
-  { name: 'CNN', id: 'cnn' },
-  { name: 'MSNBC', id: 'msnbc' },
-  { name: 'The New York Times', id: 'the-new-york-times' },
-  { name: 'Jake Tapper', id: 'jake-tapper' },
-  { name: 'Rachel Maddow', id: 'rachel-maddow' },
-  { name: 'Tucker Carlson', id: 'tucker-carlson' },
-  { name: 'Sean Hannity', id: 'sean-hannity' },
-];
+const typeLabels: Record<string, string> = {
+  actor: 'Actor',
+  theme: 'Theme',
+  explainer: 'Explainer',
+  contradiction: 'Contradiction',
+  document: 'Document',
+  framing: 'Framing',
+  evidence: 'Evidence',
+};
 
 export function CommandPalette() {
   const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState('');
+  const [searchIndex, setSearchIndex] = useState<SearchDoc[] | null>(null);
+  const [fuse, setFuse] = useState<Fuse<SearchDoc> | null>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -66,9 +77,44 @@ export function CommandPalette() {
     return () => document.removeEventListener('keydown', down);
   }, []);
 
+  // Load search index on first open
+  useEffect(() => {
+    if (open && !searchIndex) {
+      fetch('/api/search-index')
+        .then((r) => r.json())
+        .then((data: SearchDoc[]) => {
+          setSearchIndex(data);
+          setFuse(new Fuse(data, {
+            keys: ['title', 'subtitle', 'searchable'],
+            threshold: 0.4,
+            includeScore: true,
+          }));
+        })
+        .catch(() => {
+          setSearchIndex([]);
+        });
+    }
+  }, [open, searchIndex]);
+
+  const results = useMemo(() => {
+    if (!query || !fuse) return [];
+    return fuse.search(query, { limit: 20 }).map((r) => r.item);
+  }, [query, fuse]);
+
+  // Group results by type
+  const grouped = useMemo(() => {
+    const groups: Record<string, SearchDoc[]> = {};
+    for (const r of results) {
+      if (!groups[r.type]) groups[r.type] = [];
+      groups[r.type].push(r);
+    }
+    return groups;
+  }, [results]);
+
   const navigate = (href: string) => {
     router.push(href);
     setOpen(false);
+    setQuery('');
   };
 
   if (!open) return null;
@@ -82,54 +128,71 @@ export function CommandPalette() {
       <Command
         className="relative w-full max-w-lg rounded-lg border border-line bg-bg-secondary shadow-2xl"
         label="Command palette"
+        shouldFilter={!query} // Let Fuse handle filtering when there's a query
       >
         <Command.Input
-          placeholder="Search sections, officials, outlets, journalists…"
+          placeholder="Search actors, themes, explainers, contradictions…"
+          value={query}
+          onValueChange={setQuery}
           className="w-full border-b border-line bg-transparent px-4 py-3 text-sm text-text-primary placeholder:text-text-faint outline-none"
         />
         <Command.List className="max-h-72 overflow-y-auto p-2">
           <Command.Empty className="px-4 py-6 text-center text-sm text-text-faint">
-            No results found.
+            {searchIndex ? 'No results found.' : 'Loading search index...'}
           </Command.Empty>
 
-          <Command.Group heading="Sections" className="mb-2">
-            {sections.map((s) => (
-              <Command.Item
-                key={s.href}
-                value={s.name}
-                onSelect={() => navigate(s.href)}
-                className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-text-muted data-[selected=true]:bg-gold/10 data-[selected=true]:text-gold"
-              >
-                {s.name}
-              </Command.Item>
-            ))}
-          </Command.Group>
+          {/* Show sections when no query */}
+          {!query && (
+            <Command.Group
+              heading={
+                <span className="flex items-center gap-1.5 text-xs text-text-faint">
+                  <LayoutDashboard className="h-3 w-3" /> Sections
+                </span>
+              }
+              className="mb-2"
+            >
+              {sections.map((s) => (
+                <Command.Item
+                  key={s.href}
+                  value={s.name}
+                  onSelect={() => navigate(s.href)}
+                  className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-text-muted data-[selected=true]:bg-gold/10 data-[selected=true]:text-gold"
+                >
+                  {s.name}
+                </Command.Item>
+              ))}
+            </Command.Group>
+          )}
 
-          <Command.Group heading="Explainers" className="mb-2">
-            {explainerTerms.map((t) => (
-              <Command.Item
-                key={t.id}
-                value={`explainer ${t.name}`}
-                onSelect={() => navigate(`/explainers#${t.id}`)}
-                className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-text-muted data-[selected=true]:bg-gold/10 data-[selected=true]:text-gold"
+          {/* Show fuzzy search results when query exists */}
+          {query && Object.entries(grouped).map(([type, items]) => {
+            const Icon = typeIcons[type] || FileText;
+            return (
+              <Command.Group
+                key={type}
+                heading={
+                  <span className="flex items-center gap-1.5 text-xs text-text-faint">
+                    <Icon className="h-3 w-3" /> {typeLabels[type] || type}
+                  </span>
+                }
+                className="mb-2"
               >
-                <span className="text-text-faint">◎</span> {t.name}
-              </Command.Item>
-            ))}
-          </Command.Group>
-
-          <Command.Group heading="Actors & Media" className="mb-2">
-            {quickActors.map((a) => (
-              <Command.Item
-                key={a.id}
-                value={a.name}
-                onSelect={() => navigate(`/actors/${a.id}`)}
-                className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-text-muted data-[selected=true]:bg-gold/10 data-[selected=true]:text-gold"
-              >
-                {a.name}
-              </Command.Item>
-            ))}
-          </Command.Group>
+                {items.map((item) => (
+                  <Command.Item
+                    key={item.id}
+                    value={item.title}
+                    onSelect={() => navigate(item.href)}
+                    className="flex cursor-pointer items-center justify-between gap-2 rounded-md px-3 py-2 text-sm text-text-muted data-[selected=true]:bg-gold/10 data-[selected=true]:text-gold"
+                  >
+                    <span className="truncate">{item.title}</span>
+                    <span className="shrink-0 text-[10px] text-text-faint">
+                      {item.subtitle}
+                    </span>
+                  </Command.Item>
+                ))}
+              </Command.Group>
+            );
+          })}
         </Command.List>
       </Command>
     </div>

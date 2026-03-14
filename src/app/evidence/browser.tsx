@@ -3,7 +3,15 @@
 import { useState, useMemo } from 'react';
 import { EvidenceCard } from '@/components/cards/evidence-card';
 import { FilterBar } from '@/components/ui/filter-bar';
+import { Button } from '@/components/ui/button';
+import { useFilters } from '@/lib/use-filters';
 import type { Evidence } from '@/types';
+
+interface FacetItem {
+  value: string;
+  label: string;
+  count: number;
+}
 
 const PAGE_SIZE = 15;
 
@@ -11,21 +19,27 @@ export function EvidenceBrowser({
   evidence,
   themes,
   kinds,
+  themeFacets,
+  kindFacets,
 }: {
   evidence: Evidence[];
   themes: string[];
   kinds: string[];
+  themeFacets?: { id: string; name: string; count: number }[];
+  kindFacets?: { value: string; count: number }[];
 }) {
-  const [search, setSearch] = useState('');
-  const [theme, setTheme] = useState('all');
-  const [kind, setKind] = useState('all');
+  const { get, setFilter, clearAll } = useFilters();
   const [page, setPage] = useState(1);
+
+  const search = get('search');
+  const theme = get('theme') || 'all';
+  const kind = get('kind') || 'all';
 
   const filtered = useMemo(() => {
     return evidence.filter((e) => {
       if (search) {
         const q = search.toLowerCase();
-        const haystack = `${e.title} ${e.text} ${e.doc_title} ${e.actors.join(' ')} ${e.themes.join(' ')}`.toLowerCase();
+        const haystack = `${e.title} ${e.text} ${e.actors.join(' ')} ${e.themes.join(' ')}`.toLowerCase();
         if (!haystack.includes(q)) return false;
       }
       if (theme !== 'all' && !e.themes.includes(theme)) return false;
@@ -35,29 +49,38 @@ export function EvidenceBrowser({
   }, [evidence, search, theme, kind]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  // Clamp page to valid range when filters reduce results
   const safePage = Math.min(page, Math.max(1, totalPages));
   const pageItems = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
+
+  // Build faceted options with counts
+  const themeOptions: FacetItem[] = themeFacets
+    ? themeFacets.map((t) => ({ value: t.id || t.name, label: `${t.name} (${t.count})`, count: t.count }))
+    : themes.map((t) => ({ value: t, label: t, count: 0 }));
+
+  const kindOptions: FacetItem[] = kindFacets
+    ? kindFacets.map((k) => ({ value: k.value, label: `${k.value} (${k.count})`, count: k.count }))
+    : kinds.map((k) => ({ value: k, label: k, count: 0 }));
 
   return (
     <div className="space-y-4 p-6">
       <FilterBar
         search={search}
-        onSearchChange={(v) => { setSearch(v); setPage(1); }}
+        onSearchChange={(v) => { setFilter('search', v); setPage(1); }}
         filters={[
           {
             name: 'Themes',
             value: theme,
-            options: themes.map((t) => ({ value: t, label: t })),
-            onChange: (v: string) => { setTheme(v); setPage(1); },
+            options: themeOptions,
+            onChange: (v: string) => { setFilter('theme', v === 'all' ? '' : v); setPage(1); },
           },
           {
             name: 'Kind',
             value: kind,
-            options: kinds.map((k) => ({ value: k, label: k })),
-            onChange: (v: string) => { setKind(v); setPage(1); },
+            options: kindOptions,
+            onChange: (v: string) => { setFilter('kind', v === 'all' ? '' : v); setPage(1); },
           },
         ]}
+        onClearAll={() => { clearAll(); setPage(1); }}
       />
 
       <p className="text-xs text-text-faint">
@@ -76,16 +99,16 @@ export function EvidenceBrowser({
         </div>
       )}
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex items-center justify-center gap-2 pt-4">
-          <button
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={() => setPage(Math.max(1, safePage - 1))}
             disabled={safePage === 1}
-            className="rounded-md border border-line bg-bg-elevated px-3 py-1.5 text-xs text-text-muted disabled:opacity-30"
           >
             Previous
-          </button>
+          </Button>
           {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
             const p = i + 1;
             return (
@@ -105,13 +128,14 @@ export function EvidenceBrowser({
           {totalPages > 7 && (
             <span className="text-xs text-text-faint">…</span>
           )}
-          <button
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={() => setPage(Math.min(totalPages, safePage + 1))}
             disabled={safePage === totalPages}
-            className="rounded-md border border-line bg-bg-elevated px-3 py-1.5 text-xs text-text-muted disabled:opacity-30"
           >
             Next
-          </button>
+          </Button>
         </div>
       )}
     </div>

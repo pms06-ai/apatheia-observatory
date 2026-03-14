@@ -1,0 +1,123 @@
+[
+  {
+    "id": "admin-initiation-conflict",
+    "title": "Who drove the war sequence",
+    "actor": "donald-trump",
+    "counterparty": "marco-rubio",
+    "type": "Cross-actor contradiction",
+    "severity": "high",
+    "date_range": "2026-02-28 to 2026-03-04",
+    "summary": "Trump suggested he may have forced Israel’s hand, while Rubio framed the move as the U.S. reacting to an expected Israeli action.",
+    "tension": "If the trigger story changes, the implied legal and strategic rationale changes with it.",
+    "themes": [
+      "israel-and-delegation",
+      "imminence-and-threat"
+    ],
+    "related_documents": [
+      "Democratic Iran War Rhetoric Analysis",
+      "Moral Irony Analysis",
+      "Jeffries Statements Deep Dive",
+      "Democratic Iran War Statements Document"
+    ]
+  },
+  {
+    "id": "jeffries-obliterated-claim",
+    "title": "The obliterated-program problem",
+    "actor": "donald-trump",
+    "counterparty": "hakeem-jeffries",
+    "type": "Cross-time contradiction",
+    "severity": "high",
+    "date_range": "2025-06-20 to 2026-03-04",
+    "summary": "Jeffries repeatedly argues that if Trump already said the nuclear program was obliterated, the same program cannot cleanly serve as the urgent basis for a new strike cycle.",
+    "tension": "Either the earlier destruction claim was overstated, or the new emergency case is overstated.",
+    "themes": [
+      "jeffries-evolution",
+      "nuclear-program"
+    ],
+    "related_documents": [
+      "Iran vs Iraq Afghanistan Comparison",
+      "Jeffries Statements Deep Dive",
+      "Omissions Analysis",
+      "Expanded Omissions Analysis"
+    ]
+  },
+  {
+    "id": "jeffries-threat-method",
+    "title": "Threat recognition versus war rejection",
+    "actor": "hakeem-jeffries",
+    "counterparty": "hakeem-jeffries",
+    "type": "Internal tension",
+    "severity": "medium",
+    "date_range": "2025-06-19 to 2026-03-04",
+    "summary": "Jeffries calls Iran a sworn enemy and bad actor while also arguing the administration showed zero evidence for imminent threat and lawful escalation.",
+    "tension": "The profile is not pacifist; it is a split between accepting the danger and rejecting the legal-evidentiary pathway used to confront it.",
+    "themes": [
+      "jeffries-evolution",
+      "legality-and-war-powers",
+      "imminence-and-threat"
+    ],
+    "related_documents": [
+      "Democratic Iran War Rhetoric Analysis",
+      "Moral Irony Analysis",
+      "Iran vs Iraq Afghanistan Comparison",
+      "Jeffries Statements Deep Dive"
+    ]
+  },
+  {
+    "id": "democratic-party-split",
+    "title": "Anti-war front versus hawkish Democratic minority",
+    "actor": "john-fetterman",
+    "counterparty": "ro-khanna",
+    "type": "Intra-party contradiction",
+    "severity": "medium",
+    "date_range": "2026-03-04 to 2026-03-06",
+    "summary": "A visible anti-war bloc pushed War Powers restrictions while a smaller Democratic hawkish lane rejected or diluted them.",
+    "tension": "The archive cannot be scaled honestly unless party messaging is modeled as internally fragmented rather than monolithic.",
+    "themes": [
+      "intra-party-division",
+      "legality-and-war-powers"
+    ],
+    "related_documents": [
+      "Democratic Iran War Rhetoric Analysis",
+      "Iran vs Iraq Afghanistan Comparison",
+      "Jeffries Statements Deep Dive",
+      "Democratic Iran War Statements Document"
+    ]
+  },
+  {
+    "id": "democratic-fiscal-consistency",
+    "title": "Domestic-cost rhetoric versus spending record",
+    "actor": "bernie-sanders",
+    "counterparty": "democratic-caucus",
+    "type": "Consistency audit",
+    "severity": "medium",
+    "date_range": "2021 to 2026-03-05",
+    "summary": "Fiscal irony files argue that leaders condemning war costs as anti-worker previously backed massive spending programs that critics say worsened affordability.",
+    "tension": "This does not prove the anti-war case is false, but it creates a reusable consistency test for future issue tracking.",
+    "themes": [
+      "fiscal-irony",
+      "domestic-priorities"
+    ],
+    "related_documents": [
+      "Fiscal Irony Analysis",
+      "Moral Irony Analysis",
+      "Research Brief and Expansion Trail"
+    ]
+  },
+  {
+    "id": "left-vs-leadership-gap",
+    "title": "Leadership condemnation versus left dissatisfaction",
+    "actor": "chuck-schumer",
+    "counterparty": "progressive-critics",
+    "type": "Movement tension",
+    "severity": "low",
+    "date_range": "2026-03-01 to 2026-03-05",
+    "summary": "Left critics argue leadership rhetoric remained too delayed and procedural even after leadership publicly opposed the war path.",
+    "tension": "A future observatory needs to track not just party-vs-party conflict, but elite-vs-movement divergence within the same coalition.",
+    "themes": [
+      "intra-party-division",
+      "omissions-and-blind-spots"
+    ],
+    "related_documents": []
+  }
+]

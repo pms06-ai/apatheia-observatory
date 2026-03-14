@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google';
 import { Sidebar } from '@/components/layout/sidebar';
 import { CommandPalette } from '@/components/ui/command-palette';
+import { TooltipProvider } from '@/components/ui/tooltip';
 import { Providers } from './providers';
 import './globals.css';
 
@@ -37,11 +38,21 @@ export default function RootLayout({
         className={`${inter.variable} ${playfair.variable} ${jetbrains.variable} font-sans antialiased`}
       >
         <Providers>
-          <div className="flex h-dvh overflow-hidden">
-            <Sidebar />
-            <main className="flex-1 overflow-y-auto">{children}</main>
-          </div>
-          <CommandPalette />
+          <TooltipProvider>
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-gold/20 focus:px-4 focus:py-2 focus:text-sm focus:text-gold"
+            >
+              Skip to content
+            </a>
+            <div className="flex h-dvh overflow-hidden">
+              <Sidebar />
+              <main id="main-content" className="flex-1 overflow-y-auto">
+                {children}
+              </main>
+            </div>
+            <CommandPalette />
+          </TooltipProvider>
         </Providers>
       </body>
     </html>
